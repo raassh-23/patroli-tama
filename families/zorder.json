@@ -1,0 +1,12 @@
+{
+	"name": "Zorder",
+	"plugin-id": "Sprite",
+	"sid": 589117599949221,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"car",
+		"Dekorasi"
+	]
+}

@@ -1,0 +1,85 @@
+{
+	"name": "Dekorasi",
+	"plugin-id": "Sprite",
+	"sid": 643902879180680,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 652,
+						"height": 400,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1550323,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1644,
+						"height": 440,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2614203,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 217,
+						"height": 440,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1395526,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 541,
+						"height": 440,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7600998,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 763,
+						"height": 440,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2137819,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 139078865224891,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

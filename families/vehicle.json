@@ -1,0 +1,66 @@
+{
+	"name": "vehicle",
+	"plugin-id": "Sprite",
+	"sid": 319435536154602,
+	"instanceVariables": [
+		{
+			"name": "speed",
+			"type": "number",
+			"desc": "",
+			"sid": 778757090484597
+		},
+		{
+			"name": "melanggar",
+			"type": "number",
+			"desc": "",
+			"sid": 439709942768311
+		},
+		{
+			"name": "targetAngle",
+			"type": "number",
+			"desc": "",
+			"sid": 504416089604908
+		},
+		{
+			"name": "targetTurnX",
+			"type": "number",
+			"desc": "",
+			"sid": 519935417300084
+		},
+		{
+			"name": "targetTurnY",
+			"type": "number",
+			"desc": "",
+			"sid": 314918153615975
+		},
+		{
+			"name": "turningId",
+			"type": "number",
+			"desc": "",
+			"sid": 206717535812731
+		},
+		{
+			"name": "berhenti",
+			"type": "boolean",
+			"desc": "",
+			"sid": 545311986097833
+		},
+		{
+			"name": "currentAngle",
+			"type": "number",
+			"desc": "",
+			"sid": 281719768626533
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 647594988971730
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"car"
+	]
+}

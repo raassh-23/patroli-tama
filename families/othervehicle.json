@@ -1,0 +1,11 @@
+{
+	"name": "OtherVehicle",
+	"plugin-id": "Sprite",
+	"sid": 333019216054641,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"car"
+	]
+}

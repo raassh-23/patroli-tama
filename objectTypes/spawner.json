@@ -1,0 +1,50 @@
+{
+	"name": "spawner",
+	"plugin-id": "Sprite",
+	"sid": 823622390413746,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "angleSpawned",
+			"type": "number",
+			"desc": "",
+			"sid": 630282191423715
+		},
+		{
+			"name": "melawanArus",
+			"type": "number",
+			"desc": "",
+			"sid": 511308564727092
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5180351,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 299644715995124,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

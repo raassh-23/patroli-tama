@@ -1,0 +1,50 @@
+{
+	"name": "intersection",
+	"plugin-id": "Sprite",
+	"sid": 867802679528610,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "collisionCount",
+			"type": "number",
+			"desc": "",
+			"sid": 383453643170085
+		},
+		{
+			"name": "vehiclesUID",
+			"type": "string",
+			"desc": "",
+			"sid": 973018489295034
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 672417,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 975339684533052,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
