@@ -365,7 +365,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1568.6350398026768,
-						"y": 625.0262701466094,
+						"y": 638.0054801357105,
 						"width": 265.2068140098195,
 						"height": 265.2068140098195,
 						"originX": 0.5,
@@ -398,7 +398,8 @@
 						"targetTurnY": 0,
 						"turningId": 0,
 						"berhenti": false,
-						"currentAngle": 0
+						"currentAngle": 0,
+						"turning": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -407,17 +408,17 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
+								"set-angle": false,
+								"step": true,
 								"enabled": true
 							}
 						}
 					},
 					"world": {
-						"x": 86,
-						"y": 711.3222470337113,
-						"width": 90,
-						"height": 64,
+						"x": 185,
+						"y": 694,
+						"width": 112,
+						"height": 75,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -447,7 +448,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1500,
-						"y": 824,
+						"y": 836,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -479,7 +480,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1630,
-						"y": 824,
+						"y": 836,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1122,6 +1123,159 @@
 						"height": 181.87637378808648,
 						"originX": 0.5,
 						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "car",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "car1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11,
+					"instanceVariables": {
+						"speed": 0,
+						"melanggar": 0,
+						"targetAngle": 0,
+						"targetTurnX": 0,
+						"targetTurnY": 0,
+						"turningId": 0,
+						"berhenti": false,
+						"currentAngle": 0,
+						"turning": false
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 314.46471209214815,
+						"y": 694,
+						"width": 112,
+						"height": 75,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "car",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "car1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {
+						"speed": 0,
+						"melanggar": 0,
+						"targetAngle": 0,
+						"targetTurnX": 0,
+						"targetTurnY": 0,
+						"turningId": 0,
+						"berhenti": false,
+						"currentAngle": 0,
+						"turning": false
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 471.4702284209461,
+						"y": 590,
+						"width": 64,
+						"height": 90,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "car",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "car1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 19,
+					"instanceVariables": {
+						"speed": 0,
+						"melanggar": 0,
+						"targetAngle": 0,
+						"targetTurnX": 0,
+						"targetTurnY": 0,
+						"turningId": 0,
+						"berhenti": false,
+						"currentAngle": 0,
+						"turning": false
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 472.6835732879558,
+						"y": 700,
+						"width": 64,
+						"height": 90,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

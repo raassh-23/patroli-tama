@@ -22,6 +22,36 @@
 			"sid": 546775721671351
 		},
 		{
+			"eventType": "variable",
+			"name": "distX",
+			"type": "number",
+			"initialValue": "30",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 184197473437258
+		},
+		{
+			"eventType": "variable",
+			"name": "distY",
+			"type": "number",
+			"initialValue": "30",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 438030726901108
+		},
+		{
+			"eventType": "variable",
+			"name": "tolerance",
+			"type": "number",
+			"initialValue": "30",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 237952513226451
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -369,7 +399,6 @@
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
 					"sid": 338242721805279,
-					"disabled": true,
 					"parameters": {
 						"key": 17
 					}
@@ -450,85 +479,21 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "vehicle",
-					"sid": 586315516766173,
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 194772638857754,
 					"parameters": {
-						"object": "turnCheck"
-					}
-				},
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "vehicle",
-					"sid": 329130252695574,
-					"parameters": {
-						"instance-variable": "turningId",
-						"comparison": 1,
-						"value": "turnCheck.id"
+						"object": "vehicle"
 					}
 				}
 			],
 			"actions": [
 				{
 					"type": "script",
-					"script": "const vehicle = runtime.objects.vehicle.getPickedInstances()[0];\n\nconst turnCheck = runtime.objects.turnCheck.getPickedInstances()[0];\nconst turnArray = turnCheck.instVars.turnAngle\n\t.split('|').map(str => str.split(','));\n\nconst curAngle\n= vehicle.instVars.currentAngle;\nconsole.log(curAngle);\n\nconst turnable = turnArray\n\t.filter(val => val[0] == curAngle);\n\nconst rand = Math.floor(Math.random() * turnArray.length);\n\nconst [, target, targetX, targetY] = turnable[rand];\n\nconsole.table(target, targetX, targetY);\n\nif(target != curAngle) {\n\tvehicle.instVars.targetAngle = target;\n\tvehicle.instVars.targetTurnX = targetX;\n\tvehicle.instVars.targetTurnY = targetY;\n\tvehicle.instVars.turningId = turnCheck.instVars.id;\n}"
+					"script": "const vehicle = runtime.objects.vehicle.getPickedInstances()[0];\n\nconsole.log(vehicle);"
 				}
 			],
-			"sid": 374451842624501
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "vehicle",
-					"sid": 175988232019572,
-					"parameters": {
-						"instance-variable": "turningId",
-						"comparison": 4,
-						"value": "0"
-					}
-				},
-				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 404014771628685,
-					"parameters": {
-						"object": "vehicle"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 511507362834493,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 814004910021754,
-							"parameters": {
-								"first-value": "distance(vehicle.X, vehicle.Y, vehicle.targetTurnX, vehicle.targetTurnY)",
-								"comparison": 3,
-								"second-value": "(vehicle.speed/100)*timescale"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "vehicle",
-							"sid": 752459258857704,
-							"parameters": {
-								"instance-variable": "currentAngle",
-								"value": "Self.targetAngle"
-							}
-						}
-					],
-					"sid": 973395776032169
-				}
-			]
+			"sid": 958866417014395
 		},
 		{
 			"eventType": "block",
@@ -701,6 +666,14 @@
 					"parameters": {
 						"angle": "Self.currentAngle"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "vehicle",
+					"sid": 731950476987071,
+					"parameters": {
+						"frame-number": "floor(Self.currentAngle/90)"
+					}
 				}
 			],
 			"sid": 373197157505623,
@@ -709,50 +682,68 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-overlapping-at-offset",
+							"id": "is-boolean-instance-variable-set",
 							"objectClass": "vehicle",
-							"sid": 137035647852362,
+							"sid": 704174855898526,
 							"parameters": {
-								"object": "OtherVehicle",
-								"offset-x": "Self.Width/2 * cos(Self.currentAngle)",
-								"offset-y": "Self.Width/2* sin(Self.currentAngle)"
-							}
+								"instance-variable": "turning"
+							},
+							"isInverted": true
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 560339130843123,
+					"children": [
 						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 919732262306587,
-							"parameters": {
-								"instance-variable": "berhenti",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 560339130843123
-				},
-				{
-					"eventType": "block",
-					"conditions": [
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "vehicle",
+									"sid": 382207075623645,
+									"parameters": {
+										"object": "OtherVehicle",
+										"offset-x": "distX * cos(Self.currentAngle)",
+										"offset-y": "distY* sin(Self.currentAngle)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 201892450208613,
+									"parameters": {
+										"instance-variable": "berhenti",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 969516674658514
+						},
 						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 121344235936044
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 325446967258720
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 204210874345772,
+									"parameters": {
+										"instance-variable": "berhenti",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 211005504929349
 						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 151177997537543,
-							"parameters": {
-								"instance-variable": "berhenti",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 660537188001221
+					]
 				},
 				{
 					"eventType": "block",
@@ -1087,6 +1078,247 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "vehicle",
+					"sid": 826089368272064,
+					"parameters": {
+						"object": "turnCheck"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "vehicle",
+					"sid": 980360953318345,
+					"parameters": {
+						"instance-variable": "turningId",
+						"comparison": 1,
+						"value": "turnCheck.id"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "checkTurn(runtime.objects.vehicle.getPickedInstances()[0], runtime.objects.turnCheck.getPickedInstances()[0]);"
+				}
+			],
+			"sid": 710190793140722
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "vehicle",
+					"sid": 396818497711525,
+					"parameters": {
+						"instance-variable": "turningId",
+						"comparison": 4,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "vehicle",
+					"sid": 380146242822990,
+					"parameters": {
+						"instance-variable": "currentAngle",
+						"comparison": 1,
+						"value": "Self.targetAngle"
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 832630726877378,
+					"parameters": {
+						"object": "vehicle"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 204501730580926,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "beforeAngle",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 751353275125350
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 776225122824626,
+							"parameters": {
+								"first-value": "distance(vehicle.X, vehicle.Y, vehicle.targetTurnX, vehicle.targetTurnY)",
+								"comparison": 3,
+								"second-value": "tolerance"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 452672339983976,
+							"parameters": {
+								"instance-variable": "turning",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 838907921422121,
+							"parameters": {
+								"instance-variable": "berhenti",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "vehicle",
+							"sid": 388965114249490,
+							"parameters": {
+								"instance-variable": "speed",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 455780067589237,
+							"parameters": {
+								"variable": "beforeAngle",
+								"value": "vehicle.currentAngle"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "vehicle",
+							"sid": 421216532774187,
+							"parameters": {
+								"instance-variable": "currentAngle",
+								"value": "Self.targetAngle"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "vehicle",
+							"sid": 741082533237241,
+							"parameters": {
+								"frame-number": "floor(Self.currentAngle/90)"
+							}
+						}
+					],
+					"sid": 130331858272719,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "vehicle",
+									"sid": 751049413279580,
+									"parameters": {
+										"object": "OtherVehicle",
+										"offset-x": "distX * cos(Self.currentAngle)",
+										"offset-y": "distY * sin(Self.currentAngle)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "vehicle",
+									"sid": 139753103622817,
+									"parameters": {
+										"instance-variable": "currentAngle",
+										"value": "beforeAngle"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "vehicle",
+									"sid": 514061551098708,
+									"parameters": {
+										"frame-number": "floor(Self.currentAngle/90)"
+									}
+								}
+							],
+							"sid": 312193494826482
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 304776056387876
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 662117128372031,
+									"parameters": {
+										"instance-variable": "turning",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 379176193420503,
+									"parameters": {
+										"instance-variable": "berhenti",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "vehicle",
+									"sid": 884656709079110,
+									"parameters": {
+										"instance-variable": "speed",
+										"value": "TopSpeed"
+									}
+								}
+							],
+							"sid": 547941968042788
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "vehicle",
+									"sid": 412071369538213,
+									"parameters": {
+										"x": "Self.currentAngle = 90 | Self.currentAngle = 270 ? Self.targetTurnX : Self.X",
+										"y": "Self.currentAngle = 0 | Self.currentAngle = 180 ? Self.targetTurnY : Self.Y"
+									}
+								}
+							],
+							"sid": 128621255565651
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "for-each",
 					"objectClass": "System",
 					"sid": 603277546852185,
@@ -1240,27 +1472,6 @@
 				}
 			],
 			"sid": 741930236088393
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 873705795981040,
-					"parameters": {
-						"object": "vehicle"
-					}
-				}
-			],
-			"actions": [
-				{
-					"type": "script",
-					"script": "const vehicle = runtime.objects.vehicle.getPickedInstances()[0];\n\nconsole.log(vehicle);"
-				}
-			],
-			"sid": 396037311332237,
-			"disabled": true
 		}
 	],
 	"sid": 746794069324216

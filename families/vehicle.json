@@ -50,6 +50,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 281719768626533
+		},
+		{
+			"name": "turning",
+			"type": "boolean",
+			"desc": "",
+			"sid": 208425143974608
 		}
 	],
 	"behaviorTypes": [
