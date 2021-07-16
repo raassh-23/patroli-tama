@@ -64,6 +64,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -84,7 +100,11 @@
 			"intersection",
 			"Dekorasi",
 			"Keyboard",
-			"rumput"
+			"rumput",
+			"pelanggaranPanel",
+			"pelanggaranButton",
+			"pelanggaranText",
+			"pelanggaranOption"
 		],
 		"subfolders": []
 	},
@@ -94,7 +114,8 @@
 		"items": [
 			"vehicle",
 			"OtherVehicle",
-			"Zorder"
+			"Zorder",
+			"pelanggaranSprite"
 		],
 		"subfolders": []
 	},

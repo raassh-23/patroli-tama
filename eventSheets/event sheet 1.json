@@ -95,7 +95,95 @@
 					}
 				}
 			],
-			"sid": 876990249090575
+			"sid": 876990249090575,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 519212049390538,
+							"parameters": {
+								"object": "pelanggaranSprite"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "pelanggaranSprite",
+							"sid": 734991894275666,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "pelanggaranPanel",
+								"x": true,
+								"y": true,
+								"angle": false,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 563380015808440
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 351454384689933,
+							"parameters": {
+								"object": "pelanggaranText"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "pelanggaranText",
+							"sid": 258906315034055,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "pelanggaranPanel",
+								"x": true,
+								"y": true,
+								"angle": false,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 156253124276715
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "pelanggaranPanel",
+							"sid": 629234380926029,
+							"parameters": {
+								"x": "Self.X+Self.Width"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 267161403581753,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 608695160157882
+				}
+			]
 		},
 		{
 			"functionName": "spawnVehicle",
@@ -159,7 +247,7 @@
 						},
 						{
 							"type": "script",
-							"script": "localVars.type = pickType(localVars.vehicleName);\n\nconsole.log(localVars.type);"
+							"script": "localVars.type = pickType(localVars.vehicleName);"
 						}
 					],
 					"sid": 231495774324468
@@ -257,7 +345,7 @@
 									"objectClass": "vehicle",
 									"sid": 593109371893206,
 									"parameters": {
-										"instance-variable": "melanggar",
+										"instance-variable": "pelanggaran",
 										"value": "pelanggaran > 0 ? 1 : 0"
 									}
 								}
@@ -399,6 +487,16 @@
 			"sid": 859308124010579
 		},
 		{
+			"eventType": "variable",
+			"name": "pickedVehicle",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 884279891739131
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -410,6 +508,15 @@
 					}
 				},
 				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 494257855928092,
+					"parameters": {
+						"layer": "\"pilihanPelanggaran\""
+					},
+					"isInverted": true
+				},
+				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
 					"sid": 338242721805279,
@@ -419,7 +526,39 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 772965398666495,
+					"parameters": {
+						"variable": "pickedVehicle",
+						"value": "vehicle.UID"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "vehicle",
+					"sid": 886711755885871,
+					"parameters": {
+						"instance-variable": "berhenti",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "vehicle",
+					"sid": 128942104348276,
+					"parameters": {
+						"instance-variable": "picked",
+						"value": "true"
+					}
+				},
+				{
+					"callFunction": "showPelanggaranPanel",
+					"sid": 767237432034060
+				}
+			],
 			"sid": 657515552515615,
 			"children": [
 				{
@@ -430,7 +569,7 @@
 							"objectClass": "vehicle",
 							"sid": 254121600251392,
 							"parameters": {
-								"instance-variable": "melanggar",
+								"instance-variable": "pelanggaran",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -447,7 +586,8 @@
 							}
 						}
 					],
-					"sid": 774842211089645
+					"sid": 774842211089645,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -457,7 +597,7 @@
 							"objectClass": "vehicle",
 							"sid": 559584489687880,
 							"parameters": {
-								"instance-variable": "melanggar",
+								"instance-variable": "pelanggaran",
 								"comparison": 0,
 								"value": "0"
 							}
@@ -474,7 +614,8 @@
 							}
 						}
 					],
-					"sid": 685517204374522
+					"sid": 685517204374522,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -486,7 +627,550 @@
 							"sid": 190784188955390
 						}
 					],
-					"sid": 829090107512793
+					"sid": 829090107512793,
+					"disabled": true,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"functionName": "showPelanggaranPanel",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": true,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 375647937232883,
+					"parameters": {
+						"layer": "\"pilihanPelanggaran\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 725321865808371,
+					"parameters": {
+						"variable": "pickedPelanggaran",
+						"value": "0"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "pelanggaranPanel",
+					"sid": 208946026293953,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"moveIn\"",
+						"property": "offsetX",
+						"end-value": "Self.X-Self.Width",
+						"time": "0.5",
+						"ease": "easeoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 649848928241907,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 553570598497898,
+							"parameters": {
+								"object": "pelanggaranOption"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "pelanggaranOption",
+							"sid": 328010135810577,
+							"parameters": {
+								"animation": "\"inactive\"",
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 358441497063806
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pelanggaranButton",
+							"sid": 694545313883194,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "pelanggaranButton",
+							"sid": 127684254047089,
+							"parameters": {
+								"animation": "\"inactive\"",
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 581929853863265
+				}
+			]
+		},
+		{
+			"functionName": "hidePelanggaranPanel",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": true,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "pelanggaranPanel",
+					"sid": 819008820319249,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"moveOut\"",
+						"property": "offsetX",
+						"end-value": "Self.X+Self.Width",
+						"time": "0.5",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 249303477271994
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 747287349826352,
+					"parameters": {
+						"layer": "\"pilihanPelanggaran\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 784494809038188,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "vehicle",
+							"sid": 114107202506239,
+							"parameters": {
+								"unique-id": "pickedVehicle"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 126293042428363,
+							"parameters": {
+								"instance-variable": "berhenti",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 485416729108009,
+							"parameters": {
+								"instance-variable": "picked",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 745247996581369
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 212542157211434,
+					"parameters": {
+						"object": "pelanggaranButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 394358989438557,
+					"parameters": {
+						"layer": "\"pilihanPelanggaran\""
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "pelanggaranButton",
+					"sid": 710273581953152,
+					"parameters": {
+						"animation": "\"active\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "pelanggaranPanel",
+					"sid": 114966433424186,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 885098668217210,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pelanggaranButton",
+							"sid": 899029670933558,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "hidePelanggaranPanel",
+							"sid": 890020883845051
+						}
+					],
+					"sid": 751209237915290,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "vehicle",
+									"sid": 168840041195987,
+									"parameters": {
+										"unique-id": "pickedVehicle"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 955910121392507,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 776653863279570,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 482000682142425,
+											"parameters": {
+												"variable": "score",
+												"value": "-12"
+											}
+										}
+									],
+									"sid": 665771755709822
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 134368123120621,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 4,
+												"value": "0"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 154474091391077,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 1,
+												"value": "pickedPelanggaran"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 145710069615758,
+											"parameters": {
+												"variable": "score",
+												"value": "5"
+											}
+										}
+									],
+									"sid": 353407025884267
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 361755041160952,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 4,
+												"value": "0"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 809584039029648,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 0,
+												"value": "pickedPelanggaran"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 897601911090466,
+											"parameters": {
+												"variable": "score",
+												"value": "10"
+											}
+										}
+									],
+									"sid": 365347123705766
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "vehicle",
+											"sid": 335449018526297
+										}
+									],
+									"sid": 543013173038095
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pelanggaranButton",
+							"sid": 174831284294928,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "hidePelanggaranPanel",
+							"sid": 427284593965520
+						}
+					],
+					"sid": 880145318239442
+				}
+			]
+		},
+		{
+			"eventType": "variable",
+			"name": "pickedPelanggaran",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 409970550783179
+		},
+		{
+			"functionName": "setOptionsInactive",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 711280703295511,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "pelanggaranOption",
+							"sid": 612675477731031,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 1,
+								"value": "pickedPelanggaran"
+							}
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 950575034868472,
+							"parameters": {
+								"object": "pelanggaranOption"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "pelanggaranOption",
+							"sid": 804021778539623,
+							"parameters": {
+								"animation": "\"inactive\"",
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 448132322924969
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 609495441372636,
+					"parameters": {
+						"object": "pelanggaranOption"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 698818434973004,
+					"parameters": {
+						"layer": "\"pilihanPelanggaran\""
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "pelanggaranOption",
+					"sid": 257558296488261,
+					"parameters": {
+						"animation": "\"inactive\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "pelanggaranPanel",
+					"sid": 654777865078343,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 741261540397744,
+					"parameters": {
+						"variable": "pickedPelanggaran",
+						"value": "pelanggaranOption.pelanggaran"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "pelanggaranOption",
+					"sid": 259097611896670,
+					"parameters": {
+						"animation": "\"active\"",
+						"from": "current-frame"
+					}
+				},
+				{
+					"callFunction": "setOptionsInactive",
+					"sid": 863606690638561
+				}
+			],
+			"sid": 589197804357734,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pelanggaranButton",
+							"sid": 958196112428261,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "pelanggaranButton",
+							"sid": 689073369697840,
+							"parameters": {
+								"animation": "\"active\"",
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 902399492109088
 				}
 			]
 		},
@@ -703,6 +1387,15 @@
 							"sid": 704174855898526,
 							"parameters": {
 								"instance-variable": "turning"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 138072138013081,
+							"parameters": {
+								"instance-variable": "picked"
 							},
 							"isInverted": true
 						}

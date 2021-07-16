@@ -1,0 +1,25 @@
+{
+	"name": "pelanggaranSprite",
+	"plugin-id": "Sprite",
+	"sid": 446009436848803,
+	"instanceVariables": [
+		{
+			"name": "pinTarget",
+			"type": "number",
+			"desc": "",
+			"sid": 542472541446413
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 690822042556253
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"pelanggaranButton",
+		"pelanggaranOption"
+	]
+}

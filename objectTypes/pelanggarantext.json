@@ -1,0 +1,33 @@
+{
+	"name": "pelanggaranText",
+	"plugin-id": "Spritefont2",
+	"sid": 981036886837120,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "pinTarget",
+			"type": "number",
+			"desc": "",
+			"sid": 987332415933081
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 793871013799947
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8197873,
+		"useCollisionPoly": true
+	}
+}
