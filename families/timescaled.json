@@ -1,0 +1,12 @@
+{
+	"name": "timescaled",
+	"plugin-id": "Sprite",
+	"sid": 969299508080320,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"car",
+		"levelTimer"
+	]
+}

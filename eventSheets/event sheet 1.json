@@ -515,15 +515,6 @@
 						"layer": "\"pilihanPelanggaran\""
 					},
 					"isInverted": true
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 338242721805279,
-					"disabled": true,
-					"parameters": {
-						"key": 17
-					}
 				}
 			],
 			"actions": [
@@ -540,6 +531,7 @@
 					"id": "set-boolean-instvar",
 					"objectClass": "vehicle",
 					"sid": 886711755885871,
+					"disabled": true,
 					"parameters": {
 						"instance-variable": "berhenti",
 						"value": "true"
@@ -549,6 +541,7 @@
 					"id": "set-boolean-instvar",
 					"objectClass": "vehicle",
 					"sid": 128942104348276,
+					"disabled": true,
 					"parameters": {
 						"instance-variable": "picked",
 						"value": "true"
@@ -559,79 +552,7 @@
 					"sid": 767237432034060
 				}
 			],
-			"sid": 657515552515615,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "vehicle",
-							"sid": 254121600251392,
-							"parameters": {
-								"instance-variable": "pelanggaran",
-								"comparison": 4,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 477486309153178,
-							"parameters": {
-								"variable": "score",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 774842211089645,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "vehicle",
-							"sid": 559584489687880,
-							"parameters": {
-								"instance-variable": "pelanggaran",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 537054302692805,
-							"parameters": {
-								"variable": "score",
-								"value": "2"
-							}
-						}
-					],
-					"sid": 685517204374522,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "vehicle",
-							"sid": 190784188955390
-						}
-					],
-					"sid": 829090107512793,
-					"disabled": true,
-					"isOrBlock": true
-				}
-			]
+			"sid": 657515552515615
 		},
 		{
 			"functionName": "showPelanggaranPanel",
@@ -680,6 +601,31 @@
 			],
 			"sid": 649848928241907,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 738059366742619,
+							"parameters": {
+								"object": "timescaled"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 623354779875442,
+							"parameters": {
+								"object": "timescaled",
+								"time-scale": "0"
+							}
+						}
+					],
+					"sid": 292192483363472
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -742,40 +688,34 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [
-				{
-					"id": "tween-one-property",
-					"objectClass": "pelanggaranPanel",
-					"sid": 819008820319249,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"moveOut\"",
-						"property": "offsetX",
-						"end-value": "Self.X+Self.Width",
-						"time": "0.5",
-						"ease": "easeinsine",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 249303477271994
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 747287349826352,
-					"parameters": {
-						"layer": "\"pilihanPelanggaran\"",
-						"visibility": "invisible"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 784494809038188,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 856352971053921,
+							"parameters": {
+								"object": "timescaled"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 574404536648329,
+							"parameters": {
+								"object": "timescaled",
+								"time-scale": "1"
+							}
+						}
+					],
+					"sid": 966809009788507
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -808,7 +748,45 @@
 							}
 						}
 					],
-					"sid": 745247996581369
+					"sid": 745247996581369,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "pelanggaranPanel",
+							"sid": 235261807506321,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveOut\"",
+								"property": "offsetX",
+								"end-value": "Self.X+Self.Width",
+								"time": "0.5",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 350303511154429
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 567376563705832,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 325739785576820
 				}
 			]
 		},

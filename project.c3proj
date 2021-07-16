@@ -115,7 +115,8 @@
 			"vehicle",
 			"OtherVehicle",
 			"Zorder",
-			"pelanggaranSprite"
+			"pelanggaranSprite",
+			"timescaled"
 		],
 		"subfolders": []
 	},

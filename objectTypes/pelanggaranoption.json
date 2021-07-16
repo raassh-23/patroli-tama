@@ -26,18 +26,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 8235428,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.625,
-								0,
-								0.625,
-								1,
-								0,
-								1
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -50,18 +38,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 4279145,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.625,
-								0,
-								0.625,
-								1,
-								0,
-								1
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -74,18 +50,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 7467812,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.625,
-								0,
-								0.625,
-								1,
-								0,
-								1
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
@@ -109,18 +73,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 1381073,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.625,
-								0,
-								0.625,
-								1,
-								0,
-								1
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -133,18 +85,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 8942595,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.625,
-								0,
-								0.625,
-								1,
-								0,
-								1
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -157,18 +97,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 1928149,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.625,
-								0,
-								0.625,
-								1,
-								0,
-								1
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
