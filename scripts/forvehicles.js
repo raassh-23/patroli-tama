@@ -1,3 +1,5 @@
+import vehicles from "./vehiclesData.js";
+
 function checkTurn(vehicle, turnCheck) {
 	const turnArray = turnCheck.instVars.turnAngle
 		.split('|').map(str => str.split(','));
@@ -22,3 +24,6 @@ function checkTurn(vehicle, turnCheck) {
 	}
 }
 
+function pickType(vehicle) {
+	return Math.floor(Math.random() * vehicles[vehicle]) + 1;
+}

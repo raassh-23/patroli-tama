@@ -80,8 +80,7 @@
 					"sid": 120724882578819,
 					"parameters": [
 						"random(100) <= 90 ? 0 : 1",
-						"\"car\"",
-						"floor(random(car.AnimationFrameCount))"
+						"\"car\""
 					]
 				},
 				{
@@ -118,13 +117,6 @@
 					"initialValue": "car",
 					"comment": "",
 					"sid": 212692408998330
-				},
-				{
-					"name": "type",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 216843745649945
 				}
 			],
 			"eventType": "function-block",
@@ -143,6 +135,16 @@
 					"sid": 347348393337314
 				},
 				{
+					"eventType": "variable",
+					"name": "type",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 337677043828986
+				},
+				{
 					"eventType": "block",
 					"conditions": [],
 					"actions": [
@@ -154,6 +156,10 @@
 								"variable": "spawnerUID",
 								"value": "Functions.pickSpawner(pelanggaran = 1? 1 : 0)"
 							}
+						},
+						{
+							"type": "script",
+							"script": "localVars.type = pickType(localVars.vehicleName);\n\nconsole.log(localVars.type);"
 						}
 					],
 					"sid": 231495774324468
@@ -212,6 +218,23 @@
 									}
 								},
 								{
+									"id": "set-animation-frame",
+									"objectClass": "vehicle",
+									"sid": 553380202818020,
+									"parameters": {
+										"frame-number": "floor(Self.currentAngle/90)"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "vehicle",
+									"sid": 965615013086040,
+									"parameters": {
+										"animation": "Self.ObjectTypeName&type",
+										"from": "current-frame"
+									}
+								},
+								{
 									"id": "set-boolean-instvar",
 									"objectClass": "vehicle",
 									"sid": 743370639112856,
@@ -227,14 +250,6 @@
 									"parameters": {
 										"instance-variable": "speed",
 										"value": "TopSpeed"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "vehicle",
-									"sid": 848492430479921,
-									"parameters": {
-										"frame-number": "type"
 									}
 								},
 								{
@@ -328,15 +343,13 @@
 					"sid": 871499386351813,
 					"parameters": [
 						"random(100) <= 80 ? 0 : 1",
-						"\"car\"",
-						"random(car.AnimationFrameCount)"
+						"\"car\""
 					]
 				},
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
 					"sid": 813806762961164,
-					"disabled": true,
 					"behaviorType": "Timer",
 					"parameters": {
 						"duration": "random(2,4)",
@@ -348,6 +361,7 @@
 					"id": "start-timer",
 					"objectClass": "levelTimer",
 					"sid": 230950505610514,
+					"disabled": true,
 					"behaviorType": "Timer",
 					"parameters": {
 						"duration": "1",
@@ -399,6 +413,7 @@
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
 					"sid": 338242721805279,
+					"disabled": true,
 					"parameters": {
 						"key": 17
 					}
@@ -493,7 +508,8 @@
 					"script": "const vehicle = runtime.objects.vehicle.getPickedInstances()[0];\n\nconsole.log(vehicle);"
 				}
 			],
-			"sid": 958866417014395
+			"sid": 958866417014395,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -1471,7 +1487,8 @@
 					}
 				}
 			],
-			"sid": 741930236088393
+			"sid": 741930236088393,
+			"disabled": true
 		}
 	],
 	"sid": 746794069324216
