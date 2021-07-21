@@ -52,6 +52,16 @@
 			"sid": 237952513226451
 		},
 		{
+			"eventType": "variable",
+			"name": "randNum",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 436998512175791
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -72,8 +82,8 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "car",
-					"sid": 671971236072134
+					"objectClass": "vehicle",
+					"sid": 825796837737543
 				}
 			],
 			"sid": 876990249090575,
@@ -179,13 +189,6 @@
 					"initialValue": "0",
 					"comment": "",
 					"sid": 992617722645585
-				},
-				{
-					"name": "vehicleName",
-					"type": "string",
-					"initialValue": "car",
-					"comment": "",
-					"sid": 212692408998330
 				}
 			],
 			"eventType": "function-block",
@@ -214,6 +217,20 @@
 					"sid": 337677043828986
 				},
 				{
+					"eventType": "variable",
+					"name": "vehicleName",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 851443170640715
+				},
+				{
+					"eventType": "comment",
+					"text": "nilai pelanggaran:\n0 = tidak melanggar\n1 = melawan arus\n2 = motor tidak pakai helm\n3 = motor tidak menyalakan lampu"
+				},
+				{
 					"eventType": "block",
 					"conditions": [],
 					"actions": [
@@ -228,7 +245,7 @@
 						},
 						{
 							"type": "script",
-							"script": "localVars.type = pickType(localVars.vehicleName);"
+							"script": "localVars.vehicleName = pickVehicle(localVars.pelanggaran);\n\nlocalVars.type = pickType(localVars.vehicleName);"
 						}
 					],
 					"sid": 231495774324468
@@ -252,7 +269,7 @@
 						{
 							"id": "create-object-by-name",
 							"objectClass": "System",
-							"sid": 504705591546250,
+							"sid": 161368748496355,
 							"parameters": {
 								"object-name": "vehicleName",
 								"layer": "\"game\"",
@@ -324,10 +341,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "vehicle",
-									"sid": 593109371893206,
+									"sid": 524248627416021,
 									"parameters": {
 										"instance-variable": "pelanggaran",
-										"value": "pelanggaran > 0 ? 1 : 0"
+										"value": "pelanggaran"
 									}
 								}
 							],

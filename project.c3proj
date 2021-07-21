@@ -101,7 +101,10 @@
 			"Dekorasi",
 			"Keyboard",
 			"rumput",
-			"background"
+			"background",
+			"motorbike",
+			"motorbikeWithoutHelm",
+			"motorbikeWithoutLight"
 		],
 		"subfolders": [
 			{
@@ -165,7 +168,10 @@
 		"subfolders": [
 			{
 				"items": [
-					"Level1"
+					"Level1",
+					"Level2",
+					"Level3",
+					"Level4"
 				],
 				"subfolders": [],
 				"name": "levels"
@@ -188,7 +194,10 @@
 			{
 				"items": [
 					"Es_Level1",
-					"Es_Level"
+					"Es_Level",
+					"Es_Level2",
+					"Es_Level3",
+					"Es_Level4"
 				],
 				"subfolders": [],
 				"name": "levels"
@@ -226,6 +235,14 @@
 					"name": "vehiclesData.js",
 					"type": "application/javascript",
 					"sid": 475224541103366,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "commonFunctions.js",
+					"type": "text/javascript",
+					"sid": 385758973716159,
 					"script-info": {
 						"purpose": "none"
 					}

@@ -73,6 +73,9 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"car"
+		"car",
+		"motorbike",
+		"motorbikeWithoutHelm",
+		"motorbikeWithoutLight"
 	]
 }

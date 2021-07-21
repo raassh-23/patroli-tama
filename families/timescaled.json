@@ -7,6 +7,9 @@
 	"effectTypes": [],
 	"members": [
 		"car",
-		"levelTimer"
+		"levelTimer",
+		"motorbike",
+		"motorbikeWithoutHelm",
+		"motorbikeWithoutLight"
 	]
 }

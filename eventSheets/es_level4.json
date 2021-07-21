@@ -1,5 +1,5 @@
 {
-	"name": "Es_Level1",
+	"name": "Es_Level4",
 	"events": [
 		{
 			"eventType": "include",
@@ -11,14 +11,14 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 231514978547878
+					"sid": 223925248737965
 				}
 			],
 			"actions": [
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 339158831399175,
+					"sid": 859243791374381,
 					"parameters": {
 						"variable": "randNum",
 						"value": "random(100)"
@@ -26,15 +26,15 @@
 				},
 				{
 					"callFunction": "spawnVehicle",
-					"sid": 112683692200581,
+					"sid": 510703910421168,
 					"parameters": [
-						"randNum <= 90 ? 0 : 1"
+						"randNum <= 70 ? 0 : (randNum <= 80 ? 1 : (randNum <= 90 ? 2 : 3))"
 					]
 				},
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
-					"sid": 646469411987945,
+					"sid": 336958978789914,
 					"behaviorType": "Timer",
 					"parameters": {
 						"duration": "random(2,4)",
@@ -43,7 +43,7 @@
 					}
 				}
 			],
-			"sid": 260703338128923
+			"sid": 348035160361194
 		},
 		{
 			"eventType": "block",
@@ -51,7 +51,7 @@
 				{
 					"id": "on-timer",
 					"objectClass": "levelTimer",
-					"sid": 824091213201667,
+					"sid": 126855684302079,
 					"behaviorType": "Timer",
 					"parameters": {
 						"tag": "\"spawnVehicle\""
@@ -62,7 +62,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 558743048577741,
+					"sid": 410830587228672,
 					"parameters": {
 						"variable": "randNum",
 						"value": "random(100)"
@@ -70,15 +70,15 @@
 				},
 				{
 					"callFunction": "spawnVehicle",
-					"sid": 619258211138792,
+					"sid": 595564135514277,
 					"parameters": [
-						"randNum <= 90 ? 0 : 1"
+						"randNum <= 70 ? 0 : (randNum <= 80 ? 1 : (randNum <= 90 ? 2 : 3))"
 					]
 				},
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
-					"sid": 813806762961164,
+					"sid": 136948045800092,
 					"behaviorType": "Timer",
 					"parameters": {
 						"duration": "random(2,4)",
@@ -89,7 +89,7 @@
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
-					"sid": 230950505610514,
+					"sid": 943624273981619,
 					"disabled": true,
 					"behaviorType": "Timer",
 					"parameters": {
@@ -99,8 +99,8 @@
 					}
 				}
 			],
-			"sid": 187676061436019
+			"sid": 374649069336381
 		}
 	],
-	"sid": 479391389333567
+	"sid": 932343715993652
 }
