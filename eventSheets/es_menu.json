@@ -1,0 +1,558 @@
+{
+	"name": "Es_Menu",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Es_general"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 475282652747300
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 312411051003660,
+					"parameters": {
+						"layer": "\"setting\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "settingPin",
+					"sid": 796942395997400,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "settingPanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "settingBar",
+					"sid": 918337353230551,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "settingPanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 633304989385954
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 388413602281678,
+					"parameters": {
+						"object": "menuButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 473950004504482,
+					"parameters": {
+						"layer": "\"setting\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 654726487125040,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "menuButton",
+							"sid": 912755826598126,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 795394199533335
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "menuButton",
+							"sid": 261845720200710,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 444990879381360,
+							"parameters": {
+								"layer": "\"setting\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "settingPanel",
+							"sid": 799668646245692,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveIn\"",
+								"property": "offsetY",
+								"end-value": "540",
+								"time": "0.5",
+								"ease": "easeoutcubic",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 681099087077859
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 847164960098731,
+					"parameters": {
+						"object": "settingButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 753234055475996,
+					"parameters": {
+						"layer": "\"setting\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "settingPanel",
+					"sid": 667279089819824,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 634095345536515,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "settingButton",
+							"sid": 213451622543013,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "settingPanel",
+							"sid": 182869835618110,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveOut\"",
+								"property": "offsetY",
+								"end-value": "-500",
+								"time": "0.5",
+								"ease": "easeincubic",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 469512387692237
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 739281443290539,
+							"parameters": {
+								"layer": "\"setting\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 475850592489204
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "settingButton",
+							"sid": 222933703448763,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "setLanguange",
+							"sid": 599220047390449,
+							"parameters": [
+								"\"en\""
+							]
+						}
+					],
+					"sid": 232917266375203
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "settingButton",
+							"sid": 155567011191665,
+							"parameters": {
+								"comparison": 0,
+								"number": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "setLanguange",
+							"sid": 933300640472528,
+							"parameters": [
+								"\"id\""
+							]
+						}
+					],
+					"sid": 753719077829351
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 637722241646511,
+					"parameters": {
+						"object": "settingBarCollision"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 302107191427921,
+					"parameters": {
+						"layer": "\"setting\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "settingPanel",
+					"sid": 536164708484468,
+					"behaviorType": "Tween",
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 302553277248177,
+					"parameters": {
+						"object": "settingBar",
+						"expression": "settingBar.id",
+						"comparison": 0,
+						"value": "settingBarCollision.id"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "settingBar",
+					"sid": 593937586982935,
+					"parameters": {
+						"width": "clamp(Touch.X-settingBar.X, 0, 314)"
+					}
+				}
+			],
+			"sid": 249807709834029,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "settingBarCollision",
+							"sid": 187797933590689,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 435743348042151,
+							"parameters": {
+								"variable": "music",
+								"value": "round(settingBar.Width/314 * 100)"
+							}
+						}
+					],
+					"sid": 834210960878233
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "settingBarCollision",
+							"sid": 966003425314177,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 252820453251815,
+							"parameters": {
+								"variable": "music",
+								"value": "round(settingBar.Width/314 * 100)"
+							}
+						}
+					],
+					"sid": 369136737794318
+				}
+			]
+		},
+		{
+			"functionName": "setLanguange",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "language",
+					"type": "string",
+					"initialValue": "id",
+					"comment": "",
+					"sid": 429881761688814
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 750329435719575,
+					"parameters": {
+						"variable": "lang",
+						"value": "language"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "langChangeable",
+					"sid": 804624471683257,
+					"parameters": {
+						"animation": "lang",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 226438930660464,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 892325393649938,
+							"parameters": {
+								"variable": "lang",
+								"comparison": 0,
+								"value": "\"en\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 884228913639076,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "settingButton",
+									"sid": 919107038461110,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "settingButton",
+									"sid": 380638071301866,
+									"parameters": {
+										"frame-number": "2"
+									}
+								}
+							],
+							"sid": 413617241686420
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "settingButton",
+									"sid": 362271912764496,
+									"parameters": {
+										"comparison": 0,
+										"number": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "settingButton",
+									"sid": 870607215569978,
+									"parameters": {
+										"frame-number": "3"
+									}
+								}
+							],
+							"sid": 283395478574054
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 484924025413978,
+							"parameters": {
+								"variable": "lang",
+								"comparison": 0,
+								"value": "\"id\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 855696437088417,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "settingButton",
+									"sid": 882241501902361,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "settingButton",
+									"sid": 618557603386844,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 250150848896570
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "settingButton",
+									"sid": 738682601185584,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "settingButton",
+									"sid": 152457912187432,
+									"parameters": {
+										"frame-number": "4"
+									}
+								}
+							],
+							"sid": 587167283782342
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 759868280530214
+}

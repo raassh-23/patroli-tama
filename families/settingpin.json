@@ -1,0 +1,19 @@
+{
+	"name": "settingPin",
+	"plugin-id": "Sprite",
+	"sid": 866408840256727,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 928996028288142
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"settingDecor",
+		"settingButton",
+		"settingBarCollision"
+	]
+}

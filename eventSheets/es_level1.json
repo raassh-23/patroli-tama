@@ -1,0 +1,90 @@
+{
+	"name": "Es_Level1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Es_Level"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 231514978547878
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "spawnVehicle",
+					"sid": 120724882578819,
+					"parameters": [
+						"random(100) <= 90 ? 0 : 1",
+						"\"car\""
+					]
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "levelTimer",
+					"sid": 646469411987945,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "random(2,4)",
+						"type": "once",
+						"tag": "\"spawnVehicle\""
+					}
+				}
+			],
+			"sid": 260703338128923
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "levelTimer",
+					"sid": 824091213201667,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"spawnVehicle\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "spawnVehicle",
+					"sid": 871499386351813,
+					"parameters": [
+						"random(100) <= 80 ? 0 : 1",
+						"\"car\""
+					]
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "levelTimer",
+					"sid": 813806762961164,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "random(2,4)",
+						"type": "once",
+						"tag": "\"spawnVehicle\""
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "levelTimer",
+					"sid": 230950505610514,
+					"disabled": true,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "1",
+						"type": "once",
+						"tag": "\"spawnVehicle\""
+					}
+				}
+			],
+			"sid": 187676061436019
+		}
+	],
+	"sid": 479391389333567
+}

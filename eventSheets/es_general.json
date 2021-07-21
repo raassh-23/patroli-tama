@@ -1,0 +1,58 @@
+{
+	"name": "Es_general",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "lang",
+			"type": "string",
+			"initialValue": "\"id\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 898033830532866
+		},
+		{
+			"eventType": "variable",
+			"name": "sfx",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 418968602818120
+		},
+		{
+			"eventType": "variable",
+			"name": "music",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 990525247075747
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 171795792927143
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "langChangeable",
+					"sid": 429624972266069,
+					"parameters": {
+						"animation": "lang",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 806067160315501
+		}
+	],
+	"sid": 104651624668194
+}

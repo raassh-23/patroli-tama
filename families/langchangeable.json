@@ -1,0 +1,13 @@
+{
+	"name": "langChangeable",
+	"plugin-id": "Sprite",
+	"sid": 243967257682589,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"menuButton",
+		"settingButton",
+		"settingPanel"
+	]
+}

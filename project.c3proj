@@ -8,14 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Tilemap",
-			"name": "Tilemap",
-			"author": "Scirra",
-			"version": "r251.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -26,6 +18,22 @@
 			"type": "plugin",
 			"id": "Spritefont2",
 			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
 			"author": "Scirra",
 			"version": "r251.2",
 			"bundled": false
@@ -47,22 +55,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
-			"author": "Scirra",
-			"version": "r251.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Timer",
-			"name": "Timer",
-			"author": "Scirra",
-			"version": "r251.2",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
@@ -74,6 +66,14 @@
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
 			"author": "Scirra",
 			"version": "r251.2",
 			"bundled": false
@@ -101,12 +101,39 @@
 			"Dekorasi",
 			"Keyboard",
 			"rumput",
-			"pelanggaranPanel",
-			"pelanggaranButton",
-			"pelanggaranText",
-			"pelanggaranOption"
+			"background"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"pelanggaranButton",
+					"pelanggaranOption",
+					"pelanggaranPanel",
+					"pelanggaranText"
+				],
+				"subfolders": [],
+				"name": "pelanggaran"
+			},
+			{
+				"items": [
+					"settingPanel",
+					"settingBackground",
+					"settingDecor",
+					"settingButton",
+					"settingBar",
+					"settingBarCollision"
+				],
+				"subfolders": [],
+				"name": "setting"
+			},
+			{
+				"items": [
+					"menuButton"
+				],
+				"subfolders": [],
+				"name": "mainMenu"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
@@ -115,22 +142,42 @@
 			"vehicle",
 			"OtherVehicle",
 			"Zorder",
-			"pelanggaranSprite",
-			"timescaled"
+			"pelanggaranPin",
+			"timescaled",
+			"settingPin",
+			"langChangeable"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"MainMenu"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Level1"
+				],
+				"subfolders": [],
+				"name": "levels"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Es_Menu",
+			"Es_general"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Es_Level1",
+					"Es_Level"
+				],
+				"subfolders": [],
+				"name": "levels"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"script": {

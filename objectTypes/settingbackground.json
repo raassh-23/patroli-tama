@@ -1,21 +1,20 @@
 {
-	"name": "jalan",
-	"plugin-id": "Tilemap",
-	"sid": 605786478775002,
+	"name": "settingBackground",
+	"plugin-id": "TiledBg",
+	"sid": 122774570713738,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 1320,
-		"height": 440,
+		"width": 63,
+		"height": 59,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 3721545,
+		"imageSpriteId": 8036977,
 		"useCollisionPoly": true
-	},
-	"tile-collision-polys": {}
+	}
 }

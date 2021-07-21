@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "Es_Level",
 	"events": [
 		{
 			"eventType": "variable",
@@ -74,25 +74,6 @@
 					"id": "destroy",
 					"objectClass": "car",
 					"sid": 671971236072134
-				},
-				{
-					"callFunction": "spawnVehicle",
-					"sid": 120724882578819,
-					"parameters": [
-						"random(100) <= 90 ? 0 : 1",
-						"\"car\""
-					]
-				},
-				{
-					"id": "start-timer",
-					"objectClass": "levelTimer",
-					"sid": 646469411987945,
-					"behaviorType": "Timer",
-					"parameters": {
-						"duration": "random(2,4)",
-						"type": "once",
-						"tag": "\"spawnVehicle\""
-					}
 				}
 			],
 			"sid": 876990249090575,
@@ -105,14 +86,14 @@
 							"objectClass": "System",
 							"sid": 519212049390538,
 							"parameters": {
-								"object": "pelanggaranSprite"
+								"object": "pelanggaranPin"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "pin-to-object-properties",
-							"objectClass": "pelanggaranSprite",
+							"objectClass": "pelanggaranPin",
 							"sid": 734991894275666,
 							"behaviorType": "Pin",
 							"parameters": {
@@ -411,54 +392,6 @@
 					"sid": 182038533629120
 				}
 			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-timer",
-					"objectClass": "levelTimer",
-					"sid": 824091213201667,
-					"behaviorType": "Timer",
-					"parameters": {
-						"tag": "\"spawnVehicle\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "spawnVehicle",
-					"sid": 871499386351813,
-					"parameters": [
-						"random(100) <= 80 ? 0 : 1",
-						"\"car\""
-					]
-				},
-				{
-					"id": "start-timer",
-					"objectClass": "levelTimer",
-					"sid": 813806762961164,
-					"behaviorType": "Timer",
-					"parameters": {
-						"duration": "random(2,4)",
-						"type": "once",
-						"tag": "\"spawnVehicle\""
-					}
-				},
-				{
-					"id": "start-timer",
-					"objectClass": "levelTimer",
-					"sid": 230950505610514,
-					"disabled": true,
-					"behaviorType": "Timer",
-					"parameters": {
-						"duration": "1",
-						"type": "once",
-						"tag": "\"spawnVehicle\""
-					}
-				}
-			],
-			"sid": 187676061436019
 		},
 		{
 			"eventType": "block",

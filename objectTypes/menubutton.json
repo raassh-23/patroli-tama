@@ -1,0 +1,84 @@
+{
+	"name": "menuButton",
+	"plugin-id": "Sprite",
+	"sid": 597619038460835,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 559,
+						"height": 202,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4538437,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 170,
+						"height": 148,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8033684,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 709104615391698,
+				"name": "id",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 557,
+						"height": 202,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3626867,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 170,
+						"height": 148,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1227476,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 537794016571406,
+				"name": "en",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
