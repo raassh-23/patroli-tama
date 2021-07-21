@@ -132,6 +132,17 @@
 				],
 				"subfolders": [],
 				"name": "mainMenu"
+			},
+			{
+				"items": [
+					"levelSelectLevels",
+					"LevelSelectButton",
+					"levelSelectstars",
+					"levelSelectTitle",
+					"levelSelectDecor"
+				],
+				"subfolders": [],
+				"name": "levelSelect"
 			}
 		]
 	},
@@ -150,9 +161,7 @@
 		"subfolders": []
 	},
 	"layouts": {
-		"items": [
-			"MainMenu"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -160,12 +169,19 @@
 				],
 				"subfolders": [],
 				"name": "levels"
+			},
+			{
+				"items": [
+					"MainMenu",
+					"LevelSelect"
+				],
+				"subfolders": [],
+				"name": "Menu"
 			}
 		]
 	},
 	"eventSheets": {
 		"items": [
-			"Es_Menu",
 			"Es_general"
 		],
 		"subfolders": [
@@ -176,6 +192,14 @@
 				],
 				"subfolders": [],
 				"name": "levels"
+			},
+			{
+				"items": [
+					"Es_LevelSelect",
+					"Es_MainMenu"
+				],
+				"subfolders": [],
+				"name": "Menu"
 			}
 		]
 	},

@@ -8,6 +8,8 @@
 	"members": [
 		"menuButton",
 		"settingButton",
-		"settingPanel"
+		"settingPanel",
+		"LevelSelectButton",
+		"levelSelectTitle"
 	]
 }

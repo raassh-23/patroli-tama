@@ -1,5 +1,5 @@
 {
-	"name": "Es_Menu",
+	"name": "Es_MainMenu",
 	"events": [
 		{
 			"eventType": "include",

@@ -689,5 +689,5 @@
 	"width": 1920,
 	"height": 1080,
 	"unboundedScrolling": false,
-	"eventSheet": "Es_Menu"
+	"eventSheet": "Es_MainMenu"
 }
