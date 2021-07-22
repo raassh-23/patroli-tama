@@ -1,28 +1,9 @@
 {
-	"name": "intersection",
+	"name": "logoApaya",
 	"plugin-id": "Sprite",
-	"sid": 867802679528610,
+	"sid": 123956753014617,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "collisionCount",
-			"type": "number",
-			"desc": "",
-			"sid": 383453643170085
-		},
-		{
-			"name": "vehiclesUID",
-			"type": "string",
-			"desc": "",
-			"sid": 973018489295034
-		},
-		{
-			"name": "id",
-			"type": "number",
-			"desc": "",
-			"sid": 638492696871499
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -30,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 463,
+						"height": 463,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 672417,
+						"imageSpriteId": 1504274,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 975339684533052,
+				"sid": 797204600284303,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

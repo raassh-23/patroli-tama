@@ -393,14 +393,15 @@
 					"uid": 15,
 					"instanceVariables": {
 						"collisionCount": 0,
-						"vehiclesUID": ""
+						"vehiclesUID": "",
+						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1568.6350398026768,
-						"y": 638.0054801357105,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
+						"x": 1571.7062799387334,
+						"y": 628.2937200612666,
+						"width": 321.604960031862,
+						"height": 321.604960031862,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1351,6 +1352,87 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "camera",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 202,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": -1500,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 960,
+						"y": 540,
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pinpoint",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 203,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": -207,
+						"y": 255,
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 998466848923252,
@@ -1641,7 +1723,18 @@
 		}
 	],
 	"sid": 358371920948174,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "levels",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 210,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 1920,
 	"height": 1080,

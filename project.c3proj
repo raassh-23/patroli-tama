@@ -55,6 +55,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
@@ -80,8 +88,24 @@
 		},
 		{
 			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"version": "r251.2",
 			"bundled": false
@@ -104,7 +128,12 @@
 			"background",
 			"motorbike",
 			"motorbikeWithoutHelm",
-			"motorbikeWithoutLight"
+			"motorbikeWithoutLight",
+			"camera",
+			"pinpoint",
+			"levels",
+			"logoGemastik",
+			"logoApaya"
 		],
 		"subfolders": [
 			{
@@ -159,12 +188,16 @@
 			"pelanggaranPin",
 			"timescaled",
 			"settingPin",
-			"langChangeable"
+			"langChangeable",
+			"levelTween",
+			"splashLogo"
 		],
 		"subfolders": []
 	},
 	"layouts": {
-		"items": [],
+		"items": [
+			"splashScreen"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -188,7 +221,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Es_general"
+			"Es_general",
+			"Es_SplashScreen"
 		],
 		"subfolders": [
 			{
@@ -392,5 +426,5 @@
 	},
 	"viewportWidth": 1920,
 	"viewportHeight": 1080,
-	"firstLayout": null
+	"firstLayout": "splashScreen"
 }

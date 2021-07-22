@@ -1,28 +1,9 @@
 {
-	"name": "intersection",
+	"name": "logoGemastik",
 	"plugin-id": "Sprite",
-	"sid": 867802679528610,
+	"sid": 791872284310457,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "collisionCount",
-			"type": "number",
-			"desc": "",
-			"sid": 383453643170085
-		},
-		{
-			"name": "vehiclesUID",
-			"type": "string",
-			"desc": "",
-			"sid": 973018489295034
-		},
-		{
-			"name": "id",
-			"type": "number",
-			"desc": "",
-			"sid": 638492696871499
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -30,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 1280,
+						"height": 463,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 672417,
+						"imageSpriteId": 9195572,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 975339684533052,
+				"sid": 160683582609429,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

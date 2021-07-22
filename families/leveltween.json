@@ -1,0 +1,18 @@
+{
+	"name": "levelTween",
+	"plugin-id": "Sprite",
+	"sid": 438282303095138,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 783696690760202
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"levelSelectLevels",
+		"levelSelectTitle"
+	]
+}

@@ -94,7 +94,16 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 258201512136131,
+							"parameters": {
+								"layout": "LevelSelect"
+							}
+						}
+					],
 					"sid": 795394199533335
 				},
 				{

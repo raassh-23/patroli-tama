@@ -1,48 +1,35 @@
 {
-	"name": "intersection",
+	"name": "pinpoint",
 	"plugin-id": "Sprite",
-	"sid": 867802679528610,
+	"sid": 371901938447747,
 	"isGlobal": false,
-	"instanceVariables": [
+	"instanceVariables": [],
+	"behaviorTypes": [
 		{
-			"name": "collisionCount",
-			"type": "number",
-			"desc": "",
-			"sid": 383453643170085
-		},
-		{
-			"name": "vehiclesUID",
-			"type": "string",
-			"desc": "",
-			"sid": 973018489295034
-		},
-		{
-			"name": "id",
-			"type": "number",
-			"desc": "",
-			"sid": 638492696871499
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 169670045539074
 		}
 	],
-	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 36,
+						"height": 36,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 672417,
+						"imageSpriteId": 7596071,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 975339684533052,
+				"sid": 633378786899820,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

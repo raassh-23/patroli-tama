@@ -2110,6 +2110,170 @@
 			],
 			"sid": 741930236088393,
 			"disabled": true
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DragScreen",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Set the position to the center of the viewport when touching the screen. So the screen instantly moves, even if the Camera was moved to the outermost corner of the layout."
+				},
+				{
+					"eventType": "comment",
+					"text": "The Pinpoint Object is needed for the orientation of the movement. It is pinned to the Camera, which remains in the center of the screen, so the distance between your finger and the Pinpoint stays the same while moving."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-touch-start",
+							"objectClass": "Touch",
+							"sid": 416630371080607
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 150012304315710,
+							"parameters": {
+								"x": "scrollx",
+								"y": "scrolly"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "pinpoint",
+							"sid": 275775215212919,
+							"parameters": {
+								"x": "Touch.X",
+								"y": "Touch.Y"
+							}
+						},
+						{
+							"id": "pin-to-object",
+							"objectClass": "pinpoint",
+							"sid": 104467506361147,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "camera",
+								"mode": "position-only"
+							}
+						}
+					],
+					"sid": 513411644631060
+				},
+				{
+					"eventType": "comment",
+					"text": "While you swipe over the screen the Bullet Speed of the Camera is determined from the distance between your finger/cursor and the Pinpoint (two times the distance in this case), but it can be 2000 at maximum. You can play around with these parameters and the acceleration from the Cameras bullet behavior (which needs to be negativ) to find out your perfect setup."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-touch-speed",
+							"objectClass": "Touch",
+							"sid": 366038966530152,
+							"parameters": {
+								"touch-index": "0",
+								"comparison": 5,
+								"speed": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "camera",
+							"sid": 885315558152537,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "min(2000, distance(Touch.X, Touch.Y, pinpoint.X, pinpoint.Y)*2)"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "camera",
+							"sid": 669675258378996,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Touch.X, Touch.Y, pinpoint.X, pinpoint.Y)"
+							}
+						}
+					],
+					"sid": 510596135840619
+				},
+				{
+					"eventType": "comment",
+					"text": "When your finger is to slow or it has stopped, the Camera instantly stop as well and the Pinpoint is set to the position of your finger/cursor."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-touch-speed",
+							"objectClass": "Touch",
+							"sid": 712450860537149,
+							"parameters": {
+								"touch-index": "0",
+								"comparison": 2,
+								"speed": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "camera",
+							"sid": 506024840107020,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 488566685952527,
+							"parameters": {
+								"x": "scrollx",
+								"y": "scrolly"
+							}
+						},
+						{
+							"id": "unpin",
+							"objectClass": "pinpoint",
+							"sid": 177391986358471,
+							"behaviorType": "Pin"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "pinpoint",
+							"sid": 255423027028689,
+							"parameters": {
+								"x": "Touch.X",
+								"y": "Touch.Y"
+							}
+						},
+						{
+							"id": "pin-to-object",
+							"objectClass": "pinpoint",
+							"sid": 787026378491594,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "camera",
+								"mode": "position-only"
+							}
+						}
+					],
+					"sid": 469968632413111
+				}
+			],
+			"sid": 412261937616342
 		}
 	],
 	"sid": 746794069324216

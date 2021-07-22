@@ -21,6 +21,30 @@
 						"imageSpriteId": 998225,
 						"useCollisionPoly": true,
 						"duration": 1
+					},
+					{
+						"width": 97,
+						"height": 168,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2139452,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 97,
+						"height": 167,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1356594,
+						"useCollisionPoly": true,
+						"duration": 1
 					}
 				],
 				"sid": 964599219240589,
@@ -41,12 +65,76 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3957865,
+						"imageSpriteId": 621297,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 97,
+						"height": 168,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3894815,
+						"collisionPoly": {
+							"points": [
+								0.055678689685891694,
+								0.07678075855689177,
+								0.6443298969072165,
+								0.08233117483811286,
+								1,
+								0.34967622571692875,
+								1,
+								0.5,
+								0.9740416557098162,
+								0.5661424606845513,
+								0.6443298969072165,
+								0.5698427382053654,
+								0.4286588278227083,
+								0.40795559666975023,
+								0.39847158642674296,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 97,
+						"height": 167,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8366644,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0.3404421499277116,
+								1,
+								0.6077844311377245,
+								0.8214471629359712,
+								0.7254150348701301,
+								0,
+								0.7319957679460689,
+								0,
+								0.4440886958737474,
+								0,
+								0.6077844311377245
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 771962446653321,
+				"sid": 906383116035949,
 				"name": "en",
 				"isLooping": false,
 				"isPingPong": false,

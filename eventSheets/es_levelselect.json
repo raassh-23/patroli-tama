@@ -1,5 +1,522 @@
 {
 	"name": "Es_LevelSelect",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "showingStage",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 829369449140017
+		},
+		{
+			"eventType": "variable",
+			"name": "maxStage",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "jumlah stage dikurangi 1",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 305440161661058
+		},
+		{
+			"eventType": "variable",
+			"name": "maxLevel",
+			"type": "number",
+			"initialValue": "15",
+			"comment": "jumlah level kurangi 1",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 114986705524605
+		},
+		{
+			"eventType": "variable",
+			"name": "curLevel",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 134306926774118
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 677390117221548
+				}
+			],
+			"actions": [],
+			"sid": 533341807544658,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 345971535968141,
+							"parameters": {
+								"object": "levelSelectstars"
+							}
+						},
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 937549765285581,
+							"parameters": {
+								"object": "levelSelectLevels",
+								"expression": "levelSelectLevels.level",
+								"comparison": 0,
+								"value": "levelSelectstars.level"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "levelSelectstars",
+							"sid": 105572566832491,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "levelSelectLevels",
+								"x": true,
+								"y": true,
+								"angle": false,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 650243394365472
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "levels",
+							"sid": 209120067605528,
+							"parameters": {
+								"axes": "x"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 843502682604209,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-current-value",
+									"objectClass": "levels",
+									"sid": 738513505212369,
+									"parameters": {
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 807347057551065,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 757991611928781,
+											"parameters": {
+												"object": "levelSelectLevels",
+												"expression": "levelSelectLevels.level",
+												"comparison": 0,
+												"value": "levels.CurX"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "levelSelectLevels",
+											"sid": 794817161054527,
+											"parameters": {
+												"frame-number": "0"
+											}
+										}
+									],
+									"sid": 919602823181739
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 776738112431113,
+											"parameters": {
+												"object": "levelSelectstars",
+												"expression": "levelSelectstars.level",
+												"comparison": 0,
+												"value": "levels.CurX"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "levelSelectstars",
+											"sid": 647655002548752,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 438303074446113
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-current-value",
+									"objectClass": "levels",
+									"sid": 326721927068751,
+									"parameters": {
+										"comparison": 4,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 628567984812559,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 453301361660250,
+											"parameters": {
+												"object": "levelSelectstars",
+												"expression": "levelSelectstars.level",
+												"comparison": 0,
+												"value": "levels.CurX"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "levelSelectstars",
+											"sid": 265624830351760,
+											"parameters": {
+												"frame-number": "levels.CurValue"
+											}
+										}
+									],
+									"sid": 383130636252918
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "LevelSelectButton",
+					"sid": 720634766012800,
+					"parameters": {
+						"comparison": 0,
+						"number": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 221551911999528,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 417061297671279,
+							"parameters": {
+								"variable": "showingStage",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LevelSelectButton",
+							"sid": 886918215338970,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 529586356669323
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 623044566882033,
+							"parameters": {
+								"variable": "showingStage",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LevelSelectButton",
+							"sid": 608577444074493,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 720224435136424
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "LevelSelectButton",
+					"sid": 523325447310037,
+					"parameters": {
+						"comparison": 0,
+						"number": "2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 172575648878368,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 835495867042882,
+							"parameters": {
+								"variable": "showingStage",
+								"comparison": 0,
+								"value": "maxStage"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LevelSelectButton",
+							"sid": 347729745547704,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 765835690196442
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 140069214208801,
+							"parameters": {
+								"variable": "showingStage",
+								"comparison": 2,
+								"value": "maxStage"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LevelSelectButton",
+							"sid": 478281413585579,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 144490179558128
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 633434914730607,
+					"parameters": {
+						"object": "LevelSelectButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "LevelSelectButton",
+					"sid": 871301525460500
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "levelTween",
+					"sid": 832055204582269,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 435481380167681,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "LevelSelectButton",
+							"sid": 335009975852522,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 812338596782848,
+							"parameters": {
+								"variable": "showingStage",
+								"value": "-1"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "levelTween",
+							"sid": 369047583221420,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"showPrev\"",
+								"property": "offsetX",
+								"end-value": "Self.X+1920",
+								"time": "0.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 336021329011086
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "LevelSelectButton",
+							"sid": 699040721015278,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 665168794228333,
+							"parameters": {
+								"variable": "showingStage",
+								"value": "1"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "levelTween",
+							"sid": 816589497408452,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"showNext\"",
+								"property": "offsetX",
+								"end-value": "Self.X-1920",
+								"time": "0.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 992823968862090
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 912391035370907,
+					"parameters": {
+						"object": "levelSelectLevels"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "levelSelectLevels",
+					"sid": 895153016424504,
+					"parameters": {
+						"comparison": 4,
+						"number": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 407864860130338,
+					"parameters": {
+						"layout": "\"level\"&levelSelectLevels.level+1"
+					}
+				}
+			],
+			"sid": 486673625316561
+		}
+	],
 	"sid": 747772657461097
 }

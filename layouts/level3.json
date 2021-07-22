@@ -393,14 +393,15 @@
 					"uid": 130,
 					"instanceVariables": {
 						"collisionCount": 0,
-						"vehiclesUID": ""
+						"vehiclesUID": "",
+						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1568.6350398026768,
-						"y": 638.0054801357105,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
+						"x": 1563,
+						"y": 632,
+						"width": 320.6877150006357,
+						"height": 320.6877150006357,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1340,6 +1341,87 @@
 						"y": 664.8680240127314,
 						"width": 100,
 						"height": 49,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "camera",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 200,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": -1500,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 960,
+						"y": 540,
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pinpoint",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 205,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 562,
+						"y": -91,
+						"width": 36,
+						"height": 36,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

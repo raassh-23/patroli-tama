@@ -1,0 +1,103 @@
+{
+	"name": "Es_SplashScreen",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 902174668972287
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "levels",
+					"sid": 712552706641722,
+					"parameters": {
+						"width": "maxLevel+1",
+						"height": "1",
+						"depth": "1"
+					}
+				},
+				{
+					"id": "clear",
+					"objectClass": "levels",
+					"sid": 836582875452942,
+					"parameters": {
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "levels",
+					"sid": 268780140522915,
+					"parameters": {
+						"x": "0",
+						"value": "0"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "logoGemastik",
+					"sid": 927585918648841,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 695057530824630
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "logoGemastik",
+					"sid": 474908533644746,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "logoApaya",
+					"sid": 966309228255378,
+					"parameters": {
+						"x": "960",
+						"y": "540"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "logoApaya",
+					"sid": 633861109524386,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 621329981418604
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "logoApaya",
+					"sid": 811889415749595,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 784093572019709,
+					"parameters": {
+						"layout": "MainMenu"
+					}
+				}
+			],
+			"sid": 890070213359712
+		}
+	],
+	"sid": 598470982331719
+}
