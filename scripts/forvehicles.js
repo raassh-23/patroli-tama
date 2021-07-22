@@ -29,15 +29,21 @@ function checkTurn(vehicle, turnCheck) {
 function pickVehicle(pelanggaran) {
 	let pickedVehicle = "";
 
-	if(pelanggaran == 2) {
-		pickedVehicle = "motorbikeWithoutHelm";
-	} else if (pelanggaran == 3) {
-		pickedVehicle = "motorbikeWithoutLight";
-	} else {
-		const vehiclesArray = Object.keys(vehicles).filter(v => v !== "motorbikeWithoutHelm" 
+	switch (pelanggaran) {
+		case 2:
+			pickedVehicle = "motorbikeWithoutHelm";
+			break;
+
+		case 3:
+			pickedVehicle = "motorbikeWithoutLight";
+			break;
+			
+		default:
+			const vehiclesArray = Object.keys(vehicles).filter(v => v !== "motorbikeWithoutHelm" 
 														&& v !== "motorbikeWithoutLight");
 
-		pickedVehicle = vehiclesArray[randomInt(0, vehiclesArray.length - 1)]
+			pickedVehicle = vehiclesArray[randomInt(0, vehiclesArray.length - 1)]
+			break;
 	}
 
 	return pickedVehicle;
