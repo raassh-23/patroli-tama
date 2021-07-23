@@ -1,0 +1,108 @@
+{
+	"name": "levelFinishedButton",
+	"plugin-id": "Sprite",
+	"sid": 461975777888367,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 122,
+						"height": 126,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1239722,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 216,
+						"height": 219,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 375363,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 124,
+						"height": 124,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5394295,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 288237332775755,
+				"name": "id",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 122,
+						"height": 126,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3529738,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 216,
+						"height": 219,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4218697,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 124,
+						"height": 124,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9272436,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 730884763946148,
+				"name": "en",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

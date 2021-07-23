@@ -1,0 +1,63 @@
+{
+	"name": "levelFinishedPanel",
+	"plugin-id": "Sprite",
+	"sid": 952065628185690,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 866045514771735
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 627,
+						"height": 757,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6334021,
+						"collisionPoly": {
+							"points": [
+								0.04252503389466046,
+								0.06364526216612879,
+								0.48086124401913877,
+								0.186816356008735,
+								0.940750556055085,
+								0.02120816260691149,
+								0.9051879379011629,
+								0.4709379128137384,
+								0.7764081539801423,
+								0.603941993139578,
+								0.48086124401913877,
+								0.8989315876365761,
+								0.05868986032826137,
+								0.8461439759897448,
+								0.016122484053112285,
+								0.4709379128137384
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 969683842276716,
+				"name": "id",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

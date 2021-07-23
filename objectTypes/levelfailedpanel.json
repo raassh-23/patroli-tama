@@ -1,0 +1,63 @@
+{
+	"name": "levelFailedPanel",
+	"plugin-id": "Sprite",
+	"sid": 217322147365718,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 709430803272180
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 626,
+						"height": 782,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1338094,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.32385694849962543,
+								0,
+								1,
+								0,
+								1,
+								0.3351456313959734,
+								1,
+								0.5190042130228694,
+								0.32385694849962543,
+								0.926783946592249,
+								0,
+								0.8538128363745704,
+								0,
+								0.3351456313959734
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 609580782642242,
+				"name": "id",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

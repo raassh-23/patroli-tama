@@ -1,0 +1,19 @@
+{
+	"name": "failedPin",
+	"plugin-id": "Sprite",
+	"sid": 305350050376496,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 368103163809055
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"levelFailedButton",
+		"levelFailedDecor",
+		"levelFailedStar"
+	]
+}

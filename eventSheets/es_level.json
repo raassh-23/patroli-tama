@@ -113,6 +113,24 @@
 					}
 				},
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 798371823676966,
+					"parameters": {
+						"layer": "\"levelFinished\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 508144671615551,
+					"parameters": {
+						"layer": "\"levelFailed\"",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "pin-to-object-properties",
 					"objectClass": "pelanggaranPin",
 					"sid": 655524603398902,
@@ -134,6 +152,66 @@
 					"behaviorType": "Pin",
 					"parameters": {
 						"pin-to": "pausePanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "finishedPin",
+					"sid": 292488892770987,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "levelFinishedPanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "LevelFinishedText",
+					"sid": 569030635043633,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "levelFinishedPanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "failedPin",
+					"sid": 128042208660231,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "levelFailedPanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "levelFailedText",
+					"sid": 707690115315038,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "levelFailedPanel",
 						"x": true,
 						"y": true,
 						"angle": false,
@@ -537,6 +615,24 @@
 						"layer": "\"paused\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 425112350356753,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 955886213287587,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -867,6 +963,24 @@
 					"isInverted": true
 				},
 				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 252356963810125,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 747722470592123,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					},
+					"isInverted": true
+				},
+				{
 					"id": "compare-opacity",
 					"objectClass": "pelanggaranButton",
 					"sid": 386061362635147,
@@ -1145,6 +1259,24 @@
 					"sid": 876678938787962,
 					"parameters": {
 						"layer": "\"paused\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 838649408023275,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 521877448185883,
+					"parameters": {
+						"layer": "\"levelFinished\""
 					},
 					"isInverted": true
 				},
@@ -2625,6 +2757,24 @@
 					}
 				},
 				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 922673365790170,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 496368465764437,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					},
+					"isInverted": true
+				},
+				{
 					"id": "is-any-playing",
 					"objectClass": "pausePanel",
 					"sid": 405309868036597,
@@ -2780,6 +2930,24 @@
 					"isInverted": true
 				},
 				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 638384882576171,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 163146335173866,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					},
+					"isInverted": true
+				},
+				{
 					"id": "pick-by-comparison",
 					"objectClass": "System",
 					"sid": 583765791024160,
@@ -2878,6 +3046,24 @@
 						"layer": "\"paused\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 105764593173831,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 400342648481568,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [],
@@ -2886,6 +3072,13 @@
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "is-any-playing",
+							"objectClass": "pausePanel",
+							"sid": 579261615552932,
+							"behaviorType": "Tween",
+							"isInverted": true
+						},
 						{
 							"id": "compare-animation-frame",
 							"objectClass": "levelUIButton",
@@ -2928,12 +3121,12 @@
 				{
 					"id": "tween-one-property",
 					"objectClass": "pausePanel",
-					"sid": 661151585633561,
+					"sid": 918273255996049,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"moveIn\"",
 						"property": "offsetY",
-						"end-value": "540",
+						"end-value": "Self.Y + 1040",
 						"time": "0.5",
 						"ease": "easeoutsine",
 						"destroy-on-complete": "no",
@@ -2990,12 +3183,12 @@
 						{
 							"id": "tween-one-property",
 							"objectClass": "pausePanel",
-							"sid": 103234212323019,
+							"sid": 326758511579639,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"moveOut\"",
 								"property": "offsetY",
-								"end-value": "-500",
+								"end-value": "Self.Y-1040",
 								"time": "0.5",
 								"ease": "easeinsine",
 								"destroy-on-complete": "no",
@@ -3091,6 +3284,299 @@
 				}
 			],
 			"sid": 939559552825926
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "levelTimer",
+					"sid": 194768820378870,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"game\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "showLevelOver",
+					"sid": 728402128690912,
+					"parameters": [
+						"score >= int(tokenat(goals, 0, \"|\")) ? 1 : 0"
+					]
+				}
+			],
+			"sid": 413025541810840
+		},
+		{
+			"functionName": "showLevelOver",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": true,
+			"functionParameters": [
+				{
+					"name": "finished",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 579474724272368
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 989202632739290,
+					"parameters": {
+						"layer": "\"paused\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 150000666031199,
+					"parameters": {
+						"layer": "\"pilihanPelanggaran\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 721192467932213,
+					"parameters": {
+						"layer": "\"ui\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 328362636974319,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 708181631888427,
+							"parameters": {
+								"object": "timescaled"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 858252879238269,
+							"parameters": {
+								"object": "timescaled",
+								"time-scale": "0"
+							}
+						}
+					],
+					"sid": 744529513811334
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 870765878629431,
+							"parameters": {
+								"variable": "finished",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 704457059951707,
+							"parameters": {
+								"layer": "\"levelFailed\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "levelFailedPanel",
+							"sid": 486006632271695,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveIn\"",
+								"property": "offsetY",
+								"end-value": "Self.Y+1090",
+								"time": "0.5",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 740602209008365,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "levelFailedText",
+									"sid": 294975627864697,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "levelFailedText",
+									"sid": 736484549169913,
+									"parameters": {
+										"text": "\"LEVEL \" & curLevel+1 "
+									}
+								}
+							],
+							"sid": 280634574032892
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "levelFailedText",
+									"sid": 649772321514115,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "levelFailedText",
+									"sid": 890933515467054,
+									"parameters": {
+										"text": "(lang = \"id\" ? \"Skor : \" : \"Score : \") & score"
+									}
+								}
+							],
+							"sid": 883534740957513
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 742231378286349,
+							"parameters": {
+								"variable": "finished",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 507973452859256,
+							"parameters": {
+								"layer": "\"levelFinished\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "levelFinishedPanel",
+							"sid": 135405387858864,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveIn\"",
+								"property": "offsetY",
+								"end-value": "757",
+								"time": "0.5",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 519421342777318,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "LevelFinishedText",
+									"sid": 205530997918181,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "LevelFinishedText",
+									"sid": 260491513398045,
+									"parameters": {
+										"text": "\"LEVEL \" & curLevel+1 "
+									}
+								}
+							],
+							"sid": 607238848273171
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "LevelFinishedText",
+									"sid": 569942456956798,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "LevelFinishedText",
+									"sid": 496308859646258,
+									"parameters": {
+										"text": "(lang = \"id\" ? \"Skor : \" : \"Score : \") & score"
+									}
+								}
+							],
+							"sid": 100095605586032
+						}
+					]
+				}
+			]
 		}
 	],
 	"sid": 746794069324216

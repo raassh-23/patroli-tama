@@ -1,0 +1,19 @@
+{
+	"name": "finishedPin",
+	"plugin-id": "Sprite",
+	"sid": 852527644225103,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 607935089625112
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"levelFinishedButton",
+		"levelFinishedDecor",
+		"levelFinishedStar"
+	]
+}

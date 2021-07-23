@@ -207,6 +207,28 @@
 				],
 				"subfolders": [],
 				"name": "pause"
+			},
+			{
+				"items": [
+					"levelFinishedPanel",
+					"levelFinishedDecor",
+					"levelFinishedButton",
+					"LevelFinishedText",
+					"levelFinishedStar"
+				],
+				"subfolders": [],
+				"name": "levelFinished"
+			},
+			{
+				"items": [
+					"levelFailedPanel",
+					"levelFailedDecor",
+					"levelFailedButton",
+					"levelFailedText",
+					"levelFailedStar"
+				],
+				"subfolders": [],
+				"name": "levelFailed"
 			}
 		]
 	},
@@ -223,7 +245,9 @@
 			"langChangeable",
 			"levelTween",
 			"splashLogo",
-			"pausePin"
+			"pausePin",
+			"finishedPin",
+			"failedPin"
 		],
 		"subfolders": []
 	},

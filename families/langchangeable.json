@@ -16,6 +16,10 @@
 		"pauseButton",
 		"pausePanel",
 		"pelanggaranOption",
-		"pelanggaranPanel"
+		"pelanggaranPanel",
+		"levelFinishedButton",
+		"levelFinishedDecor",
+		"levelFailedButton",
+		"levelFailedDecor"
 	]
 }
