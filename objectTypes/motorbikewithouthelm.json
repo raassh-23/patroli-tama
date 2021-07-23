@@ -12,22 +12,30 @@
 				"frames": [
 					{
 						"width": 115,
-						"height": 51,
+						"height": 50,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9670360,
+						"imageSpriteId": 7170017,
 						"collisionPoly": {
 							"points": [
-								1,
+								0,
+								0,
 								1,
 								0,
 								1,
 								0,
+								1,
 								0,
 								1,
+								1,
+								1,
+								0.8,
+								0,
+								1,
+								0,
 								0
 							]
 						},
@@ -42,31 +50,19 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 706970,
+						"imageSpriteId": 4963819,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
 					{
 						"width": 115,
-						"height": 51,
+						"height": 50,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9773845,
-						"collisionPoly": {
-							"points": [
-								1,
-								1,
-								0,
-								1,
-								0,
-								0,
-								1,
-								0
-							]
-						},
+						"imageSpriteId": 4052583,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -78,13 +74,151 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 186817,
+						"imageSpriteId": 3627745,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
 				"sid": 114421106944220,
 				"name": "motorbikeWithoutHelm1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 116,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6069717,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.03017241379310345,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.03017241379310345,
+								0.8,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 98,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 345320,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 116,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3611998,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 98,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8783048,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 808346261953940,
+				"name": "motorbikeWithoutHelm2",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 115,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8583111,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7820773,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 115,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1030683,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8815522,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 739680171798477,
+				"name": "motorbikeWithoutHelm3",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
