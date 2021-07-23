@@ -63,6 +63,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
@@ -131,9 +139,10 @@
 			"motorbikeWithoutLight",
 			"camera",
 			"pinpoint",
-			"levels",
 			"logoGemastik",
-			"logoApaya"
+			"logoApaya",
+			"levels",
+			"Browser"
 		],
 		"subfolders": [
 			{

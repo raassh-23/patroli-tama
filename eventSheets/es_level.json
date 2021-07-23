@@ -2268,6 +2268,15 @@
 								"pin-to": "camera",
 								"mode": "position-only"
 							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 547235312967456,
+							"parameters": {
+								"type": "log",
+								"message": "Touch.X & \" \" & Touch.Y"
+							}
 						}
 					],
 					"sid": 469968632413111
