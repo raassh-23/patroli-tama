@@ -106,6 +106,15 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
+					"sid": 727924007206739,
+					"parameters": {
+						"layer": "\"ui\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
 					"sid": 827811921973990,
 					"parameters": {
 						"layer": "\"paused\"",
@@ -487,6 +496,15 @@
 										"instance-variable": "pelanggaran",
 										"value": "pelanggaran"
 									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "vehicle",
+									"sid": 396694796610916,
+									"parameters": {
+										"instance-variable": "type",
+										"value": "type"
+									}
 								}
 							],
 							"sid": 141008854237648
@@ -816,6 +834,14 @@
 							"parameters": {
 								"animation": "vehicle.ObjectTypeName",
 								"from": "current-frame"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "pelanggaranDriver",
+							"sid": 755541035592301,
+							"parameters": {
+								"frame-number": "vehicle.type"
 							}
 						}
 					],
@@ -3421,6 +3447,14 @@
 								"loop": "no",
 								"ping-pong": "no"
 							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "levelFailedStar",
+							"sid": 574056704967864,
+							"parameters": {
+								"frame-number": "0"
+							}
 						}
 					],
 					"sid": 740602209008365,
@@ -3506,17 +3540,43 @@
 						{
 							"id": "tween-one-property",
 							"objectClass": "levelFinishedPanel",
-							"sid": 135405387858864,
+							"sid": 495874226562041,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"moveIn\"",
 								"property": "offsetY",
-								"end-value": "757",
+								"end-value": "Self.Y+1080",
 								"time": "0.5",
 								"ease": "easeoutsine",
 								"destroy-on-complete": "no",
 								"loop": "no",
 								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "levelFinishedStar",
+							"sid": 644875923531740,
+							"parameters": {
+								"frame-number": "score >= int(tokenat(goals, 2, \"|\")) ? 3 : (score >= int(tokenat(goals, 1, \"|\")) ? 2 : 1)"
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "levels",
+							"sid": 550480028875375,
+							"parameters": {
+								"x": "curLevel",
+								"value": "levelFinishedStar.AnimationFrame"
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "levels",
+							"sid": 979828467666622,
+							"parameters": {
+								"x": "curLevel+1",
+								"value": "0"
 							}
 						}
 					],
@@ -3575,6 +3635,198 @@
 							"sid": 100095605586032
 						}
 					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 951952136734968,
+					"parameters": {
+						"object": "levelFailedButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 260556638916724,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "levelFailedPanel",
+					"sid": 948614534981632,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 975663185969089,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "levelFailedButton",
+							"sid": 429868339184617,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 221606228999744,
+							"parameters": {
+								"layout": "LevelSelect"
+							}
+						}
+					],
+					"sid": 750559381022658
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "levelFailedButton",
+							"sid": 935529697863128,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 675865253524062
+						}
+					],
+					"sid": 557726745911227
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 211142466223222,
+					"parameters": {
+						"object": "levelFinishedButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 228392184729191,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "levelFinishedPanel",
+					"sid": 245688320849695,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 815208329229763,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "levelFinishedButton",
+							"sid": 866832555372374,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 545071110487878,
+							"parameters": {
+								"layout": "LevelSelect"
+							}
+						}
+					],
+					"sid": 777270134507948
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "levelFinishedButton",
+							"sid": 669911154716671,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 652671703662908,
+							"parameters": {
+								"variable": "curLevel",
+								"value": "1"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 807803260054338,
+							"parameters": {
+								"layout": "\"level\"&curLevel+1"
+							}
+						}
+					],
+					"sid": 739132366413387
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "levelFinishedButton",
+							"sid": 829996479708502,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 680306979948555
+						}
+					],
+					"sid": 114129076837211
 				}
 			]
 		}

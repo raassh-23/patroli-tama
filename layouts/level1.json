@@ -1067,7 +1067,8 @@
 						"berhenti": false,
 						"currentAngle": 0,
 						"turning": false,
-						"picked": false
+						"picked": false,
+						"type": 0
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1177,7 +1178,8 @@
 						"berhenti": false,
 						"currentAngle": 0,
 						"turning": false,
-						"picked": false
+						"picked": false,
+						"type": 0
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1229,7 +1231,8 @@
 						"berhenti": false,
 						"currentAngle": 0,
 						"turning": false,
-						"picked": false
+						"picked": false,
+						"type": 0
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1281,7 +1284,8 @@
 						"berhenti": false,
 						"currentAngle": 0,
 						"turning": false,
-						"picked": false
+						"picked": false,
+						"type": 0
 					},
 					"behaviors": {
 						"Bullet": {
@@ -2735,7 +2739,7 @@
 					},
 					"world": {
 						"x": 968,
-						"y": 619.75,
+						"y": -460,
 						"width": 627,
 						"height": 757,
 						"originX": 0.5,
@@ -2770,7 +2774,7 @@
 					},
 					"world": {
 						"x": 949,
-						"y": 275.75,
+						"y": -804,
 						"width": 621,
 						"height": 388,
 						"originX": 0.5,
@@ -2816,7 +2820,7 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 655.75,
+						"y": -424,
 						"width": 309.9737310441832,
 						"height": 48.54451831152687,
 						"originX": 0.5,
@@ -2862,7 +2866,7 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 703.75,
+						"y": -376,
 						"width": 309.9737310441832,
 						"height": 48.54451831152687,
 						"originX": 0.5,
@@ -2897,7 +2901,7 @@
 					},
 					"world": {
 						"x": 771,
-						"y": 846.75,
+						"y": -233,
 						"width": 122,
 						"height": 126,
 						"originX": 0.5,
@@ -2932,7 +2936,7 @@
 					},
 					"world": {
 						"x": 962,
-						"y": 850.75,
+						"y": -229,
 						"width": 216,
 						"height": 219,
 						"originX": 0.5,
@@ -2967,7 +2971,7 @@
 					},
 					"world": {
 						"x": 1156,
-						"y": 846.75,
+						"y": -233,
 						"width": 124,
 						"height": 124,
 						"originX": 0.5,
@@ -3002,7 +3006,7 @@
 					},
 					"world": {
 						"x": 960,
-						"y": 532.75,
+						"y": -547,
 						"width": 364,
 						"height": 124,
 						"originX": 0.5,

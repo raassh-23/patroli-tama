@@ -471,6 +471,14 @@
 								"loop": "no",
 								"ping-pong": "no"
 							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "levelSelectDecor",
+							"sid": 127529682608858,
+							"parameters": {
+								"frame-number": "showingStage"
+							}
 						}
 					],
 					"sid": 755260604964513
@@ -512,6 +520,14 @@
 								"destroy-on-complete": "no",
 								"loop": "no",
 								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "levelSelectDecor",
+							"sid": 421176773875000,
+							"parameters": {
+								"frame-number": "showingStage"
 							}
 						}
 					],
@@ -560,6 +576,174 @@
 				}
 			],
 			"sid": 486673625316561
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-touch-speed",
+					"objectClass": "Touch",
+					"sid": 239429789684285,
+					"parameters": {
+						"touch-index": "0",
+						"comparison": 4,
+						"speed": "300"
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "levelTween",
+					"sid": 287294578074303,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 926484421926187,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 535774503915540,
+							"parameters": {
+								"first-value": "Touch.AngleAt(0)",
+								"comparison": 3,
+								"second-value": "45"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 250573357483923,
+							"parameters": {
+								"first-value": "Touch.AngleAt(0)",
+								"comparison": 5,
+								"second-value": "-45"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 835980334702355,
+							"parameters": {
+								"variable": "showingStage",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 353780807476373,
+							"parameters": {
+								"variable": "showingStage",
+								"value": "-1"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "levelTween",
+							"sid": 902234277139672,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"showPrev\"",
+								"property": "offsetX",
+								"end-value": "Self.X+1920",
+								"time": "0.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "levelSelectDecor",
+							"sid": 435425678708507,
+							"parameters": {
+								"frame-number": "showingStage"
+							}
+						}
+					],
+					"sid": 576062924487749
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 455700458840042,
+							"parameters": {
+								"first-value": "Touch.AngleAt(0)",
+								"comparison": 3,
+								"second-value": "225"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 399235153965579,
+							"parameters": {
+								"first-value": "Touch.AngleAt(0)",
+								"comparison": 5,
+								"second-value": "135"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 415261251178458,
+							"parameters": {
+								"variable": "showingStage",
+								"comparison": 2,
+								"value": "maxStage"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 170864328520791,
+							"parameters": {
+								"variable": "showingStage",
+								"value": "1"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "levelTween",
+							"sid": 961686317462916,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"showNext\"",
+								"property": "offsetX",
+								"end-value": "Self.X-1920",
+								"time": "0.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "levelSelectDecor",
+							"sid": 499883028107062,
+							"parameters": {
+								"frame-number": "showingStage"
+							}
+						}
+					],
+					"sid": 878775539890399
+				}
+			]
 		}
 	],
 	"sid": 747772657461097

@@ -939,7 +939,8 @@
 						"berhenti": false,
 						"currentAngle": 0,
 						"turning": false,
-						"picked": false
+						"picked": false,
+						"type": 0
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1049,7 +1050,8 @@
 						"berhenti": false,
 						"currentAngle": 0,
 						"turning": false,
-						"picked": false
+						"picked": false,
+						"type": 0
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1101,7 +1103,8 @@
 						"berhenti": false,
 						"currentAngle": 0,
 						"turning": false,
-						"picked": false
+						"picked": false,
+						"type": 0
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1153,7 +1156,8 @@
 						"berhenti": false,
 						"currentAngle": 0,
 						"turning": false,
-						"picked": false
+						"picked": false,
+						"type": 0
 					},
 					"behaviors": {
 						"Bullet": {

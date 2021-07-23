@@ -62,6 +62,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 297752806143014
+		},
+		{
+			"name": "type",
+			"type": "number",
+			"desc": "",
+			"sid": 677923509263411
 		}
 	],
 	"behaviorTypes": [
