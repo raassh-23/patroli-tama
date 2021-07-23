@@ -2,6 +2,96 @@
 	"name": "Es_Level1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "goals",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 283539779379892
+		},
+		{
+			"eventType": "variable",
+			"name": "options",
+			"type": "string",
+			"initialValue": "",
+			"comment": "max 6 items",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 697416018005957
+		},
+		{
+			"eventType": "variable",
+			"name": "timeLimit",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "in seconds",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 329563692976190
+		},
+		{
+			"eventType": "variable",
+			"name": "progressBarWidth",
+			"type": "number",
+			"initialValue": "294",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 202054984873610
+		},
+		{
+			"eventType": "variable",
+			"name": "optionX",
+			"type": "number",
+			"initialValue": "1445",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 307131021591356
+		},
+		{
+			"eventType": "variable",
+			"name": "optionY",
+			"type": "number",
+			"initialValue": "625",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 370947115680146
+		},
+		{
+			"eventType": "variable",
+			"name": "OptionXGrid",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 421670394946580
+		},
+		{
+			"eventType": "variable",
+			"name": "OptionXDelta",
+			"type": "number",
+			"initialValue": "155",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 645307951167150
+		},
+		{
+			"eventType": "variable",
+			"name": "OptionYDelta",
+			"type": "number",
+			"initialValue": "140",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 725689494163761
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "Es_Level"
 		},
@@ -41,6 +131,41 @@
 						"type": "once",
 						"tag": "\"spawnVehicle\""
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 521050392207716,
+					"parameters": {
+						"variable": "timeLimit",
+						"value": "85"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 558369321740395,
+					"parameters": {
+						"variable": "goals",
+						"value": "\"30|40|60\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 443653296491727,
+					"parameters": {
+						"variable": "options",
+						"value": "\"1\""
+					}
+				},
+				{
+					"callFunction": "setStar",
+					"sid": 267214773345472
+				},
+				{
+					"callFunction": "setOption",
+					"sid": 636476592939337
 				}
 			],
 			"sid": 260703338128923

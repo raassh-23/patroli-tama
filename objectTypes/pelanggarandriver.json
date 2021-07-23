@@ -1,7 +1,7 @@
 {
-	"name": "pelanggaranButton",
+	"name": "pelanggaranDriver",
 	"plugin-id": "Sprite",
-	"sid": 423093746635523,
+	"sid": 645225101566704,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,104 +11,40 @@
 			{
 				"frames": [
 					{
-						"width": 248,
-						"height": 78,
+						"width": 497,
+						"height": 290,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 929891,
+						"imageSpriteId": 8864994,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
-								0,
-								0,
 								1,
 								0,
 								1,
 								0,
 								1,
-								1,
 								0,
 								1,
 								0,
-								0.782051282051282,
+								1,
+								1,
 								0,
+								1,
+								1,
 								0
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 248,
-						"height": 78,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 8645309,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								1,
-								0,
-								1,
-								0,
-								1,
-								0,
-								0
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 95,
-						"height": 82,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 7686266,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0,
-								0,
-								1,
-								0,
-								1,
-								1,
-								1,
-								1,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 605786775500572,
-				"name": "id",
+				"sid": 480650530674979,
+				"name": "motorbikeWithoutHelm",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -118,14 +54,14 @@
 			{
 				"frames": [
 					{
-						"width": 248,
-						"height": 78,
+						"width": 497,
+						"height": 290,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4275273,
+						"imageSpriteId": 2363615,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -137,7 +73,7 @@
 								1,
 								0,
 								1,
-								1,
+								0,
 								1,
 								1,
 								0,
@@ -148,59 +84,101 @@
 						},
 						"useCollisionPoly": true,
 						"duration": 1
-					},
-					{
-						"width": 248,
-						"height": 78,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 9105934,
-						"collisionPoly": {
-							"points": [
-								0.00019521082769390747,
-								0,
-								0.4778225806451613,
-								0,
-								1,
-								0,
-								1,
-								0.5384615384615384,
-								1,
-								1,
-								0.4778225806451613,
-								1,
-								0,
-								1,
-								0.28098394653322367,
-								0.5384615384615384
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 95,
-						"height": 82,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 4000124,
-						"useCollisionPoly": true,
-						"duration": 1
 					}
 				],
-				"sid": 465385030125456,
-				"name": "en",
+				"sid": 561107988946304,
+				"name": "motorbikeWithoutLight",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 497,
+						"height": 290,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9623998,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								1,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 286439329025262,
+				"name": "motorbike",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 497,
+						"height": 290,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5827086,
+						"collisionPoly": {
+							"points": [
+								0.002012072434607646,
+								0.05517241379310345,
+								1,
+								0.1103448275862069,
+								1,
+								0,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								0.044265593561368236,
+								1,
+								0.002012072434607646,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 265816419849451,
+				"name": "car",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

@@ -1,55 +1,49 @@
 {
-	"name": "pelanggaranPanel",
+	"name": "levelUIButton",
 	"plugin-id": "Sprite",
-	"sid": 154398809036574,
+	"sid": 852774156943122,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Tween",
-			"name": "Tween",
-			"sid": 463012592368933
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 643,
-						"height": 1083,
+						"width": 107,
+						"height": 101,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4274202,
+						"imageSpriteId": 7783527,
 						"collisionPoly": {
 							"points": [
+								0.009345794392523364,
 								0,
-								0.11819021237303785,
+								0.9906542056074766,
 								0,
-								0.019390581717451522,
-								0.9963463495474022,
-								0.0009233610341643582,
-								0.9963463495474022,
-								0.5,
-								0.9963463495474022,
-								0.9981532779316713,
+								0.9906542056074766,
 								0,
-								0.9806094182825484,
+								0.9906542056074766,
 								0,
-								0.9039704524469068,
-								0,
-								0.5
+								0.9906542056074766,
+								1,
+								0.9906542056074766,
+								1,
+								0.009345794392523364,
+								1,
+								0.9906542056074766,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 663629066669286,
+				"sid": 180672828752919,
 				"name": "id",
 				"isLooping": false,
 				"isPingPong": false,
@@ -60,39 +54,39 @@
 			{
 				"frames": [
 					{
-						"width": 643,
-						"height": 1083,
+						"width": 107,
+						"height": 101,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1698857,
+						"imageSpriteId": 886301,
 						"collisionPoly": {
 							"points": [
+								0.009345794392523364,
 								0,
-								0.11819021237303785,
+								0.9906542056074766,
 								0,
-								0.019390581717451522,
+								0.9906542056074766,
+								0,
+								0.9906542056074766,
+								0,
+								0.9906542056074766,
 								1,
-								0.0009233610341643582,
+								0.9906542056074766,
 								1,
-								0.5,
+								0.009345794392523364,
 								1,
-								0.9981532779316713,
-								0,
-								0.9806094182825484,
-								0,
-								0.9039704524469068,
-								0,
-								0.5
+								0.9906542056074766,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 891574007857221,
+				"sid": 723533943207953,
 				"name": "en",
 				"isLooping": false,
 				"isPingPong": false,

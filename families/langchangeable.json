@@ -10,6 +10,8 @@
 		"settingButton",
 		"settingPanel",
 		"LevelSelectButton",
-		"levelSelectTitle"
+		"levelSelectTitle",
+		"levelUIButton",
+		"pelanggaranButton"
 	]
 }

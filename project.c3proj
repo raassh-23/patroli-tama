@@ -126,7 +126,6 @@
 			"car",
 			"spawner",
 			"levelTimer",
-			"UI",
 			"Touch",
 			"turnCheck",
 			"intersection",
@@ -150,7 +149,8 @@
 					"pelanggaranButton",
 					"pelanggaranOption",
 					"pelanggaranPanel",
-					"pelanggaranText"
+					"pelanggaranText",
+					"pelanggaranDriver"
 				],
 				"subfolders": [],
 				"name": "pelanggaran"
@@ -184,6 +184,17 @@
 				],
 				"subfolders": [],
 				"name": "levelSelect"
+			},
+			{
+				"items": [
+					"LevelUIScore",
+					"levelUIDecor",
+					"levelUIStar",
+					"levelUIButton",
+					"LevelUIProgress"
+				],
+				"subfolders": [],
+				"name": "LevelUI"
 			}
 		]
 	},

@@ -41,6 +41,41 @@
 						"type": "once",
 						"tag": "\"spawnVehicle\""
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 544637050811526,
+					"parameters": {
+						"variable": "timeLimit",
+						"value": "95"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 887952515862836,
+					"parameters": {
+						"variable": "goals",
+						"value": "\"45|60|75\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 371799954850052,
+					"parameters": {
+						"variable": "options",
+						"value": "\"1\""
+					}
+				},
+				{
+					"callFunction": "setStar",
+					"sid": 659981746018503
+				},
+				{
+					"callFunction": "setOption",
+					"sid": 714950584071757
 				}
 			],
 			"sid": 953203538812381

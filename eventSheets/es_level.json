@@ -84,6 +84,11 @@
 					"id": "destroy",
 					"objectClass": "vehicle",
 					"sid": 825796837737543
+				},
+				{
+					"id": "destroy",
+					"objectClass": "pelanggaranOption",
+					"sid": 213173825860415
 				}
 			],
 			"sid": 876990249090575,
@@ -149,30 +154,6 @@
 						}
 					],
 					"sid": 156253124276715
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-x",
-							"objectClass": "pelanggaranPanel",
-							"sid": 629234380926029,
-							"parameters": {
-								"x": "Self.X+Self.Width"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 267161403581753,
-							"parameters": {
-								"layer": "\"pilihanPelanggaran\"",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 608695160157882
 				}
 			]
 		},
@@ -415,7 +396,7 @@
 			"conditions": [
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "UI",
+					"objectClass": "LevelUIScore",
 					"sid": 776217195918384,
 					"parameters": {
 						"instance-variable": "id",
@@ -427,10 +408,10 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "UI",
-					"sid": 631360430715699,
+					"objectClass": "LevelUIScore",
+					"sid": 904796125245033,
 					"parameters": {
-						"text": "\"Skor: \" & score"
+						"text": "score"
 					}
 				}
 			],
@@ -590,12 +571,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
+							"id": "set-scale",
 							"objectClass": "pelanggaranOption",
-							"sid": 328010135810577,
+							"sid": 110064385117605,
 							"parameters": {
-								"animation": "\"inactive\"",
-								"from": "current-frame"
+								"scale": "1"
 							}
 						}
 					],
@@ -616,16 +596,43 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
+							"id": "set-opacity",
 							"objectClass": "pelanggaranButton",
-							"sid": 127684254047089,
+							"sid": 944991895559422,
 							"parameters": {
-								"animation": "\"inactive\"",
-								"from": "current-frame"
+								"opacity": "50"
 							}
 						}
 					],
 					"sid": 581929853863265
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 962578868555201,
+							"parameters": {
+								"object": "vehicle",
+								"expression": "vehicle.UID",
+								"comparison": 0,
+								"value": "pickedVehicle"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "pelanggaranDriver",
+							"sid": 983136106420704,
+							"parameters": {
+								"animation": "vehicle.ObjectTypeName",
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 188286987757620
 				}
 			]
 		},
@@ -760,11 +767,12 @@
 					}
 				},
 				{
-					"id": "is-animation-playing",
+					"id": "compare-opacity",
 					"objectClass": "pelanggaranButton",
-					"sid": 710273581953152,
+					"sid": 386061362635147,
 					"parameters": {
-						"animation": "\"active\""
+						"comparison": 5,
+						"opacity": "99"
 					}
 				},
 				{
@@ -1000,12 +1008,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
+							"id": "set-scale",
 							"objectClass": "pelanggaranOption",
-							"sid": 804021778539623,
+							"sid": 454306379271121,
 							"parameters": {
-								"animation": "\"inactive\"",
-								"from": "current-frame"
+								"scale": "1"
 							}
 						}
 					],
@@ -1033,14 +1040,6 @@
 					}
 				},
 				{
-					"id": "is-animation-playing",
-					"objectClass": "pelanggaranOption",
-					"sid": 257558296488261,
-					"parameters": {
-						"animation": "\"inactive\""
-					}
-				},
-				{
 					"id": "is-any-playing",
 					"objectClass": "pelanggaranPanel",
 					"sid": 654777865078343,
@@ -1059,12 +1058,11 @@
 					}
 				},
 				{
-					"id": "set-animation",
+					"id": "set-scale",
 					"objectClass": "pelanggaranOption",
-					"sid": 259097611896670,
+					"sid": 914361132869930,
 					"parameters": {
-						"animation": "\"active\"",
-						"from": "current-frame"
+						"scale": "1.25"
 					}
 				},
 				{
@@ -1089,12 +1087,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
+							"id": "set-opacity",
 							"objectClass": "pelanggaranButton",
-							"sid": 689073369697840,
+							"sid": 909741126195566,
 							"parameters": {
-								"animation": "\"active\"",
-								"from": "current-frame"
+								"opacity": "100"
 							}
 						}
 					],
@@ -2268,21 +2265,218 @@
 								"pin-to": "camera",
 								"mode": "position-only"
 							}
-						},
-						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 547235312967456,
-							"parameters": {
-								"type": "log",
-								"message": "Touch.X & \" \" & Touch.Y"
-							}
 						}
 					],
 					"sid": 469968632413111
 				}
 			],
 			"sid": 412261937616342
+		},
+		{
+			"functionName": "setStar",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 820932856622956,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 784849862357841,
+							"parameters": {
+								"object": "levelUIStar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "levelUIStar",
+							"sid": 493102715745233,
+							"parameters": {
+								"x": "(LevelUIProgress.X + Self.Width/2) + (int(tokenat(goals, levelUIStar.id, \"|\")) / int(tokenat(goals, 2, \"|\")) * (progressBarWidth - Self.Width))"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 767573954494085,
+							"parameters": {
+								"type": "log",
+								"message": "\"token \" &tokenat(goals, 0, \"|\") & \" global \" & goals"
+							}
+						}
+					],
+					"sid": 894079342110932
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "LevelUIProgress",
+					"sid": 397510206275195
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "LevelUIProgress",
+					"sid": 754994721206096,
+					"parameters": {
+						"width": "(clamp(score / int(tokenat(goals, 2, \"|\")), 0 ,1) * (progressBarWidth - levelUIStar.Width)) +(clamp(score / int(tokenat(goals, 2, \"|\")), 0 ,1) = 0 ? 0 : (clamp(score / int(tokenat(goals, 2, \"|\")), 0 ,1) = 1 ? levelUIStar.Width : levelUIStar.Width/2))"
+					}
+				}
+			],
+			"sid": 736159688227234
+		},
+		{
+			"functionName": "setOption",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 341610557386543,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "count",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 360610337385094
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 111711477509392,
+							"parameters": {
+								"name": "\"h\"",
+								"start-index": "0",
+								"end-index": "ceil(int(tokencount(options, \"|\"))/OptionXGrid) - 1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 205653464426745,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 669111175072811,
+									"parameters": {
+										"name": "\"c\"",
+										"start-index": "0",
+										"end-index": "((int(tokencount(options, \"|\"))  - count) <= OptionXGrid ? (int(tokencount(options, \"|\"))  - count) : 3) - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 269108638937874,
+									"parameters": {
+										"object-to-create": "pelanggaranOption",
+										"layer": "\"pilihanPelanggaran\"",
+										"x": "optionX + OptionXDelta*loopindex(\"c\")",
+										"y": "optionY + OptionYDelta*loopindex(\"h\")",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "pelanggaranOption",
+									"sid": 561708193860915,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "pelanggaranPanel",
+										"x": true,
+										"y": true,
+										"angle": false,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "pelanggaranOption",
+									"sid": 154788124454073,
+									"parameters": {
+										"frame-number": "int(tokenat(options, count, \"|\")) - 1"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pelanggaranOption",
+									"sid": 980209754685869,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"value": "int(tokenat(options, count, \"|\"))"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 759253376975643,
+									"parameters": {
+										"variable": "count",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 478417857196082
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "pelanggaranPanel",
+							"sid": 629234380926029,
+							"parameters": {
+								"x": "Self.X+Self.Width"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 267161403581753,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 878509714538635
+				}
+			]
 		}
 	],
 	"sid": 746794069324216
