@@ -50,7 +50,17 @@
 					"sid": 677390117221548
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 253719269476274,
+					"parameters": {
+						"variable": "showingStage",
+						"value": "0"
+					}
+				}
+			],
 			"sid": 533341807544658,
 			"children": [
 				{
@@ -404,7 +414,32 @@
 						{
 							"id": "compare-animation-frame",
 							"objectClass": "LevelSelectButton",
-							"sid": 335009975852522,
+							"sid": 859720487486877,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 910352605122538,
+							"parameters": {
+								"layout": "MainMenu"
+							}
+						}
+					],
+					"sid": 336021329011086
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "LevelSelectButton",
+							"sid": 603904990546769,
 							"parameters": {
 								"comparison": 0,
 								"number": "1"
@@ -415,7 +450,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 812338596782848,
+							"sid": 928907686309641,
 							"parameters": {
 								"variable": "showingStage",
 								"value": "-1"
@@ -424,7 +459,7 @@
 						{
 							"id": "tween-one-property",
 							"objectClass": "levelTween",
-							"sid": 369047583221420,
+							"sid": 554186217666156,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"showPrev\"",
@@ -438,7 +473,7 @@
 							}
 						}
 					],
-					"sid": 336021329011086
+					"sid": 755260604964513
 				},
 				{
 					"eventType": "block",
@@ -512,6 +547,15 @@
 					"sid": 407864860130338,
 					"parameters": {
 						"layout": "\"level\"&levelSelectLevels.level+1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 492398997842543,
+					"parameters": {
+						"variable": "curLevel",
+						"value": "levelSelectLevels.level"
 					}
 				}
 			],

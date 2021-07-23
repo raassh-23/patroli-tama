@@ -1,0 +1,33 @@
+{
+	"name": "pauseBar",
+	"plugin-id": "TiledBg",
+	"sid": 212910852981977,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "id",
+			"type": "number",
+			"desc": "",
+			"sid": 228316991138193
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 349903589321312
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 281,
+		"height": 17,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3927825,
+		"useCollisionPoly": true
+	}
+}

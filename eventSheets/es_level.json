@@ -2,6 +2,10 @@
 	"name": "Es_Level",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "Es_general"
+		},
+		{
 			"eventType": "variable",
 			"name": "TopSpeed",
 			"type": "number",
@@ -89,6 +93,69 @@
 					"id": "destroy",
 					"objectClass": "pelanggaranOption",
 					"sid": 213173825860415
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 919474642953783,
+					"parameters": {
+						"layer": "\"pilihanPelanggaran\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 827811921973990,
+					"parameters": {
+						"layer": "\"paused\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "pelanggaranPin",
+					"sid": 655524603398902,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pelanggaranPanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "pausePin",
+					"sid": 743210497723037,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pausePanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "pauseBar",
+					"sid": 983118749147687,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pausePanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
 				}
 			],
 			"sid": 876990249090575,
@@ -97,63 +164,78 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 519212049390538,
+							"id": "compare-instance-variable",
+							"objectClass": "pauseBar",
+							"sid": 268793078763681,
 							"parameters": {
-								"object": "pelanggaranPin"
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "0"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "pin-to-object-properties",
-							"objectClass": "pelanggaranPin",
-							"sid": 734991894275666,
-							"behaviorType": "Pin",
+							"id": "set-width",
+							"objectClass": "pauseBar",
+							"sid": 376272994739551,
 							"parameters": {
-								"pin-to": "pelanggaranPanel",
-								"x": true,
-								"y": true,
-								"angle": false,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
+								"width": "music/100 * 281"
 							}
 						}
 					],
-					"sid": 563380015808440
+					"sid": 673831270256197
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 351454384689933,
+							"id": "compare-instance-variable",
+							"objectClass": "pauseBar",
+							"sid": 177256217097334,
 							"parameters": {
-								"object": "pelanggaranText"
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "pin-to-object-properties",
-							"objectClass": "pelanggaranText",
-							"sid": 258906315034055,
-							"behaviorType": "Pin",
+							"id": "set-width",
+							"objectClass": "pauseBar",
+							"sid": 651205120716724,
 							"parameters": {
-								"pin-to": "pelanggaranPanel",
-								"x": true,
-								"y": true,
-								"angle": false,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
+								"width": "sfx/100 * 281"
 							}
 						}
 					],
-					"sid": 156253124276715
+					"sid": 704852941151247
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 645079701978140,
+							"parameters": {
+								"object": "timescaled"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 882961966445388,
+							"parameters": {
+								"object": "timescaled",
+								"time-scale": "1"
+							}
+						}
+					],
+					"sid": 673868468994296
 				}
 			]
 		},
@@ -444,6 +526,15 @@
 					"sid": 494257855928092,
 					"parameters": {
 						"layer": "\"pilihanPelanggaran\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 974322694290463,
+					"parameters": {
+						"layer": "\"paused\""
 					},
 					"isInverted": true
 				}
@@ -767,6 +858,15 @@
 					}
 				},
 				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 447695112318958,
+					"parameters": {
+						"layer": "\"paused\""
+					},
+					"isInverted": true
+				},
+				{
 					"id": "compare-opacity",
 					"objectClass": "pelanggaranButton",
 					"sid": 386061362635147,
@@ -1038,6 +1138,15 @@
 					"parameters": {
 						"layer": "\"pilihanPelanggaran\""
 					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 876678938787962,
+					"parameters": {
+						"layer": "\"paused\""
+					},
+					"isInverted": true
 				},
 				{
 					"id": "is-any-playing",
@@ -2130,6 +2239,24 @@
 							"id": "on-any-touch-start",
 							"objectClass": "Touch",
 							"sid": 416630371080607
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 236116402652202,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 517915456129989,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -2477,6 +2604,493 @@
 					"sid": 878509714538635
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 300476071282290,
+					"parameters": {
+						"object": "pauseButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 166831652220384,
+					"parameters": {
+						"layer": "\"paused\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "pausePanel",
+					"sid": 405309868036597,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 692228721176397,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pauseButton",
+							"sid": 107674889007575,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "hidePaused",
+							"sid": 256482024964499
+						}
+					],
+					"sid": 777206059106959
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pauseButton",
+							"sid": 236610713832201,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 286457615560011,
+							"parameters": {
+								"layout": "MainMenu"
+							}
+						}
+					],
+					"sid": 492721347942529
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pauseButton",
+							"sid": 842675298341912,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 698211609808464
+						}
+					],
+					"sid": 448640371798437
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pauseButton",
+							"sid": 260610933904584,
+							"parameters": {
+								"comparison": 0,
+								"number": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "setLanguange",
+							"sid": 189481198210316,
+							"parameters": [
+								"\"en\""
+							]
+						}
+					],
+					"sid": 696071847827053
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pauseButton",
+							"sid": 878789074795963,
+							"parameters": {
+								"comparison": 0,
+								"number": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "setLanguange",
+							"sid": 636677555286530,
+							"parameters": [
+								"\"id\""
+							]
+						}
+					],
+					"sid": 507934353279156
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 390356871929495,
+					"parameters": {
+						"object": "pauseCollision"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 597618300830878,
+					"parameters": {
+						"layer": "\"paused\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "pausePanel",
+					"sid": 877967548021339,
+					"behaviorType": "Tween",
+					"isInverted": true
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 583765791024160,
+					"parameters": {
+						"object": "pauseBar",
+						"expression": "pauseBar.id",
+						"comparison": 0,
+						"value": "pauseCollision.id"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "pauseBar",
+					"sid": 721520900894752,
+					"parameters": {
+						"width": "clamp(Touch.X-pauseBar.X, 0, 281)"
+					}
+				}
+			],
+			"sid": 739728664181719,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "pauseCollision",
+							"sid": 991278258000347,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 172653291788754,
+							"parameters": {
+								"variable": "music",
+								"value": "round(pauseBar.Width/281* 100)"
+							}
+						}
+					],
+					"sid": 189887635893029
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "pauseCollision",
+							"sid": 266782209731509,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 677133558376941,
+							"parameters": {
+								"variable": "sfx",
+								"value": "round(pauseBar.Width/281* 100)"
+							}
+						}
+					],
+					"sid": 503736491951007
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 443766966545498,
+					"parameters": {
+						"object": "levelUIButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 275235784434446,
+					"parameters": {
+						"layer": "\"paused\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 892508096022374,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "levelUIButton",
+							"sid": 628287962614328,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "showPaused",
+							"sid": 282379477348953
+						}
+					],
+					"sid": 685329114589193
+				}
+			]
+		},
+		{
+			"functionName": "showPaused",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": true,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 961748656248380,
+					"parameters": {
+						"layer": "\"paused\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "pausePanel",
+					"sid": 661151585633561,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"moveIn\"",
+						"property": "offsetY",
+						"end-value": "540",
+						"time": "0.5",
+						"ease": "easeoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 361755756029769,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 312547105976451,
+							"parameters": {
+								"object": "timescaled"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 286155901367723,
+							"parameters": {
+								"object": "timescaled",
+								"time-scale": "0"
+							}
+						}
+					],
+					"sid": 706929389192975
+				}
+			]
+		},
+		{
+			"functionName": "hidePaused",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": true,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 728711670932377,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "pausePanel",
+							"sid": 103234212323019,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveOut\"",
+								"property": "offsetY",
+								"end-value": "-500",
+								"time": "0.5",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 619397212009735
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 554735944429019,
+							"parameters": {
+								"layer": "\"paused\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 668178321101236,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 620368306048505,
+									"parameters": {
+										"object": "timescaled"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 814574840253023,
+									"parameters": {
+										"object": "timescaled",
+										"time-scale": "1"
+									}
+								}
+							],
+							"sid": 236580782682669
+						}
+					]
+				}
+			]
+		},
+		{
+			"functionName": "resetVariable",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 341361684278374,
+					"parameters": {
+						"variable": "score",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 773805448379033
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "LevelUITime",
+					"sid": 284243696365416
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "LevelUITime",
+					"sid": 607249788488773,
+					"parameters": {
+						"width": "(timeLimit-levelTimer.Timer.CurrentTime(\"game\"))/timeLimit * 132"
+					}
+				}
+			],
+			"sid": 939559552825926
 		}
 	],
 	"sid": 746794069324216

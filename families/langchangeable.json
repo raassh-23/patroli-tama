@@ -12,6 +12,10 @@
 		"LevelSelectButton",
 		"levelSelectTitle",
 		"levelUIButton",
-		"pelanggaranButton"
+		"pelanggaranButton",
+		"pauseButton",
+		"pausePanel",
+		"pelanggaranOption",
+		"pelanggaranPanel"
 	]
 }

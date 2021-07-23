@@ -141,7 +141,9 @@
 			"logoGemastik",
 			"logoApaya",
 			"levels",
-			"Browser"
+			"Browser",
+			"blueBackground",
+			"LevelUITime"
 		],
 		"subfolders": [
 			{
@@ -158,7 +160,6 @@
 			{
 				"items": [
 					"settingPanel",
-					"settingBackground",
 					"settingDecor",
 					"settingButton",
 					"settingBar",
@@ -195,6 +196,17 @@
 				],
 				"subfolders": [],
 				"name": "LevelUI"
+			},
+			{
+				"items": [
+					"pausePanel",
+					"pauseDecor",
+					"pauseButton",
+					"pauseBar",
+					"pauseCollision"
+				],
+				"subfolders": [],
+				"name": "pause"
 			}
 		]
 	},
@@ -210,7 +222,8 @@
 			"settingPin",
 			"langChangeable",
 			"levelTween",
-			"splashLogo"
+			"splashLogo",
+			"pausePin"
 		],
 		"subfolders": []
 	},

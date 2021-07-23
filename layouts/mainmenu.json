@@ -61,8 +61,8 @@
 			"global": false
 		},
 		{
-			"name": "ui",
-			"overriden": 1,
+			"name": "Menuui",
+			"overriden": 0,
 			"instances": [
 				{
 					"type": "menuButton",
@@ -182,7 +182,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "settingBackground",
+					"type": "blueBackground",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",

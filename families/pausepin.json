@@ -1,0 +1,19 @@
+{
+	"name": "pausePin",
+	"plugin-id": "Sprite",
+	"sid": 833435708181900,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 718778094215354
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"pauseCollision",
+		"pauseDecor",
+		"pauseButton"
+	]
+}

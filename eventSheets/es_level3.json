@@ -16,6 +16,10 @@
 			],
 			"actions": [
 				{
+					"callFunction": "resetVariable",
+					"sid": 564469589759907
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 920855819042896,
@@ -49,6 +53,17 @@
 					"parameters": {
 						"variable": "timeLimit",
 						"value": "120"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "levelTimer",
+					"sid": 785880706164565,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "timeLimit",
+						"type": "once",
+						"tag": "\"game\""
 					}
 				},
 				{
@@ -114,7 +129,6 @@
 					"id": "start-timer",
 					"objectClass": "levelTimer",
 					"sid": 823135869523018,
-					"disabled": true,
 					"behaviorType": "Timer",
 					"parameters": {
 						"duration": "random(2,4)",
@@ -126,6 +140,7 @@
 					"id": "start-timer",
 					"objectClass": "levelTimer",
 					"sid": 792811094291590,
+					"disabled": true,
 					"behaviorType": "Timer",
 					"parameters": {
 						"duration": "1",

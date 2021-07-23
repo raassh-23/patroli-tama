@@ -1,29 +1,35 @@
 {
-	"name": "levelUIButton",
+	"name": "pausePanel",
 	"plugin-id": "Sprite",
-	"sid": 852774156943122,
+	"sid": 878278221925190,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 274663958919315
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 107,
-						"height": 101,
+						"width": 646,
+						"height": 812,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7783527,
+						"imageSpriteId": 50569,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 180672828752919,
+				"sid": 154017898494019,
 				"name": "id",
 				"isLooping": false,
 				"isPingPong": false,
@@ -34,19 +40,19 @@
 			{
 				"frames": [
 					{
-						"width": 107,
-						"height": 101,
+						"width": 646,
+						"height": 812,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 886301,
+						"imageSpriteId": 1773567,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 723533943207953,
+				"sid": 357669814471701,
 				"name": "en",
 				"isLooping": false,
 				"isPingPong": false,

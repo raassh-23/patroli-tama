@@ -1415,8 +1415,8 @@
 			"global": false
 		},
 		{
-			"name": "ui",
-			"overriden": 1,
+			"name": "levelSelectUi",
+			"overriden": 0,
 			"instances": [
 				{
 					"type": "LevelSelectButton",
@@ -1434,7 +1434,7 @@
 						"x": 112.70018358547537,
 						"y": 119.4124427140242,
 						"width": 170,
-						"height": 148,
+						"height": 141,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

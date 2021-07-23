@@ -55,7 +55,61 @@
 					}
 				}
 			],
-			"sid": 633304989385954
+			"sid": 633304989385954,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "settingBar",
+							"sid": 847492225011339,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "settingBar",
+							"sid": 675468218563633,
+							"parameters": {
+								"width": "music/100 * 314"
+							}
+						}
+					],
+					"sid": 576723030348491
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "settingBar",
+							"sid": 612391955048027,
+							"parameters": {
+								"instance-variable": "id",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "settingBar",
+							"sid": 178849890508843,
+							"parameters": {
+								"width": "sfx/100 * 314"
+							}
+						}
+					],
+					"sid": 683763558091890
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -372,9 +426,9 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 252820453251815,
+							"sid": 629289110324892,
 							"parameters": {
-								"variable": "music",
+								"variable": "sfx",
 								"value": "round(settingBar.Width/314 * 100)"
 							}
 						}
@@ -488,6 +542,56 @@
 								}
 							],
 							"sid": 283395478574054
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 898440086000175,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 487851876713614,
+									"parameters": {
+										"frame-number": "4"
+									}
+								}
+							],
+							"sid": 895282889853522
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 295502512222527,
+									"parameters": {
+										"comparison": 0,
+										"number": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 927968162095426,
+									"parameters": {
+										"frame-number": "5"
+									}
+								}
+							],
+							"sid": 390304327037536
 						}
 					]
 				},
@@ -557,6 +661,56 @@
 								}
 							],
 							"sid": 587167283782342
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 245884884488740,
+									"parameters": {
+										"comparison": 0,
+										"number": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 363572079311742,
+									"parameters": {
+										"frame-number": "3"
+									}
+								}
+							],
+							"sid": 174609674765439
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 252608725181916,
+									"parameters": {
+										"comparison": 0,
+										"number": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 411196473789884,
+									"parameters": {
+										"frame-number": "6"
+									}
+								}
+							],
+							"sid": 469724023600016
 						}
 					]
 				}

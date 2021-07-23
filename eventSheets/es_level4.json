@@ -16,6 +16,10 @@
 			],
 			"actions": [
 				{
+					"callFunction": "resetVariable",
+					"sid": 493353923464236
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 859243791374381,
@@ -49,6 +53,17 @@
 					"parameters": {
 						"variable": "timeLimit",
 						"value": "120"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "levelTimer",
+					"sid": 134787231017820,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "timeLimit",
+						"type": "once",
+						"tag": "\"game\""
 					}
 				},
 				{
