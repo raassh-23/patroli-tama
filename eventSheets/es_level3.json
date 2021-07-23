@@ -29,6 +29,10 @@
 					}
 				},
 				{
+					"type": "comment",
+					"text": "70% normal, 10% melawan arus, 10% gak pake helm, 10% gak nyalakan lampu"
+				},
+				{
 					"callFunction": "spawnVehicle",
 					"sid": 756879402974368,
 					"parameters": [

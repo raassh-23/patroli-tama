@@ -110,6 +110,10 @@
 					"sid": 586687875528345
 				},
 				{
+					"type": "comment",
+					"text": "buat nentukan pelanggaran, pake bil random dari 0-100"
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 339158831399175,
@@ -119,11 +123,19 @@
 					}
 				},
 				{
+					"type": "comment",
+					"text": "kalau random dibawah 90, berarti gak melanggar, Diatas itu berarti melawan arus. Artinya 10% kesempatan melawan arus. Kalau diubah, jangan lupa yang dibawah juga. Lihat contoh es_level3 buat contoh yang lebih kompleks. Nilai-nilai pelanggaran ada di es_level di definisi spawnVehicle"
+				},
+				{
 					"callFunction": "spawnVehicle",
 					"sid": 112683692200581,
 					"parameters": [
 						"randNum <= 90 ? 0 : 1"
 					]
+				},
+				{
+					"type": "comment",
+					"text": "spawnVehicle antara 2-4 detika sekali, kalau diubah jangan lpa yang dibawah juga"
 				},
 				{
 					"id": "start-timer",
@@ -135,6 +147,10 @@
 						"type": "once",
 						"tag": "\"spawnVehicle\""
 					}
+				},
+				{
+					"type": "comment",
+					"text": "batas waktu level ini dalam detik"
 				},
 				{
 					"id": "set-eventvar-value",
@@ -157,6 +173,10 @@
 					}
 				},
 				{
+					"type": "comment",
+					"text": "target targetnya, dimulai dari yang kecil, dipisah \"|\""
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 558369321740395,
@@ -164,6 +184,10 @@
 						"variable": "goals",
 						"value": "\"30|40|60\""
 					}
+				},
+				{
+					"type": "comment",
+					"text": "pelanggaran yang muncul, dipisah \"|\", max 6. Lihat es_level 3 buat contoh yang lebih banyak"
 				},
 				{
 					"id": "set-eventvar-value",
@@ -207,6 +231,10 @@
 						"variable": "randNum",
 						"value": "random(100)"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "jangan lupa 2 action dibawah ini juga diganti kalau perlu"
 				},
 				{
 					"callFunction": "spawnVehicle",
