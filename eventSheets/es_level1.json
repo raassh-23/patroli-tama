@@ -93,6 +93,36 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "helpY",
+			"type": "number",
+			"initialValue": "98",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 267228790140108
+		},
+		{
+			"eventType": "variable",
+			"name": "helpX",
+			"type": "number",
+			"initialValue": "1420",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 541027529501102
+		},
+		{
+			"eventType": "variable",
+			"name": "helpYDelta",
+			"type": "number",
+			"initialValue": "77",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 157952289416695
+		},
+		{
+			"eventType": "variable",
 			"name": "tutorialProgress",
 			"type": "number",
 			"initialValue": "0",
@@ -186,6 +216,10 @@
 				{
 					"callFunction": "setOption",
 					"sid": 636476592939337
+				},
+				{
+					"callFunction": "setHelp",
+					"sid": 327443927151030
 				},
 				{
 					"id": "set-layer-visible",

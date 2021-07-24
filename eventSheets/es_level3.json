@@ -66,6 +66,10 @@
 				{
 					"callFunction": "setOption",
 					"sid": 172424942386377
+				},
+				{
+					"callFunction": "setHelp",
+					"sid": 715596234945403
 				}
 			],
 			"sid": 883714933981623,

@@ -247,6 +247,14 @@
 				],
 				"subfolders": [],
 				"name": "tutorial"
+			},
+			{
+				"items": [
+					"helpIcons",
+					"helpPanel"
+				],
+				"subfolders": [],
+				"name": "help"
 			}
 		]
 	},

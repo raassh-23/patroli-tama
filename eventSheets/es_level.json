@@ -95,6 +95,11 @@
 					"sid": 213173825860415
 				},
 				{
+					"id": "destroy",
+					"objectClass": "helpIcons",
+					"sid": 273454757477402
+				},
+				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
 					"sid": 919474642953783,
@@ -127,6 +132,15 @@
 					"sid": 798371823676966,
 					"parameters": {
 						"layer": "\"levelFinished\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 919367618743273,
+					"parameters": {
+						"layer": "\"help\"",
 						"visibility": "invisible"
 					}
 				},
@@ -3961,6 +3975,203 @@
 					"sid": 114129076837211
 				}
 			]
+		},
+		{
+			"functionName": "setHelp",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 967989266304338,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 743296110711430,
+							"parameters": {
+								"name": "\"i\"",
+								"start-index": "0",
+								"end-index": "int(tokencount(options, \"|\")) - 1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 660735361065728,
+							"parameters": {
+								"object-to-create": "helpIcons",
+								"layer": "\"help\"",
+								"x": "helpX",
+								"y": "helpY+ helpYDelta*loopindex(\"i\")",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "helpIcons",
+							"sid": 211866387775887,
+							"parameters": {
+								"frame-number": "int(tokenat(options, loopindex(\"i\"), \"|\")) - 1"
+							}
+						}
+					],
+					"sid": 470148647584547
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "helpPanel",
+							"sid": 911907529500269,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "helpPanel",
+							"sid": 965433062005044,
+							"parameters": {
+								"height": "70 + int(tokencount(options, \"|\")) * 53 + (int(tokencount(options, \"|\")) -1) * (helpYDelta - 53)"
+							}
+						}
+					],
+					"sid": 554546496691648
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 271517842789801,
+					"parameters": {
+						"object": "pelanggaranButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 984686995360470,
+					"parameters": {
+						"layer": "\"pilihanPelanggaran\""
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 919496849478814,
+					"parameters": {
+						"layer": "\"paused\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 506212660631898,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 167687457826307,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "pelanggaranPanel",
+					"sid": 724985109782002,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 570935645102607,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pelanggaranButton",
+							"sid": 893554516156345,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 325067559184103,
+							"parameters": {
+								"layer": "\"help\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 590746125832571
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 846681055135323,
+					"parameters": {
+						"object": "pelanggaranButton"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "pelanggaranButton",
+					"sid": 464793243120605,
+					"parameters": {
+						"comparison": 0,
+						"number": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 116455442906736,
+					"parameters": {
+						"layer": "\"help\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 632376429948896
 		}
 	],
 	"sid": 746794069324216
