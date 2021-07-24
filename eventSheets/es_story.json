@@ -1,0 +1,96 @@
+{
+	"name": "Es_Story",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "storyShown",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 774407246519719
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Es_general"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 100500336963712,
+					"parameters": {
+						"object": "storyButton"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 906032474463690,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "storyPopUp",
+							"sid": 926115066982004,
+							"parameters": {
+								"comparison": 5,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 535114979813412,
+							"parameters": {
+								"layout": "MainMenu"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 573122034858473,
+							"parameters": {
+								"variable": "storyShown",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 779699004039645
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "storyPopUp",
+							"sid": 942900584030919,
+							"parameters": {
+								"comparison": 2,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "storyPopUp",
+							"sid": 636403345404717,
+							"parameters": {
+								"frame-number": "Self.AnimationFrame+1"
+							}
+						}
+					],
+					"sid": 151941361609998
+				}
+			]
+		}
+	],
+	"sid": 565759635395326
+}

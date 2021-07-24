@@ -2,6 +2,10 @@
 	"name": "Es_LevelSelect",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "Es_general"
+		},
+		{
 			"eventType": "variable",
 			"name": "showingStage",
 			"type": "number",

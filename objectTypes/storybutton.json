@@ -1,35 +1,29 @@
 {
-	"name": "pelanggaranPanel",
+	"name": "storyButton",
 	"plugin-id": "Sprite",
-	"sid": 154398809036574,
+	"sid": 624144996190611,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Tween",
-			"name": "Tween",
-			"sid": 463012592368933
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 643,
-						"height": 1083,
+						"width": 267,
+						"height": 85,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4274202,
+						"imageSpriteId": 5175997,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 663629066669286,
+				"sid": 478887367499541,
 				"name": "id",
 				"isLooping": false,
 				"isPingPong": false,
@@ -40,19 +34,19 @@
 			{
 				"frames": [
 					{
-						"width": 643,
-						"height": 1083,
+						"width": 267,
+						"height": 75,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1698857,
+						"imageSpriteId": 6219101,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 891574007857221,
+				"sid": 886087243528866,
 				"name": "en",
 				"isLooping": false,
 				"isPingPong": false,

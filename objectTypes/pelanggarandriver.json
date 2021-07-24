@@ -45,8 +45,8 @@
 					{
 						"width": 497,
 						"height": 290,
-						"originX": 1.404426559356137,
-						"originY": 1.65,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -73,8 +73,8 @@
 					{
 						"width": 498,
 						"height": 290,
-						"originX": -1.2610441767068272,
-						"originY": 1.65,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -144,8 +144,8 @@
 					{
 						"width": 497,
 						"height": 290,
-						"originX": 1.404426559356137,
-						"originY": -0.5396551724137931,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -156,8 +156,8 @@
 					{
 						"width": 498,
 						"height": 290,
-						"originX": -1.2610441767068272,
-						"originY": -0.5396551724137931,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,

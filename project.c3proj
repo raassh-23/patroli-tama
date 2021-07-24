@@ -229,6 +229,14 @@
 				],
 				"subfolders": [],
 				"name": "levelFailed"
+			},
+			{
+				"items": [
+					"storyPopUp",
+					"storyButton"
+				],
+				"subfolders": [],
+				"name": "story"
 			}
 		]
 	},
@@ -269,7 +277,8 @@
 			{
 				"items": [
 					"MainMenu",
-					"LevelSelect"
+					"LevelSelect",
+					"Story"
 				],
 				"subfolders": [],
 				"name": "Menu"
@@ -279,7 +288,8 @@
 	"eventSheets": {
 		"items": [
 			"Es_general",
-			"Es_SplashScreen"
+			"Es_SplashScreen",
+			"Es_Story"
 		],
 		"subfolders": [
 			{

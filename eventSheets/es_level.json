@@ -1165,6 +1165,43 @@
 								},
 								{
 									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 703433033497849,
+											"parameters": {
+												"object": "intersection",
+												"expression": "intersection.vehiclesUID",
+												"comparison": 0,
+												"value": "str(vehicle.UID)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "intersection",
+											"sid": 806710677643420,
+											"parameters": {
+												"instance-variable": "collisionCount",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "intersection",
+											"sid": 819303678436215,
+											"parameters": {
+												"instance-variable": "vehiclesUID",
+												"value": "\"\""
+											}
+										}
+									],
+									"sid": 866362719675842
+								},
+								{
+									"eventType": "block",
 									"conditions": [],
 									"actions": [
 										{
