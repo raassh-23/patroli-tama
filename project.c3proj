@@ -143,7 +143,8 @@
 			"levels",
 			"Browser",
 			"blueBackground",
-			"LevelUITime"
+			"LevelUITime",
+			"tutorials"
 		],
 		"subfolders": [
 			{
@@ -237,6 +238,15 @@
 				],
 				"subfolders": [],
 				"name": "story"
+			},
+			{
+				"items": [
+					"tutorialPopup",
+					"tutorialDecor",
+					"tutorialButton"
+				],
+				"subfolders": [],
+				"name": "tutorial"
 			}
 		]
 	},
@@ -255,7 +265,8 @@
 			"splashLogo",
 			"pausePin",
 			"finishedPin",
-			"failedPin"
+			"failedPin",
+			"Tutorial"
 		],
 		"subfolders": []
 	},

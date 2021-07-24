@@ -1,0 +1,20 @@
+{
+	"name": "Tutorial",
+	"plugin-id": "Sprite",
+	"sid": 603960662646821,
+	"instanceVariables": [
+		{
+			"name": "progress",
+			"type": "number",
+			"desc": "",
+			"sid": 345245249690864
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"tutorialPopup",
+		"tutorialButton",
+		"tutorialDecor"
+	]
+}

@@ -1743,6 +1743,98 @@
 			"global": false
 		},
 		{
+			"name": "tutorial0",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "tutorialPopup",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "id",
+						"initial-frame": 7,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 343,
+					"instanceVariables": {
+						"progress": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 932,
+						"width": 1017,
+						"height": 241,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "tutorialButton",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 344,
+					"instanceVariables": {
+						"progress": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1417,
+						"y": 966,
+						"width": 33,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 521179331093910,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
 			"name": "paused",
 			"overriden": 1,
 			"instances": [],

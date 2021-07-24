@@ -39,6 +39,24 @@
 					}
 				},
 				{
+					"id": "set-size",
+					"objectClass": "tutorials",
+					"sid": 637387177426655,
+					"parameters": {
+						"width": "4",
+						"height": "1",
+						"depth": "1"
+					}
+				},
+				{
+					"id": "clear",
+					"objectClass": "tutorials",
+					"sid": 919467323463073,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
 					"id": "start-fade",
 					"objectClass": "logoGemastik",
 					"sid": 927585918648841,

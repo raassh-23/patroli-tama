@@ -688,7 +688,112 @@
 					"sid": 767237432034060
 				}
 			],
-			"sid": 657515552515615
+			"sid": 657515552515615,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 420139171505645,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"Level1\""
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 878782409021087,
+							"parameters": {
+								"variable": "tutorialProgress",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 145193154989687,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 201828885723908,
+							"parameters": {
+								"variable": "tutorialProgress",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 348579702470943,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 700116411522959,
+									"parameters": {
+										"object": "Tutorial",
+										"expression": "Tutorial.progress",
+										"comparison": 1,
+										"value": "tutorialProgress"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Tutorial",
+									"sid": 488333964762576,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 786984338717030
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 456744359989274,
+									"parameters": {
+										"object": "Tutorial",
+										"expression": "Tutorial.progress",
+										"comparison": 0,
+										"value": "tutorialProgress"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Tutorial",
+									"sid": 916268676223058,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 353197888730898
+						}
+					]
+				}
+			]
 		},
 		{
 			"functionName": "showPelanggaranPanel",
@@ -1211,6 +1316,99 @@
 										}
 									],
 									"sid": 543013173038095
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 382453800424049,
+									"parameters": {
+										"first-value": "LayoutName",
+										"comparison": 0,
+										"second-value": "\"Level1\""
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 663087277494790,
+									"parameters": {
+										"variable": "tutorialProgress",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 494632924365566,
+									"parameters": {
+										"variable": "tutorialProgress",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 660851140384346,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 937028061537931,
+											"parameters": {
+												"object": "Tutorial",
+												"expression": "Tutorial.progress",
+												"comparison": 1,
+												"value": "tutorialProgress"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "Tutorial",
+											"sid": 525393498299931,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 355932974165307
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 197036375103113,
+											"parameters": {
+												"object": "Tutorial",
+												"expression": "Tutorial.progress",
+												"comparison": 0,
+												"value": "tutorialProgress"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "Tutorial",
+											"sid": 579999366778642,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 966972743432105
 								}
 							]
 						}

@@ -92,6 +92,16 @@
 			"sid": 725689494163761
 		},
 		{
+			"eventType": "variable",
+			"name": "tutorialProgress",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 329312907336739
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "Es_Level"
 		},
@@ -127,26 +137,8 @@
 					"text": "kalau random dibawah 90, berarti gak melanggar, Diatas itu berarti melawan arus. Artinya 10% kesempatan melawan arus. Kalau diubah, jangan lupa yang dibawah juga. Lihat contoh es_level3 buat contoh yang lebih kompleks. Nilai-nilai pelanggaran ada di es_level di definisi spawnVehicle"
 				},
 				{
-					"callFunction": "spawnVehicle",
-					"sid": 954588481968781,
-					"parameters": [
-						"randNum <= 70 ? 0 : 1"
-					]
-				},
-				{
 					"type": "comment",
 					"text": "spawnVehicle antara 2-4 detika sekali, kalau diubah jangan lpa yang dibawah juga"
-				},
-				{
-					"id": "start-timer",
-					"objectClass": "levelTimer",
-					"sid": 646469411987945,
-					"behaviorType": "Timer",
-					"parameters": {
-						"duration": "random(2,4)",
-						"type": "once",
-						"tag": "\"spawnVehicle\""
-					}
 				},
 				{
 					"type": "comment",
@@ -159,17 +151,6 @@
 					"parameters": {
 						"variable": "timeLimit",
 						"value": "75"
-					}
-				},
-				{
-					"id": "start-timer",
-					"objectClass": "levelTimer",
-					"sid": 796353850517974,
-					"behaviorType": "Timer",
-					"parameters": {
-						"duration": "timeLimit",
-						"type": "once",
-						"tag": "\"game\""
 					}
 				},
 				{
@@ -205,9 +186,153 @@
 				{
 					"callFunction": "setOption",
 					"sid": 636476592939337
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 994570563063098,
+					"parameters": {
+						"layer": "\"tutorial1\"",
+						"visibility": "invisible"
+					}
 				}
 			],
-			"sid": 260703338128923
+			"sid": 260703338128923,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-x",
+							"objectClass": "tutorials",
+							"sid": 633502322002527,
+							"parameters": {
+								"x": "0",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 668999125191523,
+							"parameters": {
+								"variable": "tutorialProgress",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 141547892371779,
+							"parameters": {
+								"layer": "\"tutorial0\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 119621851704813,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 207897939500673,
+							"parameters": {
+								"object": "timescaled",
+								"time-scale": "0"
+							}
+						}
+					],
+					"sid": 455693053325970
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-x",
+							"objectClass": "tutorials",
+							"sid": 492296223699167,
+							"parameters": {
+								"x": "0",
+								"comparison": 1,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 546081587087249,
+							"parameters": {
+								"layer": "\"tutorial0\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"callFunction": "spawnVehicle",
+							"sid": 507469284829621,
+							"parameters": [
+								"randNum <= 70 ? 0 : 1"
+							]
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "levelTimer",
+							"sid": 646469411987945,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "random(2,4)",
+								"type": "once",
+								"tag": "\"spawnVehicle\""
+							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "levelTimer",
+							"sid": 796353850517974,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "timeLimit",
+								"type": "once",
+								"tag": "\"game\""
+							}
+						}
+					],
+					"sid": 676365810180566
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-layer",
+							"objectClass": "Tutorial",
+							"sid": 940657608614338,
+							"parameters": {
+								"layer": "\"tutorial1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Tutorial",
+							"sid": 388917362418376,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 828385573614520
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -268,6 +393,388 @@
 				}
 			],
 			"sid": 187676061436019
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 249515372824526,
+					"parameters": {
+						"object": "tutorialButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "tutorialButton",
+					"sid": 733659354100427
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 306466481124378,
+					"parameters": {
+						"layer": "\"paused\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 821623540375344,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 637329244410417,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 448501549740801,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 289326056900826,
+							"parameters": {
+								"layer": "\"tutorial0\""
+							}
+						},
+						{
+							"id": "is-on-layer",
+							"objectClass": "tutorialButton",
+							"sid": 985125794692010,
+							"parameters": {
+								"layer": "\"tutorial0\""
+							}
+						},
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 801638773942274,
+							"parameters": {
+								"object": "tutorialPopup",
+								"expression": "tutorialPopup.progress",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 337662838928667,
+							"parameters": {
+								"variable": "tutorialProgress",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 203217288880911,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "tutorialPopup",
+									"sid": 561223480195533,
+									"parameters": {
+										"comparison": 5,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 403386505283059,
+									"parameters": {
+										"layer": "\"tutorial1\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 599895542265887,
+									"parameters": {
+										"layer": "\"tutorial0\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 619991984538138,
+									"parameters": {
+										"object": "timescaled",
+										"time-scale": "1"
+									}
+								}
+							],
+							"sid": 296731918896500,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Tutorial",
+											"sid": 989514847937546,
+											"parameters": {
+												"instance-variable": "progress",
+												"comparison": 0,
+												"value": "tutorialProgress"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "Tutorial",
+											"sid": 263880819681297,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 521465962648049
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "tutorialPopup",
+									"sid": 492903562633498,
+									"parameters": {
+										"comparison": 2,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "tutorialPopup",
+									"sid": 429733499321894,
+									"parameters": {
+										"frame-number": "Self.AnimationFrame+1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 857653394303946,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								}
+							],
+							"sid": 556053006705156
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 717369621702286,
+							"parameters": {
+								"layer": "\"tutorial1\""
+							}
+						},
+						{
+							"id": "is-on-layer",
+							"objectClass": "tutorialButton",
+							"sid": 625924615580712,
+							"parameters": {
+								"layer": "\"tutorial1\""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "tutorialButton",
+							"sid": 255596328166378,
+							"parameters": {
+								"instance-variable": "progress",
+								"comparison": 0,
+								"value": "tutorialProgress"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 414204522712980,
+							"parameters": {
+								"variable": "tutorialProgress",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 521072520281845,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 421153681896057,
+									"parameters": {
+										"object": "Tutorial",
+										"expression": "Tutorial.progress",
+										"comparison": 1,
+										"value": "tutorialProgress"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Tutorial",
+									"sid": 231806789960951,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 359188408570762
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 317886211824689,
+									"parameters": {
+										"object": "Tutorial",
+										"expression": "Tutorial.progress",
+										"comparison": 0,
+										"value": "tutorialProgress"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Tutorial",
+									"sid": 126208733493046,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 151948523652237
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 225423525448936,
+									"parameters": {
+										"variable": "tutorialProgress",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "spawnVehicle",
+									"sid": 107370363405875,
+									"parameters": [
+										"1"
+									]
+								},
+								{
+									"id": "start-timer",
+									"objectClass": "levelTimer",
+									"sid": 129588206878214,
+									"behaviorType": "Timer",
+									"parameters": {
+										"duration": "random(2,4)",
+										"type": "once",
+										"tag": "\"spawnVehicle\""
+									}
+								},
+								{
+									"id": "start-timer",
+									"objectClass": "levelTimer",
+									"sid": 921777991383554,
+									"behaviorType": "Timer",
+									"parameters": {
+										"duration": "timeLimit",
+										"type": "once",
+										"tag": "\"game\""
+									}
+								}
+							],
+							"sid": 761390693578417
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 358024419308609,
+									"parameters": {
+										"variable": "tutorialProgress",
+										"comparison": 0,
+										"value": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "tutorials",
+									"sid": 116059605387171,
+									"parameters": {
+										"x": "0",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 525900626584083,
+									"parameters": {
+										"layer": "\"tutorial1\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 498000327722830
+						}
+					]
+				}
+			]
 		}
 	],
 	"sid": 479391389333567

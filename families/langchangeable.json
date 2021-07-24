@@ -20,6 +20,9 @@
 		"levelFinishedButton",
 		"levelFinishedDecor",
 		"levelFailedButton",
-		"levelFailedDecor"
+		"levelFailedDecor",
+		"tutorialPopup",
+		"storyButton",
+		"storyPopUp"
 	]
 }
