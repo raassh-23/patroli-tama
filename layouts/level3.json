@@ -214,39 +214,6 @@
 					}
 				},
 				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 130,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "1",
-						"id": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 413,
-						"y": 597,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "turnCheck",
 					"properties": {
 						"initially-visible": false,
@@ -795,7 +762,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -906,7 +874,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -959,7 +928,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1012,7 +982,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1056,15 +1027,15 @@
 					"uid": 93,
 					"instanceVariables": {
 						"collisionCount": 0,
-						"vehiclesUID": "2",
-						"id": 0
+						"vehiclesUID": "",
+						"id": 2
 					},
 					"behaviors": {},
 					"world": {
 						"x": 1375,
-						"y": 597,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
+						"y": 591,
+						"width": 243.119106,
+						"height": 243.119106,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1222,7 +1193,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1301,
-						"y": 412,
+						"y": 405,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -1254,7 +1225,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1449,
-						"y": 412,
+						"y": 405,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,

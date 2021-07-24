@@ -342,39 +342,6 @@
 					}
 				},
 				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 90,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "1",
-						"id": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 460,
-						"y": 623,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "turnCheck",
 					"properties": {
 						"initially-visible": false,
@@ -807,7 +774,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -918,7 +886,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -971,7 +940,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1024,7 +994,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1044,39 +1015,6 @@
 						"y": 714,
 						"width": 100,
 						"height": 49,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 71,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "2",
-						"id": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1422,
-						"y": 623,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

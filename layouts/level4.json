@@ -352,7 +352,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 555,
-						"y": 542,
+						"y": 585,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -384,7 +384,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 407,
-						"y": 542,
+						"y": 585,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -417,9 +417,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 481,
-						"y": 394,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
+						"y": 397,
+						"width": 243.11910626238932,
+						"height": 243.11910626238932,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1068,7 +1068,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1179,7 +1180,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1232,7 +1234,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1285,7 +1288,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1305,105 +1309,6 @@
 						"y": 664.8680240127314,
 						"width": 100,
 						"height": 49,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 122,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 4
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1924,
-						"y": 394,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 123,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 2
-					},
-					"behaviors": {},
-					"world": {
-						"x": 481,
-						"y": 875,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 124,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 962,
-						"y": 875,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1560,7 +1465,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 629,
+						"x": 675,
 						"y": 320,
 						"width": 148,
 						"height": 16,
@@ -1592,7 +1497,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 629,
+						"x": 675,
 						"y": 468,
 						"width": 148,
 						"height": 16,
@@ -1624,7 +1529,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 333,
+						"x": 283,
 						"y": 468,
 						"width": 148,
 						"height": 16,
@@ -1656,7 +1561,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 333,
+						"x": 283,
 						"y": 320,
 						"width": 148,
 						"height": 16,
@@ -1688,7 +1593,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1776,
+						"x": 1753,
 						"y": 320,
 						"width": 148,
 						"height": 16,
@@ -1720,7 +1625,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1776,
+						"x": 1753,
 						"y": 468,
 						"width": 148,
 						"height": 16,
@@ -1977,7 +1882,7 @@
 				{
 					"type": "pinpoint",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,

@@ -68,6 +68,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 677923509263411
+		},
+		{
+			"name": "waiting",
+			"type": "boolean",
+			"desc": "",
+			"sid": 722266331924593
 		}
 	],
 	"behaviorTypes": [

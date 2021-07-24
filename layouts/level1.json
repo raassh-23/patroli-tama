@@ -371,39 +371,6 @@
 					}
 				},
 				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 15,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1567,
-						"y": 618,
-						"width": 265.2068140098195,
-						"height": 265.2068140098195,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "turnCheck",
 					"properties": {
 						"initially-visible": false,
@@ -1068,7 +1035,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1179,7 +1147,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1232,7 +1201,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1285,7 +1255,8 @@
 						"currentAngle": 0,
 						"turning": false,
 						"picked": false,
-						"type": 0
+						"type": 0,
+						"waiting": false
 					},
 					"behaviors": {
 						"Bullet": {
