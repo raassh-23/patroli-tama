@@ -128,9 +128,9 @@
 				},
 				{
 					"callFunction": "spawnVehicle",
-					"sid": 112683692200581,
+					"sid": 954588481968781,
 					"parameters": [
-						"randNum <= 90 ? 0 : 1"
+						"randNum <= 70 ? 0 : 1"
 					]
 				},
 				{
@@ -155,10 +155,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 501391847602506,
+					"sid": 456796373714537,
 					"parameters": {
 						"variable": "timeLimit",
-						"value": "85"
+						"value": "75"
 					}
 				},
 				{
@@ -179,10 +179,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 558369321740395,
+					"sid": 878211897226588,
 					"parameters": {
 						"variable": "goals",
-						"value": "\"30|40|60\""
+						"value": "\"20|30|40\""
 					}
 				},
 				{
@@ -238,9 +238,9 @@
 				},
 				{
 					"callFunction": "spawnVehicle",
-					"sid": 619258211138792,
+					"sid": 593586880657212,
 					"parameters": [
-						"randNum <= 90 ? 0 : 1"
+						"randNum <= 70 ? 0 : 1"
 					]
 				},
 				{
