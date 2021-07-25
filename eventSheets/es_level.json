@@ -3682,8 +3682,8 @@
 					],
 					"actions": [
 						{
-							"callFunction": "playSuccess",
-							"sid": 706032956054677
+							"callFunction": "playFailed",
+							"sid": 637107708333029
 						},
 						{
 							"id": "set-layer-visible",

@@ -398,6 +398,41 @@
 					"name": "placeholderSFX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 185913260970228
+				},
+				{
+					"name": "Komiku - Shopping List.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 580597197217728
+				},
+				{
+					"name": "sfxButtonTap.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 549531033724594
+				},
+				{
+					"name": "sfxRight.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 727307027100895
+				},
+				{
+					"name": "sfxWrong.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 725923656998703
+				},
+				{
+					"name": "sfxHalfWrong.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 896673159613943
+				},
+				{
+					"name": "sfxSuccess.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 130886974217833
+				},
+				{
+					"name": "sfxFail.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 737258541505479
 				}
 			],
 			"subfolders": []

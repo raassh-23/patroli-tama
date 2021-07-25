@@ -92,9 +92,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 547739366650758,
+					"sid": 450157476688619,
 					"parameters": {
-						"audio-file": "placeholderMusic",
+						"audio-file": "Komiku - Shopping List",
 						"loop": "looping",
 						"volume": "20*log10(music/100)",
 						"tag-optional": "\"bgm\""
@@ -142,9 +142,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 151026864664575,
+					"sid": 502084189980745,
 					"parameters": {
-						"audio-file": "placeholderSFX",
+						"audio-file": "sfxButtonTap",
 						"loop": "not-looping",
 						"volume": "20*log10(sfx/100)",
 						"tag-optional": "\"sfx\""
@@ -166,9 +166,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 174023098090287,
+					"sid": 676781099173375,
 					"parameters": {
-						"audio-file": "placeholderSFX",
+						"audio-file": "sfxRight",
 						"loop": "not-looping",
 						"volume": "20*log10(sfx/100)",
 						"tag-optional": "\"sfx\""
@@ -190,9 +190,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 892441223241942,
+					"sid": 147035993606800,
 					"parameters": {
-						"audio-file": "placeholderSFX",
+						"audio-file": "sfxHalfWrong",
 						"loop": "not-looping",
 						"volume": "20*log10(sfx/100)",
 						"tag-optional": "\"sfx\""
@@ -214,9 +214,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 130000858080186,
+					"sid": 205203573313451,
 					"parameters": {
-						"audio-file": "placeholderSFX",
+						"audio-file": "sfxWrong",
 						"loop": "not-looping",
 						"volume": "20*log10(sfx/100)",
 						"tag-optional": "\"sfx\""
@@ -238,9 +238,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 840188063776459,
+					"sid": 506462192197711,
 					"parameters": {
-						"audio-file": "placeholderSFX",
+						"audio-file": "sfxSuccess",
 						"loop": "not-looping",
 						"volume": "20*log10(sfx/100)",
 						"tag-optional": "\"sfx\""
@@ -262,9 +262,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 526314671385159,
+					"sid": 184632082818578,
 					"parameters": {
-						"audio-file": "placeholderSFX",
+						"audio-file": "sfxFail",
 						"loop": "not-looping",
 						"volume": "20*log10(sfx/100)",
 						"tag-optional": "\"sfx\""
