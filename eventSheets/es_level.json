@@ -2870,6 +2870,15 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "pelanggaranOption",
+									"sid": 893916698390405,
+									"parameters": {
+										"animation": "lang",
+										"from": "current-frame"
+									}
+								},
+								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
 									"sid": 759253376975643,
@@ -4021,6 +4030,15 @@
 							"sid": 211866387775887,
 							"parameters": {
 								"frame-number": "int(tokenat(options, loopindex(\"i\"), \"|\")) - 1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "helpIcons",
+							"sid": 514336238148093,
+							"parameters": {
+								"animation": "lang",
+								"from": "current-frame"
 							}
 						}
 					],

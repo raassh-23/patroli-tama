@@ -560,26 +560,71 @@
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 486673625316561,
+			"children": [
 				{
-					"id": "go-to-layout-by-name",
-					"objectClass": "System",
-					"sid": 407864860130338,
-					"parameters": {
-						"layout": "\"level\"&levelSelectLevels.level+1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 183803590886506,
+							"parameters": {
+								"variable": "storyShown",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 526483690248311,
+							"parameters": {
+								"layout": "Story"
+							}
+						}
+					],
+					"sid": 661052559504054
 				},
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 492398997842543,
-					"parameters": {
-						"variable": "curLevel",
-						"value": "levelSelectLevels.level"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 666044273235363,
+							"parameters": {
+								"variable": "storyShown",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 636171848301657,
+							"parameters": {
+								"layout": "\"level\"&levelSelectLevels.level+1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 510612357766243,
+							"parameters": {
+								"variable": "curLevel",
+								"value": "levelSelectLevels.level"
+							}
+						}
+					],
+					"sid": 363601524561372
 				}
-			],
-			"sid": 486673625316561
+			]
 		},
 		{
 			"eventType": "block",

@@ -739,6 +739,14 @@
 							],
 							"actions": [
 								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 348927870339989,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
 									"callFunction": "spawnVehicle",
 									"sid": 107370363405875,
 									"parameters": [

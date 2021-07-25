@@ -47,9 +47,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 535114979813412,
+							"sid": 117145482684306,
 							"parameters": {
-								"layout": "MainMenu"
+								"layout": "Level1"
 							}
 						},
 						{
