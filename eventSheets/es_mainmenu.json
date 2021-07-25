@@ -75,9 +75,9 @@
 						{
 							"id": "set-width",
 							"objectClass": "settingBar",
-							"sid": 675468218563633,
+							"sid": 526191023876796,
 							"parameters": {
-								"width": "music/100 * 314"
+								"width": "sfx/100 * 314"
 							}
 						}
 					],
@@ -101,9 +101,9 @@
 						{
 							"id": "set-width",
 							"objectClass": "settingBar",
-							"sid": 178849890508843,
+							"sid": 559876484205774,
 							"parameters": {
-								"width": "sfx/100 * 314"
+								"width": "music/100 * 314"
 							}
 						}
 					],
@@ -150,6 +150,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 856022799236709
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 258201512136131,
@@ -174,6 +178,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 248115058736743
+						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
@@ -201,6 +209,27 @@
 						}
 					],
 					"sid": 681099087077859
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "menuButton",
+							"sid": 590386703294539,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 229497430436084
+						}
+					],
+					"sid": 520579031234210
 				}
 			]
 		},
@@ -249,6 +278,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 922531936956854
+						},
+						{
 							"id": "tween-one-property",
 							"objectClass": "settingPanel",
 							"sid": 182869835618110,
@@ -296,6 +329,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 839731613627076
+						},
+						{
 							"callFunction": "setLanguange",
 							"sid": 599220047390449,
 							"parameters": [
@@ -319,6 +356,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 739111666616066
+						},
 						{
 							"callFunction": "setLanguange",
 							"sid": 933300640472528,
@@ -399,9 +440,9 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 435743348042151,
+							"sid": 949594612045333,
 							"parameters": {
-								"variable": "music",
+								"variable": "sfx",
 								"value": "round(settingBar.Width/314 * 100)"
 							}
 						}
@@ -426,11 +467,15 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 629289110324892,
+							"sid": 207062641184736,
 							"parameters": {
-								"variable": "sfx",
+								"variable": "music",
 								"value": "round(settingBar.Width/314 * 100)"
 							}
+						},
+						{
+							"callFunction": "setMusicVolume",
+							"sid": 983403961745680
 						}
 					],
 					"sid": 369136737794318

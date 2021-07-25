@@ -107,7 +107,46 @@
 							}
 						}
 					],
-					"sid": 650243394365472
+					"sid": 650243394365472,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "levelSelectLevels",
+									"sid": 570271325687128,
+									"parameters": {
+										"instance-variable": "level",
+										"comparison": 5,
+										"value": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "levelSelectLevels",
+									"sid": 577479152072230,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"Grayscale\""
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "levelSelectLevels",
+									"sid": 740473914437291,
+									"parameters": {
+										"effect": "\"Grayscale\"",
+										"parameter-index": "0",
+										"value": "100"
+									}
+								}
+							],
+							"sid": 781130595616372
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -427,6 +466,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 462951981502776
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 910352605122538,
@@ -451,6 +494,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 554449438197842
+						},
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
@@ -501,6 +548,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 374613274017632
+						},
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
@@ -560,12 +611,26 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"callFunction": "playUITap",
+					"sid": 432211712130023
+				}
+			],
 			"sid": 486673625316561,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "levelSelectLevels",
+							"sid": 131886687017705,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						},
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
@@ -593,14 +658,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
+							"id": "else",
 							"objectClass": "System",
-							"sid": 666044273235363,
-							"parameters": {
-								"variable": "storyShown",
-								"comparison": 0,
-								"value": "1"
-							}
+							"sid": 442407391060718
 						}
 					],
 					"actions": [

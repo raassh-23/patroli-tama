@@ -55,6 +55,15 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
+							"sid": 497955553503918,
+							"parameters": {
+								"variable": "curLevel",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
 							"sid": 573122034858473,
 							"parameters": {
 								"variable": "storyShown",

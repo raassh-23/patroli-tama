@@ -71,6 +71,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
@@ -117,6 +125,14 @@
 			"author": "Scirra",
 			"version": "r251.2",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "grayscale",
+			"name": "Grayscale",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "0q4zf2t8fxw",
@@ -144,7 +160,8 @@
 			"Browser",
 			"blueBackground",
 			"LevelUITime",
-			"tutorials"
+			"tutorials",
+			"Audio"
 		],
 		"subfolders": [
 			{
@@ -371,7 +388,18 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "placeholderMusic.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 799680824275606
+				},
+				{
+					"name": "placeholderSFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 185913260970228
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

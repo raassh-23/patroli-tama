@@ -42,6 +42,24 @@
 			],
 			"actions": [
 				{
+					"id": "set-effect-enabled",
+					"objectClass": "pelanggaranButton",
+					"sid": 151033230088533,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Grayscale\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "levelSelectLevels",
+					"sid": 427304812020313,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Grayscale\""
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "langChangeable",
 					"sid": 429624972266069,
@@ -52,6 +70,204 @@
 				}
 			],
 			"sid": 806067160315501
+		},
+		{
+			"eventType": "comment",
+			"text": "ini ganti musik"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 456346529454969,
+					"parameters": {
+						"tag": "\"bgm\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 547739366650758,
+					"parameters": {
+						"audio-file": "placeholderMusic",
+						"loop": "looping",
+						"volume": "20*log10(music/100)",
+						"tag-optional": "\"bgm\""
+					}
+				}
+			],
+			"sid": 756853737911345
+		},
+		{
+			"functionName": "setMusicVolume",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-volume",
+					"objectClass": "Audio",
+					"sid": 671383258628541,
+					"parameters": {
+						"tag": "\"bgm\"",
+						"db": "20*log10(music/100)"
+					}
+				}
+			],
+			"sid": 680022549481352
+		},
+		{
+			"functionName": "playUITap",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 151026864664575,
+					"parameters": {
+						"audio-file": "placeholderSFX",
+						"loop": "not-looping",
+						"volume": "20*log10(sfx/100)",
+						"tag-optional": "\"sfx\""
+					}
+				}
+			],
+			"sid": 720946793823721
+		},
+		{
+			"functionName": "playCorrect",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 174023098090287,
+					"parameters": {
+						"audio-file": "placeholderSFX",
+						"loop": "not-looping",
+						"volume": "20*log10(sfx/100)",
+						"tag-optional": "\"sfx\""
+					}
+				}
+			],
+			"sid": 571400602062299
+		},
+		{
+			"functionName": "playHalfCorrect",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 892441223241942,
+					"parameters": {
+						"audio-file": "placeholderSFX",
+						"loop": "not-looping",
+						"volume": "20*log10(sfx/100)",
+						"tag-optional": "\"sfx\""
+					}
+				}
+			],
+			"sid": 975335872197660
+		},
+		{
+			"functionName": "playWrong",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 130000858080186,
+					"parameters": {
+						"audio-file": "placeholderSFX",
+						"loop": "not-looping",
+						"volume": "20*log10(sfx/100)",
+						"tag-optional": "\"sfx\""
+					}
+				}
+			],
+			"sid": 660725853507113
+		},
+		{
+			"functionName": "playSuccess",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 840188063776459,
+					"parameters": {
+						"audio-file": "placeholderSFX",
+						"loop": "not-looping",
+						"volume": "20*log10(sfx/100)",
+						"tag-optional": "\"sfx\""
+					}
+				}
+			],
+			"sid": 760724022657057
+		},
+		{
+			"functionName": "playFailed",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 526314671385159,
+					"parameters": {
+						"audio-file": "placeholderSFX",
+						"loop": "not-looping",
+						"volume": "20*log10(sfx/100)",
+						"tag-optional": "\"sfx\""
+					}
+				}
+			],
+			"sid": 273325383551014
 		}
 	],
 	"sid": 104651624668194

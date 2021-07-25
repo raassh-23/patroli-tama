@@ -738,7 +738,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 782,
-						"y": 477,
+						"y": 453,
 						"width": 70,
 						"height": 145,
 						"originX": 0.5,
@@ -767,7 +767,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 894,
-						"y": 477,
+						"y": 453,
 						"width": 70,
 						"height": 145,
 						"originX": 0.5,
@@ -883,7 +883,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1545,
-						"y": 484,
+						"y": 460,
 						"width": 70,
 						"height": 145,
 						"originX": 0.5,
@@ -1944,9 +1944,16 @@
 							}
 						}
 					},
+					"effects": {
+						"Grayscale": {
+							"parameters": {
+								"intensity": 0
+							}
+						}
+					},
 					"world": {
-						"x": 1735,
-						"y": 958,
+						"x": 1616,
+						"y": 908,
 						"width": 248,
 						"height": 78,
 						"originX": 0.5,
@@ -1984,46 +1991,9 @@
 					},
 					"world": {
 						"x": 1445,
-						"y": 625,
+						"y": 610,
 						"width": 114,
 						"height": 113,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "pelanggaranButton",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "id",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11,
-					"instanceVariables": {
-						"pinTarget": 0
-					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 1467.6187078160276,
-						"y": 958,
-						"width": 248,
-						"height": 78,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2093,11 +2063,62 @@
 							}
 						}
 					},
+					"effects": {
+						"Grayscale": {
+							"parameters": {
+								"intensity": 1
+							}
+						}
+					},
 					"world": {
 						"x": 1835.2084202443825,
 						"y": 83.27619764362753,
 						"width": 95,
 						"height": 82,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pelanggaranButton",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "id",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11,
+					"instanceVariables": {
+						"pinTarget": 0
+					},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"effects": {
+						"Grayscale": {
+							"parameters": {
+								"intensity": 0
+							}
+						}
+					},
+					"world": {
+						"x": 1616,
+						"y": 1008,
+						"width": 248,
+						"height": 78,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

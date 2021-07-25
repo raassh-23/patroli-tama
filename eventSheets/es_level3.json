@@ -310,6 +310,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 909397070028944
+						},
+						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 896476718123305,

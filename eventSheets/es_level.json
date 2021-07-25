@@ -279,9 +279,9 @@
 						{
 							"id": "set-width",
 							"objectClass": "pauseBar",
-							"sid": 376272994739551,
+							"sid": 990145731762853,
 							"parameters": {
-								"width": "music/100 * 281"
+								"width": "sfx/100 * 281"
 							}
 						}
 					],
@@ -305,9 +305,9 @@
 						{
 							"id": "set-width",
 							"objectClass": "pauseBar",
-							"sid": 651205120716724,
+							"sid": 823218432527794,
 							"parameters": {
-								"width": "sfx/100 * 281"
+								"width": "music/100 * 281"
 							}
 						}
 					],
@@ -669,6 +669,10 @@
 			],
 			"actions": [
 				{
+					"callFunction": "playUITap",
+					"sid": 419524093184771
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 772965398666495,
@@ -926,6 +930,25 @@
 							"parameters": {
 								"opacity": "50"
 							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "pelanggaranButton",
+							"sid": 529244370339737,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Grayscale\""
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "pelanggaranButton",
+							"sid": 179092759292176,
+							"parameters": {
+								"effect": "\"Grayscale\"",
+								"parameter-index": "0",
+								"value": "100"
+							}
 						}
 					],
 					"sid": 581929853863265
@@ -1160,6 +1183,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 404707923008720
+						},
+						{
 							"callFunction": "hidePelanggaranPanel",
 							"sid": 890020883845051
 						}
@@ -1196,6 +1223,10 @@
 										}
 									],
 									"actions": [
+										{
+											"callFunction": "playWrong",
+											"sid": 343366793168041
+										},
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
@@ -1234,6 +1265,10 @@
 									],
 									"actions": [
 										{
+											"callFunction": "playHalfCorrect",
+											"sid": 617806813331908
+										},
+										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
 											"sid": 145710069615758,
@@ -1270,6 +1305,10 @@
 										}
 									],
 									"actions": [
+										{
+											"callFunction": "playCorrect",
+											"sid": 688981118966211
+										},
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
@@ -1443,6 +1482,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 737885008146240
+						},
+						{
 							"callFunction": "hidePelanggaranPanel",
 							"sid": 427284593965520
 						}
@@ -1565,6 +1608,10 @@
 			],
 			"actions": [
 				{
+					"callFunction": "playUITap",
+					"sid": 884536719447270
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 741261540397744,
@@ -1608,6 +1655,25 @@
 							"sid": 909741126195566,
 							"parameters": {
 								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "pelanggaranButton",
+							"sid": 660186872209113,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Grayscale\""
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "pelanggaranButton",
+							"sid": 504701711453084,
+							"parameters": {
+								"effect": "\"Grayscale\"",
+								"parameter-index": "0",
+								"value": "0"
 							}
 						}
 					],
@@ -2981,6 +3047,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 203601160912163
+						},
+						{
 							"callFunction": "hidePaused",
 							"sid": 256482024964499
 						}
@@ -3001,6 +3071,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 788613220068302
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
@@ -3027,6 +3101,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 267043167139006
+						},
+						{
 							"id": "restart-layout",
 							"objectClass": "System",
 							"sid": 698211609808464
@@ -3048,6 +3126,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 235182327439202
+						},
 						{
 							"callFunction": "setLanguange",
 							"sid": 189481198210316,
@@ -3072,6 +3154,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 544066689283452
+						},
 						{
 							"callFunction": "setLanguange",
 							"sid": 636677555286530,
@@ -3170,9 +3256,9 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 172653291788754,
+							"sid": 197198021991692,
 							"parameters": {
-								"variable": "music",
+								"variable": "sfx",
 								"value": "round(pauseBar.Width/281* 100)"
 							}
 						}
@@ -3197,11 +3283,15 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 677133558376941,
+							"sid": 641061515803092,
 							"parameters": {
-								"variable": "sfx",
+								"variable": "music",
 								"value": "round(pauseBar.Width/281* 100)"
 							}
+						},
+						{
+							"callFunction": "setMusicVolume",
+							"sid": 204450135666890
 						}
 					],
 					"sid": 503736491951007
@@ -3271,6 +3361,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 978795302921778
+						},
 						{
 							"callFunction": "showPaused",
 							"sid": 282379477348953
@@ -3498,7 +3592,7 @@
 			"functionIsAsync": true,
 			"functionParameters": [
 				{
-					"name": "finished",
+					"name": "success",
 					"type": "number",
 					"initialValue": "0",
 					"comment": "",
@@ -3571,13 +3665,17 @@
 							"objectClass": "System",
 							"sid": 870765878629431,
 							"parameters": {
-								"variable": "finished",
+								"variable": "success",
 								"comparison": 0,
 								"value": "0"
 							}
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playSuccess",
+							"sid": 706032956054677
+						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
@@ -3676,13 +3774,17 @@
 							"objectClass": "System",
 							"sid": 742231378286349,
 							"parameters": {
-								"variable": "finished",
+								"variable": "success",
 								"comparison": 0,
 								"value": "1"
 							}
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playSuccess",
+							"sid": 805633332011610
+						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
@@ -3838,6 +3940,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 215551382058051
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 221606228999744,
@@ -3862,6 +3968,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 330612435587992
+						},
 						{
 							"id": "restart-layout",
 							"objectClass": "System",
@@ -3917,9 +4027,13 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 250008911204401
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 545071110487878,
+							"sid": 680084546271112,
 							"parameters": {
 								"layout": "LevelSelect"
 							}
@@ -3941,6 +4055,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 818829427051009
+						},
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
@@ -3975,6 +4093,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 415129944684369
+						},
 						{
 							"id": "restart-layout",
 							"objectClass": "System",

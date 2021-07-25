@@ -55,7 +55,7 @@
 			"eventType": "variable",
 			"name": "optionY",
 			"type": "number",
-			"initialValue": "625",
+			"initialValue": "610",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -177,10 +177,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 456796373714537,
+					"sid": 848920081158373,
 					"parameters": {
 						"variable": "timeLimit",
-						"value": "75"
+						"value": "10"
 					}
 				},
 				{
@@ -203,7 +203,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 443653296491727,
+					"sid": 693917004217144,
 					"parameters": {
 						"variable": "options",
 						"value": "\"1\""
@@ -508,6 +508,10 @@
 					],
 					"actions": [
 						{
+							"callFunction": "playUITap",
+							"sid": 597724962884689
+						},
+						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 337662838928667,
@@ -657,6 +661,10 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 253204135011680
+						},
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
