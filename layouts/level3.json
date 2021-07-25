@@ -1016,39 +1016,6 @@
 					}
 				},
 				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 93,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 2
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1375,
-						"y": 591,
-						"width": 243.119106,
-						"height": 243.119106,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "turnCheck",
 					"properties": {
 						"initially-visible": false,
@@ -1657,6 +1624,72 @@
 						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 135,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1377,
+						"y": 512,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 93,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1377.5,
+						"y": 662,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 492840904986972,
@@ -1780,7 +1813,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "id",
-						"initial-frame": 7,
+						"initial-frame": 8,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -1793,7 +1826,7 @@
 						"x": 960,
 						"y": 932,
 						"width": 1017,
-						"height": 241,
+						"height": 246,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

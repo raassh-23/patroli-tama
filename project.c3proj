@@ -79,6 +79,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "AdvancedRandom",
+			"name": "Advanced Random",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
@@ -161,7 +169,8 @@
 			"blueBackground",
 			"LevelUITime",
 			"tutorials",
-			"Audio"
+			"Audio",
+			"AdvancedRandom"
 		],
 		"subfolders": [
 			{

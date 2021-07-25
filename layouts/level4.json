@@ -400,39 +400,6 @@
 					}
 				},
 				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 170,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 481,
-						"y": 397,
-						"width": 243.11910626238932,
-						"height": 243.11910626238932,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "turnCheck",
 					"properties": {
 						"initially-visible": false,
@@ -1933,6 +1900,72 @@
 						"height": 252.6856716590802,
 						"originX": 0.5,
 						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 317,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 489,
+						"y": 321,
+						"width": 258.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 319,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 489,
+						"y": 471,
+						"width": 258.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

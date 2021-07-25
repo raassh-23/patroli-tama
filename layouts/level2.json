@@ -384,7 +384,7 @@
 					},
 					"uid": 92,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 90, 1348, 697",
+						"turnAngle": "1, 0, 90, 1348, 697",
 						"id": 2
 					},
 					"behaviors": {},

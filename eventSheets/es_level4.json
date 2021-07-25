@@ -29,10 +29,62 @@
 					}
 				},
 				{
+					"id": "createProbabilityTable",
+					"objectClass": "AdvancedRandom",
+					"sid": 862157697433655,
+					"parameters": {
+						"name": "\"spawnChance4\""
+					}
+				},
+				{
+					"id": "setProbabilityTable",
+					"objectClass": "AdvancedRandom",
+					"sid": 388802342505931,
+					"parameters": {
+						"name": "\"spawnChance4\""
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 184044584352566,
+					"parameters": {
+						"value": "0",
+						"weight": "60"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 428588226796523,
+					"parameters": {
+						"value": "1",
+						"weight": "15"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 608181440514508,
+					"parameters": {
+						"value": "2",
+						"weight": "15"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 188432046343178,
+					"parameters": {
+						"value": "3",
+						"weight": "10"
+					}
+				},
+				{
 					"callFunction": "spawnVehicle",
-					"sid": 514097197092722,
+					"sid": 135219884686804,
 					"parameters": [
-						"randNum <= 60 ? 0 : (randNum <= 75 ? 2 : (randNum <= 90 ? 3 : 1))"
+						"AdvancedRandom.Weighted"
 					]
 				},
 				{
@@ -124,9 +176,9 @@
 				},
 				{
 					"callFunction": "spawnVehicle",
-					"sid": 301537571829158,
+					"sid": 857588336656568,
 					"parameters": [
-						"randNum <= 60 ? 0 : (randNum <= 75 ? 2 : (randNum <= 90 ? 3 : 1))"
+						"AdvancedRandom.Weighted"
 					]
 				},
 				{

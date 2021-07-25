@@ -29,8 +29,56 @@
 					}
 				},
 				{
-					"type": "comment",
-					"text": "70% normal, 10% melawan arus, 10% gak pake helm, 10% gak nyalakan lampu"
+					"id": "createProbabilityTable",
+					"objectClass": "AdvancedRandom",
+					"sid": 557348930660233,
+					"parameters": {
+						"name": "\"spawnChance3\""
+					}
+				},
+				{
+					"id": "setProbabilityTable",
+					"objectClass": "AdvancedRandom",
+					"sid": 898533921616785,
+					"parameters": {
+						"name": "\"spawnChance3\""
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 565486487789627,
+					"parameters": {
+						"value": "0",
+						"weight": "60"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 545151611359224,
+					"parameters": {
+						"value": "1",
+						"weight": "15"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 249154549503261,
+					"parameters": {
+						"value": "2",
+						"weight": "10"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 695461386271051,
+					"parameters": {
+						"value": "3",
+						"weight": "15"
+					}
 				},
 				{
 					"id": "set-eventvar-value",
@@ -153,9 +201,9 @@
 						},
 						{
 							"callFunction": "spawnVehicle",
-							"sid": 862140434667873,
+							"sid": 126800328045747,
 							"parameters": [
-								"randNum <= 60 ? 0 : (randNum <= 75 ? 1 : (randNum <= 85 ? 2 : 3))"
+								"AdvancedRandom.Weighted"
 							]
 						},
 						{
@@ -210,9 +258,9 @@
 				},
 				{
 					"callFunction": "spawnVehicle",
-					"sid": 889402710247798,
+					"sid": 103432767999839,
 					"parameters": [
-						"randNum <= 60 ? 0 : (randNum <= 75 ? 1 : (randNum <= 85 ? 2 : 3))"
+						"AdvancedRandom.Weighted"
 					]
 				},
 				{
@@ -423,9 +471,9 @@
 								},
 								{
 									"callFunction": "spawnVehicle",
-									"sid": 526872287918578,
+									"sid": 485412323186509,
 									"parameters": [
-										"randNum <= 60 ? 0 : (randNum <= 75 ? 1 : (randNum <= 85 ? 2 : 3))"
+										"AdvancedRandom.Weighted"
 									]
 								},
 								{

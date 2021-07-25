@@ -164,11 +164,41 @@
 				},
 				{
 					"type": "comment",
-					"text": "kalau random dibawah 90, berarti gak melanggar, Diatas itu berarti melawan arus. Artinya 10% kesempatan melawan arus. Kalau diubah, jangan lupa yang dibawah juga. Lihat contoh es_level3 buat contoh yang lebih kompleks. Nilai-nilai pelanggaran ada di es_level di definisi spawnVehicle"
+					"text": "randomnya jadi gini. Weightnya bebas sebenernya, tapi biar gampang dibuat total 100 aja. Jadi kalau kesempatan 65%, weightnya 65"
 				},
 				{
-					"type": "comment",
-					"text": "spawnVehicle antara 2-4 detika sekali, kalau diubah jangan lpa yang dibawah juga"
+					"id": "createProbabilityTable",
+					"objectClass": "AdvancedRandom",
+					"sid": 555090332094278,
+					"parameters": {
+						"name": "\"spawnChance1\""
+					}
+				},
+				{
+					"id": "setProbabilityTable",
+					"objectClass": "AdvancedRandom",
+					"sid": 833501544589465,
+					"parameters": {
+						"name": "\"spawnChance1\""
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 330940006481356,
+					"parameters": {
+						"value": "0",
+						"weight": "65"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 868119455572445,
+					"parameters": {
+						"value": "1",
+						"weight": "35"
+					}
 				},
 				{
 					"type": "comment",
@@ -312,10 +342,14 @@
 						},
 						{
 							"callFunction": "spawnVehicle",
-							"sid": 831398707730321,
+							"sid": 225184012054352,
 							"parameters": [
-								"randNum <= 65 ? 0 : 1"
+								"AdvancedRandom.Weighted"
 							]
+						},
+						{
+							"type": "comment",
+							"text": "spawnVehicle antara 2-4 detika sekali, kalau diubah jangan lpa yang dibawah juga"
 						},
 						{
 							"id": "start-timer",
@@ -397,9 +431,9 @@
 				},
 				{
 					"callFunction": "spawnVehicle",
-					"sid": 419564861646205,
+					"sid": 483419473839347,
 					"parameters": [
-						"randNum <= 65 ? 0 : 1"
+						"AdvancedRandom.Weighted"
 					]
 				},
 				{

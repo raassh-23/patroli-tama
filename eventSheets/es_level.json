@@ -1356,7 +1356,8 @@
 											}
 										}
 									],
-									"sid": 866362719675842
+									"sid": 866362719675842,
+									"disabled": true
 								},
 								{
 									"eventType": "block",
@@ -1471,6 +1472,27 @@
 										}
 									],
 									"sid": 966972743432105
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-all",
+											"objectClass": "System",
+											"sid": 443263534344828,
+											"parameters": {
+												"object": "vehicle"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "vehicle",
+											"sid": 168849188183393
+										}
+									],
+									"sid": 463197169577426
 								}
 							]
 						}
@@ -1911,7 +1933,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "vehicle",
-							"sid": 277956106051656,
+							"sid": 502682865481469,
 							"parameters": {
 								"object": "intersection"
 							},
@@ -1938,7 +1960,8 @@
 							}
 						}
 					],
-					"sid": 325000478088389
+					"sid": 325000478088389,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -2543,8 +2566,80 @@
 								}
 							],
 							"sid": 476822626270613
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "intersection",
+									"sid": 761311111062228,
+									"parameters": {
+										"instance-variable": "vehiclesUID",
+										"comparison": 1,
+										"value": "\"\""
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 468528576522665,
+									"parameters": {
+										"first-value": "Functions.checkIntersection(intersection.UID, int(intersection.vehiclesUID))",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "intersection",
+									"sid": 586710385184513,
+									"parameters": {
+										"instance-variable": "vehiclesUID",
+										"value": "vehicle.UID"
+									}
+								}
+							],
+							"sid": 206542514307416
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "intersection",
+							"sid": 898947462579272,
+							"parameters": {
+								"object": "vehicle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "intersection",
+							"sid": 158152218039668,
+							"parameters": {
+								"instance-variable": "collisionCount",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "intersection",
+							"sid": 716523607911506,
+							"parameters": {
+								"instance-variable": "vehiclesUID",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 545660535422581
 				}
 			]
 		},
@@ -2570,6 +2665,98 @@
 				}
 			],
 			"sid": 693134670085527
+		},
+		{
+			"functionName": "checkIntersection",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "number",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "interUID",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 486584682595070
+				},
+				{
+					"name": "vehicleUID",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 386842404488677
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 331190161589109,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "vehicle",
+							"sid": 950102645392159,
+							"parameters": {
+								"unique-id": "vehicleUID"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 736648167878899,
+							"parameters": {
+								"object": "intersection"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 191413978679404,
+							"parameters": {
+								"first-value": "intersection.UID",
+								"comparison": 0,
+								"second-value": "interUID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 317976372020899,
+							"parameters": {
+								"value": "1"
+							}
+						}
+					],
+					"sid": 750271016329935
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 783084490096515
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 309052095918942,
+							"parameters": {
+								"value": "0"
+							}
+						}
+					],
+					"sid": 149715135825597
+				}
+			]
 		},
 		{
 			"eventType": "block",
