@@ -1398,6 +1398,15 @@
 							],
 							"actions": [
 								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 501519839531720,
+									"parameters": {
+										"object": "timescaled",
+										"time-scale": "0"
+									}
+								},
+								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
 									"sid": 494632924365566,

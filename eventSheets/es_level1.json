@@ -177,10 +177,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 848920081158373,
+					"sid": 531220208389140,
 					"parameters": {
 						"variable": "timeLimit",
-						"value": "10"
+						"value": "75"
 					}
 				},
 				{
@@ -554,15 +554,6 @@
 										"layer": "\"tutorial0\"",
 										"visibility": "invisible"
 									}
-								},
-								{
-									"id": "set-object-time-scale",
-									"objectClass": "System",
-									"sid": 619991984538138,
-									"parameters": {
-										"object": "timescaled",
-										"time-scale": "1"
-									}
 								}
 							],
 							"sid": 296731918896500,
@@ -755,6 +746,15 @@
 									}
 								},
 								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 927398639852874,
+									"parameters": {
+										"object": "timescaled",
+										"time-scale": "1"
+									}
+								},
+								{
 									"callFunction": "spawnVehicle",
 									"sid": 107370363405875,
 									"parameters": [
@@ -801,6 +801,15 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 777564846056083,
+									"parameters": {
+										"object": "timescaled",
+										"time-scale": "1"
+									}
+								},
 								{
 									"id": "set-at-x",
 									"objectClass": "tutorials",
