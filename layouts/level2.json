@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "rumput",
+					"type": "rumput1",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -39,7 +39,7 @@
 					}
 				},
 				{
-					"type": "jalan",
+					"type": "jalan1",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 480,
@@ -775,7 +775,9 @@
 						"turning": false,
 						"picked": false,
 						"type": 0,
-						"waiting": false
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -887,7 +889,9 @@
 						"turning": false,
 						"picked": false,
 						"type": 0,
-						"waiting": false
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -941,7 +945,9 @@
 						"turning": false,
 						"picked": false,
 						"type": 0,
-						"waiting": false
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -995,7 +1001,9 @@
 						"turning": false,
 						"picked": false,
 						"type": 0,
-						"waiting": false
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false
 					},
 					"behaviors": {
 						"Bullet": {

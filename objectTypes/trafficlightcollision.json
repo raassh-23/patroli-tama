@@ -1,0 +1,80 @@
+{
+	"name": "trafficLightCollision",
+	"plugin-id": "Sprite",
+	"sid": 363116306897733,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "id",
+			"type": "number",
+			"desc": "samakan sama id sprite lampu merahnya",
+			"sid": 763383812573236
+		},
+		{
+			"name": "state",
+			"type": "number",
+			"desc": "0 merah, 1 dan 3 kuning, 2 hijau, diatur juga diawal",
+			"sid": 249261800655363
+		},
+		{
+			"name": "redTime",
+			"type": "number",
+			"desc": "",
+			"sid": 139652185201713
+		},
+		{
+			"name": "yellowTime",
+			"type": "number",
+			"desc": "",
+			"sid": 685899519151159
+		},
+		{
+			"name": "greenTime",
+			"type": "number",
+			"desc": "",
+			"sid": 971003317533059
+		},
+		{
+			"name": "startTime",
+			"type": "number",
+			"desc": "timer ketika awal level",
+			"sid": 807262008157040
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 195842354760863
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8162554,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 936699060389369,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

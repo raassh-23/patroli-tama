@@ -51,15 +51,6 @@
 					}
 				},
 				{
-					"id": "set-effect-enabled",
-					"objectClass": "levelSelectLevels",
-					"sid": 427304812020313,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Grayscale\""
-					}
-				},
-				{
 					"id": "set-animation",
 					"objectClass": "langChangeable",
 					"sid": 429624972266069,

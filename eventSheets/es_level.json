@@ -337,6 +337,33 @@
 						}
 					],
 					"sid": 673868468994296
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 293746606292211,
+							"parameters": {
+								"object": "trafficLightCollision"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-timer",
+							"objectClass": "trafficLightCollision",
+							"sid": 605978916606533,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "Self.startTime",
+								"type": "once",
+								"tag": "\"stateChange\""
+							}
+						}
+					],
+					"sid": 892382547991826
 				}
 			]
 		},
@@ -521,7 +548,105 @@
 									}
 								}
 							],
-							"sid": 141008854237648
+							"sid": 141008854237648,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 149573810375352,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 0,
+												"value": "0"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 442910643791859,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 0,
+												"value": "1"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 586392956526924,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 0,
+												"value": "2"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 226995895832721,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "vehicle",
+											"sid": 898243030798183,
+											"parameters": {
+												"instance-variable": "melanggar",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 913502790201166,
+									"isOrBlock": true
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 307663655738880,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 0,
+												"value": "4"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "vehicle",
+											"sid": 339299020287516,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "vehicle",
+											"sid": 126852263513091,
+											"parameters": {
+												"instance-variable": "melanggar",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 292646761245880,
+									"isOrBlock": true
+								}
+							]
 						}
 					]
 				}
@@ -1220,6 +1345,15 @@
 												"comparison": 0,
 												"value": "0"
 											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "vehicle",
+											"sid": 978696234655425,
+											"parameters": {
+												"instance-variable": "melanggar"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -1237,7 +1371,8 @@
 											}
 										}
 									],
-									"sid": 665771755709822
+									"sid": 665771755709822,
+									"isOrBlock": true
 								},
 								{
 									"eventType": "block",
@@ -1250,6 +1385,14 @@
 												"instance-variable": "pelanggaran",
 												"comparison": 4,
 												"value": "0"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "vehicle",
+											"sid": 645742484635249,
+											"parameters": {
+												"instance-variable": "melanggar"
 											}
 										},
 										{
@@ -1291,6 +1434,14 @@
 												"instance-variable": "pelanggaran",
 												"comparison": 4,
 												"value": "0"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "vehicle",
+											"sid": 588807298976760,
+											"parameters": {
+												"instance-variable": "melanggar"
 											}
 										},
 										{
@@ -1992,6 +2143,15 @@
 								"instance-variable": "waiting"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 384772374511516,
+							"parameters": {
+								"instance-variable": "inTrafficLight"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [],
@@ -2182,6 +2342,230 @@
 								}
 							],
 							"sid": 988079699389190
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 895023887707460,
+							"parameters": {
+								"object": "trafficLightCollision"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 164711418636770,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 1,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 335131558696686,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "trafficLightCollision",
+									"sid": 652409889703163,
+									"parameters": {
+										"instance-variable": "state",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "trafficLightCollision",
+									"sid": 787487284424407,
+									"parameters": {
+										"instance-variable": "state",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 448085123465951,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "vehicle",
+											"sid": 551542127418761,
+											"parameters": {
+												"object": "turnCheck"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "vehicle",
+											"sid": 184016026356065,
+											"parameters": {
+												"instance-variable": "berhenti",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "vehicle",
+											"sid": 769802661195228,
+											"parameters": {
+												"instance-variable": "inTrafficLight",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 454830536197962
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "trafficLightCollision",
+									"sid": 404718497279244,
+									"parameters": {
+										"instance-variable": "state",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 671335619576780,
+									"parameters": {
+										"instance-variable": "berhenti",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 128069068953178,
+									"parameters": {
+										"instance-variable": "inTrafficLight",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 276268259992895,
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 910832908335957,
+							"parameters": {
+								"object": "cekMelanggar"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 877843107120670,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "vehicle",
+									"sid": 994941388397501,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "cekMelanggar",
+									"sid": 735934812418549,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 332937478807103,
+									"parameters": {
+										"object": "trafficLightCollision",
+										"expression": "trafficLightCollision.id",
+										"comparison": 0,
+										"value": "cekMelanggar.TCID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 673673712081637,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "trafficLightCollision",
+											"sid": 843255610170880,
+											"parameters": {
+												"instance-variable": "state",
+												"comparison": 0,
+												"value": "0"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "trafficLightCollision",
+											"sid": 466523702398267,
+											"parameters": {
+												"instance-variable": "state",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "vehicle",
+											"sid": 557714135836897,
+											"parameters": {
+												"instance-variable": "melanggar",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 398461330007376,
+									"isOrBlock": true
+								}
+							]
 						}
 					]
 				}
@@ -4508,6 +4892,78 @@
 				}
 			],
 			"sid": 632376429948896
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "trafficLightCollision",
+					"sid": 452113750968799,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"stateChange\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "trafficLightCollision",
+					"sid": 373023751846965,
+					"parameters": {
+						"instance-variable": "state",
+						"value": "Self.state < 3 ? Self.state + 1 : 0"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "trafficLightCollision",
+					"sid": 594685397448128,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "Self.state = 0 ? Self.redTime : (Self.state = 2 ? Self.greenTime: Self.yellowTime)",
+						"type": "once",
+						"tag": "\"stateChange\""
+					}
+				}
+			],
+			"sid": 810413227009829
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 117843980249439,
+					"parameters": {
+						"object": "trafficLight"
+					}
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 862514418249561,
+					"parameters": {
+						"object": "trafficLightCollision",
+						"expression": "trafficLightCollision.id",
+						"comparison": 0,
+						"value": "trafficLight.id"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "trafficLight",
+					"sid": 694997057266453,
+					"parameters": {
+						"frame-number": "trafficLightCollision.state"
+					}
+				}
+			],
+			"sid": 724115399325131
 		}
 	],
 	"sid": 746794069324216

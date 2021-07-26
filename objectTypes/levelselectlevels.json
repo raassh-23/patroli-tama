@@ -12,12 +12,7 @@
 		}
 	],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "grayscale",
-			"name": "Grayscale"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{

@@ -6,17 +6,19 @@ function checkTurn(vehicle, turnCheck) {
 		.split('|').map(str => str.split(','));
 
 	const curAngle = vehicle.instVars.currentAngle;
-	const melawanArus = vehicle.instVars.pelanggaran == 1? 1 : 0;
+	let pelanggaran = vehicle.instVars.pelanggaran == 1 
+						|| vehicle.instVars.pelanggaran == 5 
+						? vehicle.instVars.pelanggaran : 0;
 
-		console.log(curAngle, melawanArus);
+	console.log(curAngle, pelanggaran);
 
-	const turnable = turnArray.filter(val => val[0] == melawanArus && val[1] == curAngle);
+	const turnable = turnArray.filter(val => val[0] == pelanggaran && val[1] == curAngle);
 
 	const rand = Math.floor(Math.random() * turnArray.length);
 
 	const [, , target, targetX, targetY] = turnable[rand];
 
-		console.table(target, targetX, targetY);
+	console.table(target, targetX, targetY);
 
 	if (target != curAngle) {
 		vehicle.instVars.targetAngle = target;

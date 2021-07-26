@@ -74,6 +74,18 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 722266331924593
+		},
+		{
+			"name": "inTrafficLight",
+			"type": "boolean",
+			"desc": "",
+			"sid": 858600663827239
+		},
+		{
+			"name": "melanggar",
+			"type": "boolean",
+			"desc": "",
+			"sid": 741574515004319
 		}
 	],
 	"behaviorTypes": [

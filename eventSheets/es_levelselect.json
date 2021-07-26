@@ -107,46 +107,7 @@
 							}
 						}
 					],
-					"sid": 650243394365472,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "levelSelectLevels",
-									"sid": 570271325687128,
-									"parameters": {
-										"instance-variable": "level",
-										"comparison": 5,
-										"value": "8"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-effect-enabled",
-									"objectClass": "levelSelectLevels",
-									"sid": 577479152072230,
-									"parameters": {
-										"mode": "enable",
-										"effect": "\"Grayscale\""
-									}
-								},
-								{
-									"id": "set-effect-parameter",
-									"objectClass": "levelSelectLevels",
-									"sid": 740473914437291,
-									"parameters": {
-										"effect": "\"Grayscale\"",
-										"parameter-index": "0",
-										"value": "100"
-									}
-								}
-							],
-							"sid": 781130595616372
-						}
-					]
+					"sid": 650243394365472
 				},
 				{
 					"eventType": "block",
@@ -279,6 +240,43 @@
 									"sid": 383130636252918
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 264587513353355,
+									"parameters": {
+										"first-value": "levels.CurX",
+										"comparison": 5,
+										"second-value": "8"
+									}
+								},
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 550973802409284,
+									"parameters": {
+										"object": "levelSelectLevels",
+										"expression": "levelSelectLevels.level",
+										"comparison": 0,
+										"value": "levels.CurX"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "levelSelectLevels",
+									"sid": 578633079287128,
+									"parameters": {
+										"frame-number": "5"
+									}
+								}
+							],
+							"sid": 606264971122356
 						}
 					]
 				}
@@ -623,12 +621,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-animation-frame",
+							"id": "compare-instance-variable",
 							"objectClass": "levelSelectLevels",
-							"sid": 131886687017705,
+							"sid": 418469334807007,
 							"parameters": {
+								"instance-variable": "level",
 								"comparison": 0,
-								"number": "0"
+								"value": "0"
 							}
 						},
 						{

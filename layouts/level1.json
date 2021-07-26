@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "rumput",
+					"type": "rumput1",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -39,7 +39,7 @@
 					}
 				},
 				{
-					"type": "jalan",
+					"type": "jalan1",
 					"properties": {
 						"initially-visible": true,
 						"tile-width": 480,
@@ -565,7 +565,7 @@
 					"world": {
 						"x": 1230.5504162635254,
 						"y": 261,
-						"width": 120.89916747294902,
+						"width": 120.899167472949,
 						"height": 72.22547667215136,
 						"originX": 0.5,
 						"originY": 1,
@@ -594,7 +594,7 @@
 					"world": {
 						"x": 1354.5504162635254,
 						"y": 261,
-						"width": 120.89916747294902,
+						"width": 120.899167472949,
 						"height": 72.22547667215136,
 						"originX": 0.5,
 						"originY": 1,
@@ -623,7 +623,7 @@
 					"world": {
 						"x": 1483.5504162635254,
 						"y": 261,
-						"width": 120.89916747294902,
+						"width": 120.899167472949,
 						"height": 72.22547667215136,
 						"originX": 0.5,
 						"originY": 1,
@@ -1036,7 +1036,9 @@
 						"turning": false,
 						"picked": false,
 						"type": 0,
-						"waiting": false
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1148,7 +1150,9 @@
 						"turning": false,
 						"picked": false,
 						"type": 0,
-						"waiting": false
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1202,7 +1206,9 @@
 						"turning": false,
 						"picked": false,
 						"type": 0,
-						"waiting": false
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1256,7 +1262,9 @@
 						"turning": false,
 						"picked": false,
 						"type": 0,
-						"waiting": false
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false
 					},
 					"behaviors": {
 						"Bullet": {
