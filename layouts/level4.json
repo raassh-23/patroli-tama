@@ -71,7 +71,7 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": -239.33422467969706,
+						"x": -314.33422467969706,
 						"y": -325.55525278497726,
 						"width": 3645,
 						"height": 1959,
@@ -190,7 +190,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": -111,
+						"x": -186,
 						"y": 468,
 						"width": 16,
 						"height": 16,
@@ -222,7 +222,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": -111,
+						"x": -186,
 						"y": 320,
 						"width": 16,
 						"height": 16,
@@ -254,8 +254,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 888,
-						"y": 1356,
+						"x": 813,
+						"y": 1332,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -286,8 +286,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1036,
-						"y": 1356,
+						"x": 961,
+						"y": 1332,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -346,12 +346,12 @@
 					},
 					"uid": 168,
 					"instanceVariables": {
-						"turnAngle": "1, 270, 0, 555, 468| 1, 270, 180, 555, 320",
+						"turnAngle": "1, 270, 0, 480, 468| 1, 270, 180, 480, 320",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 555,
+						"x": 480,
 						"y": 585,
 						"width": 148,
 						"height": 16,
@@ -378,12 +378,12 @@
 					},
 					"uid": 169,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 407, 468| 0, 270, 0, 407, 320",
+						"turnAngle": "0, 270, 180, 332, 468| 0, 270, 0, 332, 320",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 407,
+						"x": 332,
 						"y": 585,
 						"width": 148,
 						"height": 16,
@@ -410,12 +410,12 @@
 					},
 					"uid": 171,
 					"instanceVariables": {
-						"turnAngle": "1, 90, 0, 407, 949",
+						"turnAngle": "1, 90, 0, 332, 949",
 						"id": 2
 					},
 					"behaviors": {},
 					"world": {
-						"x": 407,
+						"x": 332,
 						"y": 727,
 						"width": 148,
 						"height": 16,
@@ -442,12 +442,12 @@
 					},
 					"uid": 172,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 0, 555, 801",
+						"turnAngle": "0, 90, 0, 480, 801",
 						"id": 2
 					},
 					"behaviors": {},
 					"world": {
-						"x": 555,
+						"x": 480,
 						"y": 727,
 						"width": 148,
 						"height": 16,
@@ -737,8 +737,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1622,
-						"y": 689,
+						"x": 1558,
+						"y": 698,
 						"width": 70,
 						"height": 145,
 						"originX": 0.5,
@@ -766,8 +766,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1683,
-						"y": 726,
+						"x": 1619,
+						"y": 735,
 						"width": 70,
 						"height": 145,
 						"originX": 0.5,
@@ -882,8 +882,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1685,
-						"y": 1318,
+						"x": 2236,
+						"y": 1205,
 						"width": 70,
 						"height": 145,
 						"originX": 0.5,
@@ -969,8 +969,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2287,
-						"y": 692,
+						"x": 2223,
+						"y": 552,
 						"width": 300,
 						"height": 233,
 						"originX": 0.5,
@@ -998,7 +998,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1585,
+						"x": 1340,
 						"y": 1167,
 						"width": 344,
 						"height": 199,
@@ -1081,7 +1081,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2063,
+						"x": 2002,
 						"y": 876,
 						"width": 65,
 						"height": 154,
@@ -1299,12 +1299,12 @@
 					},
 					"uid": 125,
 					"instanceVariables": {
-						"turnAngle": "1, 180, 270, 555, 801",
+						"turnAngle": "1, 180, 270, 480, 801",
 						"id": 2
 					},
 					"behaviors": {},
 					"world": {
-						"x": 629,
+						"x": 554,
 						"y": 801,
 						"width": 148,
 						"height": 16,
@@ -1331,12 +1331,12 @@
 					},
 					"uid": 251,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 270, 407, 949",
+						"turnAngle": "0, 180, 270, 332, 949",
 						"id": 2
 					},
 					"behaviors": {},
 					"world": {
-						"x": 629,
+						"x": 554,
 						"y": 949,
 						"width": 148,
 						"height": 16,
@@ -1363,12 +1363,12 @@
 					},
 					"uid": 252,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 90, 1036, 801",
+						"turnAngle": "0, 0, 90, 961, 801",
 						"id": 3
 					},
 					"behaviors": {},
 					"world": {
-						"x": 814,
+						"x": 739,
 						"y": 801,
 						"width": 148,
 						"height": 16,
@@ -1395,12 +1395,12 @@
 					},
 					"uid": 210,
 					"instanceVariables": {
-						"turnAngle": "1, 0, 90, 888, 949",
+						"turnAngle": "1, 0, 90, 813, 949",
 						"id": 3
 					},
 					"behaviors": {},
 					"world": {
-						"x": 814,
+						"x": 739,
 						"y": 949,
 						"width": 148,
 						"height": 16,
@@ -1427,12 +1427,12 @@
 					},
 					"uid": 250,
 					"instanceVariables": {
-						"turnAngle": "1, 180, 90, 407, 320| 1, 180, 180, 407, 320",
+						"turnAngle": "1, 180, 90, 332, 320| 1, 180, 180, 332, 320",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 675,
+						"x": 600,
 						"y": 320,
 						"width": 148,
 						"height": 16,
@@ -1459,12 +1459,12 @@
 					},
 					"uid": 242,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 90, 555, 468| 0, 180, 180, 555, 320",
+						"turnAngle": "0, 180, 90, 480, 468| 0, 180, 180, 480, 468",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 675,
+						"x": 600,
 						"y": 468,
 						"width": 148,
 						"height": 16,
@@ -1491,12 +1491,12 @@
 					},
 					"uid": 243,
 					"instanceVariables": {
-						"turnAngle": "1, 0, 90, 407, 468| 1, 0, 0, 407, 468",
+						"turnAngle": "1, 0, 90, 332, 468| 1, 0, 0, 332, 468",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 283,
+						"x": 208,
 						"y": 468,
 						"width": 148,
 						"height": 16,
@@ -1523,12 +1523,12 @@
 					},
 					"uid": 244,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 90, 555, 320| 0, 0, 0, 555, 320",
+						"turnAngle": "0, 0, 90, 480, 320| 0, 0, 0, 480, 320",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 283,
+						"x": 208,
 						"y": 320,
 						"width": 148,
 						"height": 16,
@@ -1555,12 +1555,12 @@
 					},
 					"uid": 245,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 90, 1998, 320",
+						"turnAngle": "0, 0, 90, 1923, 320",
 						"id": 4
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1753,
+						"x": 1678,
 						"y": 320,
 						"width": 148,
 						"height": 16,
@@ -1587,12 +1587,12 @@
 					},
 					"uid": 246,
 					"instanceVariables": {
-						"turnAngle": "1, 0, 90, 1850, 468",
+						"turnAngle": "1, 0, 90, 1775, 468",
 						"id": 4
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1753,
+						"x": 1678,
 						"y": 468,
 						"width": 148,
 						"height": 16,
@@ -1619,12 +1619,12 @@
 					},
 					"uid": 247,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 1850, 468",
+						"turnAngle": "0, 270, 180, 1775, 468",
 						"id": 4
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1850,
+						"x": 1775,
 						"y": 579,
 						"width": 148,
 						"height": 16,
@@ -1651,12 +1651,12 @@
 					},
 					"uid": 248,
 					"instanceVariables": {
-						"turnAngle": "1, 270, 180, 1998, 320",
+						"turnAngle": "1, 270, 180, 1923, 320",
 						"id": 4
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1998,
+						"x": 1923,
 						"y": 579,
 						"width": 148,
 						"height": 16,
@@ -1683,12 +1683,12 @@
 					},
 					"uid": 254,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 888, 949",
+						"turnAngle": "0, 270, 180, 813, 949",
 						"id": 3
 					},
 					"behaviors": {},
 					"world": {
-						"x": 888,
+						"x": 813,
 						"y": 1060,
 						"width": 148,
 						"height": 16,
@@ -1715,12 +1715,12 @@
 					},
 					"uid": 253,
 					"instanceVariables": {
-						"turnAngle": "1, 270, 180, 1036, 801",
+						"turnAngle": "1, 270, 180, 961, 801",
 						"id": 3
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1036,
+						"x": 961,
 						"y": 1060,
 						"width": 148,
 						"height": 16,
@@ -1752,7 +1752,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1850,
+						"x": 1775,
 						"y": 1356,
 						"width": 16,
 						"height": 16,
@@ -1784,7 +1784,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1998,
+						"x": 1923,
 						"y": 1356,
 						"width": 16,
 						"height": 16,
@@ -1894,8 +1894,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2692,
-						"y": 993,
+						"x": 2605,
+						"y": 1008,
 						"width": 944.1255550171088,
 						"height": 252.6856716590802,
 						"originX": 0.5,
@@ -1927,7 +1927,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 489,
+						"x": 414,
 						"y": 321,
 						"width": 258.119106,
 						"height": 99.11910599999999,
@@ -1960,7 +1960,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 489,
+						"x": 414,
 						"y": 471,
 						"width": 258.119106,
 						"height": 99.11910599999999,
