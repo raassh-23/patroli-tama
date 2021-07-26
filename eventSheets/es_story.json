@@ -36,10 +36,10 @@
 						{
 							"id": "compare-animation-frame",
 							"objectClass": "storyPopUp",
-							"sid": 926115066982004,
+							"sid": 329949539663980,
 							"parameters": {
 								"comparison": 5,
-								"number": "1"
+								"number": "2"
 							}
 						}
 					],
@@ -79,10 +79,10 @@
 						{
 							"id": "compare-animation-frame",
 							"objectClass": "storyPopUp",
-							"sid": 942900584030919,
+							"sid": 124984243160067,
 							"parameters": {
 								"comparison": 2,
-								"number": "1"
+								"number": "2"
 							}
 						}
 					],

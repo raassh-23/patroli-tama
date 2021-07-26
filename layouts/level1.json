@@ -121,7 +121,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
-						"initial-frame": 3,
+						"initial-frame": 14,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -129,12 +129,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1345,
-						"y": 203,
-						"width": 300,
-						"height": 233,
-						"originX": 0.5,
-						"originY": 1,
+						"x": 1340,
+						"y": 111,
+						"width": 319,
+						"height": 260,
+						"originX": 0.46551724137931033,
+						"originY": 0.4288461538461538,
 						"color": [
 							1,
 							1,
@@ -447,10 +447,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 202,
+						"x": 186.37022362535504,
 						"y": 812,
-						"width": 154,
-						"height": 92,
+						"width": 122.74044725071009,
+						"height": 73.3254619939307,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -476,10 +476,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 389,
+						"x": 373.37022362535504,
 						"y": 812,
-						"width": 154,
-						"height": 92,
+						"width": 122.74044725071009,
+						"height": 73.3254619939307,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -505,10 +505,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 708,
+						"x": 692.370223625355,
 						"y": 812,
-						"width": 154,
-						"height": 92,
+						"width": 122.74044725071009,
+						"height": 73.3254619939307,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -534,10 +534,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 885,
+						"x": 869.370223625355,
 						"y": 812,
-						"width": 154,
-						"height": 92,
+						"width": 122.74044725071009,
+						"height": 73.3254619939307,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -563,10 +563,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1214,
+						"x": 1230.5504162635254,
 						"y": 261,
-						"width": 154,
-						"height": 92,
+						"width": 120.89916747294902,
+						"height": 72.22547667215136,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -592,10 +592,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1338,
+						"x": 1354.5504162635254,
 						"y": 261,
-						"width": 154,
-						"height": 92,
+						"width": 120.89916747294902,
+						"height": 72.22547667215136,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -621,10 +621,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1467,
+						"x": 1483.5504162635254,
 						"y": 261,
-						"width": 154,
-						"height": 92,
+						"width": 120.89916747294902,
+						"height": 72.22547667215136,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -932,7 +932,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
-						"initial-frame": 3,
+						"initial-frame": 17,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -941,11 +941,11 @@
 					"behaviors": {},
 					"world": {
 						"x": 375,
-						"y": 431,
-						"width": 300,
-						"height": 233,
-						"originX": 0.5,
-						"originY": 1,
+						"y": 235,
+						"width": 376,
+						"height": 376,
+						"originX": 0.5146276595744681,
+						"originY": 0.49069148936170215,
 						"color": [
 							1,
 							1,
@@ -961,7 +961,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
-						"initial-frame": 3,
+						"initial-frame": 13,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -969,12 +969,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1225,
-						"y": 996,
-						"width": 300,
-						"height": 233,
-						"originX": 0.5,
-						"originY": 1,
+						"x": 1150,
+						"y": 1179,
+						"width": 310,
+						"height": 237,
+						"originX": 0.37813637403548184,
+						"originY": 1.6279693242139648,
 						"color": [
 							1,
 							1,
@@ -1446,6 +1446,93 @@
 						"height": 79,
 						"originX": 0.5,
 						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dekorasi",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 12,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 170,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1032,
+						"y": 457,
+						"width": 94,
+						"height": 62,
+						"originX": 0.46459273586933164,
+						"originY": 1.4525201612903225,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dekorasi",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 12,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 315,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 957,
+						"y": 993,
+						"width": -94,
+						"height": 62,
+						"originX": 0.46459273586933164,
+						"originY": 1.4525201612903225,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dekorasi",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 12,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 316,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1774,
+						"y": 330,
+						"width": 94,
+						"height": 62,
+						"originX": 0.46459273586933164,
+						"originY": 1.4525201612903225,
 						"color": [
 							1,
 							1,
