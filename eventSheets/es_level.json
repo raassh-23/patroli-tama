@@ -2566,6 +2566,43 @@
 									"isOrBlock": true
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "vehicle",
+									"sid": 360867549894789,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "cekMelanggar",
+									"sid": 630477573361225,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 198644063499669,
+									"parameters": {
+										"instance-variable": "melanggar",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 542277174129368
 						}
 					]
 				}
@@ -4651,9 +4688,9 @@
 						{
 							"id": "go-to-layout-by-name",
 							"objectClass": "System",
-							"sid": 807803260054338,
+							"sid": 590134258385828,
 							"parameters": {
-								"layout": "\"level\"&curLevel+1"
+								"layout": "curLevel < 8 ? \"level\"&curLevel+1 : \"LevelSelect\""
 							}
 						}
 					],

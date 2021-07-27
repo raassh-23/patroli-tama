@@ -2,26 +2,34 @@ import vehicles from "./vehiclesData.js";
 import { randomInt } from './commonFunctions.js';
 
 function checkTurn(vehicle, turnCheck) {
+	console.log("vehicle uid " + vehicle.uid);
+	
 	const turnArray = turnCheck.instVars.turnAngle
-		.split('|').map(str => str.split(','));
-
+		.split('|').map((str) => {
+			const arr = str.split(',');
+			
+			return arr.map(num => parseInt(num));
+		});
+	
+	console.log(turnArray);
+	
 	const curAngle = vehicle.instVars.currentAngle;
 	let pelanggaran = vehicle.instVars.pelanggaran == 1 
 						|| vehicle.instVars.pelanggaran == 5 
 						? vehicle.instVars.pelanggaran : 0;
 
-	console.log(curAngle, pelanggaran);
+	console.table({curAngle, pelanggaran});
 
 	const turnable = turnArray.filter(val => val[0] == pelanggaran && val[1] == curAngle);
+	
+	console.log(turnable);
 
-	const rand = Math.floor(Math.random() * turnArray.length);
+	const [, , targetAngle, targetX, targetY] = turnable[randomInt(0, turnable.length - 1)];
 
-	const [, , target, targetX, targetY] = turnable[rand];
+	console.table({targetAngle, targetX, targetY});
 
-	console.table(target, targetX, targetY);
-
-	if (target != curAngle) {
-		vehicle.instVars.targetAngle = target;
+	if (targetAngle != curAngle) {
+		vehicle.instVars.targetAngle = targetAngle;
 		vehicle.instVars.targetTurnX = targetX;
 		vehicle.instVars.targetTurnY = targetY;
 		vehicle.instVars.turningId = turnCheck.instVars.id;

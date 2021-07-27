@@ -25,6 +25,15 @@
 					}
 				},
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 227009274691488,
+					"parameters": {
+						"layer": "\"Credit\"",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "pin-to-object-properties",
 					"objectClass": "settingPin",
 					"sid": 796942395997400,
@@ -46,6 +55,21 @@
 					"behaviorType": "Pin",
 					"parameters": {
 						"pin-to": "settingPanel",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "CreditsButton",
+					"sid": 963432198432011,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "CreditsPanel",
 						"x": true,
 						"y": true,
 						"angle": false,
@@ -227,6 +251,31 @@
 						{
 							"callFunction": "playUITap",
 							"sid": 229497430436084
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 632546516506317,
+							"parameters": {
+								"layer": "\"Credit\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "CreditsPanel",
+							"sid": 375074445595770,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveIn\"",
+								"property": "offsetY",
+								"end-value": "540",
+								"time": "0.5",
+								"ease": "easeoutcubic",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
 						}
 					],
 					"sid": 520579031234210
@@ -758,6 +807,89 @@
 							"sid": 469724023600016
 						}
 					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 353279682740141,
+					"parameters": {
+						"object": "CreditsButton"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 681470735209294,
+					"parameters": {
+						"layer": "\"Credit\""
+					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "CreditsPanel",
+					"sid": 118308324966710,
+					"behaviorType": "Tween",
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 305714767800760,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "settingButton",
+							"sid": 977791117044157,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 828350478945816
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "CreditsPanel",
+							"sid": 187676347653653,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveOut\"",
+								"property": "offsetY",
+								"end-value": "-500",
+								"time": "0.5",
+								"ease": "easeincubic",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 385576996396225
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 272588197592880,
+							"parameters": {
+								"layer": "\"Credit\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 729601518150908
 				}
 			]
 		}

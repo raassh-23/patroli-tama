@@ -152,7 +152,6 @@
 			"Touch",
 			"turnCheck",
 			"intersection",
-			"Dekorasi1",
 			"Keyboard",
 			"background",
 			"motorbike",
@@ -172,7 +171,8 @@
 			"trafficLight",
 			"trafficLightCollision",
 			"cekMelanggar",
-			"Dekorasi2"
+			"CreditsButton",
+			"CreditsPanel"
 		],
 		"subfolders": [
 			{
@@ -287,7 +287,8 @@
 			{
 				"items": [
 					"jalan1",
-					"rumput1"
+					"rumput1",
+					"Dekorasi1"
 				],
 				"subfolders": [],
 				"name": "stage1"
@@ -295,7 +296,8 @@
 			{
 				"items": [
 					"jalan2",
-					"rumput2"
+					"rumput2",
+					"Dekorasi2"
 				],
 				"subfolders": [],
 				"name": "stage2"
@@ -334,7 +336,9 @@
 					"Level3",
 					"Level4",
 					"Level5",
-					"Level6"
+					"Level6",
+					"Level7",
+					"Level8"
 				],
 				"subfolders": [],
 				"name": "levels"
@@ -365,7 +369,9 @@
 					"Es_Level3",
 					"Es_Level4",
 					"Es_Level5",
-					"Es_Level6"
+					"Es_Level6",
+					"Es_Level7",
+					"Es_Level8"
 				],
 				"subfolders": [],
 				"name": "levels"
