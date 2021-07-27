@@ -278,7 +278,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -307,7 +307,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -336,7 +336,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -365,7 +365,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -394,7 +394,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -423,7 +423,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -452,7 +452,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -481,7 +481,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -510,7 +510,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -539,7 +539,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -568,7 +568,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -597,7 +597,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -626,7 +626,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -655,7 +655,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -684,7 +684,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -713,7 +713,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -798,7 +798,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -827,7 +827,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1489,7 +1489,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1518,7 +1518,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1547,7 +1547,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1576,7 +1576,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1605,7 +1605,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1700,7 +1700,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1729,7 +1729,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1758,7 +1758,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1787,7 +1787,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",

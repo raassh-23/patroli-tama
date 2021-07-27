@@ -56,28 +56,28 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 499561078586112,
+					"sid": 516422928812218,
 					"parameters": {
 						"value": "2",
-						"weight": "15"
+						"weight": "10"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 919543228414547,
+					"sid": 240503524486618,
 					"parameters": {
 						"value": "3",
-						"weight": "15"
+						"weight": "10"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 146626901278667,
+					"sid": 617853118295765,
 					"parameters": {
 						"value": "4",
-						"weight": "10"
+						"weight": "20"
 					}
 				},
 				{

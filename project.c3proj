@@ -152,7 +152,7 @@
 			"Touch",
 			"turnCheck",
 			"intersection",
-			"Dekorasi",
+			"Dekorasi1",
 			"Keyboard",
 			"background",
 			"motorbike",
@@ -171,7 +171,8 @@
 			"AdvancedRandom",
 			"trafficLight",
 			"trafficLightCollision",
-			"cekMelanggar"
+			"cekMelanggar",
+			"Dekorasi2"
 		],
 		"subfolders": [
 			{

@@ -117,7 +117,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -435,7 +435,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -464,7 +464,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -493,7 +493,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -522,7 +522,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -551,7 +551,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -580,7 +580,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -609,7 +609,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -638,7 +638,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -667,7 +667,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -696,7 +696,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -725,7 +725,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -754,7 +754,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -783,7 +783,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -812,7 +812,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -841,7 +841,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -870,7 +870,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -899,7 +899,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -928,7 +928,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -957,7 +957,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -986,7 +986,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1071,7 +1071,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1100,7 +1100,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1378,7 +1378,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1407,7 +1407,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1436,7 +1436,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1465,7 +1465,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1494,7 +1494,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1523,7 +1523,7 @@
 					}
 				},
 				{
-					"type": "Dekorasi",
+					"type": "Dekorasi1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -4106,6 +4106,102 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 398,
+					"instanceVariables": {
+						"turnAngle": "0, 180, 270, 1220, 1760",
+						"id": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1531,
+						"y": 1906,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 399,
+					"instanceVariables": {
+						"turnAngle": "0, 180, 270, 1220, 1760",
+						"id": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1274,
+						"y": 1986,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 403,
+					"instanceVariables": {
+						"turnAngle": "0, 180, 270, 1220, 1760",
+						"id": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1379,
+						"y": 1832,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}
