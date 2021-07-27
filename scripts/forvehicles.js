@@ -5,11 +5,7 @@ function checkTurn(vehicle, turnCheck) {
 	console.log("vehicle uid " + vehicle.uid);
 	
 	const turnArray = turnCheck.instVars.turnAngle
-		.split('|').map((str) => {
-			const arr = str.split(',');
-			
-			return arr.map(num => parseInt(num));
-		});
+		.split('|').map((str) => str.split(',').map(num => parseInt(num)));
 	
 	console.log(turnArray);
 	

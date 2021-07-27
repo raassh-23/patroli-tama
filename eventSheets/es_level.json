@@ -3239,6 +3239,24 @@
 						{
 							"id": "layer-is-visible",
 							"objectClass": "System",
+							"sid": 940078469456493,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 374140424473365,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
 							"sid": 517915456129989,
 							"parameters": {
 								"layer": "\"pilihanPelanggaran\""
@@ -3294,6 +3312,42 @@
 								"comparison": 5,
 								"speed": "10"
 							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 681947152395288,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 488002988859418,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 367262075996501,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 483007098716384,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -3334,6 +3388,42 @@
 								"comparison": 2,
 								"speed": "10"
 							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 837117669362220,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 644757034527638,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 459933432188268,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 383087862351589,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -3382,6 +3472,71 @@
 						}
 					],
 					"sid": 469968632413111
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 670780686308477,
+							"parameters": {
+								"layer": "\"paused\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 309467441209132,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 602986416912382,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 547369300881873,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "camera",
+							"sid": 693577249016531,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 347039713882966,
+							"parameters": {
+								"x": "scrollx",
+								"y": "scrolly"
+							}
+						},
+						{
+							"id": "unpin",
+							"objectClass": "pinpoint",
+							"sid": 156060935647758,
+							"behaviorType": "Pin"
+						}
+					],
+					"sid": 605682933245635,
+					"isOrBlock": true
 				}
 			],
 			"sid": 412261937616342

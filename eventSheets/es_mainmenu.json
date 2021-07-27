@@ -154,6 +154,15 @@
 						"layer": "\"setting\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 734779672938917,
+					"parameters": {
+						"layer": "\"Credit\""
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [],
