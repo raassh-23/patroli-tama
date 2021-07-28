@@ -2022,6 +2022,109 @@
 						}
 					],
 					"sid": 538546530280082
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 188788432596624,
+							"parameters": {
+								"instance-variable": "berhenti"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "vehicle",
+							"sid": 404257894744331,
+							"parameters": {
+								"instance-variable": "speed",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 270800334408877,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "vehicle",
+									"sid": 939252623206404,
+									"parameters": {
+										"comparison": 2,
+										"x-co-ordinate": "0 - Self.Width/4"
+									}
+								},
+								{
+									"id": "compare-x",
+									"objectClass": "vehicle",
+									"sid": 194990779449337,
+									"parameters": {
+										"comparison": 4,
+										"x-co-ordinate": "LayoutWidth + Self.Width/4"
+									}
+								},
+								{
+									"id": "compare-y",
+									"objectClass": "vehicle",
+									"sid": 392297575096014,
+									"parameters": {
+										"comparison": 4,
+										"y-co-ordinate": "LayoutHeight + Self.Height/4"
+									}
+								},
+								{
+									"id": "compare-y",
+									"objectClass": "vehicle",
+									"sid": 461396391068411,
+									"parameters": {
+										"comparison": 2,
+										"y-co-ordinate": "0 - Self.Height/4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "vehicle",
+									"sid": 126941792806636
+								}
+							],
+							"sid": 960820579624496,
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 272454051995535,
+							"parameters": {
+								"instance-variable": "berhenti"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "vehicle",
+							"sid": 830272429189714,
+							"parameters": {
+								"instance-variable": "speed",
+								"value": "TopSpeed"
+							}
+						}
+					],
+					"sid": 375516995695762
 				}
 			]
 		},
@@ -2612,78 +2715,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "vehicle",
-					"sid": 188788432596624,
-					"parameters": {
-						"instance-variable": "berhenti"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "vehicle",
-					"sid": 404257894744331,
-					"parameters": {
-						"instance-variable": "speed",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 270800334408877,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-outside-layout",
-							"objectClass": "vehicle",
-							"sid": 141675265809246
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "vehicle",
-							"sid": 126941792806636
-						}
-					],
-					"sid": 960820579624496,
-					"isOrBlock": true
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "vehicle",
-					"sid": 272454051995535,
-					"parameters": {
-						"instance-variable": "berhenti"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "vehicle",
-					"sid": 830272429189714,
-					"parameters": {
-						"instance-variable": "speed",
-						"value": "TopSpeed"
-					}
-				}
-			],
-			"sid": 375516995695762
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "vehicle",
 					"sid": 826089368272064,
@@ -3220,6 +3251,16 @@
 					"text": "The Pinpoint Object is needed for the orientation of the movement. It is pinned to the Camera, which remains in the center of the screen, so the distance between your finger and the Pinpoint stays the same while moving."
 				},
 				{
+					"eventType": "variable",
+					"name": "touchID",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 330311668681477
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -3262,6 +3303,16 @@
 								"layer": "\"pilihanPelanggaran\""
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 267951160692070,
+							"parameters": {
+								"variable": "touchID",
+								"comparison": 0,
+								"value": "-1"
+							}
 						}
 					],
 					"actions": [
@@ -3292,6 +3343,15 @@
 								"pin-to": "camera",
 								"mode": "position-only"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 268493406511024,
+							"parameters": {
+								"variable": "touchID",
+								"value": "Touch.TouchIndex"
+							}
 						}
 					],
 					"sid": 513411644631060
@@ -3306,9 +3366,9 @@
 						{
 							"id": "compare-touch-speed",
 							"objectClass": "Touch",
-							"sid": 366038966530152,
+							"sid": 518789418576620,
 							"parameters": {
-								"touch-index": "0",
+								"touch-index": "touchID",
 								"comparison": 5,
 								"speed": "10"
 							}
@@ -3382,9 +3442,9 @@
 						{
 							"id": "compare-touch-speed",
 							"objectClass": "Touch",
-							"sid": 712450860537149,
+							"sid": 806305552884269,
 							"parameters": {
-								"touch-index": "0",
+								"touch-index": "touchID",
 								"comparison": 2,
 								"speed": "10"
 							}
@@ -3507,6 +3567,14 @@
 							"parameters": {
 								"layer": "\"pilihanPelanggaran\""
 							}
+						},
+						{
+							"id": "on-nth-touch-end",
+							"objectClass": "Touch",
+							"sid": 758862953919322,
+							"parameters": {
+								"touch-number": "touchID"
+							}
 						}
 					],
 					"actions": [
@@ -3533,6 +3601,15 @@
 							"objectClass": "pinpoint",
 							"sid": 156060935647758,
 							"behaviorType": "Pin"
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 932445534710224,
+							"parameters": {
+								"variable": "touchID",
+								"value": "-1"
+							}
 						}
 					],
 					"sid": 605682933245635,
