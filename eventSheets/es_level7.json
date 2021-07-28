@@ -56,55 +56,55 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 781307757040838,
+					"sid": 764088013103058,
 					"parameters": {
 						"value": "2",
-						"weight": "15"
+						"weight": "10"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 814621970673926,
+					"sid": 641308689022459,
 					"parameters": {
 						"value": "3",
+						"weight": "10"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 966560672618430,
+					"parameters": {
+						"value": "4",
 						"weight": "15"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 658336263704588,
-					"parameters": {
-						"value": "4",
-						"weight": "10"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 601958097799138,
+					"sid": 714828896429718,
 					"parameters": {
 						"value": "5",
-						"weight": "10"
+						"weight": "15"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 826847327808183,
+					"sid": 698152190217889,
 					"parameters": {
 						"variable": "timeLimit",
-						"value": "120"
+						"value": "130"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 973477359028803,
+					"sid": 637558931965120,
 					"parameters": {
 						"variable": "goals",
-						"value": "\"50|85|110\""
+						"value": "\"75|100|125\""
 					}
 				},
 				{
@@ -281,10 +281,10 @@
 						{
 							"id": "start-timer",
 							"objectClass": "levelTimer",
-							"sid": 626132178372830,
+							"sid": 243524375579269,
 							"behaviorType": "Timer",
 							"parameters": {
-								"duration": "random(1,3)",
+								"duration": "random(1,2)",
 								"type": "once",
 								"tag": "\"spawnVehicle\""
 							}
@@ -338,10 +338,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
-					"sid": 801643563655079,
+					"sid": 492159198300944,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "random(2,3)",
+						"duration": "random(1,2)",
 						"type": "once",
 						"tag": "\"spawnVehicle\""
 					}
@@ -560,10 +560,10 @@
 								{
 									"id": "start-timer",
 									"objectClass": "levelTimer",
-									"sid": 524543198605026,
+									"sid": 994467997676814,
 									"behaviorType": "Timer",
 									"parameters": {
-										"duration": "random(1,3)",
+										"duration": "random(1,2)",
 										"type": "once",
 										"tag": "\"spawnVehicle\""
 									}

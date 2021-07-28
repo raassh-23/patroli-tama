@@ -7417,6 +7417,270 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 776,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 503,
+						"y": 1663,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 782,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 656,
+						"y": 1662,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 783,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3969,
+						"y": 1665,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 784,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4122,
+						"y": 1664,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 785,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 4
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2316,
+						"y": 1756,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1025,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 4
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2320,
+						"y": 1597,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1026,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 7
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2307,
+						"y": 2898,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1027,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"id": 7
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2311,
+						"y": 2739,
+						"width": 247.119106,
+						"height": 99.11910599999999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 611328367447831,

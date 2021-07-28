@@ -83,19 +83,19 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 136599098875674,
+					"sid": 312460410175488,
 					"parameters": {
 						"variable": "timeLimit",
-						"value": "100"
+						"value": "90"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 202763216830879,
+					"sid": 837267400949612,
 					"parameters": {
 						"variable": "goals",
-						"value": "\"50|65|85\""
+						"value": "\"50|60|80\""
 					}
 				},
 				{
