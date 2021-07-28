@@ -4033,6 +4033,15 @@
 								"variable": "sfx",
 								"value": "round(pauseBar.Width/281* 100)"
 							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 957966703620828,
+							"parameters": {
+								"key": "\"settings\"",
+								"value": "str(music&\"|\"&sfx&\"|\"&lang)"
+							}
 						}
 					],
 					"sid": 189887635893029
@@ -4059,6 +4068,15 @@
 							"parameters": {
 								"variable": "music",
 								"value": "round(pauseBar.Width/281* 100)"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 269411443738298,
+							"parameters": {
+								"key": "\"settings\"",
+								"value": "str(music&\"|\"&sfx&\"|\"&lang)"
 							}
 						},
 						{
@@ -4606,6 +4624,15 @@
 							"parameters": {
 								"x": "curLevel+1",
 								"value": "0"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 660460078005970,
+							"parameters": {
+								"key": "\"levels\"",
+								"value": "levels.AsJSON"
 							}
 						}
 					],

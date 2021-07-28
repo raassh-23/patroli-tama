@@ -503,6 +503,15 @@
 								"variable": "sfx",
 								"value": "round(settingBar.Width/314 * 100)"
 							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 466988020509185,
+							"parameters": {
+								"key": "\"settings\"",
+								"value": "str(music&\"|\"&sfx&\"|\"&lang)"
+							}
 						}
 					],
 					"sid": 834210960878233
@@ -529,6 +538,15 @@
 							"parameters": {
 								"variable": "music",
 								"value": "round(settingBar.Width/314 * 100)"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 696946460536550,
+							"parameters": {
+								"key": "\"settings\"",
+								"value": "str(music&\"|\"&sfx&\"|\"&lang)"
 							}
 						},
 						{
@@ -565,6 +583,15 @@
 					"parameters": {
 						"variable": "lang",
 						"value": "language"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 444857313038183,
+					"parameters": {
+						"key": "\"settings\"",
+						"value": "str(music&\"|\"&sfx&\"|\"&lang)"
 					}
 				},
 				{
@@ -899,6 +926,115 @@
 						}
 					],
 					"sid": 729601518150908
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 756900990787594,
+					"parameters": {
+						"object": "testButton"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 351954026211793,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "testButton",
+							"sid": 217158986319407,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "clear",
+							"objectClass": "levels",
+							"sid": 288484713624114,
+							"parameters": {
+								"value": "0"
+							}
+						}
+					],
+					"sid": 954276784022522
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "testButton",
+							"sid": 612856009759411,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "clear-storage",
+							"objectClass": "LocalStorage",
+							"sid": 522657137816478
+						},
+						{
+							"id": "set-size",
+							"objectClass": "levels",
+							"sid": 394430126864392,
+							"parameters": {
+								"width": "maxLevel+1",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "levels",
+							"sid": 322401870720639,
+							"parameters": {
+								"value": "-1"
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "levels",
+							"sid": 584345995805627,
+							"parameters": {
+								"x": "0",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "tutorials",
+							"sid": 495258068358126,
+							"parameters": {
+								"width": "4",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "tutorials",
+							"sid": 415541557104007,
+							"parameters": {
+								"value": "0"
+							}
+						}
+					],
+					"sid": 202998180362970
 				}
 			]
 		}

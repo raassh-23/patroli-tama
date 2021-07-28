@@ -253,30 +253,66 @@
 										"comparison": 5,
 										"second-value": "8"
 									}
+								}
+							],
+							"actions": [],
+							"sid": 606264971122356,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 261899358106710,
+											"parameters": {
+												"object": "levelSelectLevels",
+												"expression": "levelSelectLevels.level",
+												"comparison": 0,
+												"value": "levels.CurX"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "levelSelectLevels",
+											"sid": 557419654650626,
+											"parameters": {
+												"frame-number": "5"
+											}
+										}
+									],
+									"sid": 973307278922075
 								},
 								{
-									"id": "pick-by-comparison",
-									"objectClass": "System",
-									"sid": 550973802409284,
-									"parameters": {
-										"object": "levelSelectLevels",
-										"expression": "levelSelectLevels.level",
-										"comparison": 0,
-										"value": "levels.CurX"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 264244878810416,
+											"parameters": {
+												"object": "levelSelectstars",
+												"expression": "levelSelectstars.level",
+												"comparison": 0,
+												"value": "levels.CurX"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "levelSelectstars",
+											"sid": 327148545949971,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 428025239589018
 								}
-							],
-							"actions": [
-								{
-									"id": "set-animation-frame",
-									"objectClass": "levelSelectLevels",
-									"sid": 578633079287128,
-									"parameters": {
-										"frame-number": "5"
-									}
-								}
-							],
-							"sid": 606264971122356
+							]
 						}
 					]
 				}

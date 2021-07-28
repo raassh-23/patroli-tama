@@ -51,13 +51,11 @@
 					}
 				},
 				{
-					"id": "set-animation",
-					"objectClass": "langChangeable",
-					"sid": 429624972266069,
-					"parameters": {
-						"animation": "lang",
-						"from": "current-frame"
-					}
+					"callFunction": "setLanguange",
+					"sid": 539410339143326,
+					"parameters": [
+						"lang"
+					]
 				}
 			],
 			"sid": 806067160315501

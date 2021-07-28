@@ -524,6 +524,15 @@
 									}
 								},
 								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 347006994805002,
+									"parameters": {
+										"key": "\"tutorials\"",
+										"value": "tutorials.AsJSON"
+									}
+								},
+								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
 									"sid": 427430205845852,

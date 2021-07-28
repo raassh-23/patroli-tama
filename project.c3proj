@@ -87,6 +87,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
@@ -172,7 +180,9 @@
 			"trafficLightCollision",
 			"cekMelanggar",
 			"CreditsButton",
-			"CreditsPanel"
+			"CreditsPanel",
+			"LocalStorage",
+			"testButton"
 		],
 		"subfolders": [
 			{

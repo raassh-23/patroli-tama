@@ -61,6 +61,30 @@
 					"objectClass": "logoGemastik",
 					"sid": 927585918648841,
 					"behaviorType": "Fade"
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 822372296506921,
+					"parameters": {
+						"key": "\"levels\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 510622239659572,
+					"parameters": {
+						"key": "\"tutorials\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 784750021684916,
+					"parameters": {
+						"key": "\"settings\""
+					}
 				}
 			],
 			"sid": 695057530824630
@@ -115,6 +139,275 @@
 				}
 			],
 			"sid": 890070213359712
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 608383427957023,
+					"parameters": {
+						"key": "\"levels\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 634271032058783,
+					"parameters": {
+						"key": "\"levels\"",
+						"value": "levels.AsJSON"
+					}
+				}
+			],
+			"sid": 878308338304203
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 456913187112390,
+					"parameters": {
+						"key": "\"tutorials\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 489613902599606,
+					"parameters": {
+						"key": "\"tutorials\"",
+						"value": "tutorials.AsJSON"
+					}
+				}
+			],
+			"sid": 168480434074341
+		},
+		{
+			"eventType": "comment",
+			"text": "music|sfx|lang"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 855336797292909,
+					"parameters": {
+						"key": "\"settings\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 238484778304259,
+					"parameters": {
+						"key": "\"settings\"",
+						"value": "\"100|100|id\""
+					}
+				}
+			],
+			"sid": 273503889853488
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 473696986835199,
+					"parameters": {
+						"key": "\"levels\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 418433735351166,
+					"parameters": {
+						"key": "\"levels\""
+					}
+				}
+			],
+			"sid": 463293580235398
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 479480314645036,
+					"parameters": {
+						"key": "\"tutorials\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 692042086069711,
+					"parameters": {
+						"key": "\"tutorials\""
+					}
+				}
+			],
+			"sid": 117513502915479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 246667120587708,
+					"parameters": {
+						"key": "\"settings\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 449987894813351,
+					"parameters": {
+						"key": "\"settings\""
+					}
+				}
+			],
+			"sid": 535574453790635
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 184497427412156,
+					"parameters": {
+						"key": "\"levels\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "levels",
+					"sid": 974246503093116,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 178642929776125,
+					"parameters": {
+						"type": "log",
+						"message": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 988099396911416
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 110886653103972,
+					"parameters": {
+						"key": "\"tutorials\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "tutorials",
+					"sid": 385104001869608,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 389469860709095,
+					"parameters": {
+						"type": "log",
+						"message": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 118909889329679
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 965164649613099,
+					"parameters": {
+						"key": "\"settings\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 281779170616011,
+					"parameters": {
+						"variable": "music",
+						"value": "int(tokenat(LocalStorage.ItemValue, 0, \"|\"))"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 383467177552000,
+					"parameters": {
+						"variable": "sfx",
+						"value": "int(tokenat(LocalStorage.ItemValue, 1, \"|\"))"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 752449086322524,
+					"parameters": {
+						"variable": "lang",
+						"value": "tokenat(LocalStorage.ItemValue, 2, \"|\")"
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 654990473396970,
+					"parameters": {
+						"type": "log",
+						"message": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 414755620461017
 		}
 	],
 	"sid": 598470982331719
