@@ -24,6 +24,7 @@
 		"tutorialPopup",
 		"storyButton",
 		"storyPopUp",
-		"helpIcons"
+		"helpIcons",
+		"CreditsPanel"
 	]
 }
