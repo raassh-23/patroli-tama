@@ -10,6 +10,7 @@
 		"levelTimer",
 		"motorbike",
 		"motorbikeWithoutHelm",
-		"motorbikeWithoutLight"
+		"motorbikeWithoutLight",
+		"trafficLightCollision"
 	]
 }
