@@ -322,7 +322,7 @@
 			"OtherVehicle",
 			"Zorder",
 			"pelanggaranPin",
-			"timescaled",
+			"TimeScaledPaused",
 			"settingPin",
 			"langChangeable",
 			"levelTween",
@@ -331,7 +331,8 @@
 			"finishedPin",
 			"failedPin",
 			"Tutorial",
-			"buttons"
+			"buttons",
+			"TimeScaledPelanggaran"
 		],
 		"subfolders": []
 	},

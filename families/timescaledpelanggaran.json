@@ -1,16 +1,15 @@
 {
-	"name": "timescaled",
+	"name": "TimeScaledPelanggaran",
 	"plugin-id": "Sprite",
-	"sid": 969299508080320,
+	"sid": 996012245887388,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
 		"car",
-		"levelTimer",
-		"motorbike",
-		"motorbikeWithoutHelm",
+		"trafficLightCollision",
 		"motorbikeWithoutLight",
-		"trafficLightCollision"
+		"motorbike",
+		"motorbikeWithoutHelm"
 	]
 }

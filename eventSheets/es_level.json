@@ -321,7 +321,7 @@
 							"objectClass": "System",
 							"sid": 645079701978140,
 							"parameters": {
-								"object": "timescaled"
+								"object": "TimeScaledPaused"
 							}
 						}
 					],
@@ -331,7 +331,7 @@
 							"objectClass": "System",
 							"sid": 882961966445388,
 							"parameters": {
-								"object": "timescaled",
+								"object": "TimeScaledPaused",
 								"time-scale": "1"
 							}
 						}
@@ -993,7 +993,7 @@
 							"objectClass": "System",
 							"sid": 738059366742619,
 							"parameters": {
-								"object": "timescaled"
+								"object": "TimeScaledPaused"
 							}
 						}
 					],
@@ -1003,8 +1003,18 @@
 							"objectClass": "System",
 							"sid": 623354779875442,
 							"parameters": {
-								"object": "timescaled",
+								"object": "TimeScaledPelanggaran",
 								"time-scale": "0"
+							}
+						},
+						{
+							"id": "pause-resume-timer",
+							"objectClass": "levelTimer",
+							"sid": 383647052455517,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"spawnVehicle\"",
+								"state": "paused"
 							}
 						}
 					],
@@ -1136,7 +1146,7 @@
 							"objectClass": "System",
 							"sid": 856352971053921,
 							"parameters": {
-								"object": "timescaled"
+								"object": "TimeScaledPaused"
 							}
 						}
 					],
@@ -1146,8 +1156,18 @@
 							"objectClass": "System",
 							"sid": 574404536648329,
 							"parameters": {
-								"object": "timescaled",
+								"object": "TimeScaledPelanggaran",
 								"time-scale": "1"
+							}
+						},
+						{
+							"id": "pause-resume-timer",
+							"objectClass": "levelTimer",
+							"sid": 804299767752110,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"spawnVehicle\"",
+								"state": "resumed"
 							}
 						}
 					],
@@ -1605,7 +1625,7 @@
 									"objectClass": "System",
 									"sid": 501519839531720,
 									"parameters": {
-										"object": "timescaled",
+										"object": "TimeScaledPaused",
 										"time-scale": "0"
 									}
 								},
@@ -4497,7 +4517,7 @@
 							"objectClass": "System",
 							"sid": 312547105976451,
 							"parameters": {
-								"object": "timescaled"
+								"object": "TimeScaledPaused"
 							}
 						}
 					],
@@ -4507,7 +4527,7 @@
 							"objectClass": "System",
 							"sid": 286155901367723,
 							"parameters": {
-								"object": "timescaled",
+								"object": "TimeScaledPaused",
 								"time-scale": "0"
 							}
 						}
@@ -4573,7 +4593,7 @@
 									"objectClass": "System",
 									"sid": 620368306048505,
 									"parameters": {
-										"object": "timescaled"
+										"object": "TimeScaledPaused"
 									}
 								}
 							],
@@ -4583,7 +4603,7 @@
 									"objectClass": "System",
 									"sid": 814574840253023,
 									"parameters": {
-										"object": "timescaled",
+										"object": "TimeScaledPaused",
 										"time-scale": "1"
 									}
 								}
@@ -4717,7 +4737,7 @@
 							"objectClass": "System",
 							"sid": 708181631888427,
 							"parameters": {
-								"object": "timescaled"
+								"object": "TimeScaledPaused"
 							}
 						}
 					],
@@ -4727,7 +4747,7 @@
 							"objectClass": "System",
 							"sid": 858252879238269,
 							"parameters": {
-								"object": "timescaled",
+								"object": "TimeScaledPaused",
 								"time-scale": "0"
 							}
 						}

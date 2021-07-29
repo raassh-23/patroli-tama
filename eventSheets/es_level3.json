@@ -229,7 +229,7 @@
 									"objectClass": "System",
 									"sid": 803919428172504,
 									"parameters": {
-										"object": "timescaled",
+										"object": "TimeScaledPaused",
 										"time-scale": "0"
 									}
 								}
@@ -588,7 +588,7 @@
 									"objectClass": "System",
 									"sid": 960277077320438,
 									"parameters": {
-										"object": "timescaled",
+										"object": "TimeScaledPaused",
 										"time-scale": "1"
 									}
 								},
