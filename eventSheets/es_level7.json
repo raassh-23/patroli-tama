@@ -373,6 +373,15 @@
 					}
 				},
 				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "tutorialButton",
+					"sid": 597797656549836,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "is-visible",
 					"objectClass": "tutorialButton",
 					"sid": 121851786097543
@@ -405,7 +414,49 @@
 					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "tutorialButton",
+					"sid": 768303092434750,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "tutorialButton",
+					"sid": 570274441548482,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 481391070758648,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "tutorialButton",
+					"sid": 901346136993966,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 621522359583524,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 104538928827962,
 			"children": [
 				{
@@ -583,6 +634,22 @@
 							"sid": 878070114414770
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "tutorialButton",
+							"sid": 764267206431469,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 525805188940290
 				}
 			]
 		}

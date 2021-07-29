@@ -141,7 +141,7 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
-					"sid": 388413602281678,
+					"sid": 113043349876832,
 					"parameters": {
 						"object": "menuButton"
 					}
@@ -163,9 +163,60 @@
 						"layer": "\"Credit\""
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "menuButton",
+					"sid": 252305012834359,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "menuButton",
+					"sid": 612484992649222,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "menuButton",
+					"sid": 484361849462186,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 357589974274247,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "menuButton",
+					"sid": 477830877265365,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 503626864963851,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 654726487125040,
 			"children": [
 				{
@@ -288,6 +339,22 @@
 						}
 					],
 					"sid": 520579031234210
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "menuButton",
+							"sid": 392605572952496,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 643853396215125
 				}
 			]
 		},
@@ -316,9 +383,60 @@
 					"sid": 667279089819824,
 					"behaviorType": "Tween",
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "settingButton",
+					"sid": 817098614179745,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "settingButton",
+					"sid": 912912932959286,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "settingButton",
+					"sid": 439735166600213,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 371325165227593,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "settingButton",
+					"sid": 566363418266766,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 549634097185093,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 634095345536515,
 			"children": [
 				{
@@ -427,6 +545,22 @@
 						}
 					],
 					"sid": 753719077829351
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "settingButton",
+							"sid": 482574676630097,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 625798717056805
 				}
 			]
 		},
@@ -871,9 +1005,60 @@
 					"sid": 118308324966710,
 					"behaviorType": "Tween",
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "CreditsButton",
+					"sid": 977931860523652,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "CreditsButton",
+					"sid": 170854740786718,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "CreditsButton",
+					"sid": 482018021070054,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 542081125983272,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "CreditsButton",
+					"sid": 650702407378292,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 220368822317362,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 305714767800760,
 			"children": [
 				{
@@ -881,7 +1066,7 @@
 					"conditions": [
 						{
 							"id": "compare-animation-frame",
-							"objectClass": "settingButton",
+							"objectClass": "CreditsButton",
 							"sid": 977791117044157,
 							"parameters": {
 								"comparison": 0,
@@ -926,6 +1111,22 @@
 						}
 					],
 					"sid": 729601518150908
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "CreditsButton",
+							"sid": 445166732220119,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 760840318055842
 				}
 			]
 		},

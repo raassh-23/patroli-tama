@@ -25,9 +25,64 @@
 					"parameters": {
 						"object": "storyButton"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "storyButton",
+					"sid": 840181745089059,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "storyButton",
+					"sid": 148124699100482,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "storyButton",
+					"sid": 623037356097358,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 707836444375679,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "storyButton",
+					"sid": 658708173537382,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 602552801352533,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"callFunction": "playUITap",
+					"sid": 189999164570290
+				}
+			],
 			"sid": 906032474463690,
 			"children": [
 				{
@@ -97,6 +152,89 @@
 						}
 					],
 					"sid": 151941361609998
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "storyButton",
+							"sid": 502588881183337,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 758211016814228
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "storyButton",
+							"sid": 785967054067685,
+							"parameters": {
+								"instance-variable": "touched"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "storyButton",
+							"sid": 257556156861713,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "storyButton",
+							"sid": 205170818685557,
+							"parameters": {
+								"scale": "0.9"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 916546866223893,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "storyButton",
+							"sid": 452718156846234,
+							"parameters": {
+								"scale": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 966073344605624,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "storyButton",
+							"sid": 170439792962130,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 971184149650916
 				}
 			]
 		}

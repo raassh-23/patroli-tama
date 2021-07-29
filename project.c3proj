@@ -330,7 +330,8 @@
 			"pausePin",
 			"finishedPin",
 			"failedPin",
-			"Tutorial"
+			"Tutorial",
+			"buttons"
 		],
 		"subfolders": []
 	},

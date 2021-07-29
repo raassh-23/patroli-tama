@@ -1247,6 +1247,15 @@
 					}
 				},
 				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "pelanggaranButton",
+					"sid": 248734649980573,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
 					"sid": 447695112318958,
@@ -1290,7 +1299,49 @@
 					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "pelanggaranButton",
+					"sid": 621933487400497,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pelanggaranButton",
+					"sid": 662197950630608,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 457773358134781,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pelanggaranButton",
+					"sid": 817564684412290,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 346285464544625,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 885098668217210,
 			"children": [
 				{
@@ -1673,6 +1724,22 @@
 						}
 					],
 					"sid": 880145318239442
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "pelanggaranButton",
+							"sid": 170439792962130,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 971184149650916
 				}
 			]
 		},
@@ -3845,6 +3912,15 @@
 					}
 				},
 				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "pauseButton",
+					"sid": 756187886847704,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
 					"sid": 166831652220384,
@@ -3878,7 +3954,49 @@
 					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "pauseButton",
+					"sid": 591611479947385,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pauseButton",
+					"sid": 524274129330410,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 953617978531743,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pauseButton",
+					"sid": 774012908797461,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 175583000926600,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 692228721176397,
 			"children": [
 				{
@@ -4016,6 +4134,22 @@
 						}
 					],
 					"sid": 507934353279156
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "pauseButton",
+							"sid": 499819815534827,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 165130143406457
 				}
 			]
 		},
@@ -4177,6 +4311,15 @@
 					}
 				},
 				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "levelUIButton",
+					"sid": 874572636009309,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
 					"sid": 275235784434446,
@@ -4204,7 +4347,49 @@
 					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "levelUIButton",
+					"sid": 440180084076300,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "levelUIButton",
+					"sid": 901918981121949,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 920955463647246,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "levelUIButton",
+					"sid": 852110097598661,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 212240245143508,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 892508096022374,
 			"children": [
 				{
@@ -4215,6 +4400,15 @@
 							"objectClass": "pausePanel",
 							"sid": 579261615552932,
 							"behaviorType": "Tween",
+							"isInverted": true
+						},
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 852116270107465,
+							"parameters": {
+								"object": "vehicle"
+							},
 							"isInverted": true
 						},
 						{
@@ -4238,6 +4432,22 @@
 						}
 					],
 					"sid": 685329114589193
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "levelUIButton",
+							"sid": 808467895358832,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 485527642643388
 				}
 			]
 		},
@@ -4796,9 +5006,60 @@
 					"sid": 948614534981632,
 					"behaviorType": "Tween",
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "levelFailedButton",
+					"sid": 797992253725811,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "levelFailedButton",
+					"sid": 395639960542465,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "levelFailedButton",
+					"sid": 185776863160648,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 676684884679537,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "levelFailedButton",
+					"sid": 104152867368634,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 733198636869858,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 975663185969089,
 			"children": [
 				{
@@ -4855,6 +5116,22 @@
 						}
 					],
 					"sid": 557726745911227
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "levelFailedButton",
+							"sid": 429264583623980,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 870914583888944
 				}
 			]
 		},
@@ -4883,9 +5160,60 @@
 					"sid": 245688320849695,
 					"behaviorType": "Tween",
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "levelFinishedButton",
+					"sid": 710576776285344,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "levelFinishedButton",
+					"sid": 868270405363352,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "levelFinishedButton",
+					"sid": 507612425940727,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 669942274712556,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "levelFinishedButton",
+					"sid": 806009912823759,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 422325352611139,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 815208329229763,
 			"children": [
 				{
@@ -4980,6 +5308,22 @@
 						}
 					],
 					"sid": 114129076837211
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "levelFinishedButton",
+							"sid": 985478204430338,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 418441072203332
 				}
 			]
 		},
@@ -5081,6 +5425,15 @@
 					}
 				},
 				{
+					"id": "compare-animation-frame",
+					"objectClass": "pelanggaranButton",
+					"sid": 445581239470737,
+					"parameters": {
+						"comparison": 0,
+						"number": "2"
+					}
+				},
+				{
 					"id": "layer-is-visible",
 					"objectClass": "System",
 					"sid": 984686995360470,
@@ -5123,36 +5476,35 @@
 					"isInverted": true
 				}
 			],
-			"actions": [],
-			"sid": 570935645102607,
-			"children": [
+			"actions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pelanggaranButton",
-							"sid": 893554516156345,
-							"parameters": {
-								"comparison": 0,
-								"number": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 325067559184103,
-							"parameters": {
-								"layer": "\"help\"",
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 590746125832571
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 426548643192392,
+					"parameters": {
+						"layer": "\"help\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "pelanggaranButton",
+					"sid": 816956685598862,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pelanggaranButton",
+					"sid": 217094335547512,
+					"parameters": {
+						"scale": "0.9"
+					}
 				}
-			]
+			],
+			"sid": 570935645102607
 		},
 		{
 			"eventType": "block",
@@ -5184,6 +5536,23 @@
 					"parameters": {
 						"layer": "\"help\"",
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "pelanggaranButton",
+					"sid": 584638218368247,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "pelanggaranButton",
+					"sid": 780192066875864,
+					"parameters": {
+						"scale": "1"
 					}
 				}
 			],

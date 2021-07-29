@@ -92,18 +92,18 @@
 					],
 					"actions": [
 						{
-							"id": "pin-to-object-properties",
-							"objectClass": "levelSelectstars",
-							"sid": 105572566832491,
-							"behaviorType": "Pin",
+							"id": "add-child",
+							"objectClass": "levelSelectLevels",
+							"sid": 540079466991216,
 							"parameters": {
-								"pin-to": "levelSelectLevels",
-								"x": true,
-								"y": true,
-								"angle": false,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
+								"child": "levelSelectstars",
+								"transform-x": true,
+								"transform-y": true,
+								"transform-w": true,
+								"transform-h": true,
+								"transform-a": true,
+								"transform-z-elevation": false,
+								"destroy-with-parent": false
 							}
 						}
 					],
@@ -480,9 +480,60 @@
 					"sid": 832055204582269,
 					"behaviorType": "Tween",
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "LevelSelectButton",
+					"sid": 915142211284976,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "LevelSelectButton",
+					"sid": 220784504693330,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "LevelSelectButton",
+					"sid": 543400579312022,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 429897682513803,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "LevelSelectButton",
+					"sid": 712301643766887,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 327787389409938,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
 			"sid": 435481380167681,
 			"children": [
 				{
@@ -509,6 +560,15 @@
 							"sid": 910352605122538,
 							"parameters": {
 								"layout": "MainMenu"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "LevelSelectButton",
+							"sid": 618816341053599,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
 							}
 						}
 					],
@@ -564,6 +624,15 @@
 							"parameters": {
 								"frame-number": "showingStage"
 							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "LevelSelectButton",
+							"sid": 159092634479464,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
 						}
 					],
 					"sid": 755260604964513
@@ -618,6 +687,15 @@
 							"parameters": {
 								"frame-number": "showingStage"
 							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "LevelSelectButton",
+							"sid": 562063233057827,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
 						}
 					],
 					"sid": 992823968862090
@@ -643,9 +721,48 @@
 						"comparison": 4,
 						"number": "0"
 					}
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "levelTween",
+					"sid": 934742260076675,
+					"behaviorType": "Tween",
+					"isInverted": true
 				}
 			],
 			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "levelSelectLevels",
+					"sid": 451810077171897,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 390349470651503,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "levelSelectLevels",
+					"sid": 271422114004791,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 525892486001246,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
 				{
 					"callFunction": "playUITap",
 					"sid": 432211712130023
@@ -732,6 +849,16 @@
 						"touch-index": "0",
 						"comparison": 4,
 						"speed": "300"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 305409620987145,
+					"parameters": {
+						"first-value": "Functions.cekButton",
+						"comparison": 0,
+						"second-value": "1"
 					}
 				},
 				{
@@ -886,6 +1013,88 @@
 						}
 					],
 					"sid": 878775539890399
+				}
+			]
+		},
+		{
+			"functionName": "cekButton",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "number",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-function-return-value",
+					"objectClass": "Functions",
+					"sid": 114426111094878,
+					"parameters": {
+						"value": "1"
+					}
+				}
+			],
+			"sid": 981194668042710,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 519400870646265,
+							"parameters": {
+								"name": "\"i\"",
+								"start-index": "1",
+								"end-index": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 713490737696929,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 810802049744870,
+									"parameters": {
+										"object": "LevelSelectButton",
+										"expression": "LevelSelectButton.AnimationFrame",
+										"comparison": 0,
+										"value": "loopindex(\"i\")"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "LevelSelectButton",
+									"sid": 538322933331005,
+									"parameters": {
+										"instance-variable": "touched"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-function-return-value",
+									"objectClass": "Functions",
+									"sid": 515374804660422,
+									"parameters": {
+										"value": "0"
+									}
+								},
+								{
+									"id": "stop-loop",
+									"objectClass": "System",
+									"sid": 681492813876731
+								}
+							],
+							"sid": 307596022682735
+						}
+					]
 				}
 			]
 		}

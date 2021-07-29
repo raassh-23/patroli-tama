@@ -3214,7 +3214,8 @@
 					},
 					"uid": 729,
 					"instanceVariables": {
-						"progress": 0
+						"progress": 0,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {
@@ -3276,7 +3277,8 @@
 					},
 					"uid": 732,
 					"instanceVariables": {
-						"progress": 1
+						"progress": 1,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {
@@ -3338,7 +3340,8 @@
 					},
 					"uid": 737,
 					"instanceVariables": {
-						"progress": 2
+						"progress": 2,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {
@@ -3400,7 +3403,8 @@
 					},
 					"uid": 739,
 					"instanceVariables": {
-						"progress": 3
+						"progress": 3,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {
@@ -3462,7 +3466,8 @@
 					},
 					"uid": 744,
 					"instanceVariables": {
-						"progress": 4
+						"progress": 4,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {

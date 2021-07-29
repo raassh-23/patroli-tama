@@ -74,7 +74,9 @@
 						"live-preview": false
 					},
 					"uid": 48,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 109.4002864273032,
@@ -103,7 +105,9 @@
 						"live-preview": false
 					},
 					"uid": 53,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 968,
@@ -132,7 +136,9 @@
 						"live-preview": false
 					},
 					"uid": 207,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 300,
@@ -492,7 +498,9 @@
 						"live-preview": false
 					},
 					"uid": 58,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -527,7 +535,9 @@
 						"live-preview": false
 					},
 					"uid": 59,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -562,7 +572,9 @@
 						"live-preview": false
 					},
 					"uid": 60,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -851,7 +863,9 @@
 						"live-preview": false
 					},
 					"uid": 403,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {

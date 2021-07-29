@@ -136,7 +136,9 @@
 						"live-preview": false
 					},
 					"uid": 90,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1360,

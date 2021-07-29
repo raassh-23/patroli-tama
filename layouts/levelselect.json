@@ -1428,7 +1428,9 @@
 						"live-preview": false
 					},
 					"uid": 65,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 112.70018358547537,
@@ -1486,7 +1488,9 @@
 						"live-preview": false
 					},
 					"uid": 208,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 67.47324857385911,
@@ -1515,7 +1519,9 @@
 						"live-preview": false
 					},
 					"uid": 209,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1852.526751426141,

@@ -1722,7 +1722,9 @@
 						"live-preview": false
 					},
 					"uid": 269,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {},
 					"world": {
 						"x": 544.2436362374202,
@@ -2030,7 +2032,8 @@
 					},
 					"uid": 19,
 					"instanceVariables": {
-						"pinTarget": 0
+						"pinTarget": 0,
+						"touched": false
 					},
 					"behaviors": {
 						"Pin": {
@@ -2149,7 +2152,8 @@
 					},
 					"uid": 46,
 					"instanceVariables": {
-						"pinTarget": 0
+						"pinTarget": 0,
+						"touched": false
 					},
 					"behaviors": {
 						"Pin": {
@@ -2193,7 +2197,8 @@
 					},
 					"uid": 11,
 					"instanceVariables": {
-						"pinTarget": 0
+						"pinTarget": 0,
+						"touched": false
 					},
 					"behaviors": {
 						"Pin": {
@@ -2512,7 +2517,8 @@
 					},
 					"uid": 329,
 					"instanceVariables": {
-						"progress": 0
+						"progress": 0,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {
@@ -2604,7 +2610,8 @@
 					},
 					"uid": 338,
 					"instanceVariables": {
-						"progress": 3
+						"progress": 3,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {
@@ -2728,7 +2735,8 @@
 					},
 					"uid": 340,
 					"instanceVariables": {
-						"progress": 6
+						"progress": 6,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {
@@ -2790,7 +2798,8 @@
 					},
 					"uid": 342,
 					"instanceVariables": {
-						"progress": 7
+						"progress": 7,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {
@@ -3058,7 +3067,9 @@
 						"live-preview": false
 					},
 					"uid": 276,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -3093,7 +3104,9 @@
 						"live-preview": false
 					},
 					"uid": 277,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -3128,7 +3141,9 @@
 						"live-preview": false
 					},
 					"uid": 278,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -3163,7 +3178,9 @@
 						"live-preview": false
 					},
 					"uid": 279,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -3198,7 +3215,9 @@
 						"live-preview": false
 					},
 					"uid": 280,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -3649,7 +3668,9 @@
 						"live-preview": false
 					},
 					"uid": 294,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -3684,7 +3705,9 @@
 						"live-preview": false
 					},
 					"uid": 295,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -3719,7 +3742,9 @@
 						"live-preview": false
 					},
 					"uid": 296,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -4049,7 +4074,9 @@
 						"live-preview": false
 					},
 					"uid": 304,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
@@ -4084,7 +4111,9 @@
 						"live-preview": false
 					},
 					"uid": 305,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"touched": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {

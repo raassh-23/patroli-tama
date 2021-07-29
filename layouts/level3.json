@@ -2206,7 +2206,8 @@
 					},
 					"uid": 344,
 					"instanceVariables": {
-						"progress": 0
+						"progress": 0,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {
@@ -2268,7 +2269,8 @@
 					},
 					"uid": 725,
 					"instanceVariables": {
-						"progress": 1
+						"progress": 1,
+						"touched": false
 					},
 					"behaviors": {},
 					"world": {

@@ -1,0 +1,28 @@
+{
+	"name": "buttons",
+	"plugin-id": "Sprite",
+	"sid": 565545539928397,
+	"instanceVariables": [
+		{
+			"name": "touched",
+			"type": "boolean",
+			"desc": "",
+			"sid": 419719818476864
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"CreditsButton",
+		"levelFinishedButton",
+		"levelFailedButton",
+		"LevelSelectButton",
+		"menuButton",
+		"levelUIButton",
+		"pelanggaranButton",
+		"pauseButton",
+		"storyButton",
+		"settingButton",
+		"tutorialButton"
+	]
+}
