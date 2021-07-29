@@ -784,11 +784,11 @@
 							}
 						},
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 183803590886506,
+							"id": "compare-at-x",
+							"objectClass": "tutorials",
+							"sid": 939799085706957,
 							"parameters": {
-								"variable": "storyShown",
+								"x": "0",
 								"comparison": 0,
 								"value": "0"
 							}

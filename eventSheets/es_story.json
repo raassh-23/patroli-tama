@@ -2,16 +2,6 @@
 	"name": "Es_Story",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "storyShown",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 774407246519719
-		},
-		{
 			"eventType": "include",
 			"includeSheet": "Es_general"
 		},
@@ -115,15 +105,6 @@
 								"variable": "curLevel",
 								"value": "0"
 							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 573122034858473,
-							"parameters": {
-								"variable": "storyShown",
-								"value": "1"
-							}
 						}
 					],
 					"sid": 779699004039645
@@ -168,73 +149,6 @@
 						}
 					],
 					"sid": 758211016814228
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "storyButton",
-							"sid": 785967054067685,
-							"parameters": {
-								"instance-variable": "touched"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "storyButton",
-							"sid": 257556156861713,
-							"parameters": {
-								"instance-variable": "touched",
-								"value": "true"
-							}
-						},
-						{
-							"id": "set-scale",
-							"objectClass": "storyButton",
-							"sid": 205170818685557,
-							"parameters": {
-								"scale": "0.9"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 916546866223893,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-scale",
-							"objectClass": "storyButton",
-							"sid": 452718156846234,
-							"parameters": {
-								"scale": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 966073344605624,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "storyButton",
-							"sid": 170439792962130,
-							"parameters": {
-								"instance-variable": "touched",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 971184149650916
 				}
 			]
 		}

@@ -85,6 +85,14 @@
 					"parameters": {
 						"key": "\"settings\""
 					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 989418313727599,
+					"parameters": {
+						"key": "\"story\""
+					}
 				}
 			],
 			"sid": 695057530824630
@@ -210,10 +218,10 @@
 				{
 					"id": "set-item",
 					"objectClass": "LocalStorage",
-					"sid": 238484778304259,
+					"sid": 479065771781180,
 					"parameters": {
 						"key": "\"settings\"",
-						"value": "\"100|100|id\""
+						"value": "str(music&\"|\"&sfx&\"|\"&lang)"
 					}
 				}
 			],
@@ -311,15 +319,6 @@
 					"parameters": {
 						"json": "LocalStorage.ItemValue"
 					}
-				},
-				{
-					"id": "log",
-					"objectClass": "Browser",
-					"sid": 178642929776125,
-					"parameters": {
-						"type": "log",
-						"message": "LocalStorage.ItemValue"
-					}
 				}
 			],
 			"sid": 988099396911416
@@ -343,15 +342,6 @@
 					"sid": 385104001869608,
 					"parameters": {
 						"json": "LocalStorage.ItemValue"
-					}
-				},
-				{
-					"id": "log",
-					"objectClass": "Browser",
-					"sid": 389469860709095,
-					"parameters": {
-						"type": "log",
-						"message": "LocalStorage.ItemValue"
 					}
 				}
 			],
@@ -395,15 +385,6 @@
 					"parameters": {
 						"variable": "lang",
 						"value": "tokenat(LocalStorage.ItemValue, 2, \"|\")"
-					}
-				},
-				{
-					"id": "log",
-					"objectClass": "Browser",
-					"sid": 654990473396970,
-					"parameters": {
-						"type": "log",
-						"message": "LocalStorage.ItemValue"
 					}
 				}
 			],
