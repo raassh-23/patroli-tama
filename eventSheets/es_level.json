@@ -2541,6 +2541,74 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "vehicle",
+							"sid": 436124854879791,
+							"parameters": {
+								"object": "intersection"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 631743278447453,
+							"parameters": {
+								"instance-variable": "waiting"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 219752684359397,
+							"parameters": {
+								"instance-variable": "waiting",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 641258540071949
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 641660899390660,
+							"parameters": {
+								"object": "trafficLightCollision"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 578573112471326,
+							"parameters": {
+								"instance-variable": "inTrafficLight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 906719638392555,
+							"parameters": {
+								"instance-variable": "inTrafficLight",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 619690550179749
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
 							"sid": 895023887707460,
 							"parameters": {
 								"object": "trafficLightCollision"
@@ -2621,6 +2689,37 @@
 										}
 									],
 									"sid": 454830536197962
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 805787456308397
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "vehicle",
+											"sid": 347409641063257,
+											"parameters": {
+												"instance-variable": "berhenti",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "vehicle",
+											"sid": 153568839884190,
+											"parameters": {
+												"instance-variable": "inTrafficLight",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 603914917375113
 								}
 							],
 							"isOrBlock": true
@@ -3737,15 +3836,6 @@
 							"parameters": {
 								"x": "(LevelUIProgress.X + Self.Width/2) + (int(tokenat(goals, levelUIStar.id, \"|\")) / int(tokenat(goals, 2, \"|\")) * (progressBarWidth - Self.Width))"
 							}
-						},
-						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 767573954494085,
-							"parameters": {
-								"type": "log",
-								"message": "\"token \" &tokenat(goals, 0, \"|\") & \" global \" & goals"
-							}
 						}
 					],
 					"sid": 894079342110932
@@ -4233,9 +4323,9 @@
 				{
 					"id": "set-width",
 					"objectClass": "pauseBar",
-					"sid": 721520900894752,
+					"sid": 695065832727320,
 					"parameters": {
-						"width": "clamp(Touch.X-pauseBar.X, 0, 281)"
+						"width": "clamp(Touch.X(\"paused\")-pauseBar.X, 0, 281)"
 					}
 				}
 			],
@@ -5649,6 +5739,33 @@
 				}
 			],
 			"sid": 724115399325131
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "vehicle",
+					"sid": 260841983093786,
+					"parameters": {
+						"object": "OtherVehicle"
+					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "vehicle",
+					"sid": 768438727083190,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "vehicle",
+					"sid": 901516903950366
+				}
+			],
+			"sid": 446919318942892
 		}
 	],
 	"sid": 746794069324216

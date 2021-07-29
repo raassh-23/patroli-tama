@@ -182,7 +182,8 @@
 			"CreditsButton",
 			"CreditsPanel",
 			"LocalStorage",
-			"testButton"
+			"testButton",
+			"BgDekorasi"
 		],
 		"subfolders": [
 			{

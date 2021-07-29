@@ -2,27 +2,27 @@ import vehicles from "./vehiclesData.js";
 import { randomInt } from './commonFunctions.js';
 
 function checkTurn(vehicle, turnCheck) {
-	console.log("vehicle uid " + vehicle.uid);
+// 	console.log("vehicle uid " + vehicle.uid);
 	
 	const turnArray = turnCheck.instVars.turnAngle
 		.split('|').map((str) => str.split(',').map(num => parseInt(num)));
 	
-	console.log(turnArray);
+// 	console.log(turnArray);
 	
 	const curAngle = vehicle.instVars.currentAngle;
 	let pelanggaran = vehicle.instVars.pelanggaran == 1 
 						|| vehicle.instVars.pelanggaran == 5 
 						? vehicle.instVars.pelanggaran : 0;
 
-	console.table({curAngle, pelanggaran});
+// 	console.table({curAngle, pelanggaran});
 
 	const turnable = turnArray.filter(val => val[0] == pelanggaran && val[1] == curAngle);
 	
-	console.log(turnable);
+// 	console.log(turnable);
 
 	const [, , targetAngle, targetX, targetY] = turnable[randomInt(0, turnable.length - 1)];
 
-	console.table({targetAngle, targetX, targetY});
+// 	console.table({targetAngle, targetX, targetY});
 
 	if (targetAngle != curAngle) {
 		vehicle.instVars.targetAngle = targetAngle;

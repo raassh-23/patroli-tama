@@ -117,15 +117,73 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Dekorasi2",
+					"type": "BgDekorasi",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
-						"initial-frame": 34,
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 902,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3175,
+						"y": 1356,
+						"width": 613,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BgDekorasi",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 778,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3469,
+						"y": 3632,
+						"width": 613,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BgDekorasi",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 662,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -218,8 +276,8 @@
 						}
 					},
 					"world": {
-						"x": 393,
-						"y": -650,
+						"x": 2296,
+						"y": 2094,
 						"width": 115,
 						"height": 48,
 						"originX": 0.5,
@@ -278,62 +336,6 @@
 						"y": -671,
 						"width": 115,
 						"height": 50,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "motorbikeWithoutLight",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "motorbikeWithoutLight1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 666,
-					"instanceVariables": {
-						"speed": 0,
-						"pelanggaran": 0,
-						"targetAngle": 0,
-						"targetTurnX": 0,
-						"targetTurnY": 0,
-						"turningId": 0,
-						"berhenti": false,
-						"currentAngle": 0,
-						"turning": false,
-						"picked": false,
-						"type": 0,
-						"waiting": false,
-						"inTrafficLight": false,
-						"melanggar": false
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": true,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 587,
-						"y": -589,
-						"width": 100,
-						"height": 49,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1476,7 +1478,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
-						"initial-frame": 33,
+						"initial-frame": 37,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -1484,10 +1486,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 3680,
+						"x": 3616,
 						"y": 1935,
 						"width": 81,
-						"height": 131,
+						"height": 142,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -1543,7 +1545,7 @@
 					},
 					"uid": 790,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 180, 2235, 2908| 0, 180, 270, 2235, 2908",
+						"turnAngle": "0, 180, 180, 2235, 2908| 0, 180, 270, 2235, 2908| 5, 180, 270, 2235, 2908 | 5, 180, 180, 2235, 2908",
 						"id": 7
 					},
 					"behaviors": {},
@@ -1639,7 +1641,7 @@
 					},
 					"uid": 794,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 90, 4131, 439",
+						"turnAngle": "0, 0, 90, 4131, 439| 5, 0, 90, 4131, 439",
 						"id": 2
 					},
 					"behaviors": {},
@@ -1671,7 +1673,7 @@
 					},
 					"uid": 795,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 3969, 597",
+						"turnAngle": "0, 270, 180, 3969, 597| 5, 270, 180, 3969, 597",
 						"id": 2
 					},
 					"behaviors": {},
@@ -1740,40 +1742,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 4630,
-						"y": 4308,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "spawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 801,
-					"instanceVariables": {
-						"angleSpawned": 90,
-						"melawanArus": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 4790,
-						"y": -68,
+						"x": 3969,
+						"y": 4104,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1804,8 +1774,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 5730.356449159475,
-						"y": 795,
+						"x": 5262,
+						"y": 2908,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1831,13 +1801,13 @@
 					},
 					"uid": 803,
 					"instanceVariables": {
-						"angleSpawned": 180,
+						"angleSpawned": 90,
 						"melawanArus": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 5715,
-						"y": 3125,
+						"x": 657,
+						"y": -128,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1919,7 +1889,7 @@
 					},
 					"uid": 805,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 0, 2235, 2750| 0, 0, 270, 2235, 2750",
+						"turnAngle": "0, 0, 0, 2235, 2750| 0, 0, 270, 2235, 2750| 5, 0, 270, 2235, 2750| 5, 0, 0, 2235, 2750",
 						"id": 7
 					},
 					"behaviors": {},
@@ -1951,7 +1921,7 @@
 					},
 					"uid": 807,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 270, 499, 1595| 5, 270, 0, 499, 1595| 5, 270, 0, 499, 1753",
+						"turnAngle": "0, 270, 270, 499, 1595| 5, 270, 0, 499, 1595| 5, 270, 0, 499, 1753 | 5, 270, 270, 499, 1595",
 						"id": 3
 					},
 					"behaviors": {},
@@ -1983,7 +1953,7 @@
 					},
 					"uid": 808,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 0, 657, 2750",
+						"turnAngle": "0, 90, 0, 657, 2750| 5, 90, 0, 657, 2750",
 						"id": 6
 					},
 					"behaviors": {},
@@ -2015,7 +1985,7 @@
 					},
 					"uid": 809,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 270, 499, 2908",
+						"turnAngle": "0, 180, 270, 499, 2908| 5, 90, 0, 657, 2750",
 						"id": 6
 					},
 					"behaviors": {},
@@ -2047,7 +2017,7 @@
 					},
 					"uid": 810,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 90, 657, 1595| 5, 90, 0, 657, 1595| 5, 90, 0, 657, 1753",
+						"turnAngle": "0, 90, 90, 657, 1595| 5, 90, 0, 657, 1595| 5, 90, 0, 657, 1753| 5, 90, 90, 657, 1595",
 						"id": 3
 					},
 					"behaviors": {},
@@ -2079,13 +2049,13 @@
 					},
 					"uid": 613,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 4050, 803| 0, 270, 270, 4050, 803| 0, 270, 0, 4050, 641",
+						"turnAngle": "0, 270, 180, 4050, 803| 0, 270, 270, 4050, 803| 0, 270, 0, 4050, 641 | 5, 270, 0, 4050, 641",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
 						"x": 499,
-						"y": 722,
+						"y": 765,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -2111,12 +2081,12 @@
 					},
 					"uid": 614,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 90, 657, 597| 0, 180, 180, 657, 597| 0, 180, 270, 499, 597",
+						"turnAngle": "0, 180, 90, 657, 597| 0, 180, 180, 657, 597| 0, 180, 270, 499, 597 | 5, 180, 90, 657, 597",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 793,
+						"x": 827,
 						"y": 597,
 						"width": 148,
 						"height": 16,
@@ -2143,12 +2113,12 @@
 					},
 					"uid": 616,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 270, 499, 439| 0, 0, 0, 499, 439| 0, 0, 90, 657, 439",
+						"turnAngle": "0, 0, 270, 499, 439| 0, 0, 0, 499, 439| 0, 0, 90, 657, 439| 5, 0, 90, 657, 439 | 5, 0, 0, 499, 439",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 366,
+						"x": 317.610489092311,
 						"y": 439,
 						"width": 148,
 						"height": 16,
@@ -2175,13 +2145,13 @@
 					},
 					"uid": 618,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 0, 657, 439| 0, 90, 90, 657, 439| 0, 90, 180, 657, 597",
+						"turnAngle": "0, 90, 0, 657, 439| 0, 90, 90, 657, 439| 0, 90, 180, 657, 597 | 5, 90, 0, 657, 439| 5, 90, 90, 657, 439",
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
 						"x": 657,
-						"y": 301,
+						"y": 264.9301328403175,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -2212,7 +2182,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 817,
+						"x": 800,
 						"y": 597,
 						"width": 14,
 						"height": 140,
@@ -2241,10 +2211,10 @@
 					"instanceVariables": {
 						"id": 2,
 						"state": 0,
-						"redTime": 42,
-						"yellowTime": 3,
-						"greenTime": 10,
-						"startTime": 10
+						"redTime": 24,
+						"yellowTime": 2,
+						"greenTime": 4,
+						"startTime": 6
 					},
 					"behaviors": {
 						"Timer": {
@@ -2252,7 +2222,7 @@
 						}
 					},
 					"world": {
-						"x": 857,
+						"x": 855,
 						"y": 597,
 						"width": 155,
 						"height": 16,
@@ -2283,8 +2253,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 834,
-						"y": 765,
+						"x": 900,
+						"y": 762,
 						"width": 49,
 						"height": 132,
 						"originX": 0.5,
@@ -2316,7 +2286,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 499,
-						"y": 753,
+						"y": 730,
 						"width": 14,
 						"height": 140,
 						"originX": 0.5,
@@ -2344,10 +2314,10 @@
 					"instanceVariables": {
 						"id": 1,
 						"state": 0,
-						"redTime": 42,
-						"yellowTime": 3,
-						"greenTime": 10,
-						"startTime": 13
+						"redTime": 24,
+						"yellowTime": 2,
+						"greenTime": 4,
+						"startTime": 14
 					},
 					"behaviors": {
 						"Timer": {
@@ -2356,7 +2326,7 @@
 					},
 					"world": {
 						"x": 499,
-						"y": 794,
+						"y": 796,
 						"width": 155,
 						"height": 16,
 						"originX": 0.5,
@@ -2386,8 +2356,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 338,
-						"y": 765,
+						"x": 332,
+						"y": 878,
 						"width": 49,
 						"height": 132,
 						"originX": 0.5,
@@ -2419,7 +2389,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 657,
-						"y": 238,
+						"y": 290.4309529593556,
 						"width": 14,
 						"height": 140,
 						"originX": 0.5,
@@ -2447,10 +2417,10 @@
 					"instanceVariables": {
 						"id": 3,
 						"state": 2,
-						"redTime": 42,
-						"yellowTime": 3,
-						"greenTime": 10,
-						"startTime": 42
+						"redTime": 24,
+						"yellowTime": 2,
+						"greenTime": 4,
+						"startTime": 4
 					},
 					"behaviors": {
 						"Timer": {
@@ -2459,7 +2429,7 @@
 					},
 					"world": {
 						"x": 657,
-						"y": 270,
+						"y": 234.43095295935555,
 						"width": 155,
 						"height": 16,
 						"originX": 0.5,
@@ -2489,8 +2459,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 826,
-						"y": 292,
+						"x": 825,
+						"y": 226,
 						"width": 49,
 						"height": 132,
 						"originX": 0.5,
@@ -2521,7 +2491,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 287,
+						"x": 337.28171468119075,
 						"y": 439,
 						"width": 14,
 						"height": 140,
@@ -2550,10 +2520,10 @@
 					"instanceVariables": {
 						"id": 4,
 						"state": 0,
-						"redTime": 42,
-						"yellowTime": 3,
-						"greenTime": 10,
-						"startTime": 29
+						"redTime": 24,
+						"yellowTime": 2,
+						"greenTime": 4,
+						"startTime": 22
 					},
 					"behaviors": {
 						"Timer": {
@@ -2561,7 +2531,7 @@
 						}
 					},
 					"world": {
-						"x": 324,
+						"x": 296.28171468119075,
 						"y": 439,
 						"width": 155,
 						"height": 16,
@@ -2578,37 +2548,6 @@
 					}
 				},
 				{
-					"type": "trafficLight",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 642,
-					"instanceVariables": {
-						"id": 4
-					},
-					"behaviors": {},
-					"world": {
-						"x": 333,
-						"y": 292,
-						"width": 49,
-						"height": 132,
-						"originX": 0.5,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "turnCheck",
 					"properties": {
 						"initially-visible": false,
@@ -2619,13 +2558,13 @@
 					},
 					"uid": 643,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 3969, 2908| 0, 270, 270, 3969, 2908| 0, 270, 0, 3969, 2750",
+						"turnAngle": "0, 270, 180, 3969, 2908| 0, 270, 270, 3969, 2908| 0, 270, 0, 3969, 2750| 5, 270, 180, 3969, 2908| 5, 270, 270, 3969, 2908",
 						"id": 8
 					},
 					"behaviors": {},
 					"world": {
 						"x": 3969,
-						"y": 3033,
+						"y": 3081.024594297451,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -2651,12 +2590,12 @@
 					},
 					"uid": 646,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 90, 4127, 2908| 0, 180, 180, 4127, 2908| 0, 180, 270, 3969, 2908",
+						"turnAngle": "0, 180, 90, 4127, 2908| 0, 180, 180, 4127, 2908| 0, 180, 270, 3969, 2908| 5, 180, 180, 4127, 2908| 5, 180, 270, 3969, 2908",
 						"id": 8
 					},
 					"behaviors": {},
 					"world": {
-						"x": 4260,
+						"x": 4295.915532128021,
 						"y": 2908,
 						"width": 148,
 						"height": 16,
@@ -2683,12 +2622,12 @@
 					},
 					"uid": 648,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 270, 3969, 2750| 0, 0, 0, 3969, 2750| 0, 0, 90, 4127, 2750",
+						"turnAngle": "0, 0, 270, 3969, 2750| 0, 0, 0, 3969, 2750| 0, 0, 90, 4127, 2750| 5, 0, 270, 3969, 2750",
 						"id": 8
 					},
 					"behaviors": {},
 					"world": {
-						"x": 3842,
+						"x": 3793.1604674638434,
 						"y": 2750,
 						"width": 148,
 						"height": 16,
@@ -2715,13 +2654,13 @@
 					},
 					"uid": 649,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 0, 4127, 2750| 0, 90, 90, 4127, 2750| 0, 90, 180, 4127, 2908",
+						"turnAngle": "0, 90, 0, 4127, 2750| 0, 90, 90, 4127, 2750| 0, 90, 180, 4127, 2908| 5, 90, 180, 4127, 2908",
 						"id": 8
 					},
 					"behaviors": {},
 					"world": {
 						"x": 4127,
-						"y": 2620,
+						"y": 2577.674323909812,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -2752,7 +2691,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 4294,
+						"x": 4268.389476391182,
 						"y": 2908,
 						"width": 14,
 						"height": 140,
@@ -2781,10 +2720,10 @@
 					"instanceVariables": {
 						"id": 5,
 						"state": 0,
-						"redTime": 42,
-						"yellowTime": 3,
-						"greenTime": 10,
-						"startTime": 10
+						"redTime": 24,
+						"yellowTime": 2,
+						"greenTime": 4,
+						"startTime": 5
 					},
 					"behaviors": {
 						"Timer": {
@@ -2792,7 +2731,7 @@
 						}
 					},
 					"world": {
-						"x": 4334,
+						"x": 4327.389476391182,
 						"y": 2908,
 						"width": 155,
 						"height": 16,
@@ -2823,7 +2762,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 4294,
+						"x": 4358,
 						"y": 3079,
 						"width": 49,
 						"height": 132,
@@ -2856,7 +2795,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 3969,
-						"y": 3066,
+						"y": 3050.024594297451,
 						"width": 14,
 						"height": 140,
 						"originX": 0.5,
@@ -2884,10 +2823,10 @@
 					"instanceVariables": {
 						"id": 8,
 						"state": 0,
-						"redTime": 42,
-						"yellowTime": 3,
-						"greenTime": 10,
-						"startTime": 13
+						"redTime": 24,
+						"yellowTime": 2,
+						"greenTime": 4,
+						"startTime": 14
 					},
 					"behaviors": {
 						"Timer": {
@@ -2896,7 +2835,7 @@
 					},
 					"world": {
 						"x": 3969,
-						"y": 3112,
+						"y": 3111.835661731304,
 						"width": 155,
 						"height": 16,
 						"originX": 0.5,
@@ -2927,7 +2866,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 3798,
-						"y": 3079,
+						"y": 3152,
 						"width": 49,
 						"height": 132,
 						"originX": 0.5,
@@ -2959,7 +2898,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 4127,
-						"y": 2563,
+						"y": 2604.3305405249566,
 						"width": 14,
 						"height": 140,
 						"originX": 0.5,
@@ -2987,10 +2926,10 @@
 					"instanceVariables": {
 						"id": 6,
 						"state": 2,
-						"redTime": 42,
-						"yellowTime": 3,
-						"greenTime": 10,
-						"startTime": 42
+						"redTime": 24,
+						"yellowTime": 2,
+						"greenTime": 4,
+						"startTime": 4
 					},
 					"behaviors": {
 						"Timer": {
@@ -2999,7 +2938,7 @@
 					},
 					"world": {
 						"x": 4127,
-						"y": 2592,
+						"y": 2546.3305405249566,
 						"width": 155,
 						"height": 16,
 						"originX": 0.5,
@@ -3030,7 +2969,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 4296,
-						"y": 2608,
+						"y": 2540,
 						"width": 49,
 						"height": 132,
 						"originX": 0.5,
@@ -3061,7 +3000,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 3763,
+						"x": 3826.6927880011012,
 						"y": 2750,
 						"width": 14,
 						"height": 140,
@@ -3090,10 +3029,10 @@
 					"instanceVariables": {
 						"id": 7,
 						"state": 0,
-						"redTime": 42,
-						"yellowTime": 3,
-						"greenTime": 10,
-						"startTime": 29
+						"redTime": 24,
+						"yellowTime": 2,
+						"greenTime": 4,
+						"startTime": 22
 					},
 					"behaviors": {
 						"Timer": {
@@ -3101,8 +3040,8 @@
 						}
 					},
 					"world": {
-						"x": 3798,
-						"y": 2750,
+						"x": 3759.6927880011012,
+						"y": 2757,
 						"width": 155,
 						"height": 16,
 						"originX": 0.5,
@@ -3132,7 +3071,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 3793,
+						"x": 3731,
 						"y": 2606,
 						"width": 49,
 						"height": 132,
@@ -3287,7 +3226,7 @@
 					},
 					"uid": 894,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 270, 1881, 1753| 0, 180, 90, 1463, 1753",
+						"turnAngle": "0, 180, 270, 657, 1753| 0, 180, 90, 499, 1753",
 						"id": 3
 					},
 					"behaviors": {},
@@ -3319,7 +3258,7 @@
 					},
 					"uid": 895,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 270, 1881, 1595| 0, 180, 90, 1463, 1595",
+						"turnAngle": "0, 180, 270, 657, 1595| 0, 180, 90, 499, 1595",
 						"id": 3
 					},
 					"behaviors": {},
@@ -3383,7 +3322,7 @@
 					},
 					"uid": 789,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 90, 4131, 1753| 0, 90, 180, 4131, 1753| 0, 90, 180, 4131, 1595",
+						"turnAngle": "0, 90, 90, 4131, 1753| 0, 90, 180, 4131, 1753| 0, 90, 180, 4131, 1595 | 5, 90, 90, 4131, 1753",
 						"id": 5
 					},
 					"behaviors": {},
@@ -3415,7 +3354,7 @@
 					},
 					"uid": 791,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 270, 3969, 1753| 0, 270, 180, 3969, 1753| 0, 270, 180, 3969, 1595",
+						"turnAngle": "0, 270, 270, 3969, 1753| 0, 270, 180, 3969, 1753| 0, 270, 180, 3969, 1595 | 5, 270, 270, 3969, 1753",
 						"id": 5
 					},
 					"behaviors": {},
@@ -3754,35 +3693,6 @@
 						"height": 335,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Dekorasi2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 34,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 902,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 3469,
-						"y": 3632,
-						"width": 613,
-						"height": 500,
-						"originX": 0.5,
-						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -5219,35 +5129,6 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
-						"initial-frame": 34,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 950,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 3175,
-						"y": 1356,
-						"width": 613,
-						"height": 500,
-						"originX": 0.5,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Dekorasi2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -5819,7 +5700,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 6.2730755814357675,
 						"zElevation": 0
 					}
 				},
@@ -5894,8 +5775,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1548,
-						"y": 103,
+						"x": 1491.7743365930407,
+						"y": 91.05516455303481,
 						"width": 67,
 						"height": 143,
 						"originX": 0.5,
@@ -7701,6 +7582,122 @@
 						"height": 132,
 						"originX": 0.5,
 						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dekorasi2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 32,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 801,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 5533,
+						"y": 635,
+						"width": 97,
+						"height": 131,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "trafficLight",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 642,
+					"instanceVariables": {
+						"id": 4
+					},
+					"behaviors": {},
+					"world": {
+						"x": 277,
+						"y": 286,
+						"width": 49,
+						"height": 132,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "motorbikeWithoutLight",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "motorbikeWithoutLight1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 666,
+					"instanceVariables": {
+						"speed": 0,
+						"pelanggaran": 0,
+						"targetAngle": 0,
+						"targetTurnX": 0,
+						"targetTurnY": 0,
+						"turningId": 0,
+						"berhenti": false,
+						"currentAngle": 0,
+						"turning": false,
+						"picked": false,
+						"type": 0,
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 405,
+						"y": 1679,
+						"width": 100,
+						"height": 49,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
