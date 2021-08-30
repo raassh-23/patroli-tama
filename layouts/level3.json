@@ -342,6 +342,7 @@
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{
@@ -997,7 +998,8 @@
 						"type": 0,
 						"waiting": false,
 						"inTrafficLight": false,
-						"melanggar": false
+						"melanggar": false,
+						"aboutToCollide": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1111,7 +1113,8 @@
 						"type": 0,
 						"waiting": false,
 						"inTrafficLight": false,
-						"melanggar": false
+						"melanggar": false,
+						"aboutToCollide": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1167,7 +1170,8 @@
 						"type": 0,
 						"waiting": false,
 						"inTrafficLight": false,
-						"melanggar": false
+						"melanggar": false,
+						"aboutToCollide": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1223,7 +1227,8 @@
 						"type": 0,
 						"waiting": false,
 						"inTrafficLight": false,
-						"melanggar": false
+						"melanggar": false,
+						"aboutToCollide": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -2071,6 +2076,7 @@
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{
@@ -2100,6 +2106,7 @@
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{
@@ -2129,6 +2136,7 @@
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{
@@ -2158,6 +2166,7 @@
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{
@@ -2314,6 +2323,7 @@
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{
@@ -2343,6 +2353,7 @@
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{
@@ -2372,6 +2383,7 @@
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		},
 		{
@@ -2401,6 +2413,7 @@
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
+			"zElevation": 0,
 			"global": false
 		}
 	],
@@ -2410,5 +2423,7 @@
 	"width": 2000,
 	"height": 1400,
 	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
 	"eventSheet": "Es_Level3"
 }

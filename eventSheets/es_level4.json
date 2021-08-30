@@ -184,10 +184,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
-					"sid": 411328927356035,
+					"sid": 241994550172585,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "random(1,3)",
+						"duration": "1",
 						"type": "once",
 						"tag": "\"spawnVehicle\""
 					}

@@ -1131,116 +1131,123 @@
 			]
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 756900990787594,
-					"parameters": {
-						"object": "testButton"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 351954026211793,
-			"disabled": true,
+			"eventType": "group",
+			"disabled": false,
+			"title": "debugging tools",
+			"description": "disable this group and move the button out of layout before exporting for production",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-animation-frame",
-							"objectClass": "testButton",
-							"sid": 217158986319407,
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 750060425495885,
 							"parameters": {
-								"comparison": 0,
-								"number": "0"
+								"object": "testButton"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 397633461506374,
+					"children": [
 						{
-							"id": "clear",
-							"objectClass": "levels",
-							"sid": 288484713624114,
-							"parameters": {
-								"value": "0"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "testButton",
+									"sid": 342197304763011,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "clear",
+									"objectClass": "levels",
+									"sid": 752625150812849,
+									"parameters": {
+										"value": "0"
+									}
+								}
+							],
+							"sid": 211982741934092
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "testButton",
+									"sid": 848335895186536,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "clear-storage",
+									"objectClass": "LocalStorage",
+									"sid": 126640668566405
+								},
+								{
+									"id": "set-size",
+									"objectClass": "levels",
+									"sid": 579681357381225,
+									"parameters": {
+										"width": "maxLevel+1",
+										"height": "1",
+										"depth": "1"
+									}
+								},
+								{
+									"id": "clear",
+									"objectClass": "levels",
+									"sid": 677796881437078,
+									"parameters": {
+										"value": "-1"
+									}
+								},
+								{
+									"id": "set-at-x",
+									"objectClass": "levels",
+									"sid": 682483589537673,
+									"parameters": {
+										"x": "0",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "tutorials",
+									"sid": 293970771630004,
+									"parameters": {
+										"width": "4",
+										"height": "1",
+										"depth": "1"
+									}
+								},
+								{
+									"id": "clear",
+									"objectClass": "tutorials",
+									"sid": 926021301659715,
+									"parameters": {
+										"value": "0"
+									}
+								}
+							],
+							"sid": 772978471884368
 						}
-					],
-					"sid": 954276784022522,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "testButton",
-							"sid": 612856009759411,
-							"parameters": {
-								"comparison": 0,
-								"number": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "clear-storage",
-							"objectClass": "LocalStorage",
-							"sid": 522657137816478
-						},
-						{
-							"id": "set-size",
-							"objectClass": "levels",
-							"sid": 394430126864392,
-							"parameters": {
-								"width": "maxLevel+1",
-								"height": "1",
-								"depth": "1"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "levels",
-							"sid": 322401870720639,
-							"parameters": {
-								"value": "-1"
-							}
-						},
-						{
-							"id": "set-at-x",
-							"objectClass": "levels",
-							"sid": 584345995805627,
-							"parameters": {
-								"x": "0",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-size",
-							"objectClass": "tutorials",
-							"sid": 495258068358126,
-							"parameters": {
-								"width": "4",
-								"height": "1",
-								"depth": "1"
-							}
-						},
-						{
-							"id": "clear",
-							"objectClass": "tutorials",
-							"sid": 415541557104007,
-							"parameters": {
-								"value": "0"
-							}
-						}
-					],
-					"sid": 202998180362970,
-					"disabled": true
+					]
 				}
-			]
+			],
+			"sid": 827996084192298
 		}
 	],
 	"sid": 759868280530214
