@@ -7,20 +7,38 @@
 		{
 			"name": "collisionCount",
 			"type": "number",
-			"desc": "",
+			"desc": "not used",
 			"sid": 383453643170085
 		},
 		{
 			"name": "vehiclesUID",
 			"type": "string",
-			"desc": "",
+			"desc": "not used",
 			"sid": 973018489295034
+		},
+		{
+			"name": "intersectionId",
+			"type": "number",
+			"desc": "",
+			"sid": 638492696871499
 		},
 		{
 			"name": "id",
 			"type": "number",
 			"desc": "",
-			"sid": 638492696871499
+			"sid": 331528432212752
+		},
+		{
+			"name": "lockedVehicle",
+			"type": "number",
+			"desc": "",
+			"sid": 273497888483227
+		},
+		{
+			"name": "isCollided",
+			"type": "boolean",
+			"desc": "",
+			"sid": 349521084703484
 		}
 	],
 	"behaviorTypes": [],

@@ -1975,879 +1975,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 428773374568349,
-					"parameters": {
-						"object": "vehicle"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 196679145579885
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 474526530195664,
-					"parameters": {
-						"object": "vehicle"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-speed",
-					"objectClass": "vehicle",
-					"sid": 481241810589164,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"speed": "Self.speed"
-					}
-				},
-				{
-					"id": "set-angle-of-motion",
-					"objectClass": "vehicle",
-					"sid": 247102455781109,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"angle": "Self.currentAngle"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "vehicle",
-					"sid": 731950476987071,
-					"parameters": {
-						"frame-number": "floor(Self.currentAngle/90)"
-					}
-				}
-			],
-			"sid": 373197157505623,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-by-comparison",
-							"objectClass": "System",
-							"sid": 329042646319688,
-							"parameters": {
-								"object": "intersection",
-								"expression": "intersection.vehiclesUID",
-								"comparison": 0,
-								"value": "str(vehicle.UID)"
-							}
-						},
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "vehicle",
-							"sid": 502682865481469,
-							"parameters": {
-								"object": "intersection"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "intersection",
-							"sid": 714603900878362,
-							"parameters": {
-								"instance-variable": "collisionCount",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "intersection",
-							"sid": 747978845382739,
-							"parameters": {
-								"instance-variable": "vehiclesUID",
-								"value": "\"\""
-							}
-						}
-					],
-					"sid": 325000478088389,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-at-offset",
-							"objectClass": "vehicle",
-							"sid": 495276752646992,
-							"parameters": {
-								"object": "OtherVehicle",
-								"offset-x": "distX * cos(Self.currentAngle)",
-								"offset-y": "distY* sin(Self.currentAngle)"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 766198524295794,
-							"parameters": {
-								"instance-variable": "aboutToCollide",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 560339130843123
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-at-offset",
-							"objectClass": "vehicle",
-							"sid": 325495841400510,
-							"parameters": {
-								"object": "OtherVehicle",
-								"offset-x": "distX * cos(Self.currentAngle)",
-								"offset-y": "distY* sin(Self.currentAngle)"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 501177329548460,
-							"parameters": {
-								"instance-variable": "aboutToCollide",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 725227191028662
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "vehicle",
-							"sid": 681692692393101,
-							"parameters": {
-								"object": "intersection"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 288172471814619,
-					"disabled": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "intersection",
-									"sid": 443371618867027,
-									"parameters": {
-										"instance-variable": "vehiclesUID",
-										"comparison": 0,
-										"value": "str(vehicle.UID)"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "vehicle",
-									"sid": 582631649995672,
-									"parameters": {
-										"instance-variable": "waiting",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 630455380249727,
-							"disabled": true,
-							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 724903104523434
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "vehicle",
-									"sid": 518035505503437,
-									"parameters": {
-										"instance-variable": "waiting",
-										"value": "true"
-									}
-								}
-							],
-							"sid": 988079699389190,
-							"disabled": true
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "vehicle",
-							"sid": 436124854879791,
-							"parameters": {
-								"object": "intersection"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 631743278447453,
-							"parameters": {
-								"instance-variable": "waiting"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 219752684359397,
-							"parameters": {
-								"instance-variable": "waiting",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 641258540071949
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "vehicle",
-							"sid": 895023887707460,
-							"parameters": {
-								"object": "trafficLightCollision"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "vehicle",
-							"sid": 164711418636770,
-							"parameters": {
-								"instance-variable": "pelanggaran",
-								"comparison": 1,
-								"value": "4"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 335131558696686,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "trafficLightCollision",
-									"sid": 652409889703163,
-									"parameters": {
-										"instance-variable": "state",
-										"comparison": 0,
-										"value": "0"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "trafficLightCollision",
-									"sid": 787487284424407,
-									"parameters": {
-										"instance-variable": "state",
-										"comparison": 0,
-										"value": "3"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "vehicle",
-									"sid": 152263012266341,
-									"parameters": {
-										"instance-variable": "inTrafficLight",
-										"value": "true"
-									}
-								}
-							],
-							"sid": 448085123465951,
-							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "trafficLightCollision",
-									"sid": 404718497279244,
-									"parameters": {
-										"instance-variable": "state",
-										"comparison": 0,
-										"value": "2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "vehicle",
-									"sid": 128069068953178,
-									"parameters": {
-										"instance-variable": "inTrafficLight",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 276268259992895,
-							"isOrBlock": true
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "vehicle",
-							"sid": 498561285747938,
-							"parameters": {
-								"object": "trafficLightCollision"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 621665695777467,
-							"parameters": {
-								"instance-variable": "inTrafficLight"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 368874354752731,
-							"parameters": {
-								"instance-variable": "inTrafficLight",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 331276766868941
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "vehicle",
-							"sid": 910832908335957,
-							"parameters": {
-								"object": "cekMelanggar"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 877843107120670,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "vehicle",
-									"sid": 994941388397501,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "4"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "cekMelanggar",
-									"sid": 735934812418549,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "4"
-									}
-								},
-								{
-									"id": "pick-by-comparison",
-									"objectClass": "System",
-									"sid": 332937478807103,
-									"parameters": {
-										"object": "trafficLightCollision",
-										"expression": "trafficLightCollision.id",
-										"comparison": 0,
-										"value": "cekMelanggar.TCID"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 673673712081637,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "trafficLightCollision",
-											"sid": 843255610170880,
-											"parameters": {
-												"instance-variable": "state",
-												"comparison": 0,
-												"value": "0"
-											}
-										},
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "trafficLightCollision",
-											"sid": 466523702398267,
-											"parameters": {
-												"instance-variable": "state",
-												"comparison": 0,
-												"value": "3"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "vehicle",
-											"sid": 557714135836897,
-											"parameters": {
-												"instance-variable": "melanggar",
-												"value": "true"
-											}
-										}
-									],
-									"sid": 398461330007376,
-									"isOrBlock": true
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "vehicle",
-									"sid": 360867549894789,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "5"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "cekMelanggar",
-									"sid": 630477573361225,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "5"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "vehicle",
-									"sid": 198644063499669,
-									"parameters": {
-										"instance-variable": "melanggar",
-										"value": "true"
-									}
-								}
-							],
-							"sid": 542277174129368
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-within-angle",
-							"objectClass": "vehicle",
-							"sid": 486225292741263,
-							"parameters": {
-								"within": "0.5",
-								"angle": "0"
-							}
-						},
-						{
-							"id": "compare-x",
-							"objectClass": "vehicle",
-							"sid": 274539993235528,
-							"parameters": {
-								"comparison": 4,
-								"x-co-ordinate": "LayoutWidth + vehicle.Width"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "vehicle",
-							"sid": 441333083823530
-						}
-					],
-					"sid": 803923051772684
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-within-angle",
-							"objectClass": "vehicle",
-							"sid": 967054197230524,
-							"parameters": {
-								"within": "0.5",
-								"angle": "90"
-							}
-						},
-						{
-							"id": "compare-y",
-							"objectClass": "vehicle",
-							"sid": 234681059069811,
-							"parameters": {
-								"comparison": 4,
-								"y-co-ordinate": "LayoutHeight+ vehicle.Height"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "vehicle",
-							"sid": 494331594336873
-						}
-					],
-					"sid": 477976619054459
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-within-angle",
-							"objectClass": "vehicle",
-							"sid": 977361072261948,
-							"parameters": {
-								"within": "0.5",
-								"angle": "180"
-							}
-						},
-						{
-							"id": "compare-x",
-							"objectClass": "vehicle",
-							"sid": 689432841794758,
-							"parameters": {
-								"comparison": 2,
-								"x-co-ordinate": "0 - vehicle.Width"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "vehicle",
-							"sid": 422745957136629
-						}
-					],
-					"sid": 381693151387165
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-within-angle",
-							"objectClass": "vehicle",
-							"sid": 670094240989180,
-							"parameters": {
-								"within": "0.5",
-								"angle": "270"
-							}
-						},
-						{
-							"id": "compare-y",
-							"objectClass": "vehicle",
-							"sid": 531460586919091,
-							"parameters": {
-								"comparison": 2,
-								"y-co-ordinate": "0 - vehicle.Height"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "vehicle",
-							"sid": 322872811311683
-						}
-					],
-					"sid": 538546530280082
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 690706566158754,
-							"parameters": {
-								"instance-variable": "turning"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 562835907104266,
-							"parameters": {
-								"instance-variable": "waiting"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 321895764970411,
-							"parameters": {
-								"instance-variable": "inTrafficLight"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 819302976740902,
-							"parameters": {
-								"instance-variable": "aboutToCollide"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 316328885451547,
-							"disabled": true,
-							"parameters": {
-								"instance-variable": "picked"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 901325024925844,
-							"parameters": {
-								"instance-variable": "berhenti",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 496495444479089
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 707635889638786,
-							"parameters": {
-								"instance-variable": "turning"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 998663769064891,
-							"parameters": {
-								"instance-variable": "waiting"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 754297768840411,
-							"parameters": {
-								"instance-variable": "inTrafficLight"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 916119187692811,
-							"parameters": {
-								"instance-variable": "aboutToCollide"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 510704313543063,
-							"disabled": true,
-							"parameters": {
-								"instance-variable": "picked"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 425267542036762,
-							"parameters": {
-								"instance-variable": "berhenti",
-								"value": "true"
-							}
-						}
-					],
-					"sid": 210198886990759,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 188788432596624,
-							"parameters": {
-								"instance-variable": "berhenti"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "vehicle",
-							"sid": 404257894744331,
-							"parameters": {
-								"instance-variable": "speed",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 270800334408877,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-x",
-									"objectClass": "vehicle",
-									"sid": 939252623206404,
-									"parameters": {
-										"comparison": 2,
-										"x-co-ordinate": "0 - Self.Width/4"
-									}
-								},
-								{
-									"id": "compare-x",
-									"objectClass": "vehicle",
-									"sid": 194990779449337,
-									"parameters": {
-										"comparison": 4,
-										"x-co-ordinate": "LayoutWidth + Self.Width/4"
-									}
-								},
-								{
-									"id": "compare-y",
-									"objectClass": "vehicle",
-									"sid": 392297575096014,
-									"parameters": {
-										"comparison": 4,
-										"y-co-ordinate": "LayoutHeight + Self.Height/4"
-									}
-								},
-								{
-									"id": "compare-y",
-									"objectClass": "vehicle",
-									"sid": 461396391068411,
-									"parameters": {
-										"comparison": 2,
-										"y-co-ordinate": "0 - Self.Height/4"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "vehicle",
-									"sid": 126941792806636
-								}
-							],
-							"sid": 960820579624496,
-							"isOrBlock": true
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 272454051995535,
-							"parameters": {
-								"instance-variable": "berhenti"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "vehicle",
-							"sid": 830272429189714,
-							"parameters": {
-								"instance-variable": "speed",
-								"value": "TopSpeed"
-							}
-						}
-					],
-					"sid": 375516995695762
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "vehicle",
 					"sid": 826089368272064,
@@ -2862,7 +1989,7 @@
 					"parameters": {
 						"instance-variable": "turningId",
 						"comparison": 1,
-						"value": "turnCheck.id"
+						"value": "turnCheck.intersectionId"
 					}
 				}
 			],
@@ -3073,6 +2200,1002 @@
 				{
 					"id": "for-each",
 					"objectClass": "System",
+					"sid": 192118191067643,
+					"parameters": {
+						"object": "vehicle"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "vehicle",
+					"sid": 377758131830679,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "Self.speed"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "vehicle",
+					"sid": 141383860313269,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "Self.currentAngle"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "vehicle",
+					"sid": 297675158674082,
+					"parameters": {
+						"frame-number": "floor(Self.currentAngle/90)"
+					}
+				}
+			],
+			"sid": 209654945538247,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 323081763279764,
+							"parameters": {
+								"object": "intersection",
+								"expression": "intersection.vehiclesUID",
+								"comparison": 0,
+								"value": "str(vehicle.UID)"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 818165532164148,
+							"parameters": {
+								"object": "intersection"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "intersection",
+							"sid": 490635129027089,
+							"parameters": {
+								"instance-variable": "collisionCount",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "intersection",
+							"sid": 961916028276455,
+							"parameters": {
+								"instance-variable": "vehiclesUID",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 273669691731077,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "vehicle",
+							"sid": 395104236231063,
+							"parameters": {
+								"object": "OtherVehicle",
+								"offset-x": "distX * cos(Self.currentAngle)",
+								"offset-y": "distY* sin(Self.currentAngle)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 654265471945192,
+							"parameters": {
+								"instance-variable": "aboutToCollide",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 973317936412102
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "vehicle",
+							"sid": 567051869148476,
+							"parameters": {
+								"object": "OtherVehicle",
+								"offset-x": "distX * cos(Self.currentAngle)",
+								"offset-y": "distY* sin(Self.currentAngle)"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 458377205052979,
+							"parameters": {
+								"instance-variable": "aboutToCollide",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 237646291541308
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 950122672637216,
+							"parameters": {
+								"object": "intersection"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 393680936344726,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "intersection",
+									"sid": 309143967578758,
+									"parameters": {
+										"instance-variable": "vehiclesUID",
+										"comparison": 0,
+										"value": "str(vehicle.UID)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 549969620029062,
+									"parameters": {
+										"instance-variable": "waiting",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 208146471696711,
+							"disabled": true,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 662785398014052
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 117652550675806,
+									"parameters": {
+										"instance-variable": "waiting",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 886462454992357,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 279823405912060,
+							"parameters": {
+								"object": "intersection"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 683866534418920,
+							"parameters": {
+								"instance-variable": "waiting"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 139526499181878,
+							"parameters": {
+								"instance-variable": "waiting",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 601567696190059,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 300449175896978,
+							"parameters": {
+								"object": "trafficLightCollision"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 482290913387296,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 1,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 973597493017802,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "trafficLightCollision",
+									"sid": 575161358675854,
+									"parameters": {
+										"instance-variable": "state",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "trafficLightCollision",
+									"sid": 590955048003657,
+									"parameters": {
+										"instance-variable": "state",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 731874004806734,
+									"parameters": {
+										"instance-variable": "inTrafficLight",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 303355940740576,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "trafficLightCollision",
+									"sid": 231383063393596,
+									"parameters": {
+										"instance-variable": "state",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 742362310378024,
+									"parameters": {
+										"instance-variable": "inTrafficLight",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 109606576699248,
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 302099017571489,
+							"parameters": {
+								"object": "trafficLightCollision"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 272675408673830,
+							"parameters": {
+								"instance-variable": "inTrafficLight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 238793956933573,
+							"parameters": {
+								"instance-variable": "inTrafficLight",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 112824745763112
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 280167675162533,
+							"parameters": {
+								"object": "cekMelanggar"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 362585560684444,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "vehicle",
+									"sid": 528559110927296,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "cekMelanggar",
+									"sid": 715779204765864,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 533491243558161,
+									"parameters": {
+										"object": "trafficLightCollision",
+										"expression": "trafficLightCollision.id",
+										"comparison": 0,
+										"value": "cekMelanggar.TCID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 690963371252414,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "trafficLightCollision",
+											"sid": 784820219642760,
+											"parameters": {
+												"instance-variable": "state",
+												"comparison": 0,
+												"value": "0"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "trafficLightCollision",
+											"sid": 218757366426448,
+											"parameters": {
+												"instance-variable": "state",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "vehicle",
+											"sid": 560287632154333,
+											"parameters": {
+												"instance-variable": "melanggar",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 696930934327290,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "vehicle",
+									"sid": 738634454694270,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "cekMelanggar",
+									"sid": 387788820862622,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 881386704324976,
+									"parameters": {
+										"instance-variable": "melanggar",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 800012950522087
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-within-angle",
+							"objectClass": "vehicle",
+							"sid": 493615039333529,
+							"parameters": {
+								"within": "0.5",
+								"angle": "0"
+							}
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "vehicle",
+							"sid": 628343401749656,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "LayoutWidth + vehicle.Width"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "vehicle",
+							"sid": 852400229904896
+						}
+					],
+					"sid": 668281573611065
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-within-angle",
+							"objectClass": "vehicle",
+							"sid": 213801706328759,
+							"parameters": {
+								"within": "0.5",
+								"angle": "90"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "vehicle",
+							"sid": 102351214896923,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "LayoutHeight+ vehicle.Height"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "vehicle",
+							"sid": 875056782891949
+						}
+					],
+					"sid": 304484188993529
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-within-angle",
+							"objectClass": "vehicle",
+							"sid": 857823773078185,
+							"parameters": {
+								"within": "0.5",
+								"angle": "180"
+							}
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "vehicle",
+							"sid": 833728401119373,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "0 - vehicle.Width"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "vehicle",
+							"sid": 862253501727721
+						}
+					],
+					"sid": 750833959024416
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-within-angle",
+							"objectClass": "vehicle",
+							"sid": 803043576122509,
+							"parameters": {
+								"within": "0.5",
+								"angle": "270"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "vehicle",
+							"sid": 801786511675332,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "0 - vehicle.Height"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "vehicle",
+							"sid": 261756595528077
+						}
+					],
+					"sid": 692899651303589
+				},
+				{
+					"eventType": "comment",
+					"text": "https://stackoverflow.com/questions/9404484/traffic-intersection-simulation-using-multi-threading-algorithm"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 498062296985222,
+							"parameters": {
+								"object": "lockCheck"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 289221675980847,
+							"parameters": {
+								"instance-variable": "waiting"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "script",
+							"script": "const vehicle = runtime.objects.vehicle.getPickedInstances()[0];\n\nif(lockIntersection(vehicle, runtime.objects.intersection.getAllInstances())) {\n\tvehicle.instVars.waiting = false;\n}\n"
+						}
+					],
+					"sid": 957673624333257
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 612733218514722,
+							"parameters": {
+								"instance-variable": "turning"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 932863277800073,
+							"parameters": {
+								"instance-variable": "waiting"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 644833309525947,
+							"parameters": {
+								"instance-variable": "inTrafficLight"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 628062034045615,
+							"parameters": {
+								"instance-variable": "aboutToCollide"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 703911378944551,
+							"disabled": true,
+							"parameters": {
+								"instance-variable": "picked"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 452738520244896,
+							"parameters": {
+								"instance-variable": "berhenti",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 193149182905480
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 920790257630816,
+							"parameters": {
+								"instance-variable": "turning"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 852123643865392,
+							"parameters": {
+								"instance-variable": "waiting"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 738568265184143,
+							"parameters": {
+								"instance-variable": "inTrafficLight"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 694075935470680,
+							"parameters": {
+								"instance-variable": "aboutToCollide"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 358084479364970,
+							"disabled": true,
+							"parameters": {
+								"instance-variable": "picked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 460768455637212,
+							"parameters": {
+								"instance-variable": "berhenti",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 938825541303504,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 936975722982582,
+							"parameters": {
+								"instance-variable": "berhenti"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "vehicle",
+							"sid": 559368350729068,
+							"parameters": {
+								"instance-variable": "speed",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 425384202867894,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "vehicle",
+									"sid": 937519027210008,
+									"parameters": {
+										"comparison": 2,
+										"x-co-ordinate": "0 - Self.Width/4"
+									}
+								},
+								{
+									"id": "compare-x",
+									"objectClass": "vehicle",
+									"sid": 282628052364276,
+									"parameters": {
+										"comparison": 4,
+										"x-co-ordinate": "LayoutWidth + Self.Width/4"
+									}
+								},
+								{
+									"id": "compare-y",
+									"objectClass": "vehicle",
+									"sid": 156003531554549,
+									"parameters": {
+										"comparison": 4,
+										"y-co-ordinate": "LayoutHeight + Self.Height/4"
+									}
+								},
+								{
+									"id": "compare-y",
+									"objectClass": "vehicle",
+									"sid": 639385737220630,
+									"parameters": {
+										"comparison": 2,
+										"y-co-ordinate": "0 - Self.Height/4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "vehicle",
+									"sid": 620757644133069
+								}
+							],
+							"sid": 877996366094057,
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 100793014407926,
+							"parameters": {
+								"instance-variable": "berhenti"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "vehicle",
+							"sid": 518717910169929,
+							"parameters": {
+								"instance-variable": "speed",
+								"value": "TopSpeed"
+							}
+						}
+					],
+					"sid": 466521392183197
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "vehicle",
+					"sid": 238350206859439,
+					"parameters": {
+						"object": "lockCheck"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "const vehicle = runtime.objects.vehicle.getPickedInstances()[0];\n\nconst check = checkLock(vehicle, runtime.objects.lockCheck.getPickedInstances()[0]);\nconsole.log(check);\n\nif(check) {\n\tif(!lockIntersection(vehicle, runtime.objects.intersection.getAllInstances())) {\n\t\tvehicle.instVars.waiting = true;\n\t}\n}\n"
+				}
+			],
+			"sid": 705713009501633
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "vehicle",
+					"sid": 594055049713355,
+					"parameters": {
+						"object": "intersection"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "intersection",
+					"sid": 226452621481150,
+					"parameters": {
+						"instance-variable": "isCollided",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 293843051485014
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 924323022645985,
+					"parameters": {
+						"object": "intersection"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 492422206352101,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "intersection",
+							"sid": 770184858738929,
+							"parameters": {
+								"instance-variable": "isCollided"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "intersection",
+							"sid": 458173589572075,
+							"parameters": {
+								"object": "vehicle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "intersection",
+							"sid": 284056078803180,
+							"parameters": {
+								"instance-variable": "isCollided",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "intersection",
+							"sid": 185226796547240,
+							"parameters": {
+								"instance-variable": "vehiclesUID",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 946381741307646
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
 					"sid": 603277546852185,
 					"parameters": {
 						"object": "intersection"
@@ -3081,6 +3204,7 @@
 			],
 			"actions": [],
 			"sid": 987026512602631,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -3106,6 +3230,7 @@
 						}
 					],
 					"sid": 610249793727605,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -3132,7 +3257,8 @@
 									}
 								}
 							],
-							"sid": 476822626270613
+							"sid": 476822626270613,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -3169,7 +3295,8 @@
 									}
 								}
 							],
-							"sid": 206542514307416
+							"sid": 206542514307416,
+							"disabled": true
 						}
 					]
 				},
@@ -3206,32 +3333,10 @@
 							}
 						}
 					],
-					"sid": 545660535422581
+					"sid": 545660535422581,
+					"disabled": true
 				}
 			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "for-each-ordered",
-					"objectClass": "System",
-					"sid": 576866085518570,
-					"parameters": {
-						"object": "Zorder",
-						"expression": "Zorder.Y",
-						"order": "ascending"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "move-to-top",
-					"objectClass": "Zorder",
-					"sid": 585739638422526
-				}
-			],
-			"sid": 693134670085527
 		},
 		{
 			"functionName": "checkIntersection",
@@ -3258,7 +3363,8 @@
 			"eventType": "function-block",
 			"conditions": [],
 			"actions": [],
-			"sid": 331190161589109,
+			"sid": 828639230325627,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -3266,7 +3372,7 @@
 						{
 							"id": "pick-by-unique-id",
 							"objectClass": "vehicle",
-							"sid": 950102645392159,
+							"sid": 949683943616956,
 							"parameters": {
 								"unique-id": "vehicleUID"
 							}
@@ -3274,7 +3380,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "vehicle",
-							"sid": 736648167878899,
+							"sid": 668195234342642,
 							"parameters": {
 								"object": "intersection"
 							}
@@ -3282,7 +3388,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 191413978679404,
+							"sid": 465860130973384,
 							"parameters": {
 								"first-value": "intersection.UID",
 								"comparison": 0,
@@ -3294,13 +3400,14 @@
 						{
 							"id": "set-function-return-value",
 							"objectClass": "Functions",
-							"sid": 317976372020899,
+							"sid": 313241308895689,
 							"parameters": {
 								"value": "1"
 							}
 						}
 					],
-					"sid": 750271016329935
+					"sid": 311761204280613,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3308,22 +3415,46 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 783084490096515
+							"sid": 493152248300803
 						}
 					],
 					"actions": [
 						{
 							"id": "set-function-return-value",
 							"objectClass": "Functions",
-							"sid": 309052095918942,
+							"sid": 872951039405736,
 							"parameters": {
 								"value": "0"
 							}
 						}
 					],
-					"sid": 149715135825597
+					"sid": 875424162245109,
+					"disabled": true
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each-ordered",
+					"objectClass": "System",
+					"sid": 576866085518570,
+					"parameters": {
+						"object": "Zorder",
+						"expression": "Zorder.Y",
+						"order": "ascending"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Zorder",
+					"sid": 585739638422526
+				}
+			],
+			"sid": 693134670085527
 		},
 		{
 			"eventType": "block",

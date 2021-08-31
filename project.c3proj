@@ -183,7 +183,8 @@
 			"CreditsPanel",
 			"LocalStorage",
 			"testButton",
-			"BgDekorasi"
+			"BgDekorasi",
+			"lockCheck"
 		],
 		"subfolders": [
 			{

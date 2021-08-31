@@ -290,7 +290,7 @@
 					"uid": 88,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 534, 549",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -322,7 +322,7 @@
 					"uid": 89,
 					"instanceVariables": {
 						"turnAngle": "1, 90, 0, 386, 697",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -354,7 +354,7 @@
 					"uid": 91,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 90, 1496, 549",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -386,7 +386,7 @@
 					"uid": 92,
 					"instanceVariables": {
 						"turnAngle": "1, 0, 90, 1348, 697",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -779,7 +779,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -894,7 +895,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -951,7 +953,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1008,7 +1011,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1052,7 +1056,7 @@
 					"uid": 200,
 					"instanceVariables": {
 						"turnAngle": "1, 270, 180, 1496, 549",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1084,7 +1088,7 @@
 					"uid": 201,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 1348, 697",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1116,7 +1120,7 @@
 					"uid": 202,
 					"instanceVariables": {
 						"turnAngle": "1, 180, 270, 534, 549",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1148,7 +1152,7 @@
 					"uid": 203,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 270, 386, 697",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {

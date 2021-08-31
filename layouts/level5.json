@@ -194,7 +194,7 @@
 					"uid": 360,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 1220, 619| 0, 270, 0, 1220, 434",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -239,7 +239,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -296,7 +297,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -353,7 +355,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -397,7 +400,7 @@
 					"uid": 393,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 1380, 619| 0, 180, 180, 1380, 619",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -429,7 +432,7 @@
 					"uid": 395,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 90, 1380, 434| 0, 0, 0, 1380, 434",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -712,7 +715,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -756,7 +760,7 @@
 					"uid": 361,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 1380, 1585",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -788,7 +792,7 @@
 					"uid": 382,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 270, 1220, 1760",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -820,7 +824,7 @@
 					"uid": 359,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 90, 2530, 1585",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -852,7 +856,7 @@
 					"uid": 388,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 2360, 1760",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {

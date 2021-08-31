@@ -92,6 +92,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 565806630628074
+		},
+		{
+			"name": "intersectionLock",
+			"type": "string",
+			"desc": "",
+			"sid": 970347087410375
 		}
 	],
 	"behaviorTypes": [

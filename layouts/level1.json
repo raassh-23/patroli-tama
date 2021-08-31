@@ -319,7 +319,7 @@
 					"uid": 16,
 					"instanceVariables": {
 						"turnAngle": "1, 0, 90, 1493, 692",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -351,7 +351,7 @@
 					"uid": 18,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 90, 1641, 544",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -383,7 +383,7 @@
 					"uid": 6,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 1493, 692",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -415,7 +415,7 @@
 					"uid": 7,
 					"instanceVariables": {
 						"turnAngle": "1, 270, 180, 1641, 544",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1040,7 +1040,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1155,7 +1156,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1212,7 +1214,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1269,7 +1272,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {

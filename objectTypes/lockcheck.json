@@ -1,20 +1,20 @@
 {
-	"name": "turnCheck",
+	"name": "lockCheck",
 	"plugin-id": "Sprite",
-	"sid": 362509184992132,
+	"sid": 324235392717979,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "turnAngle",
+			"name": "lockList",
 			"type": "string",
 			"desc": "",
-			"sid": 885763951315788
+			"sid": 887608246897078
 		},
 		{
 			"name": "intersectionId",
 			"type": "number",
 			"desc": "",
-			"sid": 789946180673202
+			"sid": 748728120152677
 		}
 	],
 	"behaviorTypes": [],
@@ -24,31 +24,19 @@
 			{
 				"frames": [
 					{
-						"width": 148,
+						"width": 16,
 						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7826307,
-						"collisionPoly": {
-							"points": [
-								0.05555555555555555,
-								0.05555555555555555,
-								0.9444444444444444,
-								0.05555555555555555,
-								0.9444444444444444,
-								0.9444444444444444,
-								0.05555555555555555,
-								0.9444444444444444
-							]
-						},
+						"imageSpriteId": 1233865,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 974015997007281,
+				"sid": 732245688101131,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

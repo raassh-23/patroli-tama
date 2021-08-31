@@ -262,7 +262,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -319,7 +320,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1517,7 +1519,7 @@
 					"uid": 788,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 2393, 2750| 0, 90, 180, 2393, 2908",
-						"id": 7
+						"intersectionId": 7
 					},
 					"behaviors": {},
 					"world": {
@@ -1549,7 +1551,7 @@
 					"uid": 790,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 2235, 2908| 0, 180, 270, 2235, 2908| 5, 180, 270, 2235, 2908 | 5, 180, 180, 2235, 2908",
-						"id": 7
+						"intersectionId": 7
 					},
 					"behaviors": {},
 					"world": {
@@ -1581,7 +1583,7 @@
 					"uid": 792,
 					"instanceVariables": {
 						"turnAngle": "5, 0, 270, 3969, 1753| 5, 0, 90, 4131, 1753",
-						"id": 5
+						"intersectionId": 5
 					},
 					"behaviors": {},
 					"world": {
@@ -1613,7 +1615,7 @@
 					"uid": 793,
 					"instanceVariables": {
 						"turnAngle": "5, 0, 270, 3969, 1595| 5, 0, 90, 4131, 1595",
-						"id": 5
+						"intersectionId": 5
 					},
 					"behaviors": {},
 					"world": {
@@ -1645,7 +1647,7 @@
 					"uid": 794,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 90, 4131, 439| 5, 0, 90, 4131, 439",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1677,7 +1679,7 @@
 					"uid": 795,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 3969, 597| 5, 270, 180, 3969, 597",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1850,7 +1852,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1894,7 +1897,7 @@
 					"uid": 805,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 2235, 2750| 0, 0, 270, 2235, 2750| 5, 0, 270, 2235, 2750| 5, 0, 0, 2235, 2750",
-						"id": 7
+						"intersectionId": 7
 					},
 					"behaviors": {},
 					"world": {
@@ -1926,7 +1929,7 @@
 					"uid": 807,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 270, 499, 1595| 5, 270, 0, 499, 1595| 5, 270, 0, 499, 1753 | 5, 270, 270, 499, 1595",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1958,7 +1961,7 @@
 					"uid": 808,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 657, 2750| 5, 90, 0, 657, 2750",
-						"id": 6
+						"intersectionId": 6
 					},
 					"behaviors": {},
 					"world": {
@@ -1990,7 +1993,7 @@
 					"uid": 809,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 270, 499, 2908| 5, 90, 0, 657, 2750",
-						"id": 6
+						"intersectionId": 6
 					},
 					"behaviors": {},
 					"world": {
@@ -2022,7 +2025,7 @@
 					"uid": 810,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 90, 657, 1595| 5, 90, 0, 657, 1595| 5, 90, 0, 657, 1753| 5, 90, 90, 657, 1595",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -2054,7 +2057,7 @@
 					"uid": 613,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 4050, 803| 0, 270, 270, 4050, 803| 0, 270, 0, 4050, 641 | 5, 270, 0, 4050, 641",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -2086,7 +2089,7 @@
 					"uid": 614,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 657, 597| 0, 180, 180, 657, 597| 0, 180, 270, 499, 597 | 5, 180, 90, 657, 597",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -2118,7 +2121,7 @@
 					"uid": 616,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 270, 499, 439| 0, 0, 0, 499, 439| 0, 0, 90, 657, 439| 5, 0, 90, 657, 439 | 5, 0, 0, 499, 439",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -2150,7 +2153,7 @@
 					"uid": 618,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 657, 439| 0, 90, 90, 657, 439| 0, 90, 180, 657, 597 | 5, 90, 0, 657, 439| 5, 90, 90, 657, 439",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -2563,7 +2566,7 @@
 					"uid": 643,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 3969, 2908| 0, 270, 270, 3969, 2908| 0, 270, 0, 3969, 2750| 5, 270, 180, 3969, 2908| 5, 270, 270, 3969, 2908",
-						"id": 8
+						"intersectionId": 8
 					},
 					"behaviors": {},
 					"world": {
@@ -2595,7 +2598,7 @@
 					"uid": 646,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 4127, 2908| 0, 180, 180, 4127, 2908| 0, 180, 270, 3969, 2908| 5, 180, 180, 4127, 2908| 5, 180, 270, 3969, 2908",
-						"id": 8
+						"intersectionId": 8
 					},
 					"behaviors": {},
 					"world": {
@@ -2627,7 +2630,7 @@
 					"uid": 648,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 270, 3969, 2750| 0, 0, 0, 3969, 2750| 0, 0, 90, 4127, 2750| 5, 0, 270, 3969, 2750",
-						"id": 8
+						"intersectionId": 8
 					},
 					"behaviors": {},
 					"world": {
@@ -2659,7 +2662,7 @@
 					"uid": 649,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 4127, 2750| 0, 90, 90, 4127, 2750| 0, 90, 180, 4127, 2908| 5, 90, 180, 4127, 2908",
-						"id": 8
+						"intersectionId": 8
 					},
 					"behaviors": {},
 					"world": {
@@ -3103,7 +3106,7 @@
 					"uid": 890,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 2393, 1753| 0, 180, 90, 2393, 1753",
-						"id": 4
+						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -3135,7 +3138,7 @@
 					"uid": 891,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 2393, 1595| 0, 180, 90, 2393, 1595",
-						"id": 4
+						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -3167,7 +3170,7 @@
 					"uid": 892,
 					"instanceVariables": {
 						"turnAngle": "5, 0, 0, 2393, 1753| 5, 0, 90, 2393, 1753",
-						"id": 4
+						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -3199,7 +3202,7 @@
 					"uid": 893,
 					"instanceVariables": {
 						"turnAngle": "5, 0, 0, 2393, 1595| 5, 0, 90, 2393, 1595",
-						"id": 4
+						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -3231,7 +3234,7 @@
 					"uid": 894,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 270, 657, 1753| 0, 180, 90, 499, 1753",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -3263,7 +3266,7 @@
 					"uid": 895,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 270, 657, 1595| 0, 180, 90, 499, 1595",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -3295,7 +3298,7 @@
 					"uid": 896,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 2235, 1595| 0, 270, 180, 2235, 1753|5, 270, 0, 2235, 1595| 5, 270, 0, 2235, 1753",
-						"id": 4
+						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -3327,7 +3330,7 @@
 					"uid": 789,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 90, 4131, 1753| 0, 90, 180, 4131, 1753| 0, 90, 180, 4131, 1595 | 5, 90, 90, 4131, 1753",
-						"id": 5
+						"intersectionId": 5
 					},
 					"behaviors": {},
 					"world": {
@@ -3359,7 +3362,7 @@
 					"uid": 791,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 270, 3969, 1753| 0, 270, 180, 3969, 1753| 0, 270, 180, 3969, 1595 | 5, 270, 270, 3969, 1753",
-						"id": 5
+						"intersectionId": 5
 					},
 					"behaviors": {},
 					"world": {
@@ -7304,270 +7307,6 @@
 					}
 				},
 				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 776,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 503,
-						"y": 1663,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 782,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 656,
-						"y": 1662,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 783,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 5
-					},
-					"behaviors": {},
-					"world": {
-						"x": 3969,
-						"y": 1665,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 784,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 5
-					},
-					"behaviors": {},
-					"world": {
-						"x": 4122,
-						"y": 1664,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 785,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 4
-					},
-					"behaviors": {},
-					"world": {
-						"x": 2316,
-						"y": 1756,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1025,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 4
-					},
-					"behaviors": {},
-					"world": {
-						"x": 2320,
-						"y": 1597,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1026,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 7
-					},
-					"behaviors": {},
-					"world": {
-						"x": 2307,
-						"y": 2898,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1027,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 7
-					},
-					"behaviors": {},
-					"world": {
-						"x": 2311,
-						"y": 2739,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Dekorasi2",
 					"properties": {
 						"initially-visible": true,
@@ -7681,7 +7420,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {

@@ -233,7 +233,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -290,7 +291,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -347,7 +349,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1458,7 +1461,7 @@
 					"uid": 681,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 3658, 2536| 0, 270, 270, 3658, 2536| 0, 270, 0, 3658, 2378| 0, 270, 180, 3658, 2378| 5, 270, 270, 3658, 2536",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1490,7 +1493,7 @@
 					"uid": 682,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 3816, 2536| 0, 180, 180, 3816, 2536| 0, 180, 270, 3658, 2536| 5, 180, 270, 3658, 2536",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1522,7 +1525,7 @@
 					"uid": 683,
 					"instanceVariables": {
 						"turnAngle": "5, 0, 270, 3658, 2378| 5, 0, 0, 3658, 2378| 5, 0, 90, 3816, 2378",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1554,7 +1557,7 @@
 					"uid": 685,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 3816, 2378| 0, 90, 90, 3816, 2378| 0, 90, 180, 3816, 2378 | 0, 90, 180, 3816, 2536",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1586,7 +1589,7 @@
 					"uid": 684,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 3658, 803| 0, 270, 270, 3658, 803| 0, 270, 0, 3658, 640| 5, 270, 180, 3658, 803",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1618,7 +1621,7 @@
 					"uid": 686,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 3816, 803| 0, 180, 180, 3816, 803| 0, 180, 270, 3658, 803| 5, 180, 180, 3816, 803",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1650,7 +1653,7 @@
 					"uid": 687,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 270, 3658, 641 | 0, 0, 0, 3658, 641| 0, 0, 90, 3816, 641",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1682,7 +1685,7 @@
 					"uid": 688,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 3816, 640| 0, 90, 90, 3816, 640| 0, 90, 180, 3816, 803| 5, 90, 180, 3816, 803",
-						"id": 2
+						"intersectionId": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1714,7 +1717,7 @@
 					"uid": 689,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 760, 803| 0, 270, 0, 760, 640",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1746,7 +1749,7 @@
 					"uid": 690,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 920, 803| 5, 180, 90, 920, 803| 5, 180, 90, 760, 803",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1778,7 +1781,7 @@
 					"uid": 691,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 760, 640| 5, 0, 90, 760, 640| 5, 0, 90, 920, 640",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1983,7 +1986,8 @@
 						"waiting": false,
 						"inTrafficLight": false,
 						"melanggar": false,
-						"aboutToCollide": false
+						"aboutToCollide": false,
+						"intersectionLock": ""
 					},
 					"behaviors": {
 						"Bullet": {
@@ -2027,7 +2031,7 @@
 					"uid": 693,
 					"instanceVariables": {
 						"turnAngle": "5, 0, 270, 3658, 2536| 5, 0, 90, 3816, 2536",
-						"id": 3
+						"intersectionId": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -2059,7 +2063,7 @@
 					"uid": 694,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 920, 803|  0, 270, 0, 920, 640",
-						"id": 1
+						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -2091,7 +2095,7 @@
 					"uid": 695,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 270, 760, 2536",
-						"id": 4
+						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -2123,7 +2127,7 @@
 					"uid": 696,
 					"instanceVariables": {
 						"turnAngle": "5, 90, 0, 920, 2378",
-						"id": 4
+						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -2155,7 +2159,7 @@
 					"uid": 697,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 270, 920, 2378",
-						"id": 4
+						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -2187,7 +2191,7 @@
 					"uid": 698,
 					"instanceVariables": {
 						"turnAngle": "5, 90, 0, 760, 2536",
-						"id": 4
+						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -5592,72 +5596,6 @@
 						"height": 152,
 						"originX": 0.5,
 						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 775,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 846,
-						"y": 651,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "intersection",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 773,
-					"instanceVariables": {
-						"collisionCount": 0,
-						"vehiclesUID": "",
-						"id": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 846,
-						"y": 798,
-						"width": 247.119106,
-						"height": 99.11910599999999,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
