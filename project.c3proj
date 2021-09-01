@@ -120,14 +120,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r260",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -165,8 +157,6 @@
 			"motorbike",
 			"motorbikeWithoutHelm",
 			"motorbikeWithoutLight",
-			"camera",
-			"pinpoint",
 			"logoGemastik",
 			"logoApaya",
 			"levels",
