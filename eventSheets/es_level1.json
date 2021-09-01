@@ -132,6 +132,26 @@
 			"sid": 329312907336739
 		},
 		{
+			"eventType": "variable",
+			"name": "randSpawnTimeFrom",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 341274044294797
+		},
+		{
+			"eventType": "variable",
+			"name": "randSpawnTimeTo",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 501468205721051
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "Es_Level"
 		},
@@ -198,6 +218,28 @@
 					"parameters": {
 						"value": "1",
 						"weight": "30"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "spawnVehicle antara 2-3 detika sekali"
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 431556966629990,
+					"parameters": {
+						"variable": "randSpawnTimeFrom",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 646128323093803,
+					"parameters": {
+						"variable": "randSpawnTimeTo",
+						"value": "4"
 					}
 				},
 				{
@@ -341,37 +383,8 @@
 							}
 						},
 						{
-							"callFunction": "spawnVehicle",
-							"sid": 225184012054352,
-							"parameters": [
-								"AdvancedRandom.Weighted"
-							]
-						},
-						{
-							"type": "comment",
-							"text": "spawnVehicle antara 2-4 detika sekali, kalau diubah jangan lpa yang dibawah juga"
-						},
-						{
-							"id": "start-timer",
-							"objectClass": "levelTimer",
-							"sid": 158440092878326,
-							"behaviorType": "Timer",
-							"parameters": {
-								"duration": "random(2,3)",
-								"type": "once",
-								"tag": "\"spawnVehicle\""
-							}
-						},
-						{
-							"id": "start-timer",
-							"objectClass": "levelTimer",
-							"sid": 796353850517974,
-							"behaviorType": "Timer",
-							"parameters": {
-								"duration": "timeLimit",
-								"type": "once",
-								"tag": "\"game\""
-							}
+							"callFunction": "startGame",
+							"sid": 164208228669116
 						}
 					],
 					"sid": 676365810180566
@@ -439,10 +452,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
-					"sid": 845080707743866,
+					"sid": 112864402382215,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "random(2,3)",
+						"duration": "random(randSpawnTimeFrom, randSpawnTimeTo)",
 						"type": "once",
 						"tag": "\"spawnVehicle\""
 					}
@@ -849,10 +862,10 @@
 								{
 									"id": "start-timer",
 									"objectClass": "levelTimer",
-									"sid": 484388665998714,
+									"sid": 439800902599459,
 									"behaviorType": "Timer",
 									"parameters": {
-										"duration": "random(2,4)",
+										"duration": "random(randSpawnTimeFrom, randSpawnTimeTo)",
 										"type": "once",
 										"tag": "\"spawnVehicle\""
 									}
@@ -912,15 +925,8 @@
 									}
 								},
 								{
-									"id": "start-timer",
-									"objectClass": "levelTimer",
-									"sid": 921777991383554,
-									"behaviorType": "Timer",
-									"parameters": {
-										"duration": "timeLimit",
-										"type": "once",
-										"tag": "\"game\""
-									}
+									"callFunction": "startGame",
+									"sid": 679367574510467
 								}
 							],
 							"sid": 498000327722830

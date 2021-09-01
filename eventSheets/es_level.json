@@ -3495,6 +3495,48 @@
 							"sid": 635045559983435
 						}
 					]
+				},
+				{
+					"functionName": "startGame",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "spawnVehicle",
+							"sid": 225184012054352,
+							"parameters": [
+								"AdvancedRandom.Weighted"
+							]
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "levelTimer",
+							"sid": 289023701719246,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "random(randSpawnTimeFrom, randSpawnTimeTo)",
+								"type": "once",
+								"tag": "\"spawnVehicle\""
+							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "levelTimer",
+							"sid": 796353850517974,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "timeLimit",
+								"type": "once",
+								"tag": "\"game\""
+							}
+						}
+					],
+					"sid": 327085240094154
 				}
 			],
 			"sid": 490970572641096

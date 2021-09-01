@@ -92,6 +92,24 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
+					"sid": 664200209576350,
+					"parameters": {
+						"variable": "randSpawnTimeFrom",
+						"value": "0.5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 806256376980043,
+					"parameters": {
+						"variable": "randSpawnTimeTo",
+						"value": "1.5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
 					"sid": 448853324801013,
 					"parameters": {
 						"variable": "timeLimit",
@@ -272,33 +290,8 @@
 							}
 						},
 						{
-							"callFunction": "spawnVehicle",
-							"sid": 143256018279709,
-							"parameters": [
-								"AdvancedRandom.Weighted"
-							]
-						},
-						{
-							"id": "start-timer",
-							"objectClass": "levelTimer",
-							"sid": 304544280279361,
-							"behaviorType": "Timer",
-							"parameters": {
-								"duration": "random(0.5,1.5)",
-								"type": "once",
-								"tag": "\"spawnVehicle\""
-							}
-						},
-						{
-							"id": "start-timer",
-							"objectClass": "levelTimer",
-							"sid": 614833268175850,
-							"behaviorType": "Timer",
-							"parameters": {
-								"duration": "timeLimit",
-								"type": "once",
-								"tag": "\"game\""
-							}
+							"callFunction": "startGame",
+							"sid": 981820782389336
 						}
 					],
 					"sid": 304116273842083
@@ -338,10 +331,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
-					"sid": 238778457983534,
+					"sid": 602687332691638,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "random(0.5,1.5)",
+						"duration": "random(randSpawnTimeFrom, randSpawnTimeTo)",
 						"type": "once",
 						"tag": "\"spawnVehicle\""
 					}
@@ -602,33 +595,8 @@
 									}
 								},
 								{
-									"callFunction": "spawnVehicle",
-									"sid": 717089802026137,
-									"parameters": [
-										"AdvancedRandom.Weighted"
-									]
-								},
-								{
-									"id": "start-timer",
-									"objectClass": "levelTimer",
-									"sid": 864753972688998,
-									"behaviorType": "Timer",
-									"parameters": {
-										"duration": "random(0.5,1.5)",
-										"type": "once",
-										"tag": "\"spawnVehicle\""
-									}
-								},
-								{
-									"id": "start-timer",
-									"objectClass": "levelTimer",
-									"sid": 451036403511364,
-									"behaviorType": "Timer",
-									"parameters": {
-										"duration": "timeLimit",
-										"type": "once",
-										"tag": "\"game\""
-									}
+									"callFunction": "startGame",
+									"sid": 522694891618307
 								}
 							],
 							"sid": 878070114414770
