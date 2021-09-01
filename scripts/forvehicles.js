@@ -66,7 +66,7 @@ function checkLock(vehicle, lockCheck) {
 
 function lockIntersection(vehicle, allIntersections) {
 	const pickedLock = vehicle.instVars.intersectionLock.split(",").map(val => parseInt(val));
-	console.log(pickedLock);
+// 	console.log(pickedLock);
 	
 	const pickedIntersections = [];
 	
@@ -74,8 +74,8 @@ function lockIntersection(vehicle, allIntersections) {
 		if (pickedLock[i] == -1) continue;
 		
 		const intersection = allIntersections.find(val => val.instVars.intersectionId == pickedLock[0]
-													  && val.instVars.id == pickedLock[i]
-													  && val.instVars.vehiclesUID == "");
+													&& val.instVars.id == pickedLock[i]
+													&& val.instVars.vehiclesUID == "");
 		if(!intersection) {
 			return false;
 		} else {

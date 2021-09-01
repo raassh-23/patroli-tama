@@ -66,6 +66,26 @@
 			"sid": 436998512175791
 		},
 		{
+			"eventType": "variable",
+			"name": "pickedPelanggaran",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 350435887180760
+		},
+		{
+			"eventType": "variable",
+			"name": "pickedVehicle",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 240398362007668
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -368,347 +388,6 @@
 			]
 		},
 		{
-			"functionName": "spawnVehicle",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [
-				{
-					"name": "pelanggaran",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 992617722645585
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 161605986393381,
-			"children": [
-				{
-					"eventType": "variable",
-					"name": "spawnerUID",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 347348393337314
-				},
-				{
-					"eventType": "variable",
-					"name": "type",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 337677043828986
-				},
-				{
-					"eventType": "variable",
-					"name": "vehicleName",
-					"type": "string",
-					"initialValue": "",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 851443170640715
-				},
-				{
-					"eventType": "comment",
-					"text": "nilai pelanggaran:\n0 = tidak melanggar\n1 = melawan arus\n2 = motor tidak pakai helm\n3 = motor tidak menyalakan lampu"
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 324089286677215,
-							"parameters": {
-								"variable": "spawnerUID",
-								"value": "Functions.pickSpawner(pelanggaran = 1? 1 : 0)"
-							}
-						},
-						{
-							"type": "script",
-							"script": "localVars.vehicleName = pickVehicle(localVars.pelanggaran);\n\nlocalVars.type = pickType(localVars.vehicleName);"
-						}
-					],
-					"sid": 231495774324468
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-by-comparison",
-							"objectClass": "System",
-							"sid": 627209852916973,
-							"parameters": {
-								"object": "spawner",
-								"expression": "spawner.UID",
-								"comparison": 0,
-								"value": "spawnerUID"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object-by-name",
-							"objectClass": "System",
-							"sid": 161368748496355,
-							"parameters": {
-								"object-name": "vehicleName",
-								"layer": "\"game\"",
-								"x": "spawner.X",
-								"y": "spawner.Y",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 338866305587360,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-last-created",
-									"objectClass": "System",
-									"sid": 321834443941754,
-									"parameters": {
-										"object": "vehicle"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "vehicle",
-									"sid": 677165664210177,
-									"parameters": {
-										"instance-variable": "currentAngle",
-										"value": "spawner.angleSpawned"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "vehicle",
-									"sid": 553380202818020,
-									"parameters": {
-										"frame-number": "floor(Self.currentAngle/90)"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "vehicle",
-									"sid": 965615013086040,
-									"parameters": {
-										"animation": "Self.ObjectTypeName&type",
-										"from": "current-frame"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "vehicle",
-									"sid": 743370639112856,
-									"parameters": {
-										"instance-variable": "berhenti",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "vehicle",
-									"sid": 260411470972192,
-									"parameters": {
-										"instance-variable": "speed",
-										"value": "TopSpeed"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "vehicle",
-									"sid": 524248627416021,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"value": "pelanggaran"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "vehicle",
-									"sid": 396694796610916,
-									"parameters": {
-										"instance-variable": "type",
-										"value": "type"
-									}
-								}
-							],
-							"sid": 141008854237648,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 149573810375352,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 0,
-												"value": "0"
-											}
-										},
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 442910643791859,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 0,
-												"value": "1"
-											}
-										},
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 586392956526924,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 0,
-												"value": "2"
-											}
-										},
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 226995895832721,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 0,
-												"value": "3"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "vehicle",
-											"sid": 898243030798183,
-											"parameters": {
-												"instance-variable": "melanggar",
-												"value": "true"
-											}
-										}
-									],
-									"sid": 913502790201166,
-									"isOrBlock": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 307663655738880,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 0,
-												"value": "4"
-											}
-										},
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 339299020287516,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 0,
-												"value": "5"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "vehicle",
-											"sid": 126852263513091,
-											"parameters": {
-												"instance-variable": "melanggar",
-												"value": "false"
-											}
-										}
-									],
-									"sid": 292646761245880,
-									"isOrBlock": true
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"functionName": "pickSpawner",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "number",
-			"functionIsAsync": false,
-			"functionParameters": [
-				{
-					"name": "melawanArus",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 405244776170138
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 408757794098320,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "spawner",
-							"sid": 679932309420195,
-							"parameters": {
-								"instance-variable": "melawanArus",
-								"comparison": 0,
-								"value": "melawanArus"
-							}
-						},
-						{
-							"id": "pick-random-instance",
-							"objectClass": "System",
-							"sid": 875079805383499,
-							"parameters": {
-								"object": "spawner"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-function-return-value",
-							"objectClass": "Functions",
-							"sid": 448206616388660,
-							"parameters": {
-								"value": "spawner.UID"
-							}
-						}
-					],
-					"sid": 182038533629120
-				}
-			]
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -733,16 +412,6 @@
 				}
 			],
 			"sid": 859308124010579
-		},
-		{
-			"eventType": "variable",
-			"name": "pickedVehicle",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 884279891739131
 		},
 		{
 			"eventType": "block",
@@ -935,1018 +604,6 @@
 							"sid": 353197888730898
 						}
 					]
-				}
-			]
-		},
-		{
-			"functionName": "showPelanggaranPanel",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": true,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 375647937232883,
-					"parameters": {
-						"layer": "\"pilihanPelanggaran\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 725321865808371,
-					"parameters": {
-						"variable": "pickedPelanggaran",
-						"value": "0"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "pelanggaranPanel",
-					"sid": 208946026293953,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"moveIn\"",
-						"property": "offsetX",
-						"end-value": "Self.X-Self.Width",
-						"time": "0.5",
-						"ease": "easeoutsine",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				}
-			],
-			"sid": 649848928241907,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-all",
-							"objectClass": "System",
-							"sid": 738059366742619,
-							"parameters": {
-								"object": "TimeScaledPaused"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-object-time-scale",
-							"objectClass": "System",
-							"sid": 623354779875442,
-							"parameters": {
-								"object": "TimeScaledPelanggaran",
-								"time-scale": "0"
-							}
-						},
-						{
-							"id": "pause-resume-timer",
-							"objectClass": "levelTimer",
-							"sid": 383647052455517,
-							"behaviorType": "Timer",
-							"parameters": {
-								"tag": "\"spawnVehicle\"",
-								"state": "paused"
-							}
-						}
-					],
-					"sid": 292192483363472
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 553570598497898,
-							"parameters": {
-								"object": "pelanggaranOption"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-scale",
-							"objectClass": "pelanggaranOption",
-							"sid": 110064385117605,
-							"parameters": {
-								"scale": "1"
-							}
-						}
-					],
-					"sid": 358441497063806
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pelanggaranButton",
-							"sid": 694545313883194,
-							"parameters": {
-								"comparison": 0,
-								"number": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-opacity",
-							"objectClass": "pelanggaranButton",
-							"sid": 944991895559422,
-							"parameters": {
-								"opacity": "50"
-							}
-						},
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "pelanggaranButton",
-							"sid": 529244370339737,
-							"parameters": {
-								"mode": "enable",
-								"effect": "\"Grayscale\""
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "pelanggaranButton",
-							"sid": 179092759292176,
-							"parameters": {
-								"effect": "\"Grayscale\"",
-								"parameter-index": "0",
-								"value": "100"
-							}
-						}
-					],
-					"sid": 581929853863265
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-by-comparison",
-							"objectClass": "System",
-							"sid": 962578868555201,
-							"parameters": {
-								"object": "vehicle",
-								"expression": "vehicle.UID",
-								"comparison": 0,
-								"value": "pickedVehicle"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "pelanggaranDriver",
-							"sid": 983136106420704,
-							"parameters": {
-								"animation": "vehicle.ObjectTypeName",
-								"from": "current-frame"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "pelanggaranDriver",
-							"sid": 755541035592301,
-							"parameters": {
-								"frame-number": "vehicle.type"
-							}
-						}
-					],
-					"sid": 188286987757620
-				}
-			]
-		},
-		{
-			"functionName": "hidePelanggaranPanel",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": true,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 784494809038188,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-all",
-							"objectClass": "System",
-							"sid": 856352971053921,
-							"parameters": {
-								"object": "TimeScaledPaused"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-object-time-scale",
-							"objectClass": "System",
-							"sid": 574404536648329,
-							"parameters": {
-								"object": "TimeScaledPelanggaran",
-								"time-scale": "1"
-							}
-						},
-						{
-							"id": "pause-resume-timer",
-							"objectClass": "levelTimer",
-							"sid": 804299767752110,
-							"behaviorType": "Timer",
-							"parameters": {
-								"tag": "\"spawnVehicle\"",
-								"state": "resumed"
-							}
-						}
-					],
-					"sid": 966809009788507
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-by-unique-id",
-							"objectClass": "vehicle",
-							"sid": 114107202506239,
-							"parameters": {
-								"unique-id": "pickedVehicle"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 126293042428363,
-							"parameters": {
-								"instance-variable": "berhenti",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 485416729108009,
-							"parameters": {
-								"instance-variable": "picked",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 745247996581369,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "tween-one-property",
-							"objectClass": "pelanggaranPanel",
-							"sid": 235261807506321,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"moveOut\"",
-								"property": "offsetX",
-								"end-value": "Self.X+Self.Width",
-								"time": "0.5",
-								"ease": "easeinsine",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no"
-							}
-						},
-						{
-							"id": "wait-for-previous-actions",
-							"objectClass": "System",
-							"sid": 350303511154429
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 567376563705832,
-							"parameters": {
-								"layer": "\"pilihanPelanggaran\"",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 325739785576820
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 212542157211434,
-					"parameters": {
-						"object": "pelanggaranButton"
-					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 394358989438557,
-					"parameters": {
-						"layer": "\"pilihanPelanggaran\""
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "pelanggaranButton",
-					"sid": 248734649980573,
-					"parameters": {
-						"instance-variable": "touched"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 447695112318958,
-					"parameters": {
-						"layer": "\"paused\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 252356963810125,
-					"parameters": {
-						"layer": "\"levelFailed\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 747722470592123,
-					"parameters": {
-						"layer": "\"levelFinished\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "compare-opacity",
-					"objectClass": "pelanggaranButton",
-					"sid": 386061362635147,
-					"parameters": {
-						"comparison": 5,
-						"opacity": "99"
-					}
-				},
-				{
-					"id": "is-any-playing",
-					"objectClass": "pelanggaranPanel",
-					"sid": 114966433424186,
-					"behaviorType": "Tween",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "pelanggaranButton",
-					"sid": 621933487400497,
-					"parameters": {
-						"instance-variable": "touched",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "pelanggaranButton",
-					"sid": 662197950630608,
-					"parameters": {
-						"scale": "0.9"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 457773358134781,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "pelanggaranButton",
-					"sid": 817564684412290,
-					"parameters": {
-						"scale": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 346285464544625,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				}
-			],
-			"sid": 885098668217210,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pelanggaranButton",
-							"sid": 899029670933558,
-							"parameters": {
-								"comparison": 0,
-								"number": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 404707923008720
-						},
-						{
-							"callFunction": "hidePelanggaranPanel",
-							"sid": 890020883845051
-						}
-					],
-					"sid": 751209237915290,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-by-unique-id",
-									"objectClass": "vehicle",
-									"sid": 168840041195987,
-									"parameters": {
-										"unique-id": "pickedVehicle"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 955910121392507,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 776653863279570,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 0,
-												"value": "0"
-											}
-										},
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "vehicle",
-											"sid": 978696234655425,
-											"parameters": {
-												"instance-variable": "melanggar"
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"callFunction": "playWrong",
-											"sid": 343366793168041
-										},
-										{
-											"id": "add-to-eventvar",
-											"objectClass": "System",
-											"sid": 482000682142425,
-											"parameters": {
-												"variable": "score",
-												"value": "-12"
-											}
-										}
-									],
-									"sid": 665771755709822,
-									"isOrBlock": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 134368123120621,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 4,
-												"value": "0"
-											}
-										},
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "vehicle",
-											"sid": 645742484635249,
-											"parameters": {
-												"instance-variable": "melanggar"
-											}
-										},
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 154474091391077,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 1,
-												"value": "pickedPelanggaran"
-											}
-										}
-									],
-									"actions": [
-										{
-											"callFunction": "playHalfCorrect",
-											"sid": 617806813331908
-										},
-										{
-											"id": "add-to-eventvar",
-											"objectClass": "System",
-											"sid": 145710069615758,
-											"parameters": {
-												"variable": "score",
-												"value": "5"
-											}
-										}
-									],
-									"sid": 353407025884267
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 361755041160952,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 4,
-												"value": "0"
-											}
-										},
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "vehicle",
-											"sid": 588807298976760,
-											"parameters": {
-												"instance-variable": "melanggar"
-											}
-										},
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "vehicle",
-											"sid": 809584039029648,
-											"parameters": {
-												"instance-variable": "pelanggaran",
-												"comparison": 0,
-												"value": "pickedPelanggaran"
-											}
-										}
-									],
-									"actions": [
-										{
-											"callFunction": "playCorrect",
-											"sid": 688981118966211
-										},
-										{
-											"id": "add-to-eventvar",
-											"objectClass": "System",
-											"sid": 897601911090466,
-											"parameters": {
-												"variable": "score",
-												"value": "10"
-											}
-										}
-									],
-									"sid": 365347123705766
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-by-comparison",
-											"objectClass": "System",
-											"sid": 703433033497849,
-											"parameters": {
-												"object": "intersection",
-												"expression": "intersection.vehiclesUID",
-												"comparison": 0,
-												"value": "str(vehicle.UID)"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-instvar-value",
-											"objectClass": "intersection",
-											"sid": 806710677643420,
-											"parameters": {
-												"instance-variable": "collisionCount",
-												"value": "0"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "intersection",
-											"sid": 819303678436215,
-											"parameters": {
-												"instance-variable": "vehiclesUID",
-												"value": "\"\""
-											}
-										}
-									],
-									"sid": 866362719675842,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "vehicle",
-											"sid": 335449018526297
-										}
-									],
-									"sid": 543013173038095
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 382453800424049,
-									"parameters": {
-										"first-value": "LayoutName",
-										"comparison": 0,
-										"second-value": "\"Level1\""
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 663087277494790,
-									"parameters": {
-										"variable": "tutorialProgress",
-										"comparison": 0,
-										"value": "5"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-object-time-scale",
-									"objectClass": "System",
-									"sid": 501519839531720,
-									"parameters": {
-										"object": "TimeScaledPaused",
-										"time-scale": "0"
-									}
-								},
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 494632924365566,
-									"parameters": {
-										"variable": "tutorialProgress",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 660851140384346,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-by-comparison",
-											"objectClass": "System",
-											"sid": 937028061537931,
-											"parameters": {
-												"object": "Tutorial",
-												"expression": "Tutorial.progress",
-												"comparison": 1,
-												"value": "tutorialProgress"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "Tutorial",
-											"sid": 525393498299931,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										}
-									],
-									"sid": 355932974165307
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-by-comparison",
-											"objectClass": "System",
-											"sid": 197036375103113,
-											"parameters": {
-												"object": "Tutorial",
-												"expression": "Tutorial.progress",
-												"comparison": 0,
-												"value": "tutorialProgress"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "Tutorial",
-											"sid": 579999366778642,
-											"parameters": {
-												"visibility": "visible"
-											}
-										}
-									],
-									"sid": 966972743432105
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-all",
-											"objectClass": "System",
-											"sid": 443263534344828,
-											"parameters": {
-												"object": "vehicle"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "vehicle",
-											"sid": 168849188183393
-										}
-									],
-									"sid": 463197169577426
-								}
-							]
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pelanggaranButton",
-							"sid": 174831284294928,
-							"parameters": {
-								"comparison": 0,
-								"number": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 737885008146240
-						},
-						{
-							"callFunction": "hidePelanggaranPanel",
-							"sid": 427284593965520
-						}
-					],
-					"sid": 880145318239442
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "pelanggaranButton",
-							"sid": 170439792962130,
-							"parameters": {
-								"instance-variable": "touched",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 971184149650916
-				}
-			]
-		},
-		{
-			"eventType": "variable",
-			"name": "pickedPelanggaran",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 409970550783179
-		},
-		{
-			"functionName": "setOptionsInactive",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 711280703295511,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "pelanggaranOption",
-							"sid": 612675477731031,
-							"parameters": {
-								"instance-variable": "pelanggaran",
-								"comparison": 1,
-								"value": "pickedPelanggaran"
-							}
-						},
-						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 950575034868472,
-							"parameters": {
-								"object": "pelanggaranOption"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-scale",
-							"objectClass": "pelanggaranOption",
-							"sid": 454306379271121,
-							"parameters": {
-								"scale": "1"
-							}
-						}
-					],
-					"sid": 448132322924969
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 609495441372636,
-					"parameters": {
-						"object": "pelanggaranOption"
-					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 698818434973004,
-					"parameters": {
-						"layer": "\"pilihanPelanggaran\""
-					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 876678938787962,
-					"parameters": {
-						"layer": "\"paused\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 838649408023275,
-					"parameters": {
-						"layer": "\"levelFailed\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 521877448185883,
-					"parameters": {
-						"layer": "\"levelFinished\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-any-playing",
-					"objectClass": "pelanggaranPanel",
-					"sid": 654777865078343,
-					"behaviorType": "Tween",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "playUITap",
-					"sid": 884536719447270
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 741261540397744,
-					"parameters": {
-						"variable": "pickedPelanggaran",
-						"value": "pelanggaranOption.pelanggaran"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "pelanggaranOption",
-					"sid": 998040308592444,
-					"parameters": {
-						"scale": "1.25"
-					}
-				},
-				{
-					"callFunction": "setOptionsInactive",
-					"sid": 863606690638561
-				}
-			],
-			"sid": 589197804357734,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pelanggaranButton",
-							"sid": 958196112428261,
-							"parameters": {
-								"comparison": 0,
-								"number": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-opacity",
-							"objectClass": "pelanggaranButton",
-							"sid": 909741126195566,
-							"parameters": {
-								"opacity": "100"
-							}
-						},
-						{
-							"id": "set-effect-enabled",
-							"objectClass": "pelanggaranButton",
-							"sid": 660186872209113,
-							"parameters": {
-								"mode": "disable",
-								"effect": "\"Grayscale\""
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "pelanggaranButton",
-							"sid": 504701711453084,
-							"parameters": {
-								"effect": "\"Grayscale\"",
-								"parameter-index": "0",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 902399492109088
 				}
 			]
 		},
@@ -3100,7 +1757,7 @@
 			"actions": [
 				{
 					"type": "script",
-					"script": "const vehicle = runtime.objects.vehicle.getPickedInstances()[0];\n\nconst check = checkLock(vehicle, runtime.objects.lockCheck.getPickedInstances()[0]);\nconsole.log(check);\n\nif(check) {\n\tif(!lockIntersection(vehicle, runtime.objects.intersection.getAllInstances())) {\n\t\tvehicle.instVars.waiting = true;\n\t}\n}\n"
+					"script": "const vehicle = runtime.objects.vehicle.getPickedInstances()[0];\n\nconst check = checkLock(vehicle, runtime.objects.lockCheck.getPickedInstances()[0]);\n// console.log(check);\n\nif(check) {\n\tif(!lockIntersection(vehicle, runtime.objects.intersection.getAllInstances())) {\n\t\tvehicle.instVars.waiting = true;\n\t}\n}\n"
 				}
 			],
 			"sid": 705713009501633
@@ -3194,249 +1851,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 603277546852185,
-					"parameters": {
-						"object": "intersection"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 987026512602631,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "intersection",
-							"sid": 160907134857187,
-							"parameters": {
-								"object": "vehicle"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "intersection",
-							"sid": 532271326847500,
-							"parameters": {
-								"instance-variable": "collisionCount",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 610249793727605,
-					"disabled": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "intersection",
-									"sid": 803478481147214,
-									"parameters": {
-										"instance-variable": "vehiclesUID",
-										"comparison": 0,
-										"value": "\"\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "intersection",
-									"sid": 446035461899737,
-									"parameters": {
-										"instance-variable": "vehiclesUID",
-										"value": "vehicle.UID"
-									}
-								}
-							],
-							"sid": 476822626270613,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "intersection",
-									"sid": 761311111062228,
-									"parameters": {
-										"instance-variable": "vehiclesUID",
-										"comparison": 1,
-										"value": "\"\""
-									}
-								},
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 468528576522665,
-									"parameters": {
-										"first-value": "Functions.checkIntersection(intersection.UID, int(intersection.vehiclesUID))",
-										"comparison": 0,
-										"second-value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "intersection",
-									"sid": 586710385184513,
-									"parameters": {
-										"instance-variable": "vehiclesUID",
-										"value": "vehicle.UID"
-									}
-								}
-							],
-							"sid": 206542514307416,
-							"disabled": true
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "intersection",
-							"sid": 898947462579272,
-							"parameters": {
-								"object": "vehicle"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "intersection",
-							"sid": 158152218039668,
-							"parameters": {
-								"instance-variable": "collisionCount",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "intersection",
-							"sid": 716523607911506,
-							"parameters": {
-								"instance-variable": "vehiclesUID",
-								"value": "\"\""
-							}
-						}
-					],
-					"sid": 545660535422581,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"functionName": "checkIntersection",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "number",
-			"functionIsAsync": false,
-			"functionParameters": [
-				{
-					"name": "interUID",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 486584682595070
-				},
-				{
-					"name": "vehicleUID",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 386842404488677
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 828639230325627,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-by-unique-id",
-							"objectClass": "vehicle",
-							"sid": 949683943616956,
-							"parameters": {
-								"unique-id": "vehicleUID"
-							}
-						},
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "vehicle",
-							"sid": 668195234342642,
-							"parameters": {
-								"object": "intersection"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 465860130973384,
-							"parameters": {
-								"first-value": "intersection.UID",
-								"comparison": 0,
-								"second-value": "interUID"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-function-return-value",
-							"objectClass": "Functions",
-							"sid": 313241308895689,
-							"parameters": {
-								"value": "1"
-							}
-						}
-					],
-					"sid": 311761204280613,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 493152248300803
-						}
-					],
-					"actions": [
-						{
-							"id": "set-function-return-value",
-							"objectClass": "Functions",
-							"sid": 872951039405736,
-							"parameters": {
-								"value": "0"
-							}
-						}
-					],
-					"sid": 875424162245109,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "for-each-ordered",
 					"objectClass": "System",
 					"sid": 576866085518570,
@@ -3460,452 +1874,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 733608883463806,
-					"parameters": {
-						"key": 32
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 757577738633499,
-					"parameters": {
-						"time-scale": "timescale = 1 ? 2 : 1"
-					}
-				}
-			],
-			"sid": 741930236088393,
-			"disabled": true
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "DragScreen",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "comment",
-					"text": "Set the position to the center of the viewport when touching the screen. So the screen instantly moves, even if the Camera was moved to the outermost corner of the layout."
-				},
-				{
-					"eventType": "comment",
-					"text": "The Pinpoint Object is needed for the orientation of the movement. It is pinned to the Camera, which remains in the center of the screen, so the distance between your finger and the Pinpoint stays the same while moving."
-				},
-				{
-					"eventType": "variable",
-					"name": "touchID",
-					"type": "number",
-					"initialValue": "-1",
-					"comment": "",
-					"isStatic": true,
-					"isConstant": false,
-					"sid": 330311668681477
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-any-touch-start",
-							"objectClass": "Touch",
-							"sid": 416630371080607
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 236116402652202,
-							"parameters": {
-								"layer": "\"paused\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 940078469456493,
-							"parameters": {
-								"layer": "\"levelFailed\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 374140424473365,
-							"parameters": {
-								"layer": "\"levelFinished\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 517915456129989,
-							"parameters": {
-								"layer": "\"pilihanPelanggaran\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 267951160692070,
-							"parameters": {
-								"variable": "touchID",
-								"comparison": 0,
-								"value": "-1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "camera",
-							"sid": 150012304315710,
-							"parameters": {
-								"x": "scrollx",
-								"y": "scrolly"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "pinpoint",
-							"sid": 275775215212919,
-							"parameters": {
-								"x": "Touch.X",
-								"y": "Touch.Y"
-							}
-						},
-						{
-							"id": "pin-to-object",
-							"objectClass": "pinpoint",
-							"sid": 104467506361147,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "camera",
-								"mode": "position-only"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 268493406511024,
-							"parameters": {
-								"variable": "touchID",
-								"value": "Touch.TouchIndex"
-							}
-						}
-					],
-					"sid": 513411644631060
-				},
-				{
-					"eventType": "comment",
-					"text": "While you swipe over the screen the Bullet Speed of the Camera is determined from the distance between your finger/cursor and the Pinpoint (two times the distance in this case), but it can be 2000 at maximum. You can play around with these parameters and the acceleration from the Cameras bullet behavior (which needs to be negativ) to find out your perfect setup."
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-touch-speed",
-							"objectClass": "Touch",
-							"sid": 518789418576620,
-							"parameters": {
-								"touch-index": "touchID",
-								"comparison": 5,
-								"speed": "10"
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 681947152395288,
-							"parameters": {
-								"layer": "\"paused\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 488002988859418,
-							"parameters": {
-								"layer": "\"levelFailed\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 367262075996501,
-							"parameters": {
-								"layer": "\"levelFinished\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 483007098716384,
-							"parameters": {
-								"layer": "\"pilihanPelanggaran\""
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-speed",
-							"objectClass": "camera",
-							"sid": 885315558152537,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "min(2000, distance(Touch.X, Touch.Y, pinpoint.X, pinpoint.Y)*2)"
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "camera",
-							"sid": 669675258378996,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"angle": "angle(Touch.X, Touch.Y, pinpoint.X, pinpoint.Y)"
-							}
-						}
-					],
-					"sid": 510596135840619
-				},
-				{
-					"eventType": "comment",
-					"text": "When your finger is to slow or it has stopped, the Camera instantly stop as well and the Pinpoint is set to the position of your finger/cursor."
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-touch-speed",
-							"objectClass": "Touch",
-							"sid": 806305552884269,
-							"parameters": {
-								"touch-index": "touchID",
-								"comparison": 2,
-								"speed": "10"
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 837117669362220,
-							"parameters": {
-								"layer": "\"paused\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 644757034527638,
-							"parameters": {
-								"layer": "\"levelFailed\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 459933432188268,
-							"parameters": {
-								"layer": "\"levelFinished\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 383087862351589,
-							"parameters": {
-								"layer": "\"pilihanPelanggaran\""
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-speed",
-							"objectClass": "camera",
-							"sid": 506024840107020,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "0"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "camera",
-							"sid": 488566685952527,
-							"parameters": {
-								"x": "scrollx",
-								"y": "scrolly"
-							}
-						},
-						{
-							"id": "unpin",
-							"objectClass": "pinpoint",
-							"sid": 177391986358471,
-							"behaviorType": "Pin"
-						},
-						{
-							"id": "set-position",
-							"objectClass": "pinpoint",
-							"sid": 255423027028689,
-							"parameters": {
-								"x": "Touch.X",
-								"y": "Touch.Y"
-							}
-						},
-						{
-							"id": "pin-to-object",
-							"objectClass": "pinpoint",
-							"sid": 787026378491594,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "camera",
-								"mode": "position-only"
-							}
-						}
-					],
-					"sid": 469968632413111
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 670780686308477,
-							"parameters": {
-								"layer": "\"paused\""
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 309467441209132,
-							"parameters": {
-								"layer": "\"levelFailed\""
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 602986416912382,
-							"parameters": {
-								"layer": "\"levelFinished\""
-							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 547369300881873,
-							"parameters": {
-								"layer": "\"pilihanPelanggaran\""
-							}
-						},
-						{
-							"id": "on-nth-touch-end",
-							"objectClass": "Touch",
-							"sid": 758862953919322,
-							"parameters": {
-								"touch-number": "touchID"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-speed",
-							"objectClass": "camera",
-							"sid": 693577249016531,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "0"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "camera",
-							"sid": 347039713882966,
-							"parameters": {
-								"x": "scrollx",
-								"y": "scrolly"
-							}
-						},
-						{
-							"id": "unpin",
-							"objectClass": "pinpoint",
-							"sid": 156060935647758,
-							"behaviorType": "Pin"
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 932445534710224,
-							"parameters": {
-								"variable": "touchID",
-								"value": "-1"
-							}
-						}
-					],
-					"sid": 605682933245635,
-					"isOrBlock": true
-				}
-			],
-			"sid": 412261937616342
-		},
-		{
-			"functionName": "setStar",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 820932856622956,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 784849862357841,
-							"parameters": {
-								"object": "levelUIStar"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-x",
-							"objectClass": "levelUIStar",
-							"sid": 493102715745233,
-							"parameters": {
-								"x": "(LevelUIProgress.X + Self.Width/2) + (int(tokenat(goals, levelUIStar.id, \"|\")) / int(tokenat(goals, 2, \"|\")) * (progressBarWidth - Self.Width))"
-							}
-						}
-					],
-					"sid": 894079342110932
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "is-on-screen",
 					"objectClass": "LevelUIProgress",
 					"sid": 397510206275195
@@ -3922,869 +1890,6 @@
 				}
 			],
 			"sid": 736159688227234
-		},
-		{
-			"functionName": "setOption",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 341610557386543,
-			"children": [
-				{
-					"eventType": "variable",
-					"name": "count",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 360610337385094
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 111711477509392,
-							"parameters": {
-								"name": "\"h\"",
-								"start-index": "0",
-								"end-index": "ceil(int(tokencount(options, \"|\"))/OptionXGrid) - 1"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 205653464426745,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "for",
-									"objectClass": "System",
-									"sid": 669111175072811,
-									"parameters": {
-										"name": "\"c\"",
-										"start-index": "0",
-										"end-index": "((int(tokencount(options, \"|\"))  - count) <= OptionXGrid ? (int(tokencount(options, \"|\"))  - count) : 3) - 1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 269108638937874,
-									"parameters": {
-										"object-to-create": "pelanggaranOption",
-										"layer": "\"pilihanPelanggaran\"",
-										"x": "optionX + OptionXDelta*loopindex(\"c\")",
-										"y": "optionY + OptionYDelta*loopindex(\"h\")",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "pin-to-object-properties",
-									"objectClass": "pelanggaranOption",
-									"sid": 561708193860915,
-									"behaviorType": "Pin",
-									"parameters": {
-										"pin-to": "pelanggaranPanel",
-										"x": true,
-										"y": true,
-										"angle": false,
-										"width-type": "no",
-										"height-type": "no",
-										"z": false
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "pelanggaranOption",
-									"sid": 154788124454073,
-									"parameters": {
-										"frame-number": "int(tokenat(options, count, \"|\")) - 1"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "pelanggaranOption",
-									"sid": 980209754685869,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"value": "int(tokenat(options, count, \"|\"))"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "pelanggaranOption",
-									"sid": 893916698390405,
-									"parameters": {
-										"animation": "lang",
-										"from": "current-frame"
-									}
-								},
-								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 759253376975643,
-									"parameters": {
-										"variable": "count",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 478417857196082
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-x",
-							"objectClass": "pelanggaranPanel",
-							"sid": 629234380926029,
-							"parameters": {
-								"x": "Self.X+Self.Width"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 267161403581753,
-							"parameters": {
-								"layer": "\"pilihanPelanggaran\"",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 878509714538635
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 300476071282290,
-					"parameters": {
-						"object": "pauseButton"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "pauseButton",
-					"sid": 756187886847704,
-					"parameters": {
-						"instance-variable": "touched"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 166831652220384,
-					"parameters": {
-						"layer": "\"paused\""
-					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 922673365790170,
-					"parameters": {
-						"layer": "\"levelFailed\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 496368465764437,
-					"parameters": {
-						"layer": "\"levelFinished\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-any-playing",
-					"objectClass": "pausePanel",
-					"sid": 405309868036597,
-					"behaviorType": "Tween",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "pauseButton",
-					"sid": 591611479947385,
-					"parameters": {
-						"instance-variable": "touched",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "pauseButton",
-					"sid": 524274129330410,
-					"parameters": {
-						"scale": "0.9"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 953617978531743,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "pauseButton",
-					"sid": 774012908797461,
-					"parameters": {
-						"scale": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 175583000926600,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				}
-			],
-			"sid": 692228721176397,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pauseButton",
-							"sid": 107674889007575,
-							"parameters": {
-								"comparison": 0,
-								"number": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 203601160912163
-						},
-						{
-							"callFunction": "hidePaused",
-							"sid": 256482024964499
-						}
-					],
-					"sid": 777206059106959
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pauseButton",
-							"sid": 236610713832201,
-							"parameters": {
-								"comparison": 0,
-								"number": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 788613220068302
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 286457615560011,
-							"parameters": {
-								"layout": "MainMenu"
-							}
-						}
-					],
-					"sid": 492721347942529
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pauseButton",
-							"sid": 842675298341912,
-							"parameters": {
-								"comparison": 0,
-								"number": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 267043167139006
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 698211609808464
-						}
-					],
-					"sid": 448640371798437
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pauseButton",
-							"sid": 260610933904584,
-							"parameters": {
-								"comparison": 0,
-								"number": "3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 235182327439202
-						},
-						{
-							"callFunction": "setLanguange",
-							"sid": 189481198210316,
-							"parameters": [
-								"\"en\""
-							]
-						}
-					],
-					"sid": 696071847827053
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "pauseButton",
-							"sid": 878789074795963,
-							"parameters": {
-								"comparison": 0,
-								"number": "5"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 544066689283452
-						},
-						{
-							"callFunction": "setLanguange",
-							"sid": 636677555286530,
-							"parameters": [
-								"\"id\""
-							]
-						}
-					],
-					"sid": 507934353279156
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "pauseButton",
-							"sid": 499819815534827,
-							"parameters": {
-								"instance-variable": "touched",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 165130143406457
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 390356871929495,
-					"parameters": {
-						"object": "pauseCollision"
-					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 597618300830878,
-					"parameters": {
-						"layer": "\"paused\""
-					}
-				},
-				{
-					"id": "is-any-playing",
-					"objectClass": "pausePanel",
-					"sid": 877967548021339,
-					"behaviorType": "Tween",
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 638384882576171,
-					"parameters": {
-						"layer": "\"levelFailed\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 163146335173866,
-					"parameters": {
-						"layer": "\"levelFinished\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "pick-by-comparison",
-					"objectClass": "System",
-					"sid": 583765791024160,
-					"parameters": {
-						"object": "pauseBar",
-						"expression": "pauseBar.id",
-						"comparison": 0,
-						"value": "pauseCollision.id"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-width",
-					"objectClass": "pauseBar",
-					"sid": 695065832727320,
-					"parameters": {
-						"width": "clamp(Touch.X(\"paused\")-pauseBar.X, 0, 281)"
-					}
-				}
-			],
-			"sid": 739728664181719,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "pauseCollision",
-							"sid": 991278258000347,
-							"parameters": {
-								"instance-variable": "id",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 197198021991692,
-							"parameters": {
-								"variable": "sfx",
-								"value": "round(pauseBar.Width/281* 100)"
-							}
-						},
-						{
-							"id": "set-item",
-							"objectClass": "LocalStorage",
-							"sid": 957966703620828,
-							"parameters": {
-								"key": "\"settings\"",
-								"value": "str(music&\"|\"&sfx&\"|\"&lang)"
-							}
-						}
-					],
-					"sid": 189887635893029
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "pauseCollision",
-							"sid": 266782209731509,
-							"parameters": {
-								"instance-variable": "id",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 641061515803092,
-							"parameters": {
-								"variable": "music",
-								"value": "round(pauseBar.Width/281* 100)"
-							}
-						},
-						{
-							"id": "set-item",
-							"objectClass": "LocalStorage",
-							"sid": 269411443738298,
-							"parameters": {
-								"key": "\"settings\"",
-								"value": "str(music&\"|\"&sfx&\"|\"&lang)"
-							}
-						},
-						{
-							"callFunction": "setMusicVolume",
-							"sid": 204450135666890
-						}
-					],
-					"sid": 503736491951007
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 443766966545498,
-					"parameters": {
-						"object": "levelUIButton"
-					}
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "levelUIButton",
-					"sid": 874572636009309,
-					"parameters": {
-						"instance-variable": "touched"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 275235784434446,
-					"parameters": {
-						"layer": "\"paused\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 105764593173831,
-					"parameters": {
-						"layer": "\"levelFailed\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 400342648481568,
-					"parameters": {
-						"layer": "\"levelFinished\""
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "levelUIButton",
-					"sid": 440180084076300,
-					"parameters": {
-						"instance-variable": "touched",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "levelUIButton",
-					"sid": 901918981121949,
-					"parameters": {
-						"scale": "0.9"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 920955463647246,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "levelUIButton",
-					"sid": 852110097598661,
-					"parameters": {
-						"scale": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 212240245143508,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				}
-			],
-			"sid": 892508096022374,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-any-playing",
-							"objectClass": "pausePanel",
-							"sid": 579261615552932,
-							"behaviorType": "Tween",
-							"isInverted": true
-						},
-						{
-							"id": "is-touching-object",
-							"objectClass": "Touch",
-							"sid": 852116270107465,
-							"parameters": {
-								"object": "vehicle"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "levelUIButton",
-							"sid": 628287962614328,
-							"parameters": {
-								"comparison": 0,
-								"number": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 978795302921778
-						},
-						{
-							"callFunction": "showPaused",
-							"sid": 282379477348953
-						}
-					],
-					"sid": 685329114589193
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "levelUIButton",
-							"sid": 808467895358832,
-							"parameters": {
-								"instance-variable": "touched",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 485527642643388
-				}
-			]
-		},
-		{
-			"functionName": "showPaused",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": true,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 961748656248380,
-					"parameters": {
-						"layer": "\"paused\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "tween-one-property",
-					"objectClass": "pausePanel",
-					"sid": 918273255996049,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"moveIn\"",
-						"property": "offsetY",
-						"end-value": "Self.Y + 1040",
-						"time": "0.5",
-						"ease": "easeoutsine",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				}
-			],
-			"sid": 361755756029769,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-all",
-							"objectClass": "System",
-							"sid": 312547105976451,
-							"parameters": {
-								"object": "TimeScaledPaused"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-object-time-scale",
-							"objectClass": "System",
-							"sid": 286155901367723,
-							"parameters": {
-								"object": "TimeScaledPaused",
-								"time-scale": "0"
-							}
-						}
-					],
-					"sid": 706929389192975
-				}
-			]
-		},
-		{
-			"functionName": "hidePaused",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": true,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 728711670932377,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "tween-one-property",
-							"objectClass": "pausePanel",
-							"sid": 326758511579639,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"moveOut\"",
-								"property": "offsetY",
-								"end-value": "Self.Y-1040",
-								"time": "0.5",
-								"ease": "easeinsine",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no"
-							}
-						},
-						{
-							"id": "wait-for-previous-actions",
-							"objectClass": "System",
-							"sid": 619397212009735
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 554735944429019,
-							"parameters": {
-								"layer": "\"paused\"",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 668178321101236,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-all",
-									"objectClass": "System",
-									"sid": 620368306048505,
-									"parameters": {
-										"object": "TimeScaledPaused"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-object-time-scale",
-									"objectClass": "System",
-									"sid": 814574840253023,
-									"parameters": {
-										"object": "TimeScaledPaused",
-										"time-scale": "1"
-									}
-								}
-							],
-							"sid": 236580782682669
-						}
-					]
-				}
-			]
-		},
-		{
-			"functionName": "resetVariable",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 341361684278374,
-					"parameters": {
-						"variable": "score",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 773805448379033
 		},
 		{
 			"eventType": "block",
@@ -4830,903 +1935,6 @@
 				}
 			],
 			"sid": 413025541810840
-		},
-		{
-			"functionName": "showLevelOver",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": true,
-			"functionParameters": [
-				{
-					"name": "success",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 579474724272368
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 989202632739290,
-					"parameters": {
-						"layer": "\"paused\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 150000666031199,
-					"parameters": {
-						"layer": "\"pilihanPelanggaran\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 721192467932213,
-					"parameters": {
-						"layer": "\"ui\"",
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 328362636974319,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-all",
-							"objectClass": "System",
-							"sid": 708181631888427,
-							"parameters": {
-								"object": "TimeScaledPaused"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-object-time-scale",
-							"objectClass": "System",
-							"sid": 858252879238269,
-							"parameters": {
-								"object": "TimeScaledPaused",
-								"time-scale": "0"
-							}
-						}
-					],
-					"sid": 744529513811334
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 870765878629431,
-							"parameters": {
-								"variable": "success",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playFailed",
-							"sid": 637107708333029
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 704457059951707,
-							"parameters": {
-								"layer": "\"levelFailed\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "tween-one-property",
-							"objectClass": "levelFailedPanel",
-							"sid": 486006632271695,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"moveIn\"",
-								"property": "offsetY",
-								"end-value": "Self.Y+1090",
-								"time": "0.5",
-								"ease": "easeoutsine",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "levelFailedStar",
-							"sid": 574056704967864,
-							"parameters": {
-								"frame-number": "0"
-							}
-						}
-					],
-					"sid": 740602209008365,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "levelFailedText",
-									"sid": 294975627864697,
-									"parameters": {
-										"instance-variable": "id",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-text",
-									"objectClass": "levelFailedText",
-									"sid": 736484549169913,
-									"parameters": {
-										"text": "\"LEVEL \" & curLevel+1 "
-									}
-								}
-							],
-							"sid": 280634574032892
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "levelFailedText",
-									"sid": 649772321514115,
-									"parameters": {
-										"instance-variable": "id",
-										"comparison": 0,
-										"value": "2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-text",
-									"objectClass": "levelFailedText",
-									"sid": 890933515467054,
-									"parameters": {
-										"text": "(lang = \"id\" ? \"Skor : \" : \"Score : \") & score"
-									}
-								}
-							],
-							"sid": 883534740957513
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 742231378286349,
-							"parameters": {
-								"variable": "success",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playSuccess",
-							"sid": 805633332011610
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 507973452859256,
-							"parameters": {
-								"layer": "\"levelFinished\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "tween-one-property",
-							"objectClass": "levelFinishedPanel",
-							"sid": 495874226562041,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"moveIn\"",
-								"property": "offsetY",
-								"end-value": "Self.Y+1080",
-								"time": "0.5",
-								"ease": "easeoutsine",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "levelFinishedStar",
-							"sid": 644875923531740,
-							"parameters": {
-								"frame-number": "score >= int(tokenat(goals, 2, \"|\")) ? 3 : (score >= int(tokenat(goals, 1, \"|\")) ? 2 : 1)"
-							}
-						},
-						{
-							"id": "set-at-x",
-							"objectClass": "levels",
-							"sid": 550480028875375,
-							"parameters": {
-								"x": "curLevel",
-								"value": "levelFinishedStar.AnimationFrame"
-							}
-						},
-						{
-							"id": "set-at-x",
-							"objectClass": "levels",
-							"sid": 979828467666622,
-							"parameters": {
-								"x": "curLevel+1",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-item",
-							"objectClass": "LocalStorage",
-							"sid": 660460078005970,
-							"parameters": {
-								"key": "\"levels\"",
-								"value": "levels.AsJSON"
-							}
-						}
-					],
-					"sid": 519421342777318,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "LevelFinishedText",
-									"sid": 205530997918181,
-									"parameters": {
-										"instance-variable": "id",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-text",
-									"objectClass": "LevelFinishedText",
-									"sid": 260491513398045,
-									"parameters": {
-										"text": "\"LEVEL \" & curLevel+1 "
-									}
-								}
-							],
-							"sid": 607238848273171
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "LevelFinishedText",
-									"sid": 569942456956798,
-									"parameters": {
-										"instance-variable": "id",
-										"comparison": 0,
-										"value": "2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-text",
-									"objectClass": "LevelFinishedText",
-									"sid": 496308859646258,
-									"parameters": {
-										"text": "(lang = \"id\" ? \"Skor : \" : \"Score : \") & score"
-									}
-								}
-							],
-							"sid": 100095605586032
-						}
-					]
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 951952136734968,
-					"parameters": {
-						"object": "levelFailedButton"
-					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 260556638916724,
-					"parameters": {
-						"layer": "\"levelFailed\""
-					}
-				},
-				{
-					"id": "is-any-playing",
-					"objectClass": "levelFailedPanel",
-					"sid": 948614534981632,
-					"behaviorType": "Tween",
-					"isInverted": true
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "levelFailedButton",
-					"sid": 797992253725811,
-					"parameters": {
-						"instance-variable": "touched"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "levelFailedButton",
-					"sid": 395639960542465,
-					"parameters": {
-						"instance-variable": "touched",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "levelFailedButton",
-					"sid": 185776863160648,
-					"parameters": {
-						"scale": "0.9"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 676684884679537,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "levelFailedButton",
-					"sid": 104152867368634,
-					"parameters": {
-						"scale": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 733198636869858,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				}
-			],
-			"sid": 975663185969089,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "levelFailedButton",
-							"sid": 429868339184617,
-							"parameters": {
-								"comparison": 0,
-								"number": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 215551382058051
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 221606228999744,
-							"parameters": {
-								"layout": "LevelSelect"
-							}
-						}
-					],
-					"sid": 750559381022658
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "levelFailedButton",
-							"sid": 935529697863128,
-							"parameters": {
-								"comparison": 0,
-								"number": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 330612435587992
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 675865253524062
-						}
-					],
-					"sid": 557726745911227
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "levelFailedButton",
-							"sid": 429264583623980,
-							"parameters": {
-								"instance-variable": "touched",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 870914583888944
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 211142466223222,
-					"parameters": {
-						"object": "levelFinishedButton"
-					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 228392184729191,
-					"parameters": {
-						"layer": "\"levelFinished\""
-					}
-				},
-				{
-					"id": "is-any-playing",
-					"objectClass": "levelFinishedPanel",
-					"sid": 245688320849695,
-					"behaviorType": "Tween",
-					"isInverted": true
-				},
-				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "levelFinishedButton",
-					"sid": 710576776285344,
-					"parameters": {
-						"instance-variable": "touched"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "levelFinishedButton",
-					"sid": 868270405363352,
-					"parameters": {
-						"instance-variable": "touched",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "levelFinishedButton",
-					"sid": 507612425940727,
-					"parameters": {
-						"scale": "0.9"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 669942274712556,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "levelFinishedButton",
-					"sid": 806009912823759,
-					"parameters": {
-						"scale": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 422325352611139,
-					"parameters": {
-						"seconds": "0.1"
-					}
-				}
-			],
-			"sid": 815208329229763,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "levelFinishedButton",
-							"sid": 866832555372374,
-							"parameters": {
-								"comparison": 0,
-								"number": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 250008911204401
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 680084546271112,
-							"parameters": {
-								"layout": "LevelSelect"
-							}
-						}
-					],
-					"sid": 777270134507948
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "levelFinishedButton",
-							"sid": 669911154716671,
-							"parameters": {
-								"comparison": 0,
-								"number": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 818829427051009
-						},
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 652671703662908,
-							"parameters": {
-								"variable": "curLevel",
-								"value": "1"
-							}
-						},
-						{
-							"id": "go-to-layout-by-name",
-							"objectClass": "System",
-							"sid": 590134258385828,
-							"parameters": {
-								"layout": "curLevel < 8 ? \"level\"&curLevel+1 : \"LevelSelect\""
-							}
-						}
-					],
-					"sid": 739132366413387
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "levelFinishedButton",
-							"sid": 829996479708502,
-							"parameters": {
-								"comparison": 0,
-								"number": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "playUITap",
-							"sid": 415129944684369
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 680306979948555
-						}
-					],
-					"sid": 114129076837211
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "levelFinishedButton",
-							"sid": 985478204430338,
-							"parameters": {
-								"instance-variable": "touched",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 418441072203332
-				}
-			]
-		},
-		{
-			"functionName": "setHelp",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 967989266304338,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 743296110711430,
-							"parameters": {
-								"name": "\"i\"",
-								"start-index": "0",
-								"end-index": "int(tokencount(options, \"|\")) - 1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 660735361065728,
-							"parameters": {
-								"object-to-create": "helpIcons",
-								"layer": "\"help\"",
-								"x": "helpX",
-								"y": "helpY+ helpYDelta*loopindex(\"i\")",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "helpIcons",
-							"sid": 211866387775887,
-							"parameters": {
-								"frame-number": "int(tokenat(options, loopindex(\"i\"), \"|\")) - 1"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "helpIcons",
-							"sid": 514336238148093,
-							"parameters": {
-								"animation": "lang",
-								"from": "current-frame"
-							}
-						}
-					],
-					"sid": 470148647584547
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "helpPanel",
-							"sid": 911907529500269,
-							"parameters": {
-								"comparison": 0,
-								"number": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-height",
-							"objectClass": "helpPanel",
-							"sid": 965433062005044,
-							"parameters": {
-								"height": "70 + int(tokencount(options, \"|\")) * 53 + (int(tokencount(options, \"|\")) -1) * (helpYDelta - 53)"
-							}
-						}
-					],
-					"sid": 554546496691648
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-touching-object",
-					"objectClass": "Touch",
-					"sid": 271517842789801,
-					"parameters": {
-						"object": "pelanggaranButton"
-					}
-				},
-				{
-					"id": "compare-animation-frame",
-					"objectClass": "pelanggaranButton",
-					"sid": 445581239470737,
-					"parameters": {
-						"comparison": 0,
-						"number": "2"
-					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 984686995360470,
-					"parameters": {
-						"layer": "\"pilihanPelanggaran\""
-					}
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 919496849478814,
-					"parameters": {
-						"layer": "\"paused\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 506212660631898,
-					"parameters": {
-						"layer": "\"levelFailed\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "layer-is-visible",
-					"objectClass": "System",
-					"sid": 167687457826307,
-					"parameters": {
-						"layer": "\"levelFinished\""
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-any-playing",
-					"objectClass": "pelanggaranPanel",
-					"sid": 724985109782002,
-					"behaviorType": "Tween",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 426548643192392,
-					"parameters": {
-						"layer": "\"help\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "pelanggaranButton",
-					"sid": 816956685598862,
-					"parameters": {
-						"instance-variable": "touched",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "pelanggaranButton",
-					"sid": 217094335547512,
-					"parameters": {
-						"scale": "0.9"
-					}
-				}
-			],
-			"sid": 570935645102607
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-touching-object",
-					"objectClass": "Touch",
-					"sid": 846681055135323,
-					"parameters": {
-						"object": "pelanggaranButton"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "compare-animation-frame",
-					"objectClass": "pelanggaranButton",
-					"sid": 464793243120605,
-					"parameters": {
-						"comparison": 0,
-						"number": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 116455442906736,
-					"parameters": {
-						"layer": "\"help\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "pelanggaranButton",
-					"sid": 584638218368247,
-					"parameters": {
-						"instance-variable": "touched",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-scale",
-					"objectClass": "pelanggaranButton",
-					"sid": 780192066875864,
-					"parameters": {
-						"scale": "1"
-					}
-				}
-			],
-			"sid": 632376429948896
 		},
 		{
 			"eventType": "block",
@@ -5826,6 +2034,3818 @@
 				}
 			],
 			"sid": 446919318942892
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Functions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "spawnVehicle",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "pelanggaran",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 992617722645585
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 877338751444140,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "spawnerUID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 768613688929553
+						},
+						{
+							"eventType": "variable",
+							"name": "type",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 477259257311809
+						},
+						{
+							"eventType": "variable",
+							"name": "vehicleName",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 443883254428521
+						},
+						{
+							"eventType": "comment",
+							"text": "nilai pelanggaran:\n0 = tidak melanggar\n1 = melawan arus\n2 = motor tidak pakai helm\n3 = motor tidak menyalakan lampu"
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 516264517592929,
+									"parameters": {
+										"variable": "spawnerUID",
+										"value": "Functions.pickSpawner(pelanggaran = 1? 1 : 0)"
+									}
+								},
+								{
+									"type": "script",
+									"script": "localVars.vehicleName = pickVehicle(localVars.pelanggaran);\n\nlocalVars.type = pickType(localVars.vehicleName);"
+								}
+							],
+							"sid": 139294230369858
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 104852043220130,
+									"parameters": {
+										"object": "spawner",
+										"expression": "spawner.UID",
+										"comparison": 0,
+										"value": "spawnerUID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object-by-name",
+									"objectClass": "System",
+									"sid": 256598212539251,
+									"parameters": {
+										"object-name": "vehicleName",
+										"layer": "\"game\"",
+										"x": "spawner.X",
+										"y": "spawner.Y",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 536720904825998,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-last-created",
+											"objectClass": "System",
+											"sid": 246029955684605,
+											"parameters": {
+												"object": "vehicle"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "vehicle",
+											"sid": 441090204900661,
+											"parameters": {
+												"instance-variable": "currentAngle",
+												"value": "spawner.angleSpawned"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "vehicle",
+											"sid": 682250529807798,
+											"parameters": {
+												"frame-number": "floor(Self.currentAngle/90)"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "vehicle",
+											"sid": 222623056554194,
+											"parameters": {
+												"animation": "Self.ObjectTypeName&type",
+												"from": "current-frame"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "vehicle",
+											"sid": 397203342584762,
+											"parameters": {
+												"instance-variable": "berhenti",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "vehicle",
+											"sid": 981910302394189,
+											"parameters": {
+												"instance-variable": "speed",
+												"value": "TopSpeed"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "vehicle",
+											"sid": 185382396397789,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"value": "pelanggaran"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "vehicle",
+											"sid": 371130411124870,
+											"parameters": {
+												"instance-variable": "type",
+												"value": "type"
+											}
+										}
+									],
+									"sid": 801025863443418,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 358333816145148,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "0"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 206978887619802,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "1"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 136894769155451,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "2"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 850887140295210,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "vehicle",
+													"sid": 723984486652117,
+													"parameters": {
+														"instance-variable": "melanggar",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 659465548223981,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 765099753848378,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "4"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 940199110828957,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "5"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "vehicle",
+													"sid": 890001640892480,
+													"parameters": {
+														"instance-variable": "melanggar",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 372757626826106,
+											"isOrBlock": true
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "pickSpawner",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "number",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "melawanArus",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 405244776170138
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 505189606321598,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "spawner",
+									"sid": 413065789463368,
+									"parameters": {
+										"instance-variable": "melawanArus",
+										"comparison": 0,
+										"value": "melawanArus"
+									}
+								},
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 506948835758101,
+									"parameters": {
+										"object": "spawner"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-function-return-value",
+									"objectClass": "Functions",
+									"sid": 780569614370924,
+									"parameters": {
+										"value": "spawner.UID"
+									}
+								}
+							],
+							"sid": 199770753104249
+						}
+					]
+				},
+				{
+					"functionName": "showPelanggaranPanel",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": true,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 290216982153485,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 334354470134773,
+							"parameters": {
+								"variable": "pickedPelanggaran",
+								"value": "0"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "pelanggaranPanel",
+							"sid": 215890332422293,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveIn\"",
+								"property": "offsetX",
+								"end-value": "Self.X-Self.Width",
+								"time": "0.5",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 203053994564004,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 194851397273092,
+									"parameters": {
+										"object": "TimeScaledPaused"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 559173894589426,
+									"parameters": {
+										"object": "TimeScaledPelanggaran",
+										"time-scale": "0"
+									}
+								},
+								{
+									"id": "pause-resume-timer",
+									"objectClass": "levelTimer",
+									"sid": 319748308070910,
+									"behaviorType": "Timer",
+									"parameters": {
+										"tag": "\"spawnVehicle\"",
+										"state": "paused"
+									}
+								}
+							],
+							"sid": 403838883985507
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 693789126795545,
+									"parameters": {
+										"object": "pelanggaranOption"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-scale",
+									"objectClass": "pelanggaranOption",
+									"sid": 964423980911443,
+									"parameters": {
+										"scale": "1"
+									}
+								}
+							],
+							"sid": 538324689003627
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pelanggaranButton",
+									"sid": 843112770597021,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "pelanggaranButton",
+									"sid": 971075639544946,
+									"parameters": {
+										"opacity": "50"
+									}
+								},
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "pelanggaranButton",
+									"sid": 413479931727767,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"Grayscale\""
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "pelanggaranButton",
+									"sid": 966932724414605,
+									"parameters": {
+										"effect": "\"Grayscale\"",
+										"parameter-index": "0",
+										"value": "100"
+									}
+								}
+							],
+							"sid": 146458536725299
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 329781711421069,
+									"parameters": {
+										"object": "vehicle",
+										"expression": "vehicle.UID",
+										"comparison": 0,
+										"value": "pickedVehicle"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "pelanggaranDriver",
+									"sid": 766523638296078,
+									"parameters": {
+										"animation": "vehicle.ObjectTypeName",
+										"from": "current-frame"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "pelanggaranDriver",
+									"sid": 902371737618701,
+									"parameters": {
+										"frame-number": "vehicle.type"
+									}
+								}
+							],
+							"sid": 275533196739995
+						}
+					]
+				},
+				{
+					"functionName": "hidePelanggaranPanel",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": true,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 843305945426098,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 399481912254827,
+									"parameters": {
+										"object": "TimeScaledPaused"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 937059579934650,
+									"parameters": {
+										"object": "TimeScaledPelanggaran",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "pause-resume-timer",
+									"objectClass": "levelTimer",
+									"sid": 548889887283896,
+									"behaviorType": "Timer",
+									"parameters": {
+										"tag": "\"spawnVehicle\"",
+										"state": "resumed"
+									}
+								}
+							],
+							"sid": 514166384858296
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "vehicle",
+									"sid": 964781327101086,
+									"parameters": {
+										"unique-id": "pickedVehicle"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 680059154603998,
+									"parameters": {
+										"instance-variable": "berhenti",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 343451140044944,
+									"parameters": {
+										"instance-variable": "picked",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 508958774044921,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "pelanggaranPanel",
+									"sid": 966368749108931,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"moveOut\"",
+										"property": "offsetX",
+										"end-value": "Self.X+Self.Width",
+										"time": "0.5",
+										"ease": "easeinsine",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no"
+									}
+								},
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 211293586857990
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 135742461214254,
+									"parameters": {
+										"layer": "\"pilihanPelanggaran\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 872929011971567
+						}
+					]
+				},
+				{
+					"functionName": "setStar",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 294821140895757,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 999858475400860,
+									"parameters": {
+										"object": "levelUIStar"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "levelUIStar",
+									"sid": 104256821822691,
+									"parameters": {
+										"x": "(LevelUIProgress.X + Self.Width/2) + (int(tokenat(goals, levelUIStar.id, \"|\")) / int(tokenat(goals, 2, \"|\")) * (progressBarWidth - Self.Width))"
+									}
+								}
+							],
+							"sid": 557390686846314
+						}
+					]
+				},
+				{
+					"functionName": "setOption",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 407060933514607,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "count",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 174635028619860
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 607093848935576,
+									"parameters": {
+										"name": "\"h\"",
+										"start-index": "0",
+										"end-index": "ceil(int(tokencount(options, \"|\"))/OptionXGrid) - 1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 159825563486924,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for",
+											"objectClass": "System",
+											"sid": 771592378021191,
+											"parameters": {
+												"name": "\"c\"",
+												"start-index": "0",
+												"end-index": "((int(tokencount(options, \"|\"))  - count) <= OptionXGrid ? (int(tokencount(options, \"|\"))  - count) : 3) - 1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 174780545514900,
+											"parameters": {
+												"object-to-create": "pelanggaranOption",
+												"layer": "\"pilihanPelanggaran\"",
+												"x": "optionX + OptionXDelta*loopindex(\"c\")",
+												"y": "optionY + OptionYDelta*loopindex(\"h\")",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "pin-to-object-properties",
+											"objectClass": "pelanggaranOption",
+											"sid": 462723731983850,
+											"behaviorType": "Pin",
+											"parameters": {
+												"pin-to": "pelanggaranPanel",
+												"x": true,
+												"y": true,
+												"angle": false,
+												"width-type": "no",
+												"height-type": "no",
+												"z": false
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "pelanggaranOption",
+											"sid": 433905297368614,
+											"parameters": {
+												"frame-number": "int(tokenat(options, count, \"|\")) - 1"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "pelanggaranOption",
+											"sid": 614086368745396,
+											"parameters": {
+												"instance-variable": "pelanggaran",
+												"value": "int(tokenat(options, count, \"|\"))"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "pelanggaranOption",
+											"sid": 960496935387759,
+											"parameters": {
+												"animation": "lang",
+												"from": "current-frame"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 760096054827449,
+											"parameters": {
+												"variable": "count",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 558025809478976
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "pelanggaranPanel",
+									"sid": 747885042526547,
+									"parameters": {
+										"x": "Self.X+Self.Width"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 870916070067884,
+									"parameters": {
+										"layer": "\"pilihanPelanggaran\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 876601980929450
+						}
+					]
+				},
+				{
+					"functionName": "showPaused",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": true,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 715905739351578,
+							"parameters": {
+								"layer": "\"paused\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "pausePanel",
+							"sid": 394933769871763,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"moveIn\"",
+								"property": "offsetY",
+								"end-value": "Self.Y + 1040",
+								"time": "0.5",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 507070172264734,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 668929614117231,
+									"parameters": {
+										"object": "TimeScaledPaused"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 565694467006307,
+									"parameters": {
+										"object": "TimeScaledPaused",
+										"time-scale": "0"
+									}
+								}
+							],
+							"sid": 142820984747903
+						}
+					]
+				},
+				{
+					"functionName": "hidePaused",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": true,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 492466530364374,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "tween-one-property",
+									"objectClass": "pausePanel",
+									"sid": 267983571272729,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"moveOut\"",
+										"property": "offsetY",
+										"end-value": "Self.Y-1040",
+										"time": "0.5",
+										"ease": "easeinsine",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no"
+									}
+								},
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 581624287794276
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 989626280020264,
+									"parameters": {
+										"layer": "\"paused\"",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 311602949289264,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-all",
+											"objectClass": "System",
+											"sid": 838206739823453,
+											"parameters": {
+												"object": "TimeScaledPaused"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 351350054606726,
+											"parameters": {
+												"object": "TimeScaledPaused",
+												"time-scale": "1"
+											}
+										}
+									],
+									"sid": 577665501825470
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "resetVariable",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 657319127847769,
+							"parameters": {
+								"variable": "score",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 184207814171927
+				},
+				{
+					"functionName": "showLevelOver",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": true,
+					"functionParameters": [
+						{
+							"name": "success",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 579474724272368
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 848845896606700,
+							"parameters": {
+								"layer": "\"paused\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 687175158598425,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 114389413498352,
+							"parameters": {
+								"layer": "\"ui\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 649598099686131,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 874410276612192,
+									"parameters": {
+										"object": "TimeScaledPaused"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 971980608393842,
+									"parameters": {
+										"object": "TimeScaledPaused",
+										"time-scale": "0"
+									}
+								}
+							],
+							"sid": 746690554291791
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 302809810814644,
+									"parameters": {
+										"variable": "success",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playFailed",
+									"sid": 616998135625880
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 661652353722014,
+									"parameters": {
+										"layer": "\"levelFailed\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "levelFailedPanel",
+									"sid": 662199599146653,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"moveIn\"",
+										"property": "offsetY",
+										"end-value": "Self.Y+1090",
+										"time": "0.5",
+										"ease": "easeoutsine",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "levelFailedStar",
+									"sid": 468072308603062,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 742452157367414,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "levelFailedText",
+											"sid": 230120422330994,
+											"parameters": {
+												"instance-variable": "id",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "levelFailedText",
+											"sid": 652076536999464,
+											"parameters": {
+												"text": "\"LEVEL \" & curLevel+1 "
+											}
+										}
+									],
+									"sid": 965255629337363
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "levelFailedText",
+											"sid": 243965635015977,
+											"parameters": {
+												"instance-variable": "id",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "levelFailedText",
+											"sid": 385237181266183,
+											"parameters": {
+												"text": "(lang = \"id\" ? \"Skor : \" : \"Score : \") & score"
+											}
+										}
+									],
+									"sid": 102915373349736
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 677482343750384,
+									"parameters": {
+										"variable": "success",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playSuccess",
+									"sid": 266104524943771
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 900606212611412,
+									"parameters": {
+										"layer": "\"levelFinished\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "levelFinishedPanel",
+									"sid": 414456129701253,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"moveIn\"",
+										"property": "offsetY",
+										"end-value": "Self.Y+1080",
+										"time": "0.5",
+										"ease": "easeoutsine",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "levelFinishedStar",
+									"sid": 422522770963740,
+									"parameters": {
+										"frame-number": "score >= int(tokenat(goals, 2, \"|\")) ? 3 : (score >= int(tokenat(goals, 1, \"|\")) ? 2 : 1)"
+									}
+								},
+								{
+									"id": "set-at-x",
+									"objectClass": "levels",
+									"sid": 448880670437158,
+									"parameters": {
+										"x": "curLevel",
+										"value": "levelFinishedStar.AnimationFrame"
+									}
+								},
+								{
+									"id": "set-at-x",
+									"objectClass": "levels",
+									"sid": 359762810021291,
+									"parameters": {
+										"x": "curLevel+1",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 804585191036644,
+									"parameters": {
+										"key": "\"levels\"",
+										"value": "levels.AsJSON"
+									}
+								}
+							],
+							"sid": 669334717959046,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LevelFinishedText",
+											"sid": 252726059679549,
+											"parameters": {
+												"instance-variable": "id",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "LevelFinishedText",
+											"sid": 622367542697088,
+											"parameters": {
+												"text": "\"LEVEL \" & curLevel+1 "
+											}
+										}
+									],
+									"sid": 463377558264258
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LevelFinishedText",
+											"sid": 365333973556162,
+											"parameters": {
+												"instance-variable": "id",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "LevelFinishedText",
+											"sid": 154375955000610,
+											"parameters": {
+												"text": "(lang = \"id\" ? \"Skor : \" : \"Score : \") & score"
+											}
+										}
+									],
+									"sid": 320597021661865
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "setHelp",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 342354234064838,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 251569315151674,
+									"parameters": {
+										"name": "\"i\"",
+										"start-index": "0",
+										"end-index": "int(tokencount(options, \"|\")) - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 289675929576680,
+									"parameters": {
+										"object-to-create": "helpIcons",
+										"layer": "\"help\"",
+										"x": "helpX",
+										"y": "helpY+ helpYDelta*loopindex(\"i\")",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "helpIcons",
+									"sid": 795625748362950,
+									"parameters": {
+										"frame-number": "int(tokenat(options, loopindex(\"i\"), \"|\")) - 1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "helpIcons",
+									"sid": 222285670064165,
+									"parameters": {
+										"animation": "lang",
+										"from": "current-frame"
+									}
+								}
+							],
+							"sid": 390026986911697
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "helpPanel",
+									"sid": 702730326689850,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-height",
+									"objectClass": "helpPanel",
+									"sid": 368979944250444,
+									"parameters": {
+										"height": "70 + int(tokencount(options, \"|\")) * 53 + (int(tokencount(options, \"|\")) -1) * (helpYDelta - 53)"
+									}
+								}
+							],
+							"sid": 865656085541829
+						}
+					]
+				},
+				{
+					"functionName": "setOptionsInactive",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 541706686353325,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "pelanggaranOption",
+									"sid": 216312428068270,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 1,
+										"value": "pickedPelanggaran"
+									}
+								},
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 628944393868814,
+									"parameters": {
+										"object": "pelanggaranOption"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-scale",
+									"objectClass": "pelanggaranOption",
+									"sid": 834317568380071,
+									"parameters": {
+										"scale": "1"
+									}
+								}
+							],
+							"sid": 635045559983435
+						}
+					]
+				}
+			],
+			"sid": 490970572641096
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DragScreen",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Set the position to the center of the viewport when touching the screen. So the screen instantly moves, even if the Camera was moved to the outermost corner of the layout."
+				},
+				{
+					"eventType": "comment",
+					"text": "The Pinpoint Object is needed for the orientation of the movement. It is pinned to the Camera, which remains in the center of the screen, so the distance between your finger and the Pinpoint stays the same while moving."
+				},
+				{
+					"eventType": "variable",
+					"name": "touchID",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 599536185092162
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-touch-start",
+							"objectClass": "Touch",
+							"sid": 424921913074908
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 202591786508696,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 746331006043818,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 995520476540962,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 160506451293551,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 350695038936340,
+							"parameters": {
+								"variable": "touchID",
+								"comparison": 0,
+								"value": "-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 123390142616813,
+							"parameters": {
+								"x": "scrollx",
+								"y": "scrolly"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "pinpoint",
+							"sid": 483130515277305,
+							"parameters": {
+								"x": "Touch.X",
+								"y": "Touch.Y"
+							}
+						},
+						{
+							"id": "pin-to-object",
+							"objectClass": "pinpoint",
+							"sid": 313095107507493,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "camera",
+								"mode": "position-only"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 397243373911945,
+							"parameters": {
+								"variable": "touchID",
+								"value": "Touch.TouchIndex"
+							}
+						}
+					],
+					"sid": 802981149579488
+				},
+				{
+					"eventType": "comment",
+					"text": "While you swipe over the screen the Bullet Speed of the Camera is determined from the distance between your finger/cursor and the Pinpoint (two times the distance in this case), but it can be 2000 at maximum. You can play around with these parameters and the acceleration from the Cameras bullet behavior (which needs to be negativ) to find out your perfect setup."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-touch-speed",
+							"objectClass": "Touch",
+							"sid": 197389114760596,
+							"parameters": {
+								"touch-index": "touchID",
+								"comparison": 5,
+								"speed": "10"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 801705398292601,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 235243359877802,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 430140848843268,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 229622728167545,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "camera",
+							"sid": 555892980042374,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "min(2000, distance(Touch.X, Touch.Y, pinpoint.X, pinpoint.Y)*2)"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "camera",
+							"sid": 136138235622568,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Touch.X, Touch.Y, pinpoint.X, pinpoint.Y)"
+							}
+						}
+					],
+					"sid": 747348818422504
+				},
+				{
+					"eventType": "comment",
+					"text": "When your finger is to slow or it has stopped, the Camera instantly stop as well and the Pinpoint is set to the position of your finger/cursor."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-touch-speed",
+							"objectClass": "Touch",
+							"sid": 520134914514843,
+							"parameters": {
+								"touch-index": "touchID",
+								"comparison": 2,
+								"speed": "10"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 900274432046014,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 898053902540793,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 114418595162492,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 192906182780746,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "camera",
+							"sid": 586799054501209,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 488204673170161,
+							"parameters": {
+								"x": "scrollx",
+								"y": "scrolly"
+							}
+						},
+						{
+							"id": "unpin",
+							"objectClass": "pinpoint",
+							"sid": 841499004201615,
+							"behaviorType": "Pin"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "pinpoint",
+							"sid": 219042944920377,
+							"parameters": {
+								"x": "Touch.X",
+								"y": "Touch.Y"
+							}
+						},
+						{
+							"id": "pin-to-object",
+							"objectClass": "pinpoint",
+							"sid": 346033666712722,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "camera",
+								"mode": "position-only"
+							}
+						}
+					],
+					"sid": 128742603625125
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 594723502436467,
+							"parameters": {
+								"layer": "\"paused\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 649958131054223,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 286255545157892,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 748339512149117,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							}
+						},
+						{
+							"id": "on-nth-touch-end",
+							"objectClass": "Touch",
+							"sid": 135251945911467,
+							"parameters": {
+								"touch-number": "touchID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "camera",
+							"sid": 521459103810440,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "camera",
+							"sid": 843824238797272,
+							"parameters": {
+								"x": "scrollx",
+								"y": "scrolly"
+							}
+						},
+						{
+							"id": "unpin",
+							"objectClass": "pinpoint",
+							"sid": 438676227960665,
+							"behaviorType": "Pin"
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 518810777288498,
+							"parameters": {
+								"variable": "touchID",
+								"value": "-1"
+							}
+						}
+					],
+					"sid": 633531841093100,
+					"isOrBlock": true
+				}
+			],
+			"sid": 288966160534287
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 990799076268354,
+							"parameters": {
+								"object": "pelanggaranOption"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 899243826951516,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 798573462956908,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 517181169711923,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 836301730433826,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "pelanggaranPanel",
+							"sid": 665188740841886,
+							"behaviorType": "Tween",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 859529107819539
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 618708607240947,
+							"parameters": {
+								"variable": "pickedPelanggaran",
+								"value": "pelanggaranOption.pelanggaran"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "pelanggaranOption",
+							"sid": 299441778628172,
+							"parameters": {
+								"scale": "1.25"
+							}
+						},
+						{
+							"callFunction": "setOptionsInactive",
+							"sid": 614199157430399
+						}
+					],
+					"sid": 599461870833158,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pelanggaranButton",
+									"sid": 289008522424526,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "pelanggaranButton",
+									"sid": 851460872253697,
+									"parameters": {
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "pelanggaranButton",
+									"sid": 291051546043091,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"Grayscale\""
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "pelanggaranButton",
+									"sid": 332325124727549,
+									"parameters": {
+										"effect": "\"Grayscale\"",
+										"parameter-index": "0",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 199346624062815
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 772222703503395,
+							"parameters": {
+								"object": "pauseButton"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "pauseButton",
+							"sid": 531460059375164,
+							"parameters": {
+								"instance-variable": "touched"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 513895956316740,
+							"parameters": {
+								"layer": "\"paused\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 487741384105994,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 323239485715278,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "pausePanel",
+							"sid": 675400564527535,
+							"behaviorType": "Tween",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "pauseButton",
+							"sid": 207762681001345,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "pauseButton",
+							"sid": 415218444902372,
+							"parameters": {
+								"scale": "0.9"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 539517210111874,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "pauseButton",
+							"sid": 417985810672717,
+							"parameters": {
+								"scale": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 342794955694692,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						}
+					],
+					"sid": 690413310811845,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 747278697182824,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 913542432763796
+								},
+								{
+									"callFunction": "hidePaused",
+									"sid": 111431134554426
+								}
+							],
+							"sid": 123973148945464
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 840119858531702,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 572161121201074
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 515788261386845,
+									"parameters": {
+										"layout": "MainMenu"
+									}
+								}
+							],
+							"sid": 321164869633600
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 579260889687907,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 942553921491024
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 600342067037591
+								}
+							],
+							"sid": 840236513828071
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 153677572218374,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 911535719384973
+								},
+								{
+									"callFunction": "setLanguange",
+									"sid": 570003060415861,
+									"parameters": [
+										"\"en\""
+									]
+								}
+							],
+							"sid": 574773989639728
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pauseButton",
+									"sid": 824858234828991,
+									"parameters": {
+										"comparison": 0,
+										"number": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 359102503036180
+								},
+								{
+									"callFunction": "setLanguange",
+									"sid": 616811508553543,
+									"parameters": [
+										"\"id\""
+									]
+								}
+							],
+							"sid": 317000570567950
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "pauseButton",
+									"sid": 181092048889220,
+									"parameters": {
+										"instance-variable": "touched",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 585598007161985
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 472782306441102,
+							"parameters": {
+								"object": "pauseCollision"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 246227679718770,
+							"parameters": {
+								"layer": "\"paused\""
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "pausePanel",
+							"sid": 412269827854406,
+							"behaviorType": "Tween",
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 259974972921325,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 389312869639647,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 880302406816131,
+							"parameters": {
+								"object": "pauseBar",
+								"expression": "pauseBar.id",
+								"comparison": 0,
+								"value": "pauseCollision.id"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "pauseBar",
+							"sid": 221072523184951,
+							"parameters": {
+								"width": "clamp(Touch.X(\"paused\")-pauseBar.X, 0, 281)"
+							}
+						}
+					],
+					"sid": 750457544405383,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "pauseCollision",
+									"sid": 810418390431629,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 759755132745829,
+									"parameters": {
+										"variable": "sfx",
+										"value": "round(pauseBar.Width/281* 100)"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 447647937145171,
+									"parameters": {
+										"key": "\"settings\"",
+										"value": "str(music&\"|\"&sfx&\"|\"&lang)"
+									}
+								}
+							],
+							"sid": 423145658856376
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "pauseCollision",
+									"sid": 994298345377895,
+									"parameters": {
+										"instance-variable": "id",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 857748366421005,
+									"parameters": {
+										"variable": "music",
+										"value": "round(pauseBar.Width/281* 100)"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 134481477747309,
+									"parameters": {
+										"key": "\"settings\"",
+										"value": "str(music&\"|\"&sfx&\"|\"&lang)"
+									}
+								},
+								{
+									"callFunction": "setMusicVolume",
+									"sid": 583676891271098
+								}
+							],
+							"sid": 168082671947887
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 760387179938207,
+							"parameters": {
+								"object": "levelUIButton"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "levelUIButton",
+							"sid": 685291041301410,
+							"parameters": {
+								"instance-variable": "touched"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 509336264367881,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 222188242073858,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 868103950178436,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "levelUIButton",
+							"sid": 974006282097633,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "levelUIButton",
+							"sid": 265388573353923,
+							"parameters": {
+								"scale": "0.9"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 676007654337313,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "levelUIButton",
+							"sid": 373322245857288,
+							"parameters": {
+								"scale": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 609901209039815,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						}
+					],
+					"sid": 126718690121814,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-any-playing",
+									"objectClass": "pausePanel",
+									"sid": 415900729857153,
+									"behaviorType": "Tween",
+									"isInverted": true
+								},
+								{
+									"id": "is-touching-object",
+									"objectClass": "Touch",
+									"sid": 694787825572576,
+									"parameters": {
+										"object": "vehicle"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "levelUIButton",
+									"sid": 481583247720548,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 960328392149114
+								},
+								{
+									"callFunction": "showPaused",
+									"sid": 253624447345209
+								}
+							],
+							"sid": 212671013082056
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "levelUIButton",
+									"sid": 430359695120178,
+									"parameters": {
+										"instance-variable": "touched",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 129849351062540
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 453919814120346,
+							"parameters": {
+								"object": "levelFailedButton"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 943098374825011,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "levelFailedPanel",
+							"sid": 424364268747443,
+							"behaviorType": "Tween",
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "levelFailedButton",
+							"sid": 111630815693040,
+							"parameters": {
+								"instance-variable": "touched"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "levelFailedButton",
+							"sid": 242133765871141,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "levelFailedButton",
+							"sid": 544897768393812,
+							"parameters": {
+								"scale": "0.9"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 350376155502350,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "levelFailedButton",
+							"sid": 650264461086940,
+							"parameters": {
+								"scale": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 980753163330515,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						}
+					],
+					"sid": 772105666183034,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "levelFailedButton",
+									"sid": 705340345074998,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 737274954822509
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 933255510803321,
+									"parameters": {
+										"layout": "LevelSelect"
+									}
+								}
+							],
+							"sid": 622801223094481
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "levelFailedButton",
+									"sid": 178087757758590,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 875165606065124
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 539539801602291
+								}
+							],
+							"sid": 300704322705060
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "levelFailedButton",
+									"sid": 815084333190429,
+									"parameters": {
+										"instance-variable": "touched",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 757388206455641
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 196835335060123,
+							"parameters": {
+								"object": "levelFinishedButton"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 281013983222262,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "levelFinishedPanel",
+							"sid": 801984287387019,
+							"behaviorType": "Tween",
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "levelFinishedButton",
+							"sid": 634797842540784,
+							"parameters": {
+								"instance-variable": "touched"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "levelFinishedButton",
+							"sid": 950984611032076,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "levelFinishedButton",
+							"sid": 444009000811059,
+							"parameters": {
+								"scale": "0.9"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 554083735288582,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "levelFinishedButton",
+							"sid": 815797116431597,
+							"parameters": {
+								"scale": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 495336136823885,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						}
+					],
+					"sid": 236232804582100,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "levelFinishedButton",
+									"sid": 416524077234535,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 951586719796387
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 649341009811193,
+									"parameters": {
+										"layout": "LevelSelect"
+									}
+								}
+							],
+							"sid": 464368552760775
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "levelFinishedButton",
+									"sid": 656919034222662,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 307788986663655
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 666040561871432,
+									"parameters": {
+										"variable": "curLevel",
+										"value": "1"
+									}
+								},
+								{
+									"id": "go-to-layout-by-name",
+									"objectClass": "System",
+									"sid": 159470054970582,
+									"parameters": {
+										"layout": "curLevel < 8 ? \"level\"&curLevel+1 : \"LevelSelect\""
+									}
+								}
+							],
+							"sid": 448407277582084
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "levelFinishedButton",
+									"sid": 648592191334287,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 904468955157737
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 104534211686254
+								}
+							],
+							"sid": 134091923428298
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "levelFinishedButton",
+									"sid": 727234806511075,
+									"parameters": {
+										"instance-variable": "touched",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 455746128827836
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 313676205156570,
+							"parameters": {
+								"object": "pelanggaranButton"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 469799999717056,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "pelanggaranButton",
+							"sid": 708427638547684,
+							"parameters": {
+								"instance-variable": "touched"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 513607278185518,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 553853334075086,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 632232063232735,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-opacity",
+							"objectClass": "pelanggaranButton",
+							"sid": 579055905281932,
+							"parameters": {
+								"comparison": 5,
+								"opacity": "99"
+							}
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "pelanggaranPanel",
+							"sid": 795539414231832,
+							"behaviorType": "Tween",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "pelanggaranButton",
+							"sid": 963108194424535,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "pelanggaranButton",
+							"sid": 712085844547738,
+							"parameters": {
+								"scale": "0.9"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 585510914652830,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "pelanggaranButton",
+							"sid": 137733806822166,
+							"parameters": {
+								"scale": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 908262879509804,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						}
+					],
+					"sid": 792472838005695,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pelanggaranButton",
+									"sid": 299481514806802,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 885056500357009
+								},
+								{
+									"callFunction": "hidePelanggaranPanel",
+									"sid": 674529164269948
+								}
+							],
+							"sid": 390692075250290,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "vehicle",
+											"sid": 815522052000322,
+											"parameters": {
+												"unique-id": "pickedVehicle"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 238477894859925,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 985891855074947,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "0"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "vehicle",
+													"sid": 414988187283961,
+													"parameters": {
+														"instance-variable": "melanggar"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "playWrong",
+													"sid": 616460849060992
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 118421587881720,
+													"parameters": {
+														"variable": "score",
+														"value": "-12"
+													}
+												}
+											],
+											"sid": 708272169119778,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 273121387932443,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 4,
+														"value": "0"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "vehicle",
+													"sid": 159124969659644,
+													"parameters": {
+														"instance-variable": "melanggar"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 402487550458182,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 1,
+														"value": "pickedPelanggaran"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "playHalfCorrect",
+													"sid": 315152674367623
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 780623377399747,
+													"parameters": {
+														"variable": "score",
+														"value": "5"
+													}
+												}
+											],
+											"sid": 491377006756369
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 163268643641918,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 4,
+														"value": "0"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "vehicle",
+													"sid": 396900582940162,
+													"parameters": {
+														"instance-variable": "melanggar"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 144923380227771,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "pickedPelanggaran"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "playCorrect",
+													"sid": 482783104966209
+												},
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 181684392989739,
+													"parameters": {
+														"variable": "score",
+														"value": "10"
+													}
+												}
+											],
+											"sid": 111975436095977
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-comparison",
+													"objectClass": "System",
+													"sid": 375553310439783,
+													"parameters": {
+														"object": "intersection",
+														"expression": "intersection.vehiclesUID",
+														"comparison": 0,
+														"value": "str(vehicle.UID)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "intersection",
+													"sid": 655432388438982,
+													"parameters": {
+														"instance-variable": "collisionCount",
+														"value": "0"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "intersection",
+													"sid": 882117987394255,
+													"parameters": {
+														"instance-variable": "vehiclesUID",
+														"value": "\"\""
+													}
+												}
+											],
+											"sid": 493109649814084,
+											"disabled": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "vehicle",
+													"sid": 740059222061774
+												}
+											],
+											"sid": 600385455250717
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 228039696552578,
+											"parameters": {
+												"first-value": "LayoutName",
+												"comparison": 0,
+												"second-value": "\"Level1\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 166237222088981,
+											"parameters": {
+												"variable": "tutorialProgress",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 410170174517217,
+											"parameters": {
+												"object": "TimeScaledPaused",
+												"time-scale": "0"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 101869495406805,
+											"parameters": {
+												"variable": "tutorialProgress",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 443098376641423,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-comparison",
+													"objectClass": "System",
+													"sid": 943385383180272,
+													"parameters": {
+														"object": "Tutorial",
+														"expression": "Tutorial.progress",
+														"comparison": 1,
+														"value": "tutorialProgress"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial",
+													"sid": 954188800550079,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 570609131599290
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-comparison",
+													"objectClass": "System",
+													"sid": 340504719191657,
+													"parameters": {
+														"object": "Tutorial",
+														"expression": "Tutorial.progress",
+														"comparison": 0,
+														"value": "tutorialProgress"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial",
+													"sid": 558553198469880,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 778027378024103
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-all",
+													"objectClass": "System",
+													"sid": 746919810315340,
+													"parameters": {
+														"object": "vehicle"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "vehicle",
+													"sid": 255429530636966
+												}
+											],
+											"sid": 501360457586190
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "pelanggaranButton",
+									"sid": 688878834408022,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "playUITap",
+									"sid": 930059688406681
+								},
+								{
+									"callFunction": "hidePelanggaranPanel",
+									"sid": 179774758415636
+								}
+							],
+							"sid": 178770784193040
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "pelanggaranButton",
+									"sid": 112357179549747,
+									"parameters": {
+										"instance-variable": "touched",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 338038704097756
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 691741296318800,
+							"parameters": {
+								"object": "pelanggaranButton"
+							}
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pelanggaranButton",
+							"sid": 609437072323815,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 157661810378539,
+							"parameters": {
+								"layer": "\"pilihanPelanggaran\""
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 363136153573080,
+							"parameters": {
+								"layer": "\"paused\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 267924381593326,
+							"parameters": {
+								"layer": "\"levelFailed\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 386843078941817,
+							"parameters": {
+								"layer": "\"levelFinished\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-any-playing",
+							"objectClass": "pelanggaranPanel",
+							"sid": 437697010175493,
+							"behaviorType": "Tween",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 713817204273835,
+							"parameters": {
+								"layer": "\"help\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "pelanggaranButton",
+							"sid": 373300964954229,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "pelanggaranButton",
+							"sid": 338496169085047,
+							"parameters": {
+								"scale": "0.9"
+							}
+						}
+					],
+					"sid": 146000475854843
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 999457818935814,
+							"parameters": {
+								"object": "pelanggaranButton"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "pelanggaranButton",
+							"sid": 627116816422721,
+							"parameters": {
+								"comparison": 0,
+								"number": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 195258020800939,
+							"parameters": {
+								"layer": "\"help\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "pelanggaranButton",
+							"sid": 431151128076351,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "pelanggaranButton",
+							"sid": 514665915119853,
+							"parameters": {
+								"scale": "1"
+							}
+						}
+					],
+					"sid": 313758561372544
+				}
+			],
+			"sid": 625421674451676
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 262759405888488,
+					"parameters": {
+						"object": "intersection"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 119933649398057,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "intersection",
+							"sid": 989631316470857,
+							"parameters": {
+								"object": "vehicle"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "intersection",
+							"sid": 767160290083858,
+							"parameters": {
+								"instance-variable": "collisionCount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 864863834928818,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "intersection",
+									"sid": 358130447953507,
+									"parameters": {
+										"instance-variable": "vehiclesUID",
+										"comparison": 0,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "intersection",
+									"sid": 992340920147085,
+									"parameters": {
+										"instance-variable": "vehiclesUID",
+										"value": "vehicle.UID"
+									}
+								}
+							],
+							"sid": 316540810991557,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "intersection",
+									"sid": 205785708555203,
+									"parameters": {
+										"instance-variable": "vehiclesUID",
+										"comparison": 1,
+										"value": "\"\""
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 230585937319359,
+									"parameters": {
+										"first-value": "Functions.checkIntersection(intersection.UID, int(intersection.vehiclesUID))",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "intersection",
+									"sid": 608734607815628,
+									"parameters": {
+										"instance-variable": "vehiclesUID",
+										"value": "vehicle.UID"
+									}
+								}
+							],
+							"sid": 968214992862298,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "intersection",
+							"sid": 128397626850143,
+							"parameters": {
+								"object": "vehicle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "intersection",
+							"sid": 392223649401987,
+							"parameters": {
+								"instance-variable": "collisionCount",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "intersection",
+							"sid": 729120125757440,
+							"parameters": {
+								"instance-variable": "vehiclesUID",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 474510732293927,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"functionName": "checkIntersection",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "number",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "interUID",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 486584682595070
+				},
+				{
+					"name": "vehicleUID",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 386842404488677
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 873979352211553,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "vehicle",
+							"sid": 801428905265199,
+							"parameters": {
+								"unique-id": "vehicleUID"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 555329782672146,
+							"parameters": {
+								"object": "intersection"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 312232351013780,
+							"parameters": {
+								"first-value": "intersection.UID",
+								"comparison": 0,
+								"second-value": "interUID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 721633962438588,
+							"parameters": {
+								"value": "1"
+							}
+						}
+					],
+					"sid": 345407536481135,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 281293383204422
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 446923889569932,
+							"parameters": {
+								"value": "0"
+							}
+						}
+					],
+					"sid": 774681630465079,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 135625361766373,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 418404196426786,
+					"parameters": {
+						"time-scale": "timescale = 1 ? 2 : 1"
+					}
+				}
+			],
+			"sid": 100167582005651,
+			"disabled": true
 		}
 	],
 	"sid": 746794069324216
