@@ -277,15 +277,6 @@
 						"height-type": "no",
 						"z": false
 					}
-				},
-				{
-					"id": "set-acceleration",
-					"objectClass": "camera",
-					"sid": 391899678171251,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"acceleration": "-500"
-					}
 				}
 			],
 			"sid": 876990249090575,
@@ -1150,17 +1141,7 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "trafficLightCollision",
-									"sid": 216305413722499,
-									"parameters": {
-										"instance-variable": "state",
-										"comparison": 0,
-										"value": "1"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "trafficLightCollision",
-									"sid": 610400424944518,
+									"sid": 590955048003657,
 									"parameters": {
 										"instance-variable": "state",
 										"comparison": 0,
@@ -3691,11 +3672,11 @@
 						{
 							"id": "compare-touch-speed",
 							"objectClass": "Touch",
-							"sid": 102892248622682,
+							"sid": 197389114760596,
 							"parameters": {
 								"touch-index": "touchID",
 								"comparison": 5,
-								"speed": "20"
+								"speed": "10"
 							}
 						},
 						{
@@ -3767,11 +3748,11 @@
 						{
 							"id": "compare-touch-speed",
 							"objectClass": "Touch",
-							"sid": 957796683067818,
+							"sid": 520134914514843,
 							"parameters": {
 								"touch-index": "touchID",
 								"comparison": 2,
-								"speed": "20"
+								"speed": "10"
 							}
 						},
 						{
