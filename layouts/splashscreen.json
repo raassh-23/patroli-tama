@@ -114,28 +114,7 @@
 		}
 	],
 	"sid": 646756635427307,
-	"nonworld-instances": [
-		{
-			"type": "levels",
-			"properties": {
-				"width": 10,
-				"height": 1,
-				"depth": 1
-			},
-			"uid": 255,
-			"instanceVariables": {}
-		},
-		{
-			"type": "tutorials",
-			"properties": {
-				"width": 10,
-				"height": 1,
-				"depth": 1
-			},
-			"uid": 324,
-			"instanceVariables": {}
-		}
-	],
+	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1920,
 	"height": 1080,

@@ -90,6 +90,14 @@
 					],
 					"actions": [
 						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 117145482684306,
+							"parameters": {
+								"layout": "Level1"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 497955553503918,
