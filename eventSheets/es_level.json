@@ -279,7 +279,7 @@
 					}
 				},
 				{
-					"callFunction": "resetTouchVariable",
+					"callFunction": "resetPanAndZoomVariable",
 					"sid": 820411304427186
 				}
 			],
@@ -3613,7 +3613,27 @@
 					"sid": 929597835857327
 				},
 				{
-					"functionName": "resetTouchVariable",
+					"eventType": "variable",
+					"name": "minScale",
+					"type": "number",
+					"initialValue": "0.5",
+					"comment": "Minimal scale of layout (for zoom)",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 698619945746001
+				},
+				{
+					"eventType": "variable",
+					"name": "MaxScale",
+					"type": "number",
+					"initialValue": "2",
+					"comment": "Max scale of layout (for zoom)",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 982233610297103
+				},
+				{
+					"functionName": "resetPanAndZoomVariable",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -3674,6 +3694,24 @@
 							"parameters": {
 								"variable": "InitialScale",
 								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 967837470865622,
+							"parameters": {
+								"variable": "minScale",
+								"value": "max(0.5, ViewportWidth(\"ui\")/LayoutWidth, ViewportHeight(\"ui\")/LayoutHeight)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 939285674452415,
+							"parameters": {
+								"variable": "MaxScale",
+								"value": "2"
 							}
 						},
 						{
@@ -3813,10 +3851,10 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 535081247143050,
+									"sid": 193797857331942,
 									"parameters": {
 										"variable": "InitialScale",
-										"value": "LayoutScale"
+										"value": "LayerScale(\"game\")"
 									}
 								},
 								{
@@ -4040,19 +4078,19 @@
 								{
 									"id": "set-layer-scale",
 									"objectClass": "System",
-									"sid": 878795180795051,
+									"sid": 959246583285359,
 									"parameters": {
 										"layer": "\"game\"",
-										"scale": "clamp(InitialScale * (TouchCurrentDistance / TouchStartDistance), 1, 2)"
+										"scale": "clamp(InitialScale * (TouchCurrentDistance / TouchStartDistance), minScale, MaxScale)"
 									}
 								},
 								{
 									"id": "set-layer-scale",
 									"objectClass": "System",
-									"sid": 884822174144210,
+									"sid": 601875103361806,
 									"parameters": {
 										"layer": "\"bg\"",
-										"scale": "clamp(InitialScale * (TouchCurrentDistance / TouchStartDistance), 1, 2)"
+										"scale": "LayerScale(\"game\")"
 									}
 								},
 								{
@@ -6213,6 +6251,50 @@
 				}
 			],
 			"sid": 100167582005651,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 443401999488452,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 294785756589120,
+					"parameters": {
+						"layer": "\"game\"",
+						"scale": "((LayerScale(\"game\") + 1) % 3) + 1"
+					}
+				},
+				{
+					"id": "set-layer-scale",
+					"objectClass": "System",
+					"sid": 926419099886894,
+					"parameters": {
+						"layer": "\"bg\"",
+						"scale": "LayerScale(\"game\")"
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 214983526194181,
+					"parameters": {
+						"type": "log",
+						"message": "LayerScale(\"game\")"
+					}
+				}
+			],
+			"sid": 759674725963872,
 			"disabled": true
 		}
 	],
