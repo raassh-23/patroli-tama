@@ -8,13 +8,13 @@
 	"effectTypes": [],
 	"image": {
 		"width": 2313,
-		"height": 1736,
+		"height": 2316,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 2943712,
+		"imageSpriteId": 4468722,
 		"useCollisionPoly": true
 	},
 	"tile-collision-polys": {}
