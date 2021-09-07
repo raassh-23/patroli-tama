@@ -234,7 +234,9 @@
 						"inTrafficLight": false,
 						"melanggar": false,
 						"aboutToCollide": false,
-						"intersectionLock": ""
+						"intersectionLock": "",
+						"parked": false,
+						"parking": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -292,7 +294,9 @@
 						"inTrafficLight": false,
 						"melanggar": false,
 						"aboutToCollide": false,
-						"intersectionLock": ""
+						"intersectionLock": "",
+						"parked": false,
+						"parking": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -350,7 +354,9 @@
 						"inTrafficLight": false,
 						"melanggar": false,
 						"aboutToCollide": false,
-						"intersectionLock": ""
+						"intersectionLock": "",
+						"parked": false,
+						"parking": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1906,7 +1912,9 @@
 						"inTrafficLight": false,
 						"melanggar": false,
 						"aboutToCollide": false,
-						"intersectionLock": ""
+						"intersectionLock": "",
+						"parked": false,
+						"parking": false
 					},
 					"behaviors": {
 						"Bullet": {

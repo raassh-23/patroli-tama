@@ -98,6 +98,18 @@
 			"type": "string",
 			"desc": "",
 			"sid": 970347087410375
+		},
+		{
+			"name": "parked",
+			"type": "boolean",
+			"desc": "",
+			"sid": 437564932615210
+		},
+		{
+			"name": "parking",
+			"type": "boolean",
+			"desc": "",
+			"sid": 224005578927732
 		}
 	],
 	"behaviorTypes": [

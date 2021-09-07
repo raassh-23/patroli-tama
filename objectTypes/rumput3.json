@@ -1,21 +1,20 @@
 {
-	"name": "jalan2",
-	"plugin-id": "Tilemap",
-	"sid": 242226825615151,
+	"name": "rumput3",
+	"plugin-id": "TiledBg",
+	"sid": 517341749678174,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 2313,
-		"height": 2316,
+		"width": 250,
+		"height": 250,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 9632749,
+		"imageSpriteId": 889078,
 		"useCollisionPoly": true
-	},
-	"tile-collision-polys": {}
+	}
 }

@@ -247,11 +247,11 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 264587513353355,
+									"sid": 897953039260053,
 									"parameters": {
 										"first-value": "levels.CurX",
 										"comparison": 5,
-										"second-value": "8"
+										"second-value": "maxLevel"
 									}
 								}
 							],

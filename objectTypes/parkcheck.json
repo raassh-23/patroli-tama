@@ -1,0 +1,50 @@
+{
+	"name": "parkCheck",
+	"plugin-id": "Sprite",
+	"sid": 918148611801013,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "parkingId",
+			"type": "number",
+			"desc": "",
+			"sid": 588474898147655
+		},
+		{
+			"name": "pelanggaran",
+			"type": "number",
+			"desc": "",
+			"sid": 313974339835246
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8835241,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 471128033340904,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

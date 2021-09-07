@@ -174,7 +174,9 @@
 			"LocalStorage",
 			"testButton",
 			"BgDekorasi",
-			"lockCheck"
+			"lockCheck",
+			"parkCheck",
+			"parkTarget"
 		],
 		"subfolders": [
 			{
@@ -303,6 +305,15 @@
 				],
 				"subfolders": [],
 				"name": "stage2"
+			},
+			{
+				"items": [
+					"jalan3",
+					"rumput3",
+					"Dekorasi3"
+				],
+				"subfolders": [],
+				"name": "stage3"
 			}
 		]
 	},
@@ -342,7 +353,8 @@
 					"Level5",
 					"Level6",
 					"Level7",
-					"Level8"
+					"Level8",
+					"Level9"
 				],
 				"subfolders": [],
 				"name": "levels"
@@ -375,7 +387,8 @@
 					"Es_Level5",
 					"Es_Level6",
 					"Es_Level7",
-					"Es_Level8"
+					"Es_Level8",
+					"Es_Level9"
 				],
 				"subfolders": [],
 				"name": "levels"
