@@ -1179,8 +1179,8 @@
 					"world": {
 						"x": 644,
 						"y": 604,
-						"width": 115,
-						"height": 48,
+						"width": 113,
+						"height": 47,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1198,7 +1198,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "motorbikeWithoutHelm1",
-						"initial-frame": 0,
+						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -1239,8 +1239,8 @@
 					"world": {
 						"x": 848,
 						"y": 583,
-						"width": 115,
-						"height": 50,
+						"width": 37,
+						"height": 98,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1299,8 +1299,8 @@
 					"world": {
 						"x": 837.9197354760042,
 						"y": 664.8680240127314,
-						"width": 100,
-						"height": 49,
+						"width": 95,
+						"height": 47,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

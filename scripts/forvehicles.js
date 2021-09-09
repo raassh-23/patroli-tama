@@ -88,7 +88,7 @@ function lockIntersection(vehicle, allIntersections) {
 	return true;
 }
 
-function pickVehicle(pelanggaran) {
+function pickVehicle(pelanggaran, level) {
 	let pickedVehicle = "";
 
 	switch (pelanggaran) {
@@ -101,12 +101,18 @@ function pickVehicle(pelanggaran) {
 			break;
 			
 		default:
-			const vehiclesArray = Object.keys(vehicles).filter(v => v !== "motorbikeWithoutHelm" 
+			let vehiclesArray = Object.keys(vehicles).filter(v => v !== "motorbikeWithoutHelm" 
 														&& v !== "motorbikeWithoutLight");
-
+			
+			if(level < 8) {
+				vehiclesArray = vehiclesArray.filter(v => v != "truck");
+			}
+			
 			pickedVehicle = vehiclesArray[randomInt(0, vehiclesArray.length - 1)]
 			break;
 	}
+	
+	console.log(pickedVehicle);
 
 	return pickedVehicle;
 }

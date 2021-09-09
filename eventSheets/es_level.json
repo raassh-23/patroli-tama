@@ -1378,7 +1378,44 @@
 							}
 						}
 					],
-					"sid": 761183884311215
+					"sid": 761183884311215,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 557304124060311,
+									"parameters": {
+										"first-value": "vehicle.ObjectTypeName",
+										"comparison": 0,
+										"second-value": "\"motorbike\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 669759985989926,
+									"parameters": {
+										"seconds": "0.25"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "vehicle",
+									"sid": 483443351533808,
+									"parameters": {
+										"animation": "Self.AnimationName & \"Parked\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 599128472270105
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -2204,7 +2241,7 @@
 								},
 								{
 									"type": "script",
-									"script": "localVars.vehicleName = pickVehicle(localVars.pelanggaran);\n\nlocalVars.type = pickType(localVars.vehicleName);"
+									"script": "localVars.vehicleName = pickVehicle(localVars.pelanggaran, runtime.globalVars.curLevel);\n\nlocalVars.type = pickType(localVars.vehicleName);"
 								}
 							],
 							"sid": 139294230369858
@@ -2645,9 +2682,9 @@
 								{
 									"id": "set-animation",
 									"objectClass": "pelanggaranDriver",
-									"sid": 766523638296078,
+									"sid": 712247192185802,
 									"parameters": {
-										"animation": "vehicle.ObjectTypeName",
+										"animation": "vehicle.ObjectTypeName & (vehicle.parked ? \"Parked\" : \"\")",
 										"from": "current-frame"
 									}
 								},

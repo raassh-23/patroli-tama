@@ -19,26 +19,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 2485637,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								1,
-								0,
-								1,
-								1,
-								0
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -51,22 +31,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 1465185,
-						"collisionPoly": {
-							"points": [
-								0,
-								0.0034482758620689655,
-								1,
-								0.3758620689655172,
-								1,
-								1,
-								1,
-								1,
-								0,
-								1,
-								0,
-								1
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -79,22 +43,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 760372,
-						"collisionPoly": {
-							"points": [
-								0,
-								0.003448275862068941,
-								0.9959839357429718,
-								0.3758620689655172,
-								0.9959839357429718,
-								1,
-								0.9959839357429718,
-								1,
-								0,
-								1,
-								0,
-								1
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
@@ -118,26 +66,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 2363615,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								1,
-								0,
-								1,
-								1,
-								0
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -185,26 +113,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 9623998,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								0,
-								1,
-								1,
-								0,
-								1,
-								1,
-								0
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -252,26 +160,6 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 5827086,
-						"collisionPoly": {
-							"points": [
-								0.002012072434607646,
-								0.05517241379310345,
-								1,
-								0.1103448275862069,
-								1,
-								0,
-								1,
-								1,
-								1,
-								1,
-								1,
-								1,
-								0.044265593561368236,
-								1,
-								0.002012072434607646,
-								1
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
@@ -283,6 +171,182 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 495,
+						"height": 288,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 464,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 559796904812433,
+				"name": "carParked",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 495,
+						"height": 288,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4908323,
+						"collisionPoly": {
+							"points": [
+								0.00808080808080808,
+								0.013888888888888888,
+								0.5,
+								0,
+								0.98989898989899,
+								0.013888888888888888,
+								0.997979797979798,
+								0.5,
+								0.98989898989899,
+								0.9826388888888888,
+								0.5,
+								0.9965277777777778,
+								0.00808080808080808,
+								0.9826388888888888,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 495,
+						"height": 288,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4073911,
+						"collisionPoly": {
+							"points": [
+								0.00808080808080808,
+								0.013888888888888888,
+								0.5,
+								0,
+								0.98989898989899,
+								0.013888888888888888,
+								0.997979797979798,
+								0.5,
+								0.98989898989899,
+								0.9826388888888888,
+								0.5,
+								0.9965277777777778,
+								0.00808080808080808,
+								0.9826388888888888,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 495,
+						"height": 288,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7085596,
+						"collisionPoly": {
+							"points": [
+								0.00808080808080808,
+								0.013888888888888888,
+								0.5,
+								0,
+								0.98989898989899,
+								0.013888888888888888,
+								0.997979797979798,
+								0.5,
+								0.98989898989899,
+								0.9826388888888888,
+								0.5,
+								0.9965277777777778,
+								0.00808080808080808,
+								0.9826388888888888,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 409930058709049,
+				"name": "motorbikeParked",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 497,
+						"height": 290,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2962787,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 301464388573790,
+				"name": "truck",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 495,
+						"height": 288,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6350357,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 329177612507980,
+				"name": "truckParked",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
 			}
 		],
 		"subfolders": []

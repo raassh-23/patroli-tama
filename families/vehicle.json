@@ -124,6 +124,7 @@
 		"car",
 		"motorbike",
 		"motorbikeWithoutHelm",
-		"motorbikeWithoutLight"
+		"motorbikeWithoutLight",
+		"truck"
 	]
 }

@@ -176,7 +176,8 @@
 			"BgDekorasi",
 			"lockCheck",
 			"parkCheck",
-			"parkTarget"
+			"parkTarget",
+			"truck"
 		],
 		"subfolders": [
 			{

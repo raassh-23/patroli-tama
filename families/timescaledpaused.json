@@ -11,6 +11,7 @@
 		"motorbike",
 		"motorbikeWithoutHelm",
 		"motorbikeWithoutLight",
-		"trafficLightCollision"
+		"trafficLightCollision",
+		"truck"
 	]
 }

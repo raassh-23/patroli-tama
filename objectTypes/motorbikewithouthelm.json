@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 115,
-						"height": 50,
+						"width": 113,
+						"height": 48,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7170017,
+						"imageSpriteId": 1518187,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -30,7 +30,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4963819,
+						"imageSpriteId": 8727893,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -42,7 +42,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4052583,
+						"imageSpriteId": 9103989,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -54,7 +54,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3627745,
+						"imageSpriteId": 880956,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
