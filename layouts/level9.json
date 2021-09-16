@@ -57,11 +57,11 @@
 					"behaviors": {},
 					"ownData": {
 						"tilemapData": {
-							"width": 9,
-							"height": 6,
-							"max-width": 179,
-							"max-height": 127,
-							"data": "0,5,126x0,1,125x0,6,11,5x2,121x0,1,126x0,1,126x0,1,126x0,1,126x0,1,126x0,1,21715x0"
+							"width": 10,
+							"height": 7,
+							"max-width": 180,
+							"max-height": 128,
+							"data": "0,9,3x0,9hv,123x0,5,3x0,5,123x0,17,5vd,19vd,9hd,18hv,123x0,5hv,0,5hv,0,5hv,123x0,9,0,9,0,9,123x0,9,0,5,0,5,123x0,17,5hd,19hd,5hd,21hd,5vd,122x0,5hv,3x0,5hv,123x0,9hv,0,13vd,10hv,13hd,123x0,9hv,0,9hv,21884x0"
 						},
 						"tile-width": 637,
 						"tile-height": 637,
@@ -71,10 +71,10 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": -191,
-						"y": -169,
-						"width": 5932,
-						"height": 4082,
+						"x": -878,
+						"y": -408,
+						"width": 6720,
+						"height": 4546,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -91,7 +91,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
-						"initial-frame": 3,
+						"initial-frame": 4,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -99,10 +99,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2564,
-						"y": 2338,
-						"width": 845,
-						"height": 931,
+						"x": 1148,
+						"y": 1616,
+						"width": 468,
+						"height": 641,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -128,8 +128,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 3493,
-						"y": 2361,
+						"x": 3688,
+						"y": 2073,
 						"width": 468,
 						"height": 641,
 						"originX": 0.5,
@@ -157,10 +157,68 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 4139,
-						"y": 1866,
+						"x": 3724,
+						"y": 2577,
 						"width": 512,
 						"height": 646,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dekorasi3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 9,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1056,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 350,
+						"y": 2550,
+						"width": 338,
+						"height": 445,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dekorasi2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 32,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1039,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2907,
+						"y": 2055,
+						"width": 97,
+						"height": 131,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -313,8 +371,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": -98,
-						"y": 732.6508867857838,
+						"x": -208,
+						"y": 489,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -340,13 +398,13 @@
 					},
 					"uid": 1320,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 4050, 803| 0, 270, 270, 4050, 803| 0, 270, 0, 4050, 641 | 5, 270, 0, 4050, 641",
+						"turnAngle": "0, 270, 180, 3180, 3174| 0, 270, 270, 3180, 3174| 0, 270, 0, 3180, 3016",
 						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 398,
-						"y": -217,
+						"x": 3180,
+						"y": 3330,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -372,13 +430,13 @@
 					},
 					"uid": 1321,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 90, 657, 597| 0, 180, 180, 657, 597| 0, 180, 270, 499, 597 | 5, 180, 90, 657, 597",
+						"turnAngle": "0, 180, 90, 3344, 3174| 0, 180, 180, 3344, 3174| 0, 180, 270, 3180, 3174",
 						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 726,
-						"y": -385,
+						"x": 3501,
+						"y": 3174,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -404,13 +462,13 @@
 					},
 					"uid": 1322,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 270, 499, 439| 0, 0, 0, 499, 439| 0, 0, 90, 657, 439| 5, 0, 90, 657, 439 | 5, 0, 0, 499, 439",
+						"turnAngle": "0, 0, 270, 3180, 3016| 0, 0, 0, 3344, 3016| 0, 0, 90, 3344, 3016",
 						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 217,
-						"y": -543,
+						"x": 3018,
+						"y": 3016,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -436,47 +494,15 @@
 					},
 					"uid": 1323,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 0, 657, 439| 0, 90, 90, 657, 439| 0, 90, 180, 657, 597 | 5, 90, 0, 657, 439| 5, 90, 90, 657, 439",
+						"turnAngle": "0, 90, 0, 3344, 3016| 0, 90, 90, 3344, 3174| 0, 90, 180, 3344, 3174",
 						"intersectionId": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 556,
-						"y": -717,
+						"x": 3343,
+						"y": 2851,
 						"width": 148,
 						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "cekMelanggar",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1324,
-					"instanceVariables": {
-						"pelanggaran": 4,
-						"TCID": 2
-					},
-					"behaviors": {},
-					"world": {
-						"x": 699,
-						"y": -385,
-						"width": 14,
-						"height": 140,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -513,8 +539,8 @@
 						}
 					},
 					"world": {
-						"x": 754,
-						"y": -385,
+						"x": 3525,
+						"y": 3174,
 						"width": 155,
 						"height": 16,
 						"originX": 0.5,
@@ -544,8 +570,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 799,
-						"y": -220,
+						"x": 3541,
+						"y": 3331,
 						"width": 49,
 						"height": 132,
 						"originX": 0.5,
@@ -557,38 +583,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "cekMelanggar",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1327,
-					"instanceVariables": {
-						"pelanggaran": 4,
-						"TCID": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 398,
-						"y": -252,
-						"width": 14,
-						"height": 140,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				},
@@ -616,8 +610,8 @@
 						}
 					},
 					"world": {
-						"x": 398,
-						"y": -186,
+						"x": 3180,
+						"y": 3357,
 						"width": 155,
 						"height": 16,
 						"originX": 0.5,
@@ -647,8 +641,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 231,
-						"y": -104,
+						"x": 3042,
+						"y": 3354,
 						"width": 49,
 						"height": 132,
 						"originX": 0.5,
@@ -660,38 +654,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "cekMelanggar",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1330,
-					"instanceVariables": {
-						"pelanggaran": 4,
-						"TCID": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 556,
-						"y": -692,
-						"width": 14,
-						"height": 140,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				},
@@ -719,8 +681,8 @@
 						}
 					},
 					"world": {
-						"x": 556,
-						"y": -748,
+						"x": 3344,
+						"y": 2822,
 						"width": 155,
 						"height": 16,
 						"originX": 0.5,
@@ -750,44 +712,12 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 724,
-						"y": -756,
+						"x": 3494,
+						"y": 2855,
 						"width": 49,
 						"height": 132,
 						"originX": 0.5,
 						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "cekMelanggar",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1333,
-					"instanceVariables": {
-						"pelanggaran": 4,
-						"TCID": 4
-					},
-					"behaviors": {},
-					"world": {
-						"x": 236,
-						"y": -543,
-						"width": 14,
-						"height": 140,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -822,8 +752,8 @@
 						}
 					},
 					"world": {
-						"x": 195,
-						"y": -543,
+						"x": 2975,
+						"y": 3016,
 						"width": 155,
 						"height": 16,
 						"originX": 0.5,
@@ -853,8 +783,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 176,
-						"y": -696,
+						"x": 3018,
+						"y": 2869,
 						"width": 49,
 						"height": 132,
 						"originX": 0.5,
@@ -913,106 +843,10 @@
 						}
 					},
 					"world": {
-						"x": 1350,
-						"y": 140,
+						"x": 726,
+						"y": 155,
 						"width": 62,
 						"height": 85,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "spawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 258,
-					"instanceVariables": {
-						"angleSpawned": 180,
-						"melawanArus": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 2494,
-						"y": 838,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 261,
-					"instanceVariables": {
-						"parkingId": 0,
-						"pelanggaran": 6
-					},
-					"behaviors": {},
-					"world": {
-						"x": 133,
-						"y": 737.2084280237497,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 262,
-					"instanceVariables": {
-						"parkingId": 0,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 233,
-						"y": 636,
-						"width": 16,
-						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1041,8 +875,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 373,
-						"y": 737,
+						"x": -65,
+						"y": 504,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1073,8 +907,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 473,
-						"y": 636,
+						"x": 35,
+						"y": 403,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1105,8 +939,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 619,
-						"y": 737,
+						"x": 181,
+						"y": 504,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1137,72 +971,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 719,
-						"y": 636,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 404,
-					"instanceVariables": {
-						"parkingId": 3,
-						"pelanggaran": 6
-					},
-					"behaviors": {},
-					"world": {
-						"x": 133,
-						"y": 838,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 405,
-					"instanceVariables": {
-						"parkingId": 4,
-						"pelanggaran": 6
-					},
-					"behaviors": {},
-					"world": {
-						"x": 373,
-						"y": 838,
+						"x": 281,
+						"y": 403,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1228,13 +998,13 @@
 					},
 					"uid": 439,
 					"instanceVariables": {
-						"parkingId": 5,
+						"parkingId": 25,
 						"pelanggaran": 6
 					},
 					"behaviors": {},
 					"world": {
-						"x": 619,
-						"y": 838,
+						"x": 181,
+						"y": 605,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1293,8 +1063,8 @@
 						}
 					},
 					"world": {
-						"x": -27.105931065435215,
-						"y": 708.2825666086446,
+						"x": -301,
+						"y": 1159,
 						"width": 104,
 						"height": 70,
 						"originX": 0.5,
@@ -1318,143 +1088,15 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 659,
-					"instanceVariables": {
-						"parkingId": 3,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 33,
-						"y": 918,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 667,
-					"instanceVariables": {
-						"parkingId": 4,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 273,
-						"y": 918,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 668,
 					"instanceVariables": {
-						"parkingId": 5,
+						"parkingId": 25,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 519,
-						"y": 918,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "spawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 658,
-					"instanceVariables": {
-						"angleSpawned": 0,
-						"melawanArus": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 2808,
-						"y": 38,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "spawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1035,
-					"instanceVariables": {
-						"angleSpawned": 90,
-						"melawanArus": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1455,
-						"y": -130.1370950914351,
+						"x": 81,
+						"y": 685,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1513,8 +1155,8 @@
 						}
 					},
 					"world": {
-						"x": 1265,
-						"y": 140,
+						"x": 510,
+						"y": 118,
 						"width": 62,
 						"height": 85,
 						"originX": 0.5,
@@ -1573,8 +1215,8 @@
 						}
 					},
 					"world": {
-						"x": 1540,
-						"y": 140,
+						"x": 715,
+						"y": 205,
 						"width": 62,
 						"height": 85,
 						"originX": 0.5,
@@ -1633,42 +1275,10 @@
 						}
 					},
 					"world": {
-						"x": 1455,
-						"y": 140,
+						"x": 620,
+						"y": 155,
 						"width": 62,
 						"height": 85,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "spawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1039,
-					"instanceVariables": {
-						"angleSpawned": 270,
-						"melawanArus": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1350,
-						"y": 1355,
-						"width": 16,
-						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1692,13 +1302,13 @@
 					},
 					"uid": 1040,
 					"instanceVariables": {
-						"parkingId": 6,
+						"parkingId": 29,
 						"pelanggaran": 6
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1350,
-						"y": 200,
+						"x": 660,
+						"y": 1160,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1724,13 +1334,13 @@
 					},
 					"uid": 1041,
 					"instanceVariables": {
-						"parkingId": 6,
+						"parkingId": 29,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1265,
-						"y": 100,
+						"x": 575,
+						"y": 1060,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1756,13 +1366,13 @@
 					},
 					"uid": 1042,
 					"instanceVariables": {
-						"parkingId": 7,
+						"parkingId": 28,
 						"pelanggaran": 6
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1350,
-						"y": 433.90644359457576,
+						"x": 660,
+						"y": 1394,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1788,13 +1398,13 @@
 					},
 					"uid": 1043,
 					"instanceVariables": {
-						"parkingId": 7,
+						"parkingId": 28,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1265,
-						"y": 333.90644359457576,
+						"x": 575,
+						"y": 1294,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1820,13 +1430,13 @@
 					},
 					"uid": 1044,
 					"instanceVariables": {
-						"parkingId": 9,
+						"parkingId": 27,
 						"pelanggaran": 6
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1455,
-						"y": 287,
+						"x": 765,
+						"y": 1247,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1852,13 +1462,13 @@
 					},
 					"uid": 1045,
 					"instanceVariables": {
-						"parkingId": 9,
+						"parkingId": 27,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1540,
-						"y": 387,
+						"x": 850,
+						"y": 1347,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1884,13 +1494,13 @@
 					},
 					"uid": 1046,
 					"instanceVariables": {
-						"parkingId": 8,
+						"parkingId": 26,
 						"pelanggaran": 6
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1455,
-						"y": 52,
+						"x": 765,
+						"y": 1012,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1916,13 +1526,13 @@
 					},
 					"uid": 1047,
 					"instanceVariables": {
-						"parkingId": 8,
+						"parkingId": 26,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1540,
-						"y": 152,
+						"x": 850,
+						"y": 1112,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1981,8 +1591,8 @@
 						}
 					},
 					"world": {
-						"x": -45.85805812393396,
-						"y": 838,
+						"x": -424,
+						"y": 1093,
 						"width": 183,
 						"height": 88,
 						"originX": 0.5,
@@ -2041,8 +1651,8 @@
 						}
 					},
 					"world": {
-						"x": 33,
-						"y": 918,
+						"x": -316,
+						"y": 1072,
 						"width": 183,
 						"height": 88,
 						"originX": 0.5,
@@ -2101,8 +1711,8 @@
 						}
 					},
 					"world": {
-						"x": 1265,
-						"y": 333.906444,
+						"x": 614,
+						"y": -41,
 						"width": 61,
 						"height": 160,
 						"originX": 0.5,
@@ -2161,12 +1771,4617 @@
 						}
 					},
 					"world": {
-						"x": 1350,
-						"y": 433.906444,
+						"x": 981,
+						"y": 152,
 						"width": 61,
 						"height": 160,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1057,
+					"instanceVariables": {
+						"parkingId": 3,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1267,
+						"y": 502,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1058,
+					"instanceVariables": {
+						"parkingId": 3,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1367,
+						"y": 401,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1059,
+					"instanceVariables": {
+						"parkingId": 4,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1507,
+						"y": 502,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1060,
+					"instanceVariables": {
+						"parkingId": 4,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1607,
+						"y": 401,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1061,
+					"instanceVariables": {
+						"parkingId": 5,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1753,
+						"y": 502,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1062,
+					"instanceVariables": {
+						"parkingId": 5,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1853,
+						"y": 401,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1063,
+					"instanceVariables": {
+						"parkingId": 24,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1267,
+						"y": 603,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1064,
+					"instanceVariables": {
+						"parkingId": 23,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1507,
+						"y": 603,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1065,
+					"instanceVariables": {
+						"parkingId": 22,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1753,
+						"y": 603,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1066,
+					"instanceVariables": {
+						"parkingId": 24,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1169,
+						"y": 686,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1067,
+					"instanceVariables": {
+						"parkingId": 23,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1407,
+						"y": 683,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1068,
+					"instanceVariables": {
+						"parkingId": 22,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1653,
+						"y": 683,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1069,
+					"instanceVariables": {
+						"parkingId": 6,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1958,
+						"y": 499,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1070,
+					"instanceVariables": {
+						"parkingId": 6,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2058,
+						"y": 398,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1071,
+					"instanceVariables": {
+						"parkingId": 7,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2198,
+						"y": 499,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1072,
+					"instanceVariables": {
+						"parkingId": 7,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2298,
+						"y": 398,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1073,
+					"instanceVariables": {
+						"parkingId": 8,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2444,
+						"y": 499,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1074,
+					"instanceVariables": {
+						"parkingId": 8,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2544,
+						"y": 398,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1075,
+					"instanceVariables": {
+						"parkingId": 21,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1958,
+						"y": 600,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1076,
+					"instanceVariables": {
+						"parkingId": 20,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2198,
+						"y": 600,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1077,
+					"instanceVariables": {
+						"parkingId": 19,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2444,
+						"y": 600,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1078,
+					"instanceVariables": {
+						"parkingId": 21,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1860,
+						"y": 683,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1079,
+					"instanceVariables": {
+						"parkingId": 20,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2098,
+						"y": 680,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1080,
+					"instanceVariables": {
+						"parkingId": 19,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2344,
+						"y": 680,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1081,
+					"instanceVariables": {
+						"parkingId": 9,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2689,
+						"y": 508,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1082,
+					"instanceVariables": {
+						"parkingId": 9,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2789,
+						"y": 407,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1083,
+					"instanceVariables": {
+						"parkingId": 19,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2689,
+						"y": 609,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1084,
+					"instanceVariables": {
+						"parkingId": 19,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2589,
+						"y": 689,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1085,
+					"instanceVariables": {
+						"parkingId": 44,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1280,
+						"y": 3056,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1086,
+					"instanceVariables": {
+						"parkingId": 44,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1380,
+						"y": 2955,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1087,
+					"instanceVariables": {
+						"parkingId": 45,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1520,
+						"y": 3056,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1088,
+					"instanceVariables": {
+						"parkingId": 45,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1620,
+						"y": 2955,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1089,
+					"instanceVariables": {
+						"parkingId": 46,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1766,
+						"y": 3056,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1090,
+					"instanceVariables": {
+						"parkingId": 46,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1866,
+						"y": 2955,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1091,
+					"instanceVariables": {
+						"parkingId": 57,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1280,
+						"y": 3157,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1092,
+					"instanceVariables": {
+						"parkingId": 56,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1520,
+						"y": 3157,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1093,
+					"instanceVariables": {
+						"parkingId": 55,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1766,
+						"y": 3157,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1094,
+					"instanceVariables": {
+						"parkingId": 57,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1182,
+						"y": 3240,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1095,
+					"instanceVariables": {
+						"parkingId": 56,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1420,
+						"y": 3237,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1096,
+					"instanceVariables": {
+						"parkingId": 55,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1666,
+						"y": 3237,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1097,
+					"instanceVariables": {
+						"parkingId": 47,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1971,
+						"y": 3053,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1098,
+					"instanceVariables": {
+						"parkingId": 47,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2071,
+						"y": 2952,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1099,
+					"instanceVariables": {
+						"parkingId": 48,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2211,
+						"y": 3053,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1100,
+					"instanceVariables": {
+						"parkingId": 48,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2311,
+						"y": 2952,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1101,
+					"instanceVariables": {
+						"parkingId": 49,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2457,
+						"y": 3053,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1102,
+					"instanceVariables": {
+						"parkingId": 49,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2557,
+						"y": 2952,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1103,
+					"instanceVariables": {
+						"parkingId": 54,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1971,
+						"y": 3154,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1104,
+					"instanceVariables": {
+						"parkingId": 53,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2211,
+						"y": 3154,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1105,
+					"instanceVariables": {
+						"parkingId": 52,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2457,
+						"y": 3154,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1106,
+					"instanceVariables": {
+						"parkingId": 54,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1873,
+						"y": 3237,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1107,
+					"instanceVariables": {
+						"parkingId": 53,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2111,
+						"y": 3234,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1108,
+					"instanceVariables": {
+						"parkingId": 52,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2357,
+						"y": 3234,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1109,
+					"instanceVariables": {
+						"parkingId": 50,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2702,
+						"y": 3062,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1110,
+					"instanceVariables": {
+						"parkingId": 50,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2802,
+						"y": 2961,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1111,
+					"instanceVariables": {
+						"parkingId": 51,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2702,
+						"y": 3163,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1112,
+					"instanceVariables": {
+						"parkingId": 51,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2602,
+						"y": 3243,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1113,
+					"instanceVariables": {
+						"parkingId": 39,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 662,
+						"y": 2401,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1114,
+					"instanceVariables": {
+						"parkingId": 39,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 577,
+						"y": 2301,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1115,
+					"instanceVariables": {
+						"parkingId": 38,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 662,
+						"y": 2635,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1116,
+					"instanceVariables": {
+						"parkingId": 38,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 577,
+						"y": 2535,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1117,
+					"instanceVariables": {
+						"parkingId": 41,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 767,
+						"y": 2488,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1118,
+					"instanceVariables": {
+						"parkingId": 41,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 852,
+						"y": 2588,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1119,
+					"instanceVariables": {
+						"parkingId": 40,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 767,
+						"y": 2253,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1120,
+					"instanceVariables": {
+						"parkingId": 40,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 852,
+						"y": 2353,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1121,
+					"instanceVariables": {
+						"parkingId": 35,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3213,
+						"y": 2439,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1122,
+					"instanceVariables": {
+						"parkingId": 35,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3128,
+						"y": 2339,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1123,
+					"instanceVariables": {
+						"parkingId": 34,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3213,
+						"y": 2673,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1124,
+					"instanceVariables": {
+						"parkingId": 34,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3128,
+						"y": 2573,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1125,
+					"instanceVariables": {
+						"parkingId": 37,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3318,
+						"y": 2526,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1126,
+					"instanceVariables": {
+						"parkingId": 37,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3403,
+						"y": 2626,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1127,
+					"instanceVariables": {
+						"parkingId": 36,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3318,
+						"y": 2291,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1128,
+					"instanceVariables": {
+						"parkingId": 36,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3403,
+						"y": 2391,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1129,
+					"instanceVariables": {
+						"parkingId": 31,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3216,
+						"y": 1077,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1130,
+					"instanceVariables": {
+						"parkingId": 31,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3131,
+						"y": 977,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1131,
+					"instanceVariables": {
+						"parkingId": 30,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3216,
+						"y": 1311,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1132,
+					"instanceVariables": {
+						"parkingId": 30,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3131,
+						"y": 1211,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1133,
+					"instanceVariables": {
+						"parkingId": 33,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3321,
+						"y": 1164,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1134,
+					"instanceVariables": {
+						"parkingId": 33,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3406,
+						"y": 1264,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1135,
+					"instanceVariables": {
+						"parkingId": 32,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3321,
+						"y": 929,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1136,
+					"instanceVariables": {
+						"parkingId": 32,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3406,
+						"y": 1029,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1137,
+					"instanceVariables": {
+						"parkingId": 10,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3832,
+						"y": 500,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1138,
+					"instanceVariables": {
+						"parkingId": 10,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3932,
+						"y": 399,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1139,
+					"instanceVariables": {
+						"parkingId": 11,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4072,
+						"y": 500,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1140,
+					"instanceVariables": {
+						"parkingId": 11,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4172,
+						"y": 399,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1141,
+					"instanceVariables": {
+						"parkingId": 12,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4318,
+						"y": 500,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1142,
+					"instanceVariables": {
+						"parkingId": 12,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4418,
+						"y": 399,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1143,
+					"instanceVariables": {
+						"parkingId": 18,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3832,
+						"y": 601,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1144,
+					"instanceVariables": {
+						"parkingId": 17,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4072,
+						"y": 601,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1145,
+					"instanceVariables": {
+						"parkingId": 16,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4318,
+						"y": 601,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1146,
+					"instanceVariables": {
+						"parkingId": 18,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3734,
+						"y": 684,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1147,
+					"instanceVariables": {
+						"parkingId": 17,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3972,
+						"y": 681,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1148,
+					"instanceVariables": {
+						"parkingId": 16,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4218,
+						"y": 681,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1149,
+					"instanceVariables": {
+						"parkingId": 13,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4563,
+						"y": 509,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1150,
+					"instanceVariables": {
+						"parkingId": 13,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4663,
+						"y": 408,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1151,
+					"instanceVariables": {
+						"parkingId": 16,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4563,
+						"y": 610,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1152,
+					"instanceVariables": {
+						"parkingId": 16,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4463,
+						"y": 690,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1153,
+					"instanceVariables": {
+						"parkingId": 14,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4820,
+						"y": 503,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1154,
+					"instanceVariables": {
+						"parkingId": 14,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4920,
+						"y": 402,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1155,
+					"instanceVariables": {
+						"parkingId": 15,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4820,
+						"y": 604,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1156,
+					"instanceVariables": {
+						"parkingId": 15,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4720,
+						"y": 684,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1157,
+					"instanceVariables": {
+						"parkingId": 67,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3206,
+						"y": 3716,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1158,
+					"instanceVariables": {
+						"parkingId": 67,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3121,
+						"y": 3616,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1163,
+					"instanceVariables": {
+						"parkingId": 68,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3311,
+						"y": 3568,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1164,
+					"instanceVariables": {
+						"parkingId": 68,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3396,
+						"y": 3668,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1165,
+					"instanceVariables": {
+						"parkingId": 64,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4477,
+						"y": 2413,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1166,
+					"instanceVariables": {
+						"parkingId": 64,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4392,
+						"y": 2313,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1167,
+					"instanceVariables": {
+						"parkingId": 63,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4477,
+						"y": 2647,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1168,
+					"instanceVariables": {
+						"parkingId": 63,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4392,
+						"y": 2547,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1169,
+					"instanceVariables": {
+						"parkingId": 66,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4582,
+						"y": 2500,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1170,
+					"instanceVariables": {
+						"parkingId": 66,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4667,
+						"y": 2600,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1171,
+					"instanceVariables": {
+						"parkingId": 65,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4582,
+						"y": 2265,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1172,
+					"instanceVariables": {
+						"parkingId": 65,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4667,
+						"y": 2365,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1173,
+					"instanceVariables": {
+						"parkingId": 58,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3794,
+						"y": 3058,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1174,
+					"instanceVariables": {
+						"parkingId": 58,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3894,
+						"y": 2957,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1175,
+					"instanceVariables": {
+						"parkingId": 59,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4034,
+						"y": 3058,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1176,
+					"instanceVariables": {
+						"parkingId": 59,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4134,
+						"y": 2957,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1178,
+					"instanceVariables": {
+						"parkingId": 62,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3794,
+						"y": 3159,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1179,
+					"instanceVariables": {
+						"parkingId": 61,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4034,
+						"y": 3159,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1180,
+					"instanceVariables": {
+						"parkingId": 60,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4280,
+						"y": 3159,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1181,
+					"instanceVariables": {
+						"parkingId": 62,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3696,
+						"y": 3242,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1182,
+					"instanceVariables": {
+						"parkingId": 61,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3934,
+						"y": 3239,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1183,
+					"instanceVariables": {
+						"parkingId": 60,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4180,
+						"y": 3239,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1186,
+					"instanceVariables": {
+						"parkingId": 42,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 29,
+						"y": 3052,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1187,
+					"instanceVariables": {
+						"parkingId": 42,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 129,
+						"y": 2951,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1191,
+					"instanceVariables": {
+						"parkingId": 43,
+						"pelanggaran": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 275,
+						"y": 3153,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "parkTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1194,
+					"instanceVariables": {
+						"parkingId": 43,
+						"occupiedBy": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 175,
+						"y": 3233,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "spawner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 258,
+					"instanceVariables": {
+						"angleSpawned": 180,
+						"melawanArus": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5081,
+						"y": 596,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "spawner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 261,
+					"instanceVariables": {
+						"angleSpawned": 180,
+						"melawanArus": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5090,
+						"y": 1906,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "spawner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 262,
+					"instanceVariables": {
+						"angleSpawned": 270,
+						"melawanArus": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3204,
+						"y": 3885,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "spawner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 404,
+					"instanceVariables": {
+						"angleSpawned": 0,
+						"melawanArus": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": -153,
+						"y": 3025,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 405,
+					"instanceVariables": {
+						"turnAngle": "0, 270, 180, 3181, 631|0, 270, 180, 3181, 467",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3181,
+						"y": 795,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 658,
+					"instanceVariables": {
+						"turnAngle": "0, 0, 0, 3345, 467|0, 0, 90, 3345, 467",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3017,
+						"y": 467,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 659,
+					"instanceVariables": {
+						"turnAngle": "0, 180, 180, 3345, 631|0, 180, 90, 3345, 631",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3509,
+						"y": 631,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 667,
+					"instanceVariables": {
+						"turnAngle": "0, 270, 180, 639, 631|0, 270, 180, 639, 467",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 639,
+						"y": 795,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1035,
+					"instanceVariables": {
+						"turnAngle": "0, 0, 0, 803, 467|0, 0, 90, 803, 467",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 475,
+						"y": 467,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1159,
+					"instanceVariables": {
+						"turnAngle": "0, 180, 180, 803, 631|0, 180, 90, 803, 631",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 967,
+						"y": 631,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1161,
+					"instanceVariables": {
+						"turnAngle": "0, 90, 0, 803, 3009|0, 90, 180, 803, 3173",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 803,
+						"y": 2845,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1162,
+					"instanceVariables": {
+						"turnAngle": "0, 180, 180, 639, 3173|0, 180, 270, 639, 3173",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 967,
+						"y": 3173,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1177,
+					"instanceVariables": {
+						"turnAngle": "0, 0, 0, 639, 3009|0, 0, 270, 639, 3009",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 475,
+						"y": 3009,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1160,
+					"instanceVariables": {
+						"turnAngle": "0, 90, 180, 4617, 3173",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4617,
+						"y": 2845,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1184,
+					"instanceVariables": {
+						"turnAngle": "0, 0, 270, 4453, 3009",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4289,
+						"y": 3009,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1185,
+					"instanceVariables": {
+						"turnAngle": "0, 90, 0, 4453, 1737",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4453,
+						"y": 1983,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1188,
+					"instanceVariables": {
+						"turnAngle": "0, 180, 90, 4617, 1901",
+						"intersectionId": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4699,
+						"y": 1901,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dekorasi2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 38,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1189,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1075,
+						"y": 1625,
+						"width": 82,
+						"height": 142,
+						"originX": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,

@@ -1,3 +1,14 @@
+/*
+	KODE PELANGGARAN
+	1 - Lawan Arah
+	2 - Tanpa Helm
+	3 - Tanpa Lampu
+	4 - Lampu Merah
+	5 - Satu Arah
+	6 - Dilarang Parkir
+	7 - Dilarang Berhenti
+*/
+
 import vehicles from "./vehiclesData.js";
 import { randomInt } from './commonFunctions.js';
 
