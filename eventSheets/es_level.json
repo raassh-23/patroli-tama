@@ -37,6 +37,26 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "minStopTime",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 334222088676037
+		},
+		{
+			"eventType": "variable",
+			"name": "maxStopTime",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 361472672858863
+		},
+		{
+			"eventType": "variable",
 			"name": "TopSpeed3",
 			"type": "number",
 			"initialValue": "200",
@@ -723,15 +743,6 @@
 							"sid": 682285812457313,
 							"parameters": {
 								"instance-variable": "parking"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
-							"sid": 245227642225546,
-							"parameters": {
-								"instance-variable": "going"
 							},
 							"isInverted": true
 						},
@@ -1523,6 +1534,17 @@
 								"instance-variable": "stopped",
 								"value": "true"
 							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "stopTarget",
+							"sid": 866772510971252,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "random(minStopTime, maxStopTime)",
+								"type": "once",
+								"tag": "\"stopping\""
+							}
 						}
 					],
 					"sid": 820096995284984,
@@ -1560,12 +1582,12 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-within-angle",
+							"id": "compare-animation-frame",
 							"objectClass": "vehicle",
-							"sid": 493615039333529,
+							"sid": 666009903333376,
 							"parameters": {
-								"within": "0.5",
-								"angle": "0"
+								"comparison": 0,
+								"number": "0"
 							}
 						},
 						{
@@ -1591,12 +1613,12 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-within-angle",
+							"id": "compare-animation-frame",
 							"objectClass": "vehicle",
-							"sid": 213801706328759,
+							"sid": 696158076929569,
 							"parameters": {
-								"within": "0.5",
-								"angle": "90"
+								"comparison": 0,
+								"number": "1"
 							}
 						},
 						{
@@ -1622,12 +1644,12 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-within-angle",
+							"id": "compare-animation-frame",
 							"objectClass": "vehicle",
-							"sid": 857823773078185,
+							"sid": 511904991120842,
 							"parameters": {
-								"within": "0.5",
-								"angle": "180"
+								"comparison": 0,
+								"number": "2"
 							}
 						},
 						{
@@ -1653,12 +1675,12 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-within-angle",
+							"id": "compare-animation-frame",
 							"objectClass": "vehicle",
-							"sid": 803043576122509,
+							"sid": 355190670143015,
 							"parameters": {
-								"within": "0.5",
-								"angle": "270"
+								"comparison": 0,
+								"number": "3"
 							}
 						},
 						{
@@ -1679,10 +1701,6 @@
 						}
 					],
 					"sid": 692899651303589
-				},
-				{
-					"eventType": "comment",
-					"text": "https://stackoverflow.com/questions/9404484/traffic-intersection-simulation-using-multi-threading-algorithm"
 				},
 				{
 					"eventType": "block",
@@ -6295,15 +6313,6 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "intersection",
-													"sid": 655432388438982,
-													"parameters": {
-														"instance-variable": "collisionCount",
-														"value": "0"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "intersection",
 													"sid": 882117987394255,
 													"parameters": {
 														"instance-variable": "vehiclesUID",
@@ -6311,8 +6320,7 @@
 													}
 												}
 											],
-											"sid": 493109649814084,
-											"disabled": true
+											"sid": 493109649814084
 										},
 										{
 											"eventType": "block",

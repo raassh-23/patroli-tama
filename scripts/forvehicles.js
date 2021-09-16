@@ -1,15 +1,5 @@
-/*
-	KODE PELANGGARAN
-	1 - Lawan Arah
-	2 - Tanpa Helm
-	3 - Tanpa Lampu
-	4 - Lampu Merah
-	5 - Satu Arah
-	6 - Dilarang Parkir
-	7 - Dilarang Berhenti
-*/
-
 import vehicles from "./vehiclesData.js";
+import kodePelanggaran from "./pelanggaran.js";
 import { randomInt } from './commonFunctions.js';
 
 function checkTurn(vehicle, turnCheck) {
@@ -103,11 +93,11 @@ function pickVehicle(pelanggaran, level) {
 	let pickedVehicle = "";
 
 	switch (pelanggaran) {
-		case 2:
+		case kodePelanggaran.TANPA_HELM:
 			pickedVehicle = "motorbikeWithoutHelm";
 			break;
 
-		case 3:
+		case kodePelanggaran.TANPA_LAMPU:
 			pickedVehicle = "motorbikeWithoutLight";
 			break;
 			
@@ -122,7 +112,7 @@ function pickVehicle(pelanggaran, level) {
 			pickedVehicle = vehiclesArray[randomInt(0, vehiclesArray.length - 1)]
 			break;
 	}
-	
+
 	console.log(pickedVehicle);
 
 	return pickedVehicle;

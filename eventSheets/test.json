@@ -48,6 +48,7 @@
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
 					"sid": 355503870648368,
+					"disabled": true,
 					"parameters": {
 						"value": "0",
 						"weight": "20"
@@ -97,7 +98,6 @@
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
 					"sid": 483258059812597,
-					"disabled": true,
 					"parameters": {
 						"value": "7",
 						"weight": "20"

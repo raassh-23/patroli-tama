@@ -122,12 +122,6 @@
 			"type": "boolean",
 			"desc": "berhenti di pinggir jalan",
 			"sid": 102564579714371
-		},
-		{
-			"name": "going",
-			"type": "boolean",
-			"desc": "",
-			"sid": 971865085432483
 		}
 	],
 	"behaviorTypes": [

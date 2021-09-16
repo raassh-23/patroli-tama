@@ -267,8 +267,7 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false,
-						"going": false
+						"stopped": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -345,8 +344,7 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false,
-						"going": false
+						"stopped": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1816,8 +1814,7 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false,
-						"going": false
+						"stopped": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -7404,8 +7401,7 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false,
-						"going": false
+						"stopped": false
 					},
 					"behaviors": {
 						"Bullet": {

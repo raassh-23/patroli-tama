@@ -4,7 +4,7 @@
 	"name": "Patroli Tama",
 	"runtime": "c3",
 	"useWorker": "auto",
-	"bundleAddons": false,
+	"bundleAddons": true,
 	"usedAddons": [
 		{
 			"type": "plugin",
@@ -148,7 +148,7 @@
 			"name": "BetterOutline",
 			"author": "skymen",
 			"version": "1.4.0.3",
-			"bundled": false
+			"bundled": true
 		}
 	],
 	"uniqueId": "0q4zf2t8fxw",
@@ -449,6 +449,14 @@
 					"name": "commonFunctions.js",
 					"type": "text/javascript",
 					"sid": 385758973716159,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pelanggaran.js",
+					"type": "application/javascript",
+					"sid": 854332775742291,
 					"script-info": {
 						"purpose": "none"
 					}
