@@ -236,7 +236,10 @@
 						"aboutToCollide": false,
 						"intersectionLock": "",
 						"parked": false,
-						"parking": false
+						"parking": false,
+						"stopping": false,
+						"stopped": false,
+						"going": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -248,6 +251,21 @@
 								"set-angle": false,
 								"step": true,
 								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
 							}
 						}
 					},
@@ -296,7 +314,10 @@
 						"aboutToCollide": false,
 						"intersectionLock": "",
 						"parked": false,
-						"parking": false
+						"parking": false,
+						"stopping": false,
+						"stopped": false,
+						"going": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -308,6 +329,21 @@
 								"set-angle": false,
 								"step": true,
 								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
 							}
 						}
 					},
@@ -356,7 +392,10 @@
 						"aboutToCollide": false,
 						"intersectionLock": "",
 						"parked": false,
-						"parking": false
+						"parking": false,
+						"stopping": false,
+						"stopped": false,
+						"going": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -368,6 +407,21 @@
 								"set-angle": false,
 								"step": true,
 								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
 							}
 						}
 					},
@@ -1914,7 +1968,10 @@
 						"aboutToCollide": false,
 						"intersectionLock": "",
 						"parked": false,
-						"parking": false
+						"parking": false,
+						"stopping": false,
+						"stopped": false,
+						"going": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1926,6 +1983,21 @@
 								"set-angle": false,
 								"step": true,
 								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 1,
+								"precision-step": 1,
+								"samples": 16
 							}
 						}
 					},

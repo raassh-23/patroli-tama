@@ -42,7 +42,7 @@
 		{
 			"name": "berhenti",
 			"type": "boolean",
-			"desc": "",
+			"desc": "berhenti secara umum",
 			"sid": 545311986097833
 		},
 		{
@@ -110,6 +110,24 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 224005578927732
+		},
+		{
+			"name": "stopping",
+			"type": "boolean",
+			"desc": "",
+			"sid": 391856776829569
+		},
+		{
+			"name": "stopped",
+			"type": "boolean",
+			"desc": "berhenti di pinggir jalan",
+			"sid": 102564579714371
+		},
+		{
+			"name": "going",
+			"type": "boolean",
+			"desc": "",
+			"sid": 971865085432483
 		}
 	],
 	"behaviorTypes": [
@@ -119,7 +137,12 @@
 			"sid": 647594988971730
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
 	"members": [
 		"car",
 		"motorbike",

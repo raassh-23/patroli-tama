@@ -141,6 +141,14 @@
 			"author": "Scirra",
 			"version": "r260",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "skymen_BetterOutline",
+			"name": "BetterOutline",
+			"author": "skymen",
+			"version": "1.4.0.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "0q4zf2t8fxw",
@@ -177,7 +185,9 @@
 			"lockCheck",
 			"parkCheck",
 			"parkTarget",
-			"truck"
+			"truck",
+			"stopCheck",
+			"stopTarget"
 		],
 		"subfolders": [
 			{
@@ -356,7 +366,8 @@
 					"Level7",
 					"Level8",
 					"Level9",
-					"Level10"
+					"Level10",
+					"test"
 				],
 				"subfolders": [],
 				"name": "levels"
@@ -391,7 +402,8 @@
 					"Es_Level7",
 					"Es_Level8",
 					"Es_Level9",
-					"Es_Level10"
+					"Es_Level10",
+					"test"
 				],
 				"subfolders": [],
 				"name": "levels"

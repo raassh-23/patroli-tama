@@ -11,10 +11,10 @@
 			"sid": 588474898147655
 		},
 		{
-			"name": "pelanggaran",
-			"type": "number",
+			"name": "melanggar",
+			"type": "boolean",
 			"desc": "",
-			"sid": 313974339835246
+			"sid": 370325324999818
 		}
 	],
 	"behaviorTypes": [],

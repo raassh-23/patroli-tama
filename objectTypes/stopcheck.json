@@ -1,20 +1,20 @@
 {
-	"name": "parkTarget",
+	"name": "stopCheck",
 	"plugin-id": "Sprite",
-	"sid": 267324342739539,
+	"sid": 521385077158807,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "parkingId",
+			"name": "stoppingId",
 			"type": "number",
 			"desc": "",
-			"sid": 355522646101567
+			"sid": 332718751665117
 		},
 		{
-			"name": "occupiedBy",
-			"type": "number",
+			"name": "melanggar",
+			"type": "boolean",
 			"desc": "",
-			"sid": 409132913989051
+			"sid": 119412720970255
 		}
 	],
 	"behaviorTypes": [],
@@ -31,12 +31,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9905530,
+						"imageSpriteId": 4062726,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 338894986887913,
+				"sid": 819696019056063,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

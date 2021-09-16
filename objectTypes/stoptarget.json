@@ -1,23 +1,29 @@
 {
-	"name": "parkTarget",
+	"name": "stopTarget",
 	"plugin-id": "Sprite",
-	"sid": 267324342739539,
+	"sid": 108305793525081,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "parkingId",
+			"name": "stoppingId",
 			"type": "number",
 			"desc": "",
-			"sid": 355522646101567
+			"sid": 605937488181775
 		},
 		{
 			"name": "occupiedBy",
 			"type": "number",
 			"desc": "",
-			"sid": 409132913989051
+			"sid": 225007497632922
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 984034056578936
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -31,12 +37,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9905530,
+						"imageSpriteId": 4147615,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 338894986887913,
+				"sid": 121620291218201,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

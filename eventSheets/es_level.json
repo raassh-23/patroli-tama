@@ -17,6 +17,36 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "probPark",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 501765421570386
+		},
+		{
+			"eventType": "variable",
+			"name": "probStop",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 776554792142981
+		},
+		{
+			"eventType": "variable",
+			"name": "TopSpeed3",
+			"type": "number",
+			"initialValue": "200",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 154018768246543
+		},
+		{
+			"eventType": "variable",
 			"name": "score",
 			"type": "number",
 			"initialValue": "0",
@@ -482,18 +512,7 @@
 				{
 					"id": "set-boolean-instvar",
 					"objectClass": "vehicle",
-					"sid": 886711755885871,
-					"disabled": true,
-					"parameters": {
-						"instance-variable": "berhenti",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "vehicle",
 					"sid": 128942104348276,
-					"disabled": true,
 					"parameters": {
 						"instance-variable": "picked",
 						"value": "true"
@@ -704,6 +723,24 @@
 							"sid": 682285812457313,
 							"parameters": {
 								"instance-variable": "parking"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 245227642225546,
+							"parameters": {
+								"instance-variable": "going"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 454530233226456,
+							"parameters": {
+								"instance-variable": "stopping"
 							},
 							"isInverted": true
 						}
@@ -1367,15 +1404,6 @@
 								"instance-variable": "parked",
 								"value": "true"
 							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "vehicle",
-							"sid": 788237615437116,
-							"parameters": {
-								"instance-variable": "melanggar",
-								"value": "true"
-							}
 						}
 					],
 					"sid": 761183884311215,
@@ -1414,6 +1442,117 @@
 								}
 							],
 							"sid": 599128472270105
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "vehicle",
+									"sid": 124778768830339,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 389019583963879,
+									"parameters": {
+										"instance-variable": "melanggar",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 913941518122730
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 292476468775560,
+							"parameters": {
+								"instance-variable": "stopping"
+							}
+						},
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 451509967109692,
+							"parameters": {
+								"object": "stopTarget",
+								"expression": "stopTarget.occupiedBy",
+								"comparison": 0,
+								"value": "vehicle.UID"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 717347997550986,
+							"parameters": {
+								"first-value": "distance(vehicle.X, vehicle.Y, stopTarget.X, stopTarget.Y)",
+								"comparison": 3,
+								"second-value": "tolerance/2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 249667880383071,
+							"parameters": {
+								"instance-variable": "stopping",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 584039814403173,
+							"parameters": {
+								"instance-variable": "stopped",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 820096995284984,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "vehicle",
+									"sid": 633076356998233,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 298567532259286,
+									"parameters": {
+										"instance-variable": "melanggar",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 468649919538696
 						}
 					]
 				},
@@ -1624,6 +1763,15 @@
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "vehicle",
+							"sid": 980991374693725,
+							"parameters": {
+								"instance-variable": "stopped"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
 							"sid": 703911378944551,
 							"disabled": true,
 							"parameters": {
@@ -1651,14 +1799,6 @@
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "vehicle",
-							"sid": 920790257630816,
-							"parameters": {
-								"instance-variable": "turning"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "vehicle",
 							"sid": 427228139269576,
 							"parameters": {
 								"instance-variable": "turning"
@@ -1670,6 +1810,14 @@
 							"sid": 458673839667662,
 							"parameters": {
 								"instance-variable": "parked"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 291096333612852,
+							"parameters": {
+								"instance-variable": "stopped"
 							}
 						},
 						{
@@ -1822,6 +1970,77 @@
 						}
 					],
 					"sid": 466521392183197
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 791846493173788,
+							"parameters": {
+								"instance-variable": "picked"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "vehicle",
+							"sid": 639503503191627,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"BetterOutline\""
+							}
+						}
+					],
+					"sid": 115832608999033
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 565138810208898,
+							"parameters": {
+								"instance-variable": "picked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "vehicle",
+							"sid": 710544559152705,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"BetterOutline\""
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "vehicle",
+							"sid": 716323976376392,
+							"parameters": {
+								"effect": "\"BetterOutline\"",
+								"parameter-index": "0",
+								"value": "rgba255(255,255,255,255)"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "vehicle",
+							"sid": 585738017741399,
+							"parameters": {
+								"effect": "\"BetterOutline\"",
+								"parameter-index": "1",
+								"value": "5"
+							}
+						}
+					],
+					"sid": 890911927460953
 				}
 			]
 		},
@@ -1857,16 +2076,6 @@
 					}
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "parkCheck",
-					"sid": 191193941590364,
-					"parameters": {
-						"instance-variable": "pelanggaran",
-						"comparison": 0,
-						"value": "vehicle.pelanggaran"
-					}
-				},
-				{
 					"id": "pick-by-comparison",
 					"objectClass": "System",
 					"sid": 207692973091736,
@@ -1888,36 +2097,350 @@
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 293843051485014,
+			"children": [
 				{
-					"id": "set-instvar-value",
-					"objectClass": "parkTarget",
-					"sid": 815045854121149,
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "parkCheck",
+							"sid": 629607372949261,
+							"parameters": {
+								"instance-variable": "melanggar"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 688986830795266,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "parkTarget",
+							"sid": 602964677709249,
+							"parameters": {
+								"instance-variable": "occupiedBy",
+								"value": "vehicle.UID"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "vehicle",
+							"sid": 401477412926156,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Self.X, Self.Y, parkTarget.X, parkTarget.Y)"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 340519982048752,
+							"parameters": {
+								"instance-variable": "parking",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 602379939776625
+				},
+				{
+					"eventType": "variable",
+					"name": "parkTest",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 940108647609837
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "parkCheck",
+							"sid": 294879376046662,
+							"parameters": {
+								"instance-variable": "melanggar"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 592987281843253,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 439210011365429,
+							"parameters": {
+								"variable": "parkTest",
+								"value": "random(100)"
+							}
+						}
+					],
+					"sid": 677360445974247,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 922187768054358,
+									"parameters": {
+										"variable": "parkTest",
+										"comparison": 3,
+										"value": "probPark"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "parkTarget",
+									"sid": 565212039073177,
+									"parameters": {
+										"instance-variable": "occupiedBy",
+										"value": "vehicle.UID"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "vehicle",
+									"sid": 709064635695362,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "angle(Self.X, Self.Y, parkTarget.X, parkTarget.Y)"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 470391636158806,
+									"parameters": {
+										"instance-variable": "parking",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 909479145645109
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "vehicle",
+					"sid": 207339953415051,
+					"parameters": {
+						"object": "stopCheck"
+					}
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 582751914636085,
+					"parameters": {
+						"object": "stopTarget",
+						"expression": "stopTarget.stoppingId",
+						"comparison": 0,
+						"value": "stopCheck.stoppingId"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "stopTarget",
+					"sid": 971017012979167,
 					"parameters": {
 						"instance-variable": "occupiedBy",
-						"value": "vehicle.UID"
-					}
-				},
-				{
-					"id": "set-angle-of-motion",
-					"objectClass": "vehicle",
-					"sid": 384289589553431,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"angle": "angle(Self.X, Self.Y, parkTarget.X, parkTarget.Y)"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "vehicle",
-					"sid": 106658353844228,
-					"parameters": {
-						"instance-variable": "parking",
-						"value": "true"
+						"comparison": 0,
+						"value": "0"
 					}
 				}
 			],
-			"sid": 293843051485014
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 825251452790544,
+					"parameters": {
+						"type": "log",
+						"message": "\"stopcheck\""
+					}
+				}
+			],
+			"sid": 690909150803146,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "stopCheck",
+							"sid": 822752647737593,
+							"parameters": {
+								"instance-variable": "melanggar"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 432027107515300,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "stopTarget",
+							"sid": 711573571876146,
+							"parameters": {
+								"instance-variable": "occupiedBy",
+								"value": "vehicle.UID"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "vehicle",
+							"sid": 578552244601509,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Self.X, Self.Y, stopTarget.X, stopTarget.Y)"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 733467277844260,
+							"parameters": {
+								"instance-variable": "stopping",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 768355759813277
+				},
+				{
+					"eventType": "variable",
+					"name": "stopTest",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 148917838349254
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "stopCheck",
+							"sid": 934786427054888,
+							"parameters": {
+								"instance-variable": "melanggar"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 882145907680431,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 842643919210200,
+							"parameters": {
+								"variable": "stopTest",
+								"value": "random(100)"
+							}
+						}
+					],
+					"sid": 273115515993394,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 428156178198365,
+									"parameters": {
+										"variable": "stopTest",
+										"comparison": 3,
+										"value": "probStop"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "stopTarget",
+									"sid": 216717391208967,
+									"parameters": {
+										"instance-variable": "occupiedBy",
+										"value": "vehicle.UID"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "vehicle",
+									"sid": 582365370965307,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "angle(Self.X, Self.Y, stopTarget.X, stopTarget.Y)"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 391456364813149,
+									"parameters": {
+										"instance-variable": "stopping",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 225528617291070
+						}
+					]
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -2361,16 +2884,6 @@
 												{
 													"id": "compare-instance-variable",
 													"objectClass": "vehicle",
-													"sid": 358333816145148,
-													"parameters": {
-														"instance-variable": "pelanggaran",
-														"comparison": 0,
-														"value": "0"
-													}
-												},
-												{
-													"id": "compare-instance-variable",
-													"objectClass": "vehicle",
 													"sid": 206978887619802,
 													"parameters": {
 														"instance-variable": "pelanggaran",
@@ -2419,6 +2932,16 @@
 												{
 													"id": "compare-instance-variable",
 													"objectClass": "vehicle",
+													"sid": 627198154259861,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "0"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
 													"sid": 765099753848378,
 													"parameters": {
 														"instance-variable": "pelanggaran",
@@ -2434,6 +2957,26 @@
 														"instance-variable": "pelanggaran",
 														"comparison": 0,
 														"value": "5"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 131997815254065,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "6"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 717860794440533,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "7"
 													}
 												}
 											],
@@ -2764,15 +3307,6 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "vehicle",
-									"sid": 680059154603998,
-									"parameters": {
-										"instance-variable": "berhenti",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "vehicle",
 									"sid": 343451140044944,
 									"parameters": {
 										"instance-variable": "picked",
@@ -2780,8 +3314,7 @@
 									}
 								}
 							],
-							"sid": 508958774044921,
-							"disabled": true
+							"sid": 508958774044921
 						},
 						{
 							"eventType": "block",

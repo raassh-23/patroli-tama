@@ -1,5 +1,5 @@
 {
-	"name": "Level10",
+	"name": "test",
 	"layers": [
 		{
 			"name": "bg",
@@ -18,14 +18,14 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 1190,
+					"uid": 1400,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": -46,
 						"y": -49,
-						"width": 6131,
-						"height": 4168,
+						"width": 5501,
+						"height": 3796,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -52,16 +52,16 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 1192,
+					"uid": 1401,
 					"instanceVariables": {},
 					"behaviors": {},
 					"ownData": {
 						"tilemapData": {
-							"width": 11,
+							"width": 10,
 							"height": 7,
-							"max-width": 181,
+							"max-width": 180,
 							"max-height": 128,
-							"data": "5x0,9hv,127x0,5,122x0,2x10,18vd,5vd,5d,11hv,5hvd,123x0,5hv,2x0,5hv,124x0,5,2x0,9,122x0,9hd,5hd,11vd,5vd,13hv,5,124x0,5hv,0,13,21hd,5vd,122x0,13h,13v,2x0,5hv,123x0,5h,3x0,9,123x0,9h,0,13h,5d,18v,123x0,9,0,9h,0,9,21882x0"
+							"data": "0,9,3x0,9hv,123x0,7h,3x0,5,123x0,7h,127x0,7h,0,1d,125x0,7h,1h,5d,125x0,7h,5d,1d,125x0,7h,5v,1d,127x0,1d,127x0,1d,22012x0"
 						},
 						"tile-width": 636,
 						"tile-height": 636,
@@ -73,8 +73,8 @@
 					"world": {
 						"x": -878,
 						"y": -408,
-						"width": 7064,
-						"height": 4785,
+						"width": 6720,
+						"height": 4546,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -95,7 +95,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1193,
+					"uid": 1402,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -124,7 +124,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1195,
+					"uid": 1403,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -153,7 +153,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1196,
+					"uid": 1404,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -182,7 +182,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1197,
+					"uid": 1405,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -211,7 +211,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1198,
+					"uid": 1406,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -232,7 +232,7 @@
 					}
 				}
 			],
-			"sid": 921367167984009,
+			"sid": 400838533674052,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -271,7 +271,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1199,
+					"uid": 1407,
 					"instanceVariables": {},
 					"behaviors": {
 						"Timer": {
@@ -304,7 +304,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1200,
+					"uid": 1408,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -345,12 +345,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -382,7 +382,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1201,
+					"uid": 1409,
 					"instanceVariables": {
 						"angleSpawned": 0,
 						"melawanArus": 0
@@ -414,7 +414,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1202,
+					"uid": 1410,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 3180, 3174| 0, 270, 270, 3180, 3174| 0, 270, 0, 3180, 3016",
 						"intersectionId": 1
@@ -446,7 +446,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1203,
+					"uid": 1411,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 3344, 3174| 0, 180, 180, 3344, 3174| 0, 180, 270, 3180, 3174",
 						"intersectionId": 1
@@ -478,7 +478,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1204,
+					"uid": 1412,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 270, 3180, 3016| 0, 0, 0, 3344, 3016| 0, 0, 90, 3344, 3016",
 						"intersectionId": 1
@@ -510,7 +510,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1205,
+					"uid": 1413,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 3344, 3016| 0, 90, 90, 3344, 3174| 0, 90, 180, 3344, 3174",
 						"intersectionId": 1
@@ -542,7 +542,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1206,
+					"uid": 1414,
 					"instanceVariables": {
 						"id": 2,
 						"state": 0,
@@ -582,7 +582,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1207,
+					"uid": 1415,
 					"instanceVariables": {
 						"id": 2
 					},
@@ -613,7 +613,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1208,
+					"uid": 1416,
 					"instanceVariables": {
 						"id": 1,
 						"state": 0,
@@ -653,7 +653,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1209,
+					"uid": 1417,
 					"instanceVariables": {
 						"id": 1
 					},
@@ -684,7 +684,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1210,
+					"uid": 1418,
 					"instanceVariables": {
 						"id": 3,
 						"state": 2,
@@ -724,7 +724,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1211,
+					"uid": 1419,
 					"instanceVariables": {
 						"id": 3
 					},
@@ -755,7 +755,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1212,
+					"uid": 1420,
 					"instanceVariables": {
 						"id": 4,
 						"state": 0,
@@ -795,7 +795,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1213,
+					"uid": 1421,
 					"instanceVariables": {
 						"id": 4
 					},
@@ -826,7 +826,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1214,
+					"uid": 1422,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -867,12 +867,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -904,135 +904,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1215,
-					"instanceVariables": {
-						"parkingId": 1,
-						"melanggar": true
-					},
-					"behaviors": {},
-					"world": {
-						"x": -65,
-						"y": 504,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1216,
-					"instanceVariables": {
-						"parkingId": 1,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 35,
-						"y": 403,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1217,
-					"instanceVariables": {
-						"parkingId": 2,
-						"melanggar": true
-					},
-					"behaviors": {},
-					"world": {
-						"x": 181,
-						"y": 504,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1218,
-					"instanceVariables": {
-						"parkingId": 2,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 281,
-						"y": 403,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1219,
+					"uid": 1427,
 					"instanceVariables": {
 						"parkingId": 25,
 						"melanggar": true
@@ -1064,7 +936,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1220,
+					"uid": 1428,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1105,12 +977,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1142,7 +1014,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1221,
+					"uid": 1429,
 					"instanceVariables": {
 						"parkingId": 25,
 						"occupiedBy": 0
@@ -1174,7 +1046,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1222,
+					"uid": 1430,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1215,12 +1087,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1252,7 +1124,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1223,
+					"uid": 1431,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1293,12 +1165,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1330,7 +1202,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1224,
+					"uid": 1432,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1371,12 +1243,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1408,7 +1280,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1225,
+					"uid": 1433,
 					"instanceVariables": {
 						"parkingId": 29,
 						"melanggar": true
@@ -1440,7 +1312,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1226,
+					"uid": 1434,
 					"instanceVariables": {
 						"parkingId": 29,
 						"occupiedBy": 0
@@ -1472,7 +1344,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1227,
+					"uid": 1435,
 					"instanceVariables": {
 						"parkingId": 28,
 						"melanggar": true
@@ -1504,7 +1376,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1228,
+					"uid": 1436,
 					"instanceVariables": {
 						"parkingId": 28,
 						"occupiedBy": 0
@@ -1536,7 +1408,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1229,
+					"uid": 1437,
 					"instanceVariables": {
 						"parkingId": 27,
 						"melanggar": true
@@ -1568,7 +1440,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1230,
+					"uid": 1438,
 					"instanceVariables": {
 						"parkingId": 27,
 						"occupiedBy": 0
@@ -1600,7 +1472,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1231,
+					"uid": 1439,
 					"instanceVariables": {
 						"parkingId": 26,
 						"melanggar": true
@@ -1632,7 +1504,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1232,
+					"uid": 1440,
 					"instanceVariables": {
 						"parkingId": 26,
 						"occupiedBy": 0
@@ -1664,7 +1536,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1233,
+					"uid": 1441,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1705,12 +1577,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1742,7 +1614,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1234,
+					"uid": 1442,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1783,12 +1655,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1820,7 +1692,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1235,
+					"uid": 1443,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1861,12 +1733,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1898,7 +1770,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1236,
+					"uid": 1444,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1939,12 +1811,12 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
-								"width": 1,
+								"width": 3,
 								"precision-step": 1,
 								"samples": 16
 							}
@@ -1976,135 +1848,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1237,
-					"instanceVariables": {
-						"parkingId": 3,
-						"melanggar": true
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1267,
-						"y": 502,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1238,
-					"instanceVariables": {
-						"parkingId": 3,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1367,
-						"y": 401,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1239,
-					"instanceVariables": {
-						"parkingId": 4,
-						"melanggar": true
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1507,
-						"y": 502,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1240,
-					"instanceVariables": {
-						"parkingId": 4,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1607,
-						"y": 401,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1241,
+					"uid": 1449,
 					"instanceVariables": {
 						"parkingId": 5,
 						"melanggar": true
@@ -2136,7 +1880,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1242,
+					"uid": 1450,
 					"instanceVariables": {
 						"parkingId": 5,
 						"occupiedBy": 0
@@ -2168,7 +1912,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1243,
+					"uid": 1451,
 					"instanceVariables": {
 						"parkingId": 24,
 						"melanggar": true
@@ -2200,7 +1944,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1244,
+					"uid": 1452,
 					"instanceVariables": {
 						"parkingId": 23,
 						"melanggar": true
@@ -2232,7 +1976,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1245,
+					"uid": 1453,
 					"instanceVariables": {
 						"parkingId": 22,
 						"melanggar": true
@@ -2264,7 +2008,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1246,
+					"uid": 1454,
 					"instanceVariables": {
 						"parkingId": 24,
 						"occupiedBy": 0
@@ -2296,7 +2040,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1247,
+					"uid": 1455,
 					"instanceVariables": {
 						"parkingId": 23,
 						"occupiedBy": 0
@@ -2328,7 +2072,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1248,
+					"uid": 1456,
 					"instanceVariables": {
 						"parkingId": 22,
 						"occupiedBy": 0
@@ -2360,7 +2104,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1249,
+					"uid": 1457,
 					"instanceVariables": {
 						"parkingId": 6,
 						"melanggar": true
@@ -2392,7 +2136,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1250,
+					"uid": 1458,
 					"instanceVariables": {
 						"parkingId": 6,
 						"occupiedBy": 0
@@ -2424,7 +2168,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1251,
+					"uid": 1459,
 					"instanceVariables": {
 						"parkingId": 7,
 						"melanggar": true
@@ -2456,7 +2200,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1252,
+					"uid": 1460,
 					"instanceVariables": {
 						"parkingId": 7,
 						"occupiedBy": 0
@@ -2488,7 +2232,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1253,
+					"uid": 1461,
 					"instanceVariables": {
 						"parkingId": 8,
 						"melanggar": true
@@ -2520,7 +2264,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1254,
+					"uid": 1462,
 					"instanceVariables": {
 						"parkingId": 8,
 						"occupiedBy": 0
@@ -2552,7 +2296,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1255,
+					"uid": 1463,
 					"instanceVariables": {
 						"parkingId": 21,
 						"melanggar": true
@@ -2584,7 +2328,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1256,
+					"uid": 1464,
 					"instanceVariables": {
 						"parkingId": 20,
 						"melanggar": true
@@ -2616,7 +2360,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1257,
+					"uid": 1465,
 					"instanceVariables": {
 						"parkingId": 19,
 						"melanggar": true
@@ -2648,7 +2392,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1258,
+					"uid": 1466,
 					"instanceVariables": {
 						"parkingId": 21,
 						"occupiedBy": 0
@@ -2680,7 +2424,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1261,
+					"uid": 1467,
 					"instanceVariables": {
 						"parkingId": 20,
 						"occupiedBy": 0
@@ -2712,7 +2456,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1262,
+					"uid": 1468,
 					"instanceVariables": {
 						"parkingId": 19,
 						"occupiedBy": 0
@@ -2744,7 +2488,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1263,
+					"uid": 1469,
 					"instanceVariables": {
 						"parkingId": 9,
 						"melanggar": true
@@ -2776,7 +2520,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1265,
+					"uid": 1470,
 					"instanceVariables": {
 						"parkingId": 9,
 						"occupiedBy": 0
@@ -2808,7 +2552,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1267,
+					"uid": 1471,
 					"instanceVariables": {
 						"parkingId": 19,
 						"melanggar": true
@@ -2840,7 +2584,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1268,
+					"uid": 1472,
 					"instanceVariables": {
 						"parkingId": 19,
 						"occupiedBy": 0
@@ -2872,7 +2616,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1269,
+					"uid": 1473,
 					"instanceVariables": {
 						"parkingId": 44,
 						"melanggar": true
@@ -2904,7 +2648,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1270,
+					"uid": 1474,
 					"instanceVariables": {
 						"parkingId": 44,
 						"occupiedBy": 0
@@ -2936,7 +2680,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1271,
+					"uid": 1475,
 					"instanceVariables": {
 						"parkingId": 45,
 						"melanggar": true
@@ -2968,7 +2712,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1272,
+					"uid": 1476,
 					"instanceVariables": {
 						"parkingId": 45,
 						"occupiedBy": 0
@@ -3000,7 +2744,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1273,
+					"uid": 1477,
 					"instanceVariables": {
 						"parkingId": 46,
 						"melanggar": true
@@ -3032,7 +2776,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1274,
+					"uid": 1478,
 					"instanceVariables": {
 						"parkingId": 46,
 						"occupiedBy": 0
@@ -3064,7 +2808,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1275,
+					"uid": 1479,
 					"instanceVariables": {
 						"parkingId": 57,
 						"melanggar": true
@@ -3096,7 +2840,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1276,
+					"uid": 1480,
 					"instanceVariables": {
 						"parkingId": 56,
 						"melanggar": true
@@ -3128,7 +2872,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1277,
+					"uid": 1481,
 					"instanceVariables": {
 						"parkingId": 55,
 						"melanggar": true
@@ -3160,7 +2904,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1278,
+					"uid": 1482,
 					"instanceVariables": {
 						"parkingId": 57,
 						"occupiedBy": 0
@@ -3192,7 +2936,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1279,
+					"uid": 1483,
 					"instanceVariables": {
 						"parkingId": 56,
 						"occupiedBy": 0
@@ -3224,7 +2968,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1280,
+					"uid": 1484,
 					"instanceVariables": {
 						"parkingId": 55,
 						"occupiedBy": 0
@@ -3256,7 +3000,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1281,
+					"uid": 1485,
 					"instanceVariables": {
 						"parkingId": 47,
 						"melanggar": true
@@ -3288,7 +3032,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1282,
+					"uid": 1486,
 					"instanceVariables": {
 						"parkingId": 47,
 						"occupiedBy": 0
@@ -3320,7 +3064,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1283,
+					"uid": 1487,
 					"instanceVariables": {
 						"parkingId": 48,
 						"melanggar": true
@@ -3352,7 +3096,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1284,
+					"uid": 1488,
 					"instanceVariables": {
 						"parkingId": 48,
 						"occupiedBy": 0
@@ -3384,7 +3128,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1285,
+					"uid": 1489,
 					"instanceVariables": {
 						"parkingId": 49,
 						"melanggar": true
@@ -3416,7 +3160,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1286,
+					"uid": 1490,
 					"instanceVariables": {
 						"parkingId": 49,
 						"occupiedBy": 0
@@ -3448,7 +3192,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1287,
+					"uid": 1491,
 					"instanceVariables": {
 						"parkingId": 54,
 						"melanggar": true
@@ -3480,7 +3224,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1288,
+					"uid": 1492,
 					"instanceVariables": {
 						"parkingId": 53,
 						"melanggar": true
@@ -3512,7 +3256,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1289,
+					"uid": 1493,
 					"instanceVariables": {
 						"parkingId": 52,
 						"melanggar": true
@@ -3544,7 +3288,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1290,
+					"uid": 1494,
 					"instanceVariables": {
 						"parkingId": 54,
 						"occupiedBy": 0
@@ -3576,7 +3320,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1291,
+					"uid": 1495,
 					"instanceVariables": {
 						"parkingId": 53,
 						"occupiedBy": 0
@@ -3608,7 +3352,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1292,
+					"uid": 1496,
 					"instanceVariables": {
 						"parkingId": 52,
 						"occupiedBy": 0
@@ -3640,7 +3384,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1293,
+					"uid": 1498,
 					"instanceVariables": {
 						"parkingId": 50,
 						"melanggar": true
@@ -3672,7 +3416,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1294,
+					"uid": 1499,
 					"instanceVariables": {
 						"parkingId": 50,
 						"occupiedBy": 0
@@ -3704,7 +3448,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1295,
+					"uid": 1500,
 					"instanceVariables": {
 						"parkingId": 51,
 						"melanggar": true
@@ -3736,7 +3480,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1296,
+					"uid": 1501,
 					"instanceVariables": {
 						"parkingId": 51,
 						"occupiedBy": 0
@@ -3768,7 +3512,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1297,
+					"uid": 1502,
 					"instanceVariables": {
 						"parkingId": 39,
 						"melanggar": true
@@ -3800,7 +3544,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1298,
+					"uid": 1503,
 					"instanceVariables": {
 						"parkingId": 39,
 						"occupiedBy": 0
@@ -3832,7 +3576,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1299,
+					"uid": 1504,
 					"instanceVariables": {
 						"parkingId": 38,
 						"melanggar": true
@@ -3864,7 +3608,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1300,
+					"uid": 1505,
 					"instanceVariables": {
 						"parkingId": 38,
 						"occupiedBy": 0
@@ -3896,7 +3640,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1301,
+					"uid": 1506,
 					"instanceVariables": {
 						"parkingId": 41,
 						"melanggar": true
@@ -3928,7 +3672,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1302,
+					"uid": 1507,
 					"instanceVariables": {
 						"parkingId": 41,
 						"occupiedBy": 0
@@ -3960,7 +3704,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1303,
+					"uid": 1508,
 					"instanceVariables": {
 						"parkingId": 40,
 						"melanggar": true
@@ -3992,7 +3736,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1304,
+					"uid": 1509,
 					"instanceVariables": {
 						"parkingId": 40,
 						"occupiedBy": 0
@@ -4024,7 +3768,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1305,
+					"uid": 1510,
 					"instanceVariables": {
 						"parkingId": 35,
 						"melanggar": true
@@ -4056,7 +3800,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1306,
+					"uid": 1511,
 					"instanceVariables": {
 						"parkingId": 35,
 						"occupiedBy": 0
@@ -4088,7 +3832,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1307,
+					"uid": 1512,
 					"instanceVariables": {
 						"parkingId": 34,
 						"melanggar": true
@@ -4120,7 +3864,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1308,
+					"uid": 1513,
 					"instanceVariables": {
 						"parkingId": 34,
 						"occupiedBy": 0
@@ -4152,7 +3896,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1309,
+					"uid": 1514,
 					"instanceVariables": {
 						"parkingId": 37,
 						"melanggar": true
@@ -4184,7 +3928,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1311,
+					"uid": 1515,
 					"instanceVariables": {
 						"parkingId": 37,
 						"occupiedBy": 0
@@ -4216,7 +3960,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1312,
+					"uid": 1516,
 					"instanceVariables": {
 						"parkingId": 36,
 						"melanggar": true
@@ -4248,7 +3992,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1313,
+					"uid": 1517,
 					"instanceVariables": {
 						"parkingId": 36,
 						"occupiedBy": 0
@@ -4280,7 +4024,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1314,
+					"uid": 1518,
 					"instanceVariables": {
 						"parkingId": 31,
 						"melanggar": true
@@ -4312,7 +4056,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1315,
+					"uid": 1519,
 					"instanceVariables": {
 						"parkingId": 31,
 						"occupiedBy": 0
@@ -4344,7 +4088,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1316,
+					"uid": 1520,
 					"instanceVariables": {
 						"parkingId": 30,
 						"melanggar": true
@@ -4376,7 +4120,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1317,
+					"uid": 1521,
 					"instanceVariables": {
 						"parkingId": 30,
 						"occupiedBy": 0
@@ -4408,7 +4152,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1318,
+					"uid": 1522,
 					"instanceVariables": {
 						"parkingId": 33,
 						"melanggar": true
@@ -4440,7 +4184,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1319,
+					"uid": 1523,
 					"instanceVariables": {
 						"parkingId": 33,
 						"occupiedBy": 0
@@ -4472,7 +4216,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1324,
+					"uid": 1524,
 					"instanceVariables": {
 						"parkingId": 32,
 						"melanggar": true
@@ -4504,7 +4248,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1327,
+					"uid": 1525,
 					"instanceVariables": {
 						"parkingId": 32,
 						"occupiedBy": 0
@@ -4536,7 +4280,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1330,
+					"uid": 1526,
 					"instanceVariables": {
 						"parkingId": 10,
 						"melanggar": true
@@ -4568,7 +4312,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1333,
+					"uid": 1527,
 					"instanceVariables": {
 						"parkingId": 10,
 						"occupiedBy": 0
@@ -4600,7 +4344,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1335,
+					"uid": 1528,
 					"instanceVariables": {
 						"parkingId": 11,
 						"melanggar": true
@@ -4632,7 +4376,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1336,
+					"uid": 1529,
 					"instanceVariables": {
 						"parkingId": 11,
 						"occupiedBy": 0
@@ -4664,7 +4408,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1337,
+					"uid": 1530,
 					"instanceVariables": {
 						"parkingId": 12,
 						"melanggar": true
@@ -4696,7 +4440,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1338,
+					"uid": 1531,
 					"instanceVariables": {
 						"parkingId": 12,
 						"occupiedBy": 0
@@ -4728,7 +4472,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1339,
+					"uid": 1532,
 					"instanceVariables": {
 						"parkingId": 18,
 						"melanggar": true
@@ -4760,7 +4504,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1340,
+					"uid": 1533,
 					"instanceVariables": {
 						"parkingId": 17,
 						"melanggar": true
@@ -4792,7 +4536,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1341,
+					"uid": 1534,
 					"instanceVariables": {
 						"parkingId": 16,
 						"melanggar": true
@@ -4824,7 +4568,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1342,
+					"uid": 1535,
 					"instanceVariables": {
 						"parkingId": 18,
 						"occupiedBy": 0
@@ -4856,7 +4600,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1343,
+					"uid": 1536,
 					"instanceVariables": {
 						"parkingId": 17,
 						"occupiedBy": 0
@@ -4888,7 +4632,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1344,
+					"uid": 1537,
 					"instanceVariables": {
 						"parkingId": 16,
 						"occupiedBy": 0
@@ -4920,7 +4664,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1345,
+					"uid": 1538,
 					"instanceVariables": {
 						"parkingId": 13,
 						"melanggar": true
@@ -4952,7 +4696,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1346,
+					"uid": 1539,
 					"instanceVariables": {
 						"parkingId": 13,
 						"occupiedBy": 0
@@ -4984,7 +4728,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1347,
+					"uid": 1540,
 					"instanceVariables": {
 						"parkingId": 16,
 						"melanggar": true
@@ -5016,7 +4760,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1348,
+					"uid": 1541,
 					"instanceVariables": {
 						"parkingId": 16,
 						"occupiedBy": 0
@@ -5048,7 +4792,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1349,
+					"uid": 1542,
 					"instanceVariables": {
 						"parkingId": 14,
 						"melanggar": true
@@ -5080,7 +4824,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1350,
+					"uid": 1543,
 					"instanceVariables": {
 						"parkingId": 14,
 						"occupiedBy": 0
@@ -5112,7 +4856,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1351,
+					"uid": 1544,
 					"instanceVariables": {
 						"parkingId": 15,
 						"melanggar": true
@@ -5144,7 +4888,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1352,
+					"uid": 1545,
 					"instanceVariables": {
 						"parkingId": 15,
 						"occupiedBy": 0
@@ -5176,7 +4920,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1353,
+					"uid": 1546,
 					"instanceVariables": {
 						"parkingId": 67,
 						"melanggar": true
@@ -5208,7 +4952,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1354,
+					"uid": 1547,
 					"instanceVariables": {
 						"parkingId": 67,
 						"occupiedBy": 0
@@ -5240,7 +4984,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1355,
+					"uid": 1548,
 					"instanceVariables": {
 						"parkingId": 68,
 						"melanggar": true
@@ -5272,7 +5016,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1356,
+					"uid": 1549,
 					"instanceVariables": {
 						"parkingId": 68,
 						"occupiedBy": 0
@@ -5304,7 +5048,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1357,
+					"uid": 1550,
 					"instanceVariables": {
 						"parkingId": 64,
 						"melanggar": true
@@ -5336,7 +5080,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1358,
+					"uid": 1551,
 					"instanceVariables": {
 						"parkingId": 64,
 						"occupiedBy": 0
@@ -5368,7 +5112,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1359,
+					"uid": 1552,
 					"instanceVariables": {
 						"parkingId": 63,
 						"melanggar": true
@@ -5400,7 +5144,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1360,
+					"uid": 1553,
 					"instanceVariables": {
 						"parkingId": 63,
 						"occupiedBy": 0
@@ -5432,7 +5176,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1361,
+					"uid": 1554,
 					"instanceVariables": {
 						"parkingId": 66,
 						"melanggar": true
@@ -5464,7 +5208,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1362,
+					"uid": 1555,
 					"instanceVariables": {
 						"parkingId": 66,
 						"occupiedBy": 0
@@ -5496,7 +5240,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1363,
+					"uid": 1556,
 					"instanceVariables": {
 						"parkingId": 65,
 						"melanggar": true
@@ -5528,7 +5272,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1364,
+					"uid": 1557,
 					"instanceVariables": {
 						"parkingId": 65,
 						"occupiedBy": 0
@@ -5560,7 +5304,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1365,
+					"uid": 1558,
 					"instanceVariables": {
 						"parkingId": 58,
 						"melanggar": true
@@ -5592,7 +5336,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1366,
+					"uid": 1559,
 					"instanceVariables": {
 						"parkingId": 58,
 						"occupiedBy": 0
@@ -5624,7 +5368,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1367,
+					"uid": 1560,
 					"instanceVariables": {
 						"parkingId": 59,
 						"melanggar": true
@@ -5656,7 +5400,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1368,
+					"uid": 1561,
 					"instanceVariables": {
 						"parkingId": 59,
 						"occupiedBy": 0
@@ -5688,7 +5432,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1369,
+					"uid": 1562,
 					"instanceVariables": {
 						"parkingId": 62,
 						"melanggar": true
@@ -5720,7 +5464,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1370,
+					"uid": 1563,
 					"instanceVariables": {
 						"parkingId": 61,
 						"melanggar": true
@@ -5752,7 +5496,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1371,
+					"uid": 1564,
 					"instanceVariables": {
 						"parkingId": 60,
 						"melanggar": true
@@ -5784,7 +5528,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1372,
+					"uid": 1565,
 					"instanceVariables": {
 						"parkingId": 62,
 						"occupiedBy": 0
@@ -5816,7 +5560,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1373,
+					"uid": 1566,
 					"instanceVariables": {
 						"parkingId": 61,
 						"occupiedBy": 0
@@ -5848,7 +5592,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1374,
+					"uid": 1567,
 					"instanceVariables": {
 						"parkingId": 60,
 						"occupiedBy": 0
@@ -5880,7 +5624,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1375,
+					"uid": 1568,
 					"instanceVariables": {
 						"parkingId": 42,
 						"melanggar": true
@@ -5912,7 +5656,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1376,
+					"uid": 1569,
 					"instanceVariables": {
 						"parkingId": 42,
 						"occupiedBy": 0
@@ -5944,7 +5688,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1377,
+					"uid": 1570,
 					"instanceVariables": {
 						"parkingId": 43,
 						"melanggar": true
@@ -5976,7 +5720,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1378,
+					"uid": 1571,
 					"instanceVariables": {
 						"parkingId": 43,
 						"occupiedBy": 0
@@ -6000,134 +5744,6 @@
 					}
 				},
 				{
-					"type": "spawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1379,
-					"instanceVariables": {
-						"angleSpawned": 180,
-						"melawanArus": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5081,
-						"y": 596,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "spawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1380,
-					"instanceVariables": {
-						"angleSpawned": 180,
-						"melawanArus": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5090,
-						"y": 1906,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "spawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1381,
-					"instanceVariables": {
-						"angleSpawned": 270,
-						"melawanArus": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 3204,
-						"y": 3885,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "spawner",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1382,
-					"instanceVariables": {
-						"angleSpawned": 0,
-						"melawanArus": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": -153,
-						"y": 3025,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "turnCheck",
 					"properties": {
 						"initially-visible": false,
@@ -6136,7 +5752,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1383,
+					"uid": 1576,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 3181, 631|0, 270, 180, 3181, 467",
 						"intersectionId": 1
@@ -6168,7 +5784,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1384,
+					"uid": 1577,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 3345, 467|0, 0, 90, 3345, 467",
 						"intersectionId": 1
@@ -6200,7 +5816,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1385,
+					"uid": 1578,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 3345, 631|0, 180, 90, 3345, 631",
 						"intersectionId": 1
@@ -6232,7 +5848,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1386,
+					"uid": 1579,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 639, 631|0, 270, 180, 639, 467",
 						"intersectionId": 1
@@ -6264,7 +5880,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1387,
+					"uid": 1580,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 803, 467|0, 0, 90, 803, 467",
 						"intersectionId": 1
@@ -6296,7 +5912,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1388,
+					"uid": 1581,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 803, 631|0, 180, 90, 803, 631",
 						"intersectionId": 1
@@ -6328,7 +5944,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1389,
+					"uid": 1582,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 803, 3009|0, 90, 180, 803, 3173",
 						"intersectionId": 1
@@ -6360,7 +5976,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1390,
+					"uid": 1583,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 639, 3173|0, 180, 270, 639, 3173",
 						"intersectionId": 1
@@ -6392,7 +6008,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1391,
+					"uid": 1584,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 639, 3009|0, 0, 270, 639, 3009",
 						"intersectionId": 1
@@ -6424,7 +6040,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1392,
+					"uid": 1585,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 180, 4617, 3173",
 						"intersectionId": 1
@@ -6456,7 +6072,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1393,
+					"uid": 1586,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 270, 4453, 3009",
 						"intersectionId": 1
@@ -6488,7 +6104,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1394,
+					"uid": 1587,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 4453, 1737",
 						"intersectionId": 1
@@ -6520,7 +6136,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1395,
+					"uid": 1588,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 4617, 1901",
 						"intersectionId": 1
@@ -6552,7 +6168,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1396,
+					"uid": 1589,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -6571,9 +6187,291 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "stopTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1590,
+					"instanceVariables": {
+						"stoppingId": 1,
+						"occupiedBy": 0
+					},
+					"behaviors": {
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 281,
+						"y": 403,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "stopCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1591,
+					"instanceVariables": {
+						"stoppingId": 1,
+						"melanggar": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 181,
+						"y": 504,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "car",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "car1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1592,
+					"instanceVariables": {
+						"speed": 0,
+						"pelanggaran": 0,
+						"targetAngle": 0,
+						"targetTurnX": 0,
+						"targetTurnY": 0,
+						"turningId": 0,
+						"berhenti": false,
+						"currentAngle": 0,
+						"turning": false,
+						"picked": false,
+						"type": 0,
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false,
+						"aboutToCollide": false,
+						"intersectionLock": "",
+						"parked": false,
+						"parking": false,
+						"stopping": false,
+						"stopped": false,
+						"going": false
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": true,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": -307,
+						"y": 1856,
+						"width": 104,
+						"height": 70,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "stopTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1423,
+					"instanceVariables": {
+						"stoppingId": 2,
+						"occupiedBy": 0
+					},
+					"behaviors": {
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1369.0985234906966,
+						"y": 403,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "stopCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1424,
+					"instanceVariables": {
+						"stoppingId": 2,
+						"melanggar": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1269.0985234906966,
+						"y": 504,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "stopTarget",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1425,
+					"instanceVariables": {
+						"stoppingId": 3,
+						"occupiedBy": 0
+					},
+					"behaviors": {
+						"Timer": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1615.8916732405305,
+						"y": 403,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "stopCheck",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1426,
+					"instanceVariables": {
+						"stoppingId": 3,
+						"melanggar": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1515.8916732405305,
+						"y": 504,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
-			"sid": 436939530051973,
+			"sid": 904584541136166,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6603,7 +6501,7 @@
 			"name": "ui",
 			"overriden": 1,
 			"instances": [],
-			"sid": 681703311162170,
+			"sid": 766897217528820,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6633,7 +6531,7 @@
 			"name": "pilihanPelanggaran",
 			"overriden": 1,
 			"instances": [],
-			"sid": 202248324043259,
+			"sid": 757339306308249,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6663,7 +6561,7 @@
 			"name": "help",
 			"overriden": 1,
 			"instances": [],
-			"sid": 607475328807211,
+			"sid": 738785865443423,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6693,7 +6591,7 @@
 			"name": "paused",
 			"overriden": 1,
 			"instances": [],
-			"sid": 644710587477763,
+			"sid": 244585008474585,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6723,7 +6621,7 @@
 			"name": "levelFinished",
 			"overriden": 1,
 			"instances": [],
-			"sid": 296539050650554,
+			"sid": 490074135442717,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6753,7 +6651,7 @@
 			"name": "levelFailed",
 			"overriden": 1,
 			"instances": [],
-			"sid": 171494108066256,
+			"sid": 672184076706702,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6780,13 +6678,13 @@
 			"global": false
 		}
 	],
-	"sid": 831492328251978,
+	"sid": 125488325392506,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 6000,
-	"height": 4000,
+	"width": 5000,
+	"height": 3500,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
-	"eventSheet": "Es_Level10"
+	"eventSheet": "test"
 }
