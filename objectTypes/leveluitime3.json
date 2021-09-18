@@ -1,20 +1,20 @@
 {
-	"name": "LevelUITime",
+	"name": "LevelUITime3",
 	"plugin-id": "TiledBg",
-	"sid": 713718627623744,
+	"sid": 857444982343350,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
 		"width": 170,
-		"height": 17,
+		"height": 18,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 2012962,
+		"imageSpriteId": 2525702,
 		"useCollisionPoly": true
 	}
 }

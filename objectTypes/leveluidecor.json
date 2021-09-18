@@ -35,14 +35,14 @@
 						"duration": 1
 					},
 					{
-						"width": 237,
-						"height": 96,
+						"width": 297,
+						"height": 97,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9776504,
+						"imageSpriteId": 3894074,
 						"collisionPoly": {
 							"points": [
 								0,

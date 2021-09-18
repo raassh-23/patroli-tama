@@ -2593,22 +2593,161 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-on-screen",
-					"objectClass": "LevelUITime",
-					"sid": 284243696365416
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 466780796247399,
+					"parameters": {
+						"first-value": "(timeLimit-levelTimer.Timer.CurrentTime(\"game\"))/timeLimit",
+						"comparison": 4,
+						"second-value": "0.3"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-width",
 					"objectClass": "LevelUITime",
-					"sid": 607249788488773,
+					"sid": 465609017430942,
 					"parameters": {
-						"width": "(timeLimit-levelTimer.Timer.CurrentTime(\"game\"))/timeLimit * 132"
+						"width": "(timeLimit-levelTimer.Timer.CurrentTime(\"game\"))/timeLimit * 170"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LevelUITime",
+					"sid": 246601224709712,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LevelUITime2",
+					"sid": 389101864929393,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LevelUITime3",
+					"sid": 995638531932894,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 939559552825926
+			"sid": 891794201170228
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 576962258373462,
+					"parameters": {
+						"first-value": "(timeLimit-levelTimer.Timer.CurrentTime(\"game\"))/timeLimit",
+						"comparison": 3,
+						"second-value": "0.3"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 757377897953506,
+					"parameters": {
+						"first-value": "(timeLimit-levelTimer.Timer.CurrentTime(\"game\"))/timeLimit",
+						"comparison": 4,
+						"second-value": "0.1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "LevelUITime2",
+					"sid": 250658273465521,
+					"parameters": {
+						"width": "(timeLimit-levelTimer.Timer.CurrentTime(\"game\"))/timeLimit * 170"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LevelUITime",
+					"sid": 592854999168503,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LevelUITime2",
+					"sid": 178295333299963,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LevelUITime3",
+					"sid": 508446906195705,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 661621000496401
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 973989957345802,
+					"parameters": {
+						"first-value": "(timeLimit-levelTimer.Timer.CurrentTime(\"game\"))/timeLimit",
+						"comparison": 3,
+						"second-value": "0.1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "LevelUITime3",
+					"sid": 547762079825793,
+					"parameters": {
+						"width": "(timeLimit-levelTimer.Timer.CurrentTime(\"game\"))/timeLimit * 170"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LevelUITime",
+					"sid": 236240395501011,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LevelUITime2",
+					"sid": 104533452506682,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LevelUITime3",
+					"sid": 437117816522523,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 395906605256359
 		},
 		{
 			"eventType": "block",
