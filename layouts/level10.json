@@ -18,7 +18,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 1190,
+					"uid": 1445,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -52,16 +52,16 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 1192,
+					"uid": 1446,
 					"instanceVariables": {},
 					"behaviors": {},
 					"ownData": {
 						"tilemapData": {
-							"width": 12,
-							"height": 8,
-							"max-width": 182,
-							"max-height": 129,
-							"data": "5x0,8hv,124x0,8hv,3x0,7v,124x0,9h,7hvd,9vd,7hd,6vd,7vd,8hd,122x0,8hv,0,7hv,0,1vd,124x0,8hv,0,8,0,9,7vd,8hd,122x0,8hv,0,7,0,7hv,124x0,9,1hv,13vd,7hd,9hv,124x0,8hv,2,7hv,2vd,7,5vd,123x0,8hv,2,5,7hd,13h,5hd,123x0,7v,0,2x2hd,1hd,123x0,8hd,9hd,7hvd,2x8hvd,6hvd,2x8hvd,126x0,7hv,22053x0"
+							"width": 11,
+							"height": 7,
+							"max-width": 181,
+							"max-height": 128,
+							"data": "5x0,8hv,123x0,7v,3x0,7v,122x0,7d,6vd,7hvd,9vd,7hd,6vd,7vd,122x0,7hv,0,1vd,0,1vd,123x0,8v,0,5,1,9hv,123x0,7v,3x0,7hv,122x0,7hd,9hd,9vd,1hv,5hv,7v,124x0,1vd,0,5,6,7vd,121x0,8vd,7hd,5hd,2x0,1d,125x0,5vd,1v,9hv,125x0,7hv,0,7h,21882x0"
 						},
 						"tile-width": 636,
 						"tile-height": 636,
@@ -71,10 +71,10 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": -1153,
-						"y": -487,
-						"width": 7708,
-						"height": 5135,
+						"x": -878,
+						"y": -408,
+						"width": 7064,
+						"height": 4785,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -95,7 +95,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1193,
+					"uid": 1447,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -124,7 +124,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1195,
+					"uid": 1448,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -153,7 +153,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1196,
+					"uid": 1572,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -182,7 +182,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1197,
+					"uid": 1573,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -211,7 +211,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1198,
+					"uid": 1574,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -232,7 +232,7 @@
 					}
 				}
 			],
-			"sid": 921367167984009,
+			"sid": 404530078351168,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -271,7 +271,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1199,
+					"uid": 1575,
 					"instanceVariables": {},
 					"behaviors": {
 						"Timer": {
@@ -304,7 +304,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1200,
+					"uid": 1593,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -381,7 +381,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1201,
+					"uid": 1594,
 					"instanceVariables": {
 						"angleSpawned": 0,
 						"melawanArus": 0
@@ -413,7 +413,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1202,
+					"uid": 1595,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 3180, 3174| 0, 270, 270, 3180, 3174| 0, 270, 0, 3180, 3016",
 						"intersectionId": 1
@@ -445,7 +445,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1203,
+					"uid": 1596,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 3344, 3174| 0, 180, 180, 3344, 3174| 0, 180, 270, 3180, 3174",
 						"intersectionId": 1
@@ -477,7 +477,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1204,
+					"uid": 1597,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 270, 3180, 3016| 0, 0, 0, 3344, 3016| 0, 0, 90, 3344, 3016",
 						"intersectionId": 1
@@ -509,7 +509,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1205,
+					"uid": 1598,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 3344, 3016| 0, 90, 90, 3344, 3174| 0, 90, 180, 3344, 3174",
 						"intersectionId": 1
@@ -541,7 +541,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1206,
+					"uid": 1599,
 					"instanceVariables": {
 						"id": 2,
 						"state": 0,
@@ -581,7 +581,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1207,
+					"uid": 1600,
 					"instanceVariables": {
 						"id": 2
 					},
@@ -612,7 +612,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1208,
+					"uid": 1601,
 					"instanceVariables": {
 						"id": 1,
 						"state": 0,
@@ -652,7 +652,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1209,
+					"uid": 1602,
 					"instanceVariables": {
 						"id": 1
 					},
@@ -683,7 +683,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1210,
+					"uid": 1603,
 					"instanceVariables": {
 						"id": 3,
 						"state": 2,
@@ -723,7 +723,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1211,
+					"uid": 1604,
 					"instanceVariables": {
 						"id": 3
 					},
@@ -754,7 +754,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1212,
+					"uid": 1605,
 					"instanceVariables": {
 						"id": 4,
 						"state": 0,
@@ -794,7 +794,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1213,
+					"uid": 1606,
 					"instanceVariables": {
 						"id": 4
 					},
@@ -825,7 +825,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1214,
+					"uid": 1607,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -902,7 +902,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1215,
+					"uid": 1608,
 					"instanceVariables": {
 						"parkingId": 1,
 						"melanggar": true
@@ -934,7 +934,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1216,
+					"uid": 1609,
 					"instanceVariables": {
 						"parkingId": 1,
 						"occupiedBy": 0
@@ -966,7 +966,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1217,
+					"uid": 1610,
 					"instanceVariables": {
 						"parkingId": 2,
 						"melanggar": true
@@ -998,7 +998,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1218,
+					"uid": 1611,
 					"instanceVariables": {
 						"parkingId": 2,
 						"occupiedBy": 0
@@ -1030,7 +1030,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1219,
+					"uid": 1612,
 					"instanceVariables": {
 						"parkingId": 25,
 						"melanggar": true
@@ -1062,7 +1062,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1220,
+					"uid": 1613,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1139,7 +1139,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1221,
+					"uid": 1614,
 					"instanceVariables": {
 						"parkingId": 25,
 						"occupiedBy": 0
@@ -1171,7 +1171,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1222,
+					"uid": 1615,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1248,7 +1248,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1223,
+					"uid": 1616,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1325,7 +1325,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1224,
+					"uid": 1617,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1402,7 +1402,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1225,
+					"uid": 1618,
 					"instanceVariables": {
 						"parkingId": 29,
 						"melanggar": true
@@ -1434,7 +1434,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1226,
+					"uid": 1619,
 					"instanceVariables": {
 						"parkingId": 29,
 						"occupiedBy": 0
@@ -1466,7 +1466,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1227,
+					"uid": 1620,
 					"instanceVariables": {
 						"parkingId": 28,
 						"melanggar": true
@@ -1498,7 +1498,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1228,
+					"uid": 1621,
 					"instanceVariables": {
 						"parkingId": 28,
 						"occupiedBy": 0
@@ -1530,7 +1530,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1229,
+					"uid": 1622,
 					"instanceVariables": {
 						"parkingId": 27,
 						"melanggar": true
@@ -1562,7 +1562,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1230,
+					"uid": 1623,
 					"instanceVariables": {
 						"parkingId": 27,
 						"occupiedBy": 0
@@ -1594,7 +1594,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1231,
+					"uid": 1624,
 					"instanceVariables": {
 						"parkingId": 26,
 						"melanggar": true
@@ -1626,7 +1626,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1232,
+					"uid": 1625,
 					"instanceVariables": {
 						"parkingId": 26,
 						"occupiedBy": 0
@@ -1658,7 +1658,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1233,
+					"uid": 1626,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1735,7 +1735,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1234,
+					"uid": 1627,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1812,7 +1812,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1235,
+					"uid": 1628,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1889,7 +1889,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1236,
+					"uid": 1629,
 					"instanceVariables": {
 						"speed": 0,
 						"pelanggaran": 0,
@@ -1966,7 +1966,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1237,
+					"uid": 1630,
 					"instanceVariables": {
 						"parkingId": 3,
 						"melanggar": true
@@ -1998,7 +1998,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1238,
+					"uid": 1631,
 					"instanceVariables": {
 						"parkingId": 3,
 						"occupiedBy": 0
@@ -2030,7 +2030,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1239,
+					"uid": 1632,
 					"instanceVariables": {
 						"parkingId": 4,
 						"melanggar": true
@@ -2062,7 +2062,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1240,
+					"uid": 1633,
 					"instanceVariables": {
 						"parkingId": 4,
 						"occupiedBy": 0
@@ -2094,7 +2094,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1241,
+					"uid": 1634,
 					"instanceVariables": {
 						"parkingId": 5,
 						"melanggar": true
@@ -2126,7 +2126,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1242,
+					"uid": 1635,
 					"instanceVariables": {
 						"parkingId": 5,
 						"occupiedBy": 0
@@ -2158,7 +2158,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1243,
+					"uid": 1636,
 					"instanceVariables": {
 						"parkingId": 24,
 						"melanggar": true
@@ -2190,7 +2190,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1244,
+					"uid": 1637,
 					"instanceVariables": {
 						"parkingId": 23,
 						"melanggar": true
@@ -2222,7 +2222,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1245,
+					"uid": 1638,
 					"instanceVariables": {
 						"parkingId": 22,
 						"melanggar": true
@@ -2254,7 +2254,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1246,
+					"uid": 1639,
 					"instanceVariables": {
 						"parkingId": 24,
 						"occupiedBy": 0
@@ -2286,7 +2286,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1247,
+					"uid": 1640,
 					"instanceVariables": {
 						"parkingId": 23,
 						"occupiedBy": 0
@@ -2318,7 +2318,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1248,
+					"uid": 1641,
 					"instanceVariables": {
 						"parkingId": 22,
 						"occupiedBy": 0
@@ -2350,7 +2350,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1249,
+					"uid": 1642,
 					"instanceVariables": {
 						"parkingId": 6,
 						"melanggar": true
@@ -2382,7 +2382,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1250,
+					"uid": 1643,
 					"instanceVariables": {
 						"parkingId": 6,
 						"occupiedBy": 0
@@ -2414,7 +2414,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1251,
+					"uid": 1644,
 					"instanceVariables": {
 						"parkingId": 7,
 						"melanggar": true
@@ -2446,7 +2446,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1252,
+					"uid": 1645,
 					"instanceVariables": {
 						"parkingId": 7,
 						"occupiedBy": 0
@@ -2478,7 +2478,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1253,
+					"uid": 1646,
 					"instanceVariables": {
 						"parkingId": 8,
 						"melanggar": true
@@ -2510,7 +2510,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1254,
+					"uid": 1647,
 					"instanceVariables": {
 						"parkingId": 8,
 						"occupiedBy": 0
@@ -2542,7 +2542,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1255,
+					"uid": 1648,
 					"instanceVariables": {
 						"parkingId": 21,
 						"melanggar": true
@@ -2574,7 +2574,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1256,
+					"uid": 1649,
 					"instanceVariables": {
 						"parkingId": 20,
 						"melanggar": true
@@ -2606,7 +2606,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1257,
+					"uid": 1650,
 					"instanceVariables": {
 						"parkingId": 19,
 						"melanggar": true
@@ -2638,7 +2638,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1258,
+					"uid": 1651,
 					"instanceVariables": {
 						"parkingId": 21,
 						"occupiedBy": 0
@@ -2670,7 +2670,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1261,
+					"uid": 1652,
 					"instanceVariables": {
 						"parkingId": 20,
 						"occupiedBy": 0
@@ -2702,7 +2702,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1262,
+					"uid": 1653,
 					"instanceVariables": {
 						"parkingId": 19,
 						"occupiedBy": 0
@@ -2734,7 +2734,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1263,
+					"uid": 1654,
 					"instanceVariables": {
 						"parkingId": 9,
 						"melanggar": true
@@ -2766,7 +2766,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1265,
+					"uid": 1655,
 					"instanceVariables": {
 						"parkingId": 9,
 						"occupiedBy": 0
@@ -2798,7 +2798,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1267,
+					"uid": 1656,
 					"instanceVariables": {
 						"parkingId": 19,
 						"melanggar": true
@@ -2830,7 +2830,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1268,
+					"uid": 1657,
 					"instanceVariables": {
 						"parkingId": 19,
 						"occupiedBy": 0
@@ -2862,7 +2862,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1269,
+					"uid": 1658,
 					"instanceVariables": {
 						"parkingId": 44,
 						"melanggar": true
@@ -2894,7 +2894,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1270,
+					"uid": 1659,
 					"instanceVariables": {
 						"parkingId": 44,
 						"occupiedBy": 0
@@ -2926,7 +2926,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1271,
+					"uid": 1660,
 					"instanceVariables": {
 						"parkingId": 45,
 						"melanggar": true
@@ -2958,7 +2958,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1272,
+					"uid": 1661,
 					"instanceVariables": {
 						"parkingId": 45,
 						"occupiedBy": 0
@@ -2990,7 +2990,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1273,
+					"uid": 1662,
 					"instanceVariables": {
 						"parkingId": 46,
 						"melanggar": true
@@ -3022,7 +3022,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1274,
+					"uid": 1663,
 					"instanceVariables": {
 						"parkingId": 46,
 						"occupiedBy": 0
@@ -3054,7 +3054,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1275,
+					"uid": 1664,
 					"instanceVariables": {
 						"parkingId": 57,
 						"melanggar": true
@@ -3086,7 +3086,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1276,
+					"uid": 1665,
 					"instanceVariables": {
 						"parkingId": 56,
 						"melanggar": true
@@ -3118,7 +3118,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1277,
+					"uid": 1666,
 					"instanceVariables": {
 						"parkingId": 55,
 						"melanggar": true
@@ -3150,7 +3150,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1278,
+					"uid": 1667,
 					"instanceVariables": {
 						"parkingId": 57,
 						"occupiedBy": 0
@@ -3182,7 +3182,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1279,
+					"uid": 1668,
 					"instanceVariables": {
 						"parkingId": 56,
 						"occupiedBy": 0
@@ -3214,7 +3214,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1280,
+					"uid": 1669,
 					"instanceVariables": {
 						"parkingId": 55,
 						"occupiedBy": 0
@@ -3246,7 +3246,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1281,
+					"uid": 1670,
 					"instanceVariables": {
 						"parkingId": 47,
 						"melanggar": true
@@ -3278,7 +3278,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1282,
+					"uid": 1671,
 					"instanceVariables": {
 						"parkingId": 47,
 						"occupiedBy": 0
@@ -3310,7 +3310,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1283,
+					"uid": 1672,
 					"instanceVariables": {
 						"parkingId": 48,
 						"melanggar": true
@@ -3342,7 +3342,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1284,
+					"uid": 1673,
 					"instanceVariables": {
 						"parkingId": 48,
 						"occupiedBy": 0
@@ -3374,7 +3374,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1285,
+					"uid": 1674,
 					"instanceVariables": {
 						"parkingId": 49,
 						"melanggar": true
@@ -3406,7 +3406,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1286,
+					"uid": 1675,
 					"instanceVariables": {
 						"parkingId": 49,
 						"occupiedBy": 0
@@ -3438,7 +3438,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1287,
+					"uid": 1676,
 					"instanceVariables": {
 						"parkingId": 54,
 						"melanggar": true
@@ -3470,7 +3470,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1288,
+					"uid": 1677,
 					"instanceVariables": {
 						"parkingId": 53,
 						"melanggar": true
@@ -3502,7 +3502,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1289,
+					"uid": 1678,
 					"instanceVariables": {
 						"parkingId": 52,
 						"melanggar": true
@@ -3534,7 +3534,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1290,
+					"uid": 1679,
 					"instanceVariables": {
 						"parkingId": 54,
 						"occupiedBy": 0
@@ -3566,7 +3566,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1291,
+					"uid": 1680,
 					"instanceVariables": {
 						"parkingId": 53,
 						"occupiedBy": 0
@@ -3598,7 +3598,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1292,
+					"uid": 1681,
 					"instanceVariables": {
 						"parkingId": 52,
 						"occupiedBy": 0
@@ -3630,7 +3630,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1293,
+					"uid": 1682,
 					"instanceVariables": {
 						"parkingId": 50,
 						"melanggar": true
@@ -3662,7 +3662,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1294,
+					"uid": 1683,
 					"instanceVariables": {
 						"parkingId": 50,
 						"occupiedBy": 0
@@ -3694,7 +3694,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1295,
+					"uid": 1684,
 					"instanceVariables": {
 						"parkingId": 51,
 						"melanggar": true
@@ -3726,7 +3726,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1296,
+					"uid": 1685,
 					"instanceVariables": {
 						"parkingId": 51,
 						"occupiedBy": 0
@@ -3758,7 +3758,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1297,
+					"uid": 1686,
 					"instanceVariables": {
 						"parkingId": 39,
 						"melanggar": true
@@ -3790,7 +3790,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1298,
+					"uid": 1687,
 					"instanceVariables": {
 						"parkingId": 39,
 						"occupiedBy": 0
@@ -3822,7 +3822,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1299,
+					"uid": 1688,
 					"instanceVariables": {
 						"parkingId": 38,
 						"melanggar": true
@@ -3854,7 +3854,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1300,
+					"uid": 1689,
 					"instanceVariables": {
 						"parkingId": 38,
 						"occupiedBy": 0
@@ -3886,7 +3886,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1301,
+					"uid": 1690,
 					"instanceVariables": {
 						"parkingId": 41,
 						"melanggar": true
@@ -3918,7 +3918,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1302,
+					"uid": 1691,
 					"instanceVariables": {
 						"parkingId": 41,
 						"occupiedBy": 0
@@ -3950,7 +3950,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1303,
+					"uid": 1692,
 					"instanceVariables": {
 						"parkingId": 40,
 						"melanggar": true
@@ -3982,7 +3982,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1304,
+					"uid": 1693,
 					"instanceVariables": {
 						"parkingId": 40,
 						"occupiedBy": 0
@@ -4014,7 +4014,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1305,
+					"uid": 1694,
 					"instanceVariables": {
 						"parkingId": 35,
 						"melanggar": true
@@ -4046,7 +4046,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1306,
+					"uid": 1695,
 					"instanceVariables": {
 						"parkingId": 35,
 						"occupiedBy": 0
@@ -4078,7 +4078,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1307,
+					"uid": 1696,
 					"instanceVariables": {
 						"parkingId": 34,
 						"melanggar": true
@@ -4110,7 +4110,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1308,
+					"uid": 1697,
 					"instanceVariables": {
 						"parkingId": 34,
 						"occupiedBy": 0
@@ -4142,7 +4142,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1309,
+					"uid": 1698,
 					"instanceVariables": {
 						"parkingId": 37,
 						"melanggar": true
@@ -4174,7 +4174,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1311,
+					"uid": 1699,
 					"instanceVariables": {
 						"parkingId": 37,
 						"occupiedBy": 0
@@ -4206,7 +4206,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1312,
+					"uid": 1700,
 					"instanceVariables": {
 						"parkingId": 36,
 						"melanggar": true
@@ -4238,7 +4238,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1313,
+					"uid": 1701,
 					"instanceVariables": {
 						"parkingId": 36,
 						"occupiedBy": 0
@@ -4270,7 +4270,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1314,
+					"uid": 1702,
 					"instanceVariables": {
 						"parkingId": 31,
 						"melanggar": true
@@ -4302,7 +4302,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1315,
+					"uid": 1703,
 					"instanceVariables": {
 						"parkingId": 31,
 						"occupiedBy": 0
@@ -4334,7 +4334,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1316,
+					"uid": 1704,
 					"instanceVariables": {
 						"parkingId": 30,
 						"melanggar": true
@@ -4366,7 +4366,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1317,
+					"uid": 1705,
 					"instanceVariables": {
 						"parkingId": 30,
 						"occupiedBy": 0
@@ -4398,7 +4398,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1318,
+					"uid": 1706,
 					"instanceVariables": {
 						"parkingId": 33,
 						"melanggar": true
@@ -4430,7 +4430,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1319,
+					"uid": 1707,
 					"instanceVariables": {
 						"parkingId": 33,
 						"occupiedBy": 0
@@ -4462,7 +4462,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1324,
+					"uid": 1708,
 					"instanceVariables": {
 						"parkingId": 32,
 						"melanggar": true
@@ -4494,7 +4494,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1327,
+					"uid": 1709,
 					"instanceVariables": {
 						"parkingId": 32,
 						"occupiedBy": 0
@@ -4526,7 +4526,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1330,
+					"uid": 1710,
 					"instanceVariables": {
 						"parkingId": 10,
 						"melanggar": true
@@ -4558,7 +4558,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1333,
+					"uid": 1711,
 					"instanceVariables": {
 						"parkingId": 10,
 						"occupiedBy": 0
@@ -4590,7 +4590,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1335,
+					"uid": 1712,
 					"instanceVariables": {
 						"parkingId": 11,
 						"melanggar": true
@@ -4622,7 +4622,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1336,
+					"uid": 1713,
 					"instanceVariables": {
 						"parkingId": 11,
 						"occupiedBy": 0
@@ -4654,7 +4654,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1337,
+					"uid": 1714,
 					"instanceVariables": {
 						"parkingId": 12,
 						"melanggar": true
@@ -4686,7 +4686,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1338,
+					"uid": 1715,
 					"instanceVariables": {
 						"parkingId": 12,
 						"occupiedBy": 0
@@ -4718,7 +4718,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1339,
+					"uid": 1716,
 					"instanceVariables": {
 						"parkingId": 18,
 						"melanggar": true
@@ -4750,7 +4750,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1340,
+					"uid": 1717,
 					"instanceVariables": {
 						"parkingId": 17,
 						"melanggar": true
@@ -4782,7 +4782,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1341,
+					"uid": 1718,
 					"instanceVariables": {
 						"parkingId": 16,
 						"melanggar": true
@@ -4814,7 +4814,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1342,
+					"uid": 1719,
 					"instanceVariables": {
 						"parkingId": 18,
 						"occupiedBy": 0
@@ -4846,7 +4846,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1343,
+					"uid": 1720,
 					"instanceVariables": {
 						"parkingId": 17,
 						"occupiedBy": 0
@@ -4878,7 +4878,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1344,
+					"uid": 1721,
 					"instanceVariables": {
 						"parkingId": 16,
 						"occupiedBy": 0
@@ -4910,7 +4910,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1345,
+					"uid": 1722,
 					"instanceVariables": {
 						"parkingId": 13,
 						"melanggar": true
@@ -4942,7 +4942,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1346,
+					"uid": 1723,
 					"instanceVariables": {
 						"parkingId": 13,
 						"occupiedBy": 0
@@ -4974,7 +4974,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1347,
+					"uid": 1724,
 					"instanceVariables": {
 						"parkingId": 16,
 						"melanggar": true
@@ -5006,7 +5006,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1348,
+					"uid": 1725,
 					"instanceVariables": {
 						"parkingId": 16,
 						"occupiedBy": 0
@@ -5038,7 +5038,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1349,
+					"uid": 1726,
 					"instanceVariables": {
 						"parkingId": 14,
 						"melanggar": true
@@ -5070,7 +5070,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1350,
+					"uid": 1727,
 					"instanceVariables": {
 						"parkingId": 14,
 						"occupiedBy": 0
@@ -5102,7 +5102,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1351,
+					"uid": 1728,
 					"instanceVariables": {
 						"parkingId": 15,
 						"melanggar": true
@@ -5134,7 +5134,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1352,
+					"uid": 1729,
 					"instanceVariables": {
 						"parkingId": 15,
 						"occupiedBy": 0
@@ -5166,7 +5166,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1353,
+					"uid": 1730,
 					"instanceVariables": {
 						"parkingId": 67,
 						"melanggar": true
@@ -5198,7 +5198,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1354,
+					"uid": 1731,
 					"instanceVariables": {
 						"parkingId": 67,
 						"occupiedBy": 0
@@ -5230,7 +5230,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1355,
+					"uid": 1732,
 					"instanceVariables": {
 						"parkingId": 68,
 						"melanggar": true
@@ -5262,7 +5262,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1356,
+					"uid": 1733,
 					"instanceVariables": {
 						"parkingId": 68,
 						"occupiedBy": 0
@@ -5294,7 +5294,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1357,
+					"uid": 1734,
 					"instanceVariables": {
 						"parkingId": 64,
 						"melanggar": true
@@ -5326,7 +5326,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1358,
+					"uid": 1735,
 					"instanceVariables": {
 						"parkingId": 64,
 						"occupiedBy": 0
@@ -5358,7 +5358,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1359,
+					"uid": 1736,
 					"instanceVariables": {
 						"parkingId": 63,
 						"melanggar": true
@@ -5390,7 +5390,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1360,
+					"uid": 1737,
 					"instanceVariables": {
 						"parkingId": 63,
 						"occupiedBy": 0
@@ -5422,7 +5422,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1361,
+					"uid": 1738,
 					"instanceVariables": {
 						"parkingId": 66,
 						"melanggar": true
@@ -5454,7 +5454,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1362,
+					"uid": 1739,
 					"instanceVariables": {
 						"parkingId": 66,
 						"occupiedBy": 0
@@ -5486,7 +5486,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1363,
+					"uid": 1740,
 					"instanceVariables": {
 						"parkingId": 65,
 						"melanggar": true
@@ -5518,7 +5518,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1364,
+					"uid": 1741,
 					"instanceVariables": {
 						"parkingId": 65,
 						"occupiedBy": 0
@@ -5550,7 +5550,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1365,
+					"uid": 1742,
 					"instanceVariables": {
 						"parkingId": 58,
 						"melanggar": true
@@ -5582,7 +5582,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1366,
+					"uid": 1743,
 					"instanceVariables": {
 						"parkingId": 58,
 						"occupiedBy": 0
@@ -5614,7 +5614,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1367,
+					"uid": 1744,
 					"instanceVariables": {
 						"parkingId": 59,
 						"melanggar": true
@@ -5646,7 +5646,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1368,
+					"uid": 1745,
 					"instanceVariables": {
 						"parkingId": 59,
 						"occupiedBy": 0
@@ -5678,7 +5678,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1369,
+					"uid": 1746,
 					"instanceVariables": {
 						"parkingId": 62,
 						"melanggar": true
@@ -5710,7 +5710,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1370,
+					"uid": 1747,
 					"instanceVariables": {
 						"parkingId": 61,
 						"melanggar": true
@@ -5742,7 +5742,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1371,
+					"uid": 1748,
 					"instanceVariables": {
 						"parkingId": 60,
 						"melanggar": true
@@ -5774,7 +5774,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1372,
+					"uid": 1749,
 					"instanceVariables": {
 						"parkingId": 62,
 						"occupiedBy": 0
@@ -5806,7 +5806,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1373,
+					"uid": 1750,
 					"instanceVariables": {
 						"parkingId": 61,
 						"occupiedBy": 0
@@ -5838,7 +5838,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1374,
+					"uid": 1751,
 					"instanceVariables": {
 						"parkingId": 60,
 						"occupiedBy": 0
@@ -5870,7 +5870,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1375,
+					"uid": 1752,
 					"instanceVariables": {
 						"parkingId": 42,
 						"melanggar": true
@@ -5902,7 +5902,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1376,
+					"uid": 1753,
 					"instanceVariables": {
 						"parkingId": 42,
 						"occupiedBy": 0
@@ -5934,7 +5934,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1377,
+					"uid": 1754,
 					"instanceVariables": {
 						"parkingId": 43,
 						"melanggar": true
@@ -5966,7 +5966,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1378,
+					"uid": 1755,
 					"instanceVariables": {
 						"parkingId": 43,
 						"occupiedBy": 0
@@ -5998,7 +5998,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1379,
+					"uid": 1756,
 					"instanceVariables": {
 						"angleSpawned": 180,
 						"melawanArus": 0
@@ -6030,7 +6030,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1380,
+					"uid": 1757,
 					"instanceVariables": {
 						"angleSpawned": 180,
 						"melawanArus": 0
@@ -6062,7 +6062,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1381,
+					"uid": 1758,
 					"instanceVariables": {
 						"angleSpawned": 270,
 						"melawanArus": 0
@@ -6094,7 +6094,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1382,
+					"uid": 1759,
 					"instanceVariables": {
 						"angleSpawned": 0,
 						"melawanArus": 0
@@ -6126,7 +6126,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1383,
+					"uid": 1760,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 3181, 631|0, 270, 180, 3181, 467",
 						"intersectionId": 1
@@ -6158,7 +6158,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1384,
+					"uid": 1761,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 3345, 467|0, 0, 90, 3345, 467",
 						"intersectionId": 1
@@ -6190,7 +6190,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1385,
+					"uid": 1762,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 3345, 631|0, 180, 90, 3345, 631",
 						"intersectionId": 1
@@ -6222,7 +6222,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1386,
+					"uid": 1763,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 639, 631|0, 270, 180, 639, 467",
 						"intersectionId": 1
@@ -6254,7 +6254,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1387,
+					"uid": 1764,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 803, 467|0, 0, 90, 803, 467",
 						"intersectionId": 1
@@ -6286,7 +6286,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1388,
+					"uid": 1765,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 803, 631|0, 180, 90, 803, 631",
 						"intersectionId": 1
@@ -6318,7 +6318,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1389,
+					"uid": 1766,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 803, 3009|0, 90, 180, 803, 3173",
 						"intersectionId": 1
@@ -6350,7 +6350,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1390,
+					"uid": 1767,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 639, 3173|0, 180, 270, 639, 3173",
 						"intersectionId": 1
@@ -6382,7 +6382,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1391,
+					"uid": 1768,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 639, 3009|0, 0, 270, 639, 3009",
 						"intersectionId": 1
@@ -6414,7 +6414,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1392,
+					"uid": 1769,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 180, 4617, 3173",
 						"intersectionId": 1
@@ -6446,7 +6446,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1393,
+					"uid": 1770,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 270, 4453, 3009",
 						"intersectionId": 1
@@ -6478,7 +6478,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1394,
+					"uid": 1771,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 4453, 1737",
 						"intersectionId": 1
@@ -6510,7 +6510,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1395,
+					"uid": 1772,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 4617, 1901",
 						"intersectionId": 1
@@ -6542,7 +6542,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1396,
+					"uid": 1773,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -6563,7 +6563,7 @@
 					}
 				}
 			],
-			"sid": 436939530051973,
+			"sid": 262368679220449,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6593,7 +6593,7 @@
 			"name": "ui",
 			"overriden": 1,
 			"instances": [],
-			"sid": 681703311162170,
+			"sid": 631860779262867,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6623,7 +6623,7 @@
 			"name": "pilihanPelanggaran",
 			"overriden": 1,
 			"instances": [],
-			"sid": 202248324043259,
+			"sid": 958056246770480,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6653,7 +6653,7 @@
 			"name": "help",
 			"overriden": 1,
 			"instances": [],
-			"sid": 607475328807211,
+			"sid": 596914543102838,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6683,7 +6683,7 @@
 			"name": "paused",
 			"overriden": 1,
 			"instances": [],
-			"sid": 644710587477763,
+			"sid": 884312970928091,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6713,7 +6713,7 @@
 			"name": "levelFinished",
 			"overriden": 1,
 			"instances": [],
-			"sid": 296539050650554,
+			"sid": 436665572785332,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6743,7 +6743,7 @@
 			"name": "levelFailed",
 			"overriden": 1,
 			"instances": [],
-			"sid": 171494108066256,
+			"sid": 973488892936249,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -6770,7 +6770,7 @@
 			"global": false
 		}
 	],
-	"sid": 831492328251978,
+	"sid": 354913712951028,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 6000,

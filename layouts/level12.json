@@ -61,7 +61,7 @@
 							"height": 7,
 							"max-width": 181,
 							"max-height": 128,
-							"data": "5x0,8hv,123x0,7v,3x0,7v,122x0,7d,6vd,7hvd,9vd,7hd,6vd,7vd,122x0,7hv,0,1vd,0,1vd,123x0,8v,0,5,1,9hv,123x0,7v,3x0,7hv,122x0,7hd,9hd,9vd,1hv,5hv,7v,124x0,1vd,0,5,6,7vd,121x0,8vd,7hd,5hd,2x0,1d,125x0,5vd,1v,9hv,125x0,7hv,0,7h,21882x0"
+							"data": "5x0,8v,127x0,8v,127x0,8v,127x0,8v,127x0,7v,122x0,8hd,8hvd,6hvd,8hd,7hd,6hd,7hvd,123x0,1vd,2x0,7hv,0,7hvd,122x0,9hv,2x0,8v,124x0,5,2x0,8v,127x0,8v,127x0,8v,21882x0"
 						},
 						"tile-width": 636,
 						"tile-height": 636,
@@ -71,8 +71,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": -878,
-						"y": -408,
+						"x": -718,
+						"y": -21,
 						"width": 7064,
 						"height": 4785,
 						"originX": 0,
