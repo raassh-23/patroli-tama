@@ -1045,7 +1045,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1180,7 +1182,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1257,7 +1261,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1334,7 +1340,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {

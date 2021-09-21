@@ -1045,7 +1045,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1180,7 +1182,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1257,7 +1261,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1334,7 +1340,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -4209,6 +4217,68 @@
 						"height": 931,
 						"originX": 0.5,
 						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "windEffect",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1963,
+					"instanceVariables": {
+						"vehicleUid": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 538,
+						"y": 943,
+						"width": 65,
+						"height": 51,
+						"originX": 1.1538461538461537,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "windEffect",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1964,
+					"instanceVariables": {
+						"vehicleUid": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1116,
+						"y": 199,
+						"width": 65,
+						"height": 51,
+						"originX": 1.1538461538461537,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

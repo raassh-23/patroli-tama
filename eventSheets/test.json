@@ -31,24 +31,23 @@
 				{
 					"id": "createProbabilityTable",
 					"objectClass": "AdvancedRandom",
-					"sid": 512992700289155,
+					"sid": 573509363752018,
 					"parameters": {
-						"name": "\"spawnChance9\""
+						"name": "\"spawnChanceTest\""
 					}
 				},
 				{
 					"id": "setProbabilityTable",
 					"objectClass": "AdvancedRandom",
-					"sid": 981551880525824,
+					"sid": 646586113765033,
 					"parameters": {
-						"name": "\"spawnChance9\""
+						"name": "\"spawnChanceTest\""
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 355503870648368,
-					"disabled": true,
+					"sid": 851112140850499,
 					"parameters": {
 						"value": "0",
 						"weight": "20"
@@ -57,49 +56,9 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 224786298876344,
-					"disabled": true,
+					"sid": 115329256873166,
 					"parameters": {
-						"value": "2",
-						"weight": "5"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 339282275183878,
-					"disabled": true,
-					"parameters": {
-						"value": "3",
-						"weight": "5"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 892674048711176,
-					"disabled": true,
-					"parameters": {
-						"value": "4",
-						"weight": "5"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 741468141986595,
-					"disabled": true,
-					"parameters": {
-						"value": "5",
-						"weight": "5"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 483258059812597,
-					"parameters": {
-						"value": "7",
+						"value": "8",
 						"weight": "20"
 					}
 				},

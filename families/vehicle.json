@@ -122,6 +122,18 @@
 			"type": "boolean",
 			"desc": "berhenti di pinggir jalan",
 			"sid": 102564579714371
+		},
+		{
+			"name": "topSpeed",
+			"type": "number",
+			"desc": "",
+			"sid": 966856049322844
+		},
+		{
+			"name": "speeding",
+			"type": "boolean",
+			"desc": "",
+			"sid": 958979273630296
 		}
 	],
 	"behaviorTypes": [

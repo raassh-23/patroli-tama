@@ -20,6 +20,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 1579005,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 0,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -32,6 +39,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 3660113,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 0.5,
+								"y": 0
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -44,6 +58,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 1907685,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -56,6 +77,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 3972223,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 0.5,
+								"y": 1
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -79,6 +107,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 3442612,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 0,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -91,6 +126,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 9732723,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 0.5,
+								"y": 0
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -103,6 +145,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 8613926,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 1,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -115,6 +164,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 921553,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 0.5,
+								"y": 1
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -150,6 +206,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 0,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					},
 					{
@@ -162,6 +225,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 7157724,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "wind",
+								"x": 0.5,
+								"y": 0
+							}
+						],
 						"duration": 1
 					},
 					{

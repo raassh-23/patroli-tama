@@ -325,7 +325,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -846,7 +848,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -955,7 +959,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1064,7 +1070,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1141,7 +1149,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1218,7 +1228,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1551,7 +1563,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1628,7 +1642,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1705,7 +1721,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1782,7 +1800,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -6276,7 +6296,9 @@
 						"parked": false,
 						"parking": false,
 						"stopping": false,
-						"stopped": false
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -6458,9 +6480,70 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "windEffect",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1965,
+					"instanceVariables": {
+						"vehicleUid": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": -346,
+						"y": 1164,
+						"width": 65,
+						"height": 51,
+						"originX": 1.1538461538461537,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 904584541136166,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "topGame",
+			"overriden": 0,
+			"instances": [],
+			"sid": 190416914390881,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [

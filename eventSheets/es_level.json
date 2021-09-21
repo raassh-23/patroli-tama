@@ -170,6 +170,11 @@
 					"sid": 273454757477402
 				},
 				{
+					"id": "destroy",
+					"objectClass": "windEffect",
+					"sid": 128351133493509
+				},
+				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
 					"sid": 919474642953783,
@@ -970,7 +975,43 @@
 							}
 						}
 					],
-					"sid": 973317936412102
+					"sid": 973317936412102,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "vehicle",
+									"sid": 600756450321141,
+									"parameters": {
+										"instance-variable": "speeding"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 940490264087614,
+									"parameters": {
+										"instance-variable": "speeding",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "vehicle",
+									"sid": 610325233979473,
+									"parameters": {
+										"instance-variable": "topSpeed",
+										"value": "TopSpeed"
+									}
+								}
+							],
+							"sid": 885449288994135
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -1582,6 +1623,71 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 293878636400809,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "8"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 975786147368567,
+							"parameters": {
+								"instance-variable": "speeding"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "vehicle",
+							"sid": 357649645346016,
+							"parameters": {
+								"object": "OtherVehicle",
+								"offset-x": "1.5 * Self.Width * cos(Self.currentAngle)",
+								"offset-y": "1.5 * Self.Height* sin(Self.currentAngle)"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 305274360841131,
+							"parameters": {
+								"instance-variable": "speeding",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 448955661514679,
+							"parameters": {
+								"instance-variable": "melanggar",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "vehicle",
+							"sid": 822015064052323,
+							"parameters": {
+								"instance-variable": "topSpeed",
+								"value": "TopSpeed*1.5"
+							}
+						}
+					],
+					"sid": 817091689148508
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "compare-animation-frame",
 							"objectClass": "vehicle",
 							"sid": 666009903333376,
@@ -1980,10 +2086,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "vehicle",
-							"sid": 518717910169929,
+							"sid": 632386441232672,
 							"parameters": {
 								"instance-variable": "speed",
-								"value": "TopSpeed"
+								"value": "Self.topSpeed"
 							}
 						}
 					],
@@ -2846,6 +2952,127 @@
 			"sid": 724115399325131
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 551881647286968,
+					"parameters": {
+						"object": "windEffect"
+					}
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "vehicle",
+					"sid": 577836154450152,
+					"parameters": {
+						"unique-id": "windEffect.vehicleUid"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "windEffect",
+					"sid": 471779665325097,
+					"parameters": {
+						"frame-number": "vehicle.AnimationFrame"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "windEffect",
+					"sid": 377737694522251,
+					"parameters": {
+						"x": "vehicle.AnimationFrame = 0 ? vehicle.X - vehicle.Width/2 : (vehicle.AnimationFrame = 2 ? vehicle.X + vehicle.Width/2 : vehicle.X)",
+						"y": "vehicle.AnimationFrame = 1 ? vehicle.Y - vehicle.Height/2 : (vehicle.AnimationFrame = 3 ? vehicle.Y + vehicle.Height/2 : vehicle.Y)"
+					}
+				}
+			],
+			"sid": 727413633635460,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 936564507544425,
+							"parameters": {
+								"instance-variable": "speeding"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "windEffect",
+							"sid": 831300730580862,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 503251290833517
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "vehicle",
+							"sid": 996441673669186,
+							"parameters": {
+								"instance-variable": "speeding"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "windEffect",
+							"sid": 114856838099663,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 270285673716113
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "vehicle",
+					"sid": 803121350205265
+				},
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 564812343043667,
+					"parameters": {
+						"object": "windEffect",
+						"expression": "windEffect.vehicleUid",
+						"comparison": 0,
+						"value": "vehicle.UID"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "windEffect",
+					"sid": 284008002873338
+				}
+			],
+			"sid": 987646984727397
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Functions",
@@ -2901,10 +3128,6 @@
 							"isStatic": false,
 							"isConstant": false,
 							"sid": 443883254428521
-						},
-						{
-							"eventType": "comment",
-							"text": "nilai pelanggaran:\n0 = tidak melanggar\n1 = melawan arus\n2 = motor tidak pakai helm\n3 = motor tidak menyalakan lampu"
 						},
 						{
 							"eventType": "block",
@@ -2997,21 +3220,21 @@
 											}
 										},
 										{
+											"id": "set-instvar-value",
+											"objectClass": "vehicle",
+											"sid": 790891245656790,
+											"parameters": {
+												"instance-variable": "topSpeed",
+												"value": "TopSpeed"
+											}
+										},
+										{
 											"id": "set-boolean-instvar",
 											"objectClass": "vehicle",
 											"sid": 397203342584762,
 											"parameters": {
 												"instance-variable": "berhenti",
 												"value": "false"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "vehicle",
-											"sid": 981910302394189,
-											"parameters": {
-												"instance-variable": "speed",
-												"value": "TopSpeed"
 											}
 										},
 										{
@@ -3035,6 +3258,45 @@
 									],
 									"sid": 801025863443418,
 									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 625632720050683,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "8"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 592250862704126,
+													"parameters": {
+														"object-to-create": "windEffect",
+														"layer": "\"topGame\"",
+														"x": "0",
+														"y": "0",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "windEffect",
+													"sid": 627191047473947,
+													"parameters": {
+														"instance-variable": "vehicleUid",
+														"value": "vehicle.UID"
+													}
+												}
+											],
+											"sid": 797408654203389
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -3066,6 +3328,16 @@
 														"instance-variable": "pelanggaran",
 														"comparison": 0,
 														"value": "3"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 136095570144779,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "8"
 													}
 												}
 											],
