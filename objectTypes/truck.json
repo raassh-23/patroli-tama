@@ -14,7 +14,7 @@
 						"width": 183,
 						"height": 88,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.6136363636363636,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -50,7 +50,7 @@
 						"width": 183,
 						"height": 88,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.6136363636363636,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -89,7 +89,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 0
+				"speed": 1
 			},
 			{
 				"frames": [
@@ -97,7 +97,7 @@
 						"width": 183,
 						"height": 87,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.6206896551724138,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -133,7 +133,7 @@
 						"width": 183,
 						"height": 87,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.6206896551724138,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
