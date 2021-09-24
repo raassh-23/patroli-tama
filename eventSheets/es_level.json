@@ -1319,7 +1319,7 @@
 										"object": "trafficLightCollision",
 										"expression": "trafficLightCollision.id",
 										"comparison": 0,
-										"value": "cekMelanggar.TCID"
+										"value": "cekMelanggar.TCLID"
 									}
 								}
 							],

@@ -2167,7 +2167,7 @@
 					"uid": 619,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 2
+						"TCLID": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -2270,7 +2270,7 @@
 					"uid": 629,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 1
+						"TCLID": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -2373,7 +2373,7 @@
 					"uid": 634,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 3
+						"TCLID": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -2476,7 +2476,7 @@
 					"uid": 637,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 4
+						"TCLID": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -2676,7 +2676,7 @@
 					"uid": 669,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 5
+						"TCLID": 5
 					},
 					"behaviors": {},
 					"world": {
@@ -2779,7 +2779,7 @@
 					"uid": 700,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 8
+						"TCLID": 8
 					},
 					"behaviors": {},
 					"world": {
@@ -2882,7 +2882,7 @@
 					"uid": 703,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 6
+						"TCLID": 6
 					},
 					"behaviors": {},
 					"world": {
@@ -2985,7 +2985,7 @@
 					"uid": 706,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 7
+						"TCLID": 7
 					},
 					"behaviors": {},
 					"world": {
@@ -3376,7 +3376,7 @@
 					"uid": 796,
 					"instanceVariables": {
 						"pelanggaran": 5,
-						"TCID": -1
+						"TCLID": -1
 					},
 					"behaviors": {},
 					"world": {
@@ -3408,7 +3408,7 @@
 					"uid": 797,
 					"instanceVariables": {
 						"pelanggaran": 5,
-						"TCID": -1
+						"TCLID": -1
 					},
 					"behaviors": {},
 					"world": {
@@ -3440,7 +3440,7 @@
 					"uid": 798,
 					"instanceVariables": {
 						"pelanggaran": 5,
-						"TCID": -1
+						"TCLID": -1
 					},
 					"behaviors": {},
 					"world": {

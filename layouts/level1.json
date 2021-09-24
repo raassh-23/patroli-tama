@@ -4178,7 +4178,7 @@
 					"uid": 813,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 1
+						"TCLID": 1
 					},
 					"behaviors": {},
 					"world": {

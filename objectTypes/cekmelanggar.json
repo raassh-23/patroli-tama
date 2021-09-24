@@ -11,9 +11,9 @@
 			"sid": 129340505836178
 		},
 		{
-			"name": "TCID",
+			"name": "TCLID",
 			"type": "number",
-			"desc": "id traffic collision",
+			"desc": "id traffic light collision",
 			"sid": 924815997100659
 		}
 	],

@@ -1011,7 +1011,7 @@
 					"uid": 459,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 1
+						"TCLID": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1043,7 +1043,7 @@
 					"uid": 460,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 3
+						"TCLID": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1075,7 +1075,7 @@
 					"uid": 461,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 2
+						"TCLID": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1338,7 +1338,7 @@
 					"uid": 423,
 					"instanceVariables": {
 						"pelanggaran": 4,
-						"TCID": 4
+						"TCLID": 4
 					},
 					"behaviors": {},
 					"world": {
