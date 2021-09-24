@@ -443,6 +443,29 @@
 						}
 					],
 					"sid": 892382547991826
+				},
+				{
+					"eventType": "comment",
+					"text": "buat ngetes turncheck"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-outside-layout",
+							"objectClass": "spawner",
+							"sid": 740427368459150
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "spawner",
+							"sid": 142366647551787
+						}
+					],
+					"sid": 445319448788068,
+					"disabled": true
 				}
 			]
 		},
@@ -7131,6 +7154,28 @@
 			],
 			"sid": 759674725963872,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 999203917620064,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "vehicle"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "console.log(runtime.objects.vehicle.getFirstPickedInstance())"
+				}
+			],
+			"sid": 410462013415966
 		}
 	],
 	"sid": 746794069324216
