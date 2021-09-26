@@ -61,7 +61,7 @@
 							"height": 7,
 							"max-width": 181,
 							"max-height": 128,
-							"data": "5x0,7,122x0,8vd,9d,3x8vd,5hd,123x0,8h,0,5h,2x7d,5d,122x0,8h,0,7h,2x0,7v,122x0,9h,1h,6h,9d,7d,9v,122x0,8h,0,7h,8h,0,7v,122x0,8h,0,7h,8h,0,7v,7hvd,121x0,9h,1h,9hvd,9v,0,7v,122x0,8h,2x0,5hvd,8d,5v,121x0,7hvd,9hvd,5x7hvd,22009x0"
+							"data": "5x0,2hvd,122x0,2h,9d,3x2h,5hd,123x0,7hv,0,5h,2x7d,5d,122x0,7v,0,7h,2x0,7v,122x0,9,1,6h,9d,7d,9v,122x0,7hv,0,7h,8h,0,7v,122x0,7v,0,7,8h,0,7v,7hvd,121x0,9h,1h,9hvd,9v,0,7v,122x0,1hd,2x0,5hvd,8d,5v,121x0,2,9hvd,5x2,22009x0"
 						},
 						"tile-width": 636,
 						"tile-height": 636,
@@ -3439,7 +3439,7 @@
 						"x": 3451,
 						"y": -164,
 						"width": 422.8684094582988,
-						"height": 708.7665886036267,
+						"height": 708.7665886036266,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
