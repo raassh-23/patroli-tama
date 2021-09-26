@@ -337,6 +337,16 @@
 				],
 				"subfolders": [],
 				"name": "stage3"
+			},
+			{
+				"items": [
+					"Dekorasi4",
+					"jalan4",
+					"rumput4",
+					"rumput5"
+				],
+				"subfolders": [],
+				"name": "stage4"
 			}
 		]
 	},

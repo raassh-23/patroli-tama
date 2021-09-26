@@ -1,0 +1,21 @@
+{
+	"name": "jalan4",
+	"plugin-id": "Tilemap",
+	"sid": 415096332431614,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 2544,
+		"height": 2545,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1633873,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

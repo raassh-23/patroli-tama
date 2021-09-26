@@ -1,0 +1,20 @@
+{
+	"name": "rumput4",
+	"plugin-id": "TiledBg",
+	"sid": 958164560058084,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 847,
+		"height": 849,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2593067,
+		"useCollisionPoly": true
+	}
+}
