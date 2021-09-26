@@ -4110,6 +4110,15 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "layer-is-visible",
+											"objectClass": "System",
+											"sid": 366898102241156,
+											"parameters": {
+												"layer": "\"pilihanPelanggaran\""
+											},
+											"isInverted": true
+										},
+										{
 											"id": "pick-all",
 											"objectClass": "System",
 											"sid": 838206739823453,
