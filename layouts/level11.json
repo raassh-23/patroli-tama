@@ -7426,74 +7426,10 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3104,
-					"instanceVariables": {
-						"parkingId": 31,
-						"melanggar": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5466,
-						"y": 1296,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3155,
-					"instanceVariables": {
-						"parkingId": 31,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5381,
-						"y": 1196,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 3156,
 					"instanceVariables": {
 						"parkingId": 30,
-						"melanggar": false
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -7557,7 +7493,7 @@
 					"uid": 3158,
 					"instanceVariables": {
 						"parkingId": 33,
-						"melanggar": false
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -7618,73 +7554,9 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3160,
-					"instanceVariables": {
-						"parkingId": 32,
-						"melanggar": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5579,
-						"y": 1147,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3161,
-					"instanceVariables": {
-						"parkingId": 32,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5664,
-						"y": 1247,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 3163,
 					"instanceVariables": {
-						"parkingId": 111,
+						"parkingId": 156,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -7716,7 +7588,7 @@
 					},
 					"uid": 3164,
 					"instanceVariables": {
-						"parkingId": 111,
+						"parkingId": 156,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -8197,7 +8069,7 @@
 					"uid": 3181,
 					"instanceVariables": {
 						"parkingId": 27,
-						"melanggar": true
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -8261,7 +8133,7 @@
 					"uid": 3184,
 					"instanceVariables": {
 						"parkingId": 26,
-						"melanggar": true
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -8325,7 +8197,7 @@
 					"uid": 3186,
 					"instanceVariables": {
 						"parkingId": 123,
-						"melanggar": true
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -8389,7 +8261,7 @@
 					"uid": 3188,
 					"instanceVariables": {
 						"parkingId": 122,
-						"melanggar": true
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -8580,7 +8452,7 @@
 					},
 					"uid": 3194,
 					"instanceVariables": {
-						"parkingId": 6,
+						"parkingId": 140,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -8612,76 +8484,12 @@
 					},
 					"uid": 3195,
 					"instanceVariables": {
-						"parkingId": 6,
+						"parkingId": 140,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
 					"world": {
 						"x": 1775,
-						"y": 322,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3196,
-					"instanceVariables": {
-						"parkingId": 7,
-						"melanggar": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1915,
-						"y": 423,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3197,
-					"instanceVariables": {
-						"parkingId": 7,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 2015,
 						"y": 322,
 						"width": 32,
 						"height": 32,
@@ -8836,7 +8644,7 @@
 					},
 					"uid": 3202,
 					"instanceVariables": {
-						"parkingId": 19,
+						"parkingId": 141,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -8932,7 +8740,7 @@
 					},
 					"uid": 3205,
 					"instanceVariables": {
-						"parkingId": 19,
+						"parkingId": 141,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -9092,7 +8900,7 @@
 					},
 					"uid": 3210,
 					"instanceVariables": {
-						"parkingId": 105,
+						"parkingId": 162,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -9124,77 +8932,13 @@
 					},
 					"uid": 3211,
 					"instanceVariables": {
-						"parkingId": 105,
+						"parkingId": 162,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
 					"world": {
 						"x": 875,
 						"y": 1876,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.2651325219367635,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3212,
-					"instanceVariables": {
-						"parkingId": 106,
-						"melanggar": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1160,
-						"y": 1799,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.2651325219367635,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3213,
-					"instanceVariables": {
-						"parkingId": 106,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1062,
-						"y": 1882,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -9348,8 +9092,8 @@
 					},
 					"uid": 3218,
 					"instanceVariables": {
-						"parkingId": 105,
-						"melanggar": false
+						"parkingId": 161,
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -9380,7 +9124,7 @@
 					},
 					"uid": 3219,
 					"instanceVariables": {
-						"parkingId": 105,
+						"parkingId": 161,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -9413,7 +9157,7 @@
 					"uid": 3220,
 					"instanceVariables": {
 						"parkingId": 106,
-						"melanggar": false
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -9476,7 +9220,7 @@
 					},
 					"uid": 3222,
 					"instanceVariables": {
-						"parkingId": 103,
+						"parkingId": 157,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -9508,7 +9252,7 @@
 					},
 					"uid": 3223,
 					"instanceVariables": {
-						"parkingId": 103,
+						"parkingId": 157,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -9540,7 +9284,7 @@
 					},
 					"uid": 3224,
 					"instanceVariables": {
-						"parkingId": 104,
+						"parkingId": 158,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -9572,7 +9316,7 @@
 					},
 					"uid": 3225,
 					"instanceVariables": {
-						"parkingId": 104,
+						"parkingId": 158,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -9605,7 +9349,7 @@
 					"uid": 3226,
 					"instanceVariables": {
 						"parkingId": 105,
-						"melanggar": false
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -9666,73 +9410,9 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3228,
-					"instanceVariables": {
-						"parkingId": 106,
-						"melanggar": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 2018,
-						"y": 1800,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.2651325219367635,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3229,
-					"instanceVariables": {
-						"parkingId": 106,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1920,
-						"y": 1883,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.2651325219367635,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 3230,
 					"instanceVariables": {
-						"parkingId": 103,
+						"parkingId": 159,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -9764,7 +9444,7 @@
 					},
 					"uid": 3231,
 					"instanceVariables": {
-						"parkingId": 103,
+						"parkingId": 159,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -9796,7 +9476,7 @@
 					},
 					"uid": 3232,
 					"instanceVariables": {
-						"parkingId": 104,
+						"parkingId": 160,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -9828,7 +9508,7 @@
 					},
 					"uid": 3233,
 					"instanceVariables": {
-						"parkingId": 104,
+						"parkingId": 160,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -9860,8 +9540,8 @@
 					},
 					"uid": 3234,
 					"instanceVariables": {
-						"parkingId": 27,
-						"melanggar": true
+						"parkingId": 172,
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -9892,7 +9572,7 @@
 					},
 					"uid": 3235,
 					"instanceVariables": {
-						"parkingId": 27,
+						"parkingId": 172,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -9924,8 +9604,8 @@
 					},
 					"uid": 3236,
 					"instanceVariables": {
-						"parkingId": 26,
-						"melanggar": true
+						"parkingId": 171,
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -9956,7 +9636,7 @@
 					},
 					"uid": 3237,
 					"instanceVariables": {
-						"parkingId": 26,
+						"parkingId": 171,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -9988,8 +9668,8 @@
 					},
 					"uid": 3238,
 					"instanceVariables": {
-						"parkingId": 123,
-						"melanggar": true
+						"parkingId": 173,
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -10020,7 +9700,7 @@
 					},
 					"uid": 3239,
 					"instanceVariables": {
-						"parkingId": 123,
+						"parkingId": 173,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10052,8 +9732,8 @@
 					},
 					"uid": 3240,
 					"instanceVariables": {
-						"parkingId": 122,
-						"melanggar": true
+						"parkingId": 174,
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -10084,7 +9764,7 @@
 					},
 					"uid": 3241,
 					"instanceVariables": {
-						"parkingId": 122,
+						"parkingId": 174,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10116,7 +9796,7 @@
 					},
 					"uid": 3242,
 					"instanceVariables": {
-						"parkingId": 27,
+						"parkingId": 164,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -10148,7 +9828,7 @@
 					},
 					"uid": 3243,
 					"instanceVariables": {
-						"parkingId": 27,
+						"parkingId": 164,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10180,7 +9860,7 @@
 					},
 					"uid": 3244,
 					"instanceVariables": {
-						"parkingId": 26,
+						"parkingId": 163,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -10212,7 +9892,7 @@
 					},
 					"uid": 3245,
 					"instanceVariables": {
-						"parkingId": 26,
+						"parkingId": 163,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10244,8 +9924,8 @@
 					},
 					"uid": 3246,
 					"instanceVariables": {
-						"parkingId": 123,
-						"melanggar": true
+						"parkingId": 165,
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -10276,7 +9956,7 @@
 					},
 					"uid": 3247,
 					"instanceVariables": {
-						"parkingId": 123,
+						"parkingId": 165,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10308,8 +9988,8 @@
 					},
 					"uid": 3248,
 					"instanceVariables": {
-						"parkingId": 122,
-						"melanggar": true
+						"parkingId": 166,
+						"melanggar": false
 					},
 					"behaviors": {},
 					"world": {
@@ -10340,7 +10020,7 @@
 					},
 					"uid": 3249,
 					"instanceVariables": {
-						"parkingId": 122,
+						"parkingId": 166,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10370,138 +10050,10 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3250,
-					"instanceVariables": {
-						"parkingId": 31,
-						"melanggar": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5467,
-						"y": 2055,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3251,
-					"instanceVariables": {
-						"parkingId": 31,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5382,
-						"y": 1955,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3254,
-					"instanceVariables": {
-						"parkingId": 33,
-						"melanggar": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5580,
-						"y": 2141,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3255,
-					"instanceVariables": {
-						"parkingId": 33,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 5665,
-						"y": 2241,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 3256,
 					"instanceVariables": {
-						"parkingId": 32,
-						"melanggar": false
+						"parkingId": 155,
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -10532,7 +10084,7 @@
 					},
 					"uid": 3257,
 					"instanceVariables": {
-						"parkingId": 32,
+						"parkingId": 155,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10565,7 +10117,7 @@
 					"uid": 3258,
 					"instanceVariables": {
 						"parkingId": 111,
-						"melanggar": false
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -10628,8 +10180,8 @@
 					},
 					"uid": 3260,
 					"instanceVariables": {
-						"parkingId": 112,
-						"melanggar": false
+						"parkingId": 154,
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -10660,7 +10212,7 @@
 					},
 					"uid": 3261,
 					"instanceVariables": {
-						"parkingId": 112,
+						"parkingId": 154,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10692,7 +10244,7 @@
 					},
 					"uid": 3252,
 					"instanceVariables": {
-						"parkingId": 5,
+						"parkingId": 144,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -10724,7 +10276,7 @@
 					},
 					"uid": 3253,
 					"instanceVariables": {
-						"parkingId": 5,
+						"parkingId": 144,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10756,7 +10308,7 @@
 					},
 					"uid": 3262,
 					"instanceVariables": {
-						"parkingId": 22,
+						"parkingId": 153,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -10788,7 +10340,7 @@
 					},
 					"uid": 3263,
 					"instanceVariables": {
-						"parkingId": 22,
+						"parkingId": 153,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10820,7 +10372,7 @@
 					},
 					"uid": 3264,
 					"instanceVariables": {
-						"parkingId": 6,
+						"parkingId": 145,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -10852,7 +10404,7 @@
 					},
 					"uid": 3265,
 					"instanceVariables": {
-						"parkingId": 6,
+						"parkingId": 145,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -10948,7 +10500,7 @@
 					},
 					"uid": 3268,
 					"instanceVariables": {
-						"parkingId": 8,
+						"parkingId": 146,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -10980,7 +10532,7 @@
 					},
 					"uid": 3269,
 					"instanceVariables": {
-						"parkingId": 8,
+						"parkingId": 146,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11012,7 +10564,7 @@
 					},
 					"uid": 3270,
 					"instanceVariables": {
-						"parkingId": 21,
+						"parkingId": 152,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -11042,42 +10594,10 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3271,
-					"instanceVariables": {
-						"parkingId": 20,
-						"melanggar": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 4067,
-						"y": 528,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 3272,
 					"instanceVariables": {
-						"parkingId": 19,
-						"melanggar": false
+						"parkingId": 151,
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -11108,7 +10628,7 @@
 					},
 					"uid": 3273,
 					"instanceVariables": {
-						"parkingId": 21,
+						"parkingId": 152,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11138,41 +10658,9 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3274,
-					"instanceVariables": {
-						"parkingId": 20,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 3967,
-						"y": 608,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 3275,
 					"instanceVariables": {
-						"parkingId": 19,
+						"parkingId": 151,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11204,7 +10692,7 @@
 					},
 					"uid": 3276,
 					"instanceVariables": {
-						"parkingId": 9,
+						"parkingId": 147,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -11236,7 +10724,7 @@
 					},
 					"uid": 3277,
 					"instanceVariables": {
-						"parkingId": 9,
+						"parkingId": 147,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11268,8 +10756,8 @@
 					},
 					"uid": 3278,
 					"instanceVariables": {
-						"parkingId": 19,
-						"melanggar": false
+						"parkingId": 150,
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -11300,7 +10788,7 @@
 					},
 					"uid": 3279,
 					"instanceVariables": {
-						"parkingId": 19,
+						"parkingId": 150,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11332,7 +10820,7 @@
 					},
 					"uid": 3280,
 					"instanceVariables": {
-						"parkingId": 9,
+						"parkingId": 148,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -11364,7 +10852,7 @@
 					},
 					"uid": 3281,
 					"instanceVariables": {
-						"parkingId": 9,
+						"parkingId": 148,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11396,8 +10884,8 @@
 					},
 					"uid": 3282,
 					"instanceVariables": {
-						"parkingId": 19,
-						"melanggar": false
+						"parkingId": 149,
+						"melanggar": true
 					},
 					"behaviors": {},
 					"world": {
@@ -11428,7 +10916,7 @@
 					},
 					"uid": 3283,
 					"instanceVariables": {
-						"parkingId": 19,
+						"parkingId": 149,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11458,73 +10946,9 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3284,
-					"instanceVariables": {
-						"parkingId": 5,
-						"melanggar": true
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1041,
-						"y": 428,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkTarget",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3285,
-					"instanceVariables": {
-						"parkingId": 5,
-						"occupiedBy": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1141,
-						"y": 327,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "parkCheck",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 3334,
 					"instanceVariables": {
-						"parkingId": 22,
+						"parkingId": 143,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -11556,7 +10980,7 @@
 					},
 					"uid": 3335,
 					"instanceVariables": {
-						"parkingId": 22,
+						"parkingId": 143,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11652,7 +11076,7 @@
 					},
 					"uid": 3338,
 					"instanceVariables": {
-						"parkingId": 21,
+						"parkingId": 142,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -11684,7 +11108,7 @@
 					},
 					"uid": 3339,
 					"instanceVariables": {
-						"parkingId": 21,
+						"parkingId": 142,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11716,7 +11140,7 @@
 					},
 					"uid": 3177,
 					"instanceVariables": {
-						"parkingId": 1,
+						"parkingId": 167,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -11748,7 +11172,7 @@
 					},
 					"uid": 3178,
 					"instanceVariables": {
-						"parkingId": 1,
+						"parkingId": 167,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11780,7 +11204,7 @@
 					},
 					"uid": 3179,
 					"instanceVariables": {
-						"parkingId": 2,
+						"parkingId": 168,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -11812,7 +11236,7 @@
 					},
 					"uid": 3180,
 					"instanceVariables": {
-						"parkingId": 2,
+						"parkingId": 168,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11844,7 +11268,7 @@
 					},
 					"uid": 3340,
 					"instanceVariables": {
-						"parkingId": 120,
+						"parkingId": 170,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -11876,7 +11300,7 @@
 					},
 					"uid": 3341,
 					"instanceVariables": {
-						"parkingId": 120,
+						"parkingId": 170,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -11908,7 +11332,7 @@
 					},
 					"uid": 3342,
 					"instanceVariables": {
-						"parkingId": 121,
+						"parkingId": 169,
 						"melanggar": false
 					},
 					"behaviors": {},
@@ -11940,7 +11364,7 @@
 					},
 					"uid": 3343,
 					"instanceVariables": {
-						"parkingId": 121,
+						"parkingId": 169,
 						"occupiedBy": 0
 					},
 					"behaviors": {},
@@ -12108,7 +11532,7 @@
 					},
 					"uid": 3348,
 					"instanceVariables": {
-						"stoppingId": 10,
+						"stoppingId": 20,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -12144,7 +11568,7 @@
 					},
 					"uid": 3349,
 					"instanceVariables": {
-						"stoppingId": 10,
+						"stoppingId": 20,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -12176,7 +11600,7 @@
 					},
 					"uid": 3350,
 					"instanceVariables": {
-						"stoppingId": 11,
+						"stoppingId": 21,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -12212,7 +11636,7 @@
 					},
 					"uid": 3351,
 					"instanceVariables": {
-						"stoppingId": 11,
+						"stoppingId": 21,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -12380,7 +11804,7 @@
 					},
 					"uid": 3356,
 					"instanceVariables": {
-						"stoppingId": 1,
+						"stoppingId": 26,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -12416,7 +11840,7 @@
 					},
 					"uid": 3357,
 					"instanceVariables": {
-						"stoppingId": 1,
+						"stoppingId": 26,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -12448,7 +11872,7 @@
 					},
 					"uid": 3358,
 					"instanceVariables": {
-						"stoppingId": 2,
+						"stoppingId": 28,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -12484,7 +11908,7 @@
 					},
 					"uid": 3359,
 					"instanceVariables": {
-						"stoppingId": 2,
+						"stoppingId": 27,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -12788,7 +12212,7 @@
 					},
 					"uid": 3368,
 					"instanceVariables": {
-						"stoppingId": 3,
+						"stoppingId": 29,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -12824,7 +12248,7 @@
 					},
 					"uid": 3369,
 					"instanceVariables": {
-						"stoppingId": 3,
+						"stoppingId": 29,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -12856,7 +12280,7 @@
 					},
 					"uid": 3370,
 					"instanceVariables": {
-						"stoppingId": 4,
+						"stoppingId": 30,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -12892,7 +12316,7 @@
 					},
 					"uid": 3371,
 					"instanceVariables": {
-						"stoppingId": 4,
+						"stoppingId": 30,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -12924,7 +12348,7 @@
 					},
 					"uid": 3372,
 					"instanceVariables": {
-						"stoppingId": 3,
+						"stoppingId": 24,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -12960,7 +12384,7 @@
 					},
 					"uid": 3373,
 					"instanceVariables": {
-						"stoppingId": 3,
+						"stoppingId": 24,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -12992,7 +12416,7 @@
 					},
 					"uid": 3374,
 					"instanceVariables": {
-						"stoppingId": 4,
+						"stoppingId": 25,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -13028,7 +12452,7 @@
 					},
 					"uid": 3375,
 					"instanceVariables": {
-						"stoppingId": 4,
+						"stoppingId": 25,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -13060,7 +12484,7 @@
 					},
 					"uid": 3376,
 					"instanceVariables": {
-						"stoppingId": 7,
+						"stoppingId": 23,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -13096,7 +12520,7 @@
 					},
 					"uid": 3377,
 					"instanceVariables": {
-						"stoppingId": 7,
+						"stoppingId": 23,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -13128,7 +12552,7 @@
 					},
 					"uid": 3378,
 					"instanceVariables": {
-						"stoppingId": 6,
+						"stoppingId": 22,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -13164,7 +12588,7 @@
 					},
 					"uid": 3379,
 					"instanceVariables": {
-						"stoppingId": 6,
+						"stoppingId": 22,
 						"melanggar": true
 					},
 					"behaviors": {},
