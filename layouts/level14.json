@@ -61,7 +61,7 @@
 							"height": 8,
 							"max-width": 181,
 							"max-height": 129,
-							"data": "2vd,0,2x2vd,8hv,124x0,2x7d,9d,7d,9hd,7d,5d,122x0,2h,0,1d,3x0,8v,122x0,2h,5vd,6hv,7hd,9vd,7hd,6h,8hd,122x0,8,8hv,0,7,0,8v,123x0,8,8hv,0,5,7hd,9hv,3h,8d,120x0,2h,9,6vd,8vd,5hv,0,8v,122x0,2h,8,8hv,0,8hv,5h,9v,123x0,5,9hd,7hd,9hd,5v,8h,3h,121x0,2x8hvd,9vd,3x8hvd,6d,8hvd,121x0,2h,0,8,3x0,8v,123x0,8v,21928x0"
+							"data": "4x0,8hv,124x0,2x7d,9d,7d,9hd,7d,5d,124x0,1d,3x0,8v,123x0,5vd,6hv,7hd,9vd,7hd,6h,8hd,122x0,8,8hv,0,7,0,8v,123x0,8,8hv,0,5,7hd,9hv,3h,8d,121x0,9,6vd,8vd,5hv,0,8v,123x0,8,8hv,0,8hv,5h,9v,123x0,5,9hd,7hd,9hd,5v,8h,3h,121x0,2x8hvd,9vd,3x8hvd,6d,8hvd,123x0,8,3x0,8v,123x0,8v,21928x0"
 						},
 						"tile-width": 636,
 						"tile-height": 636,
@@ -157,8 +157,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 3724,
-						"y": 2577,
+						"x": 4077,
+						"y": 2387,
 						"width": 512,
 						"height": 646,
 						"originX": 0.5,
