@@ -21,6 +21,16 @@ function checkTurn(vehicle, turnCheck) {
 	
 // 	console.log(turnable);
 
+	if(turnable.length == 0) {
+		console.error(`
+		Belok tidak ditemukan. 
+		Pelanggaran = ${pelanggaran} 
+		CurAngle = ${curAngle}
+		TurnCheck UID = ${turnCheck.uid}
+		`)
+		return;
+	}
+
 	const [, , targetAngle, targetX, targetY] = turnable[randomInt(0, turnable.length - 1)];
 
 // 	console.table({targetAngle, targetX, targetY});
@@ -105,15 +115,23 @@ function pickVehicle(pelanggaran, level) {
 			let vehiclesArray = Object.keys(vehicles).filter(v => v !== "motorbikeWithoutHelm" 
 														&& v !== "motorbikeWithoutLight");
 			
-			if(level < 8) {
+			if(level <= 8) {
 				vehiclesArray = vehiclesArray.filter(v => v != "truck");
+			} else if (level <= 12) {
+				if(Math.random() < 0.25) {
+					vehiclesArray = vehiclesArray.filter(v => v == "motorbike");
+				} else {
+					vehiclesArray = vehiclesArray.filter(v => v != "motorbike");
+				}
+			} else if (level <= 16) {
+				vehiclesArray = vehiclesArray.filter(v => v != "motorbike");
 			}
 			
 			pickedVehicle = vehiclesArray[randomInt(0, vehiclesArray.length - 1)]
 			break;
 	}
 
-	console.log(pickedVehicle);
+// 	console.log(pickedVehicle);
 
 	return pickedVehicle;
 }

@@ -2433,6 +2433,7 @@
 					"id": "log",
 					"objectClass": "Browser",
 					"sid": 825251452790544,
+					"disabled": true,
 					"parameters": {
 						"type": "log",
 						"message": "\"stopcheck\""
@@ -4923,6 +4924,7 @@
 							"id": "log",
 							"objectClass": "Browser",
 							"sid": 278329283031945,
+							"disabled": true,
 							"parameters": {
 								"type": "log",
 								"message": "\"start\""
@@ -5317,6 +5319,7 @@
 							"id": "log",
 							"objectClass": "Browser",
 							"sid": 890411553111863,
+							"disabled": true,
 							"parameters": {
 								"type": "log",
 								"message": "\"end\""
