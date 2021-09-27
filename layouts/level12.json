@@ -16241,7 +16241,7 @@
 					},
 					"uid": 3602,
 					"instanceVariables": {
-						"stoppingId": 1,
+						"stoppingId": 14,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -16277,7 +16277,7 @@
 					},
 					"uid": 3603,
 					"instanceVariables": {
-						"stoppingId": 1,
+						"stoppingId": 14,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -16309,7 +16309,7 @@
 					},
 					"uid": 3604,
 					"instanceVariables": {
-						"stoppingId": 2,
+						"stoppingId": 15,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -16345,7 +16345,7 @@
 					},
 					"uid": 3605,
 					"instanceVariables": {
-						"stoppingId": 2,
+						"stoppingId": 15,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -16785,7 +16785,7 @@
 					},
 					"uid": 3616,
 					"instanceVariables": {
-						"stoppingId": 10,
+						"stoppingId": 12,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -16821,7 +16821,7 @@
 					},
 					"uid": 3617,
 					"instanceVariables": {
-						"stoppingId": 10,
+						"stoppingId": 12,
 						"melanggar": true
 					},
 					"behaviors": {},
@@ -16853,7 +16853,7 @@
 					},
 					"uid": 3618,
 					"instanceVariables": {
-						"stoppingId": 11,
+						"stoppingId": 13,
 						"occupiedBy": 0
 					},
 					"behaviors": {
@@ -16889,7 +16889,7 @@
 					},
 					"uid": 3619,
 					"instanceVariables": {
-						"stoppingId": 11,
+						"stoppingId": 13,
 						"melanggar": true
 					},
 					"behaviors": {},
