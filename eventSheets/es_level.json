@@ -146,15 +146,6 @@
 			],
 			"actions": [
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 625652439692389,
-					"parameters": {
-						"variable": "score",
-						"value": "0"
-					}
-				},
-				{
 					"id": "destroy",
 					"objectClass": "vehicle",
 					"sid": 825796837737543
@@ -3176,7 +3167,7 @@
 								},
 								{
 									"type": "script",
-									"script": "localVars.vehicleName = pickVehicle(localVars.pelanggaran, runtime.globalVars.curLevel);\n\nlocalVars.type = pickType(localVars.vehicleName);"
+									"script": "localVars.vehicleName = pickVehicle(localVars.pelanggaran, runtime.globalVars.curLevel-1);\n\nlocalVars.type = pickType(localVars.vehicleName);"
 								}
 							],
 							"sid": 139294230369858
@@ -4202,6 +4193,15 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
+							"sid": 543744275290854,
+							"parameters": {
+								"variable": "curLevel",
+								"value": "int(right(LayoutName, len(LayoutName) - 5))"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
 							"sid": 657319127847769,
 							"parameters": {
 								"variable": "score",
@@ -4366,9 +4366,9 @@
 										{
 											"id": "set-text",
 											"objectClass": "levelFailedText",
-											"sid": 652076536999464,
+											"sid": 459070081303764,
 											"parameters": {
-												"text": "\"LEVEL \" & curLevel+1 "
+												"text": "\"LEVEL \" & curLevel"
 											}
 										}
 									],
@@ -4457,18 +4457,18 @@
 								{
 									"id": "set-at-x",
 									"objectClass": "levels",
-									"sid": 448880670437158,
+									"sid": 887121486847747,
 									"parameters": {
-										"x": "curLevel",
+										"x": "curLevel-1",
 										"value": "levelFinishedStar.AnimationFrame"
 									}
 								},
 								{
 									"id": "set-at-x",
 									"objectClass": "levels",
-									"sid": 359762810021291,
+									"sid": 419764226971076,
 									"parameters": {
-										"x": "curLevel+1",
+										"x": "curLevel",
 										"value": "0"
 									}
 								},
@@ -4502,9 +4502,9 @@
 										{
 											"id": "set-text",
 											"objectClass": "LevelFinishedText",
-											"sid": 622367542697088,
+											"sid": 983803008415823,
 											"parameters": {
-												"text": "\"LEVEL \" & curLevel+1 "
+												"text": "\"LEVEL \" & curLevel"
 											}
 										}
 									],
@@ -6432,20 +6432,11 @@
 									"sid": 307788986663655
 								},
 								{
-									"id": "add-to-eventvar",
-									"objectClass": "System",
-									"sid": 666040561871432,
-									"parameters": {
-										"variable": "curLevel",
-										"value": "1"
-									}
-								},
-								{
 									"id": "go-to-layout-by-name",
 									"objectClass": "System",
-									"sid": 159470054970582,
+									"sid": 342872874766074,
 									"parameters": {
-										"layout": "curLevel < 8 ? \"level\"&curLevel+1 : \"LevelSelect\""
+										"layout": "curLevel < 16 ? \"level\"&curLevel+1 : \"LevelSelect\""
 									}
 								}
 							],

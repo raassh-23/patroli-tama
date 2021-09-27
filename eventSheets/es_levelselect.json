@@ -247,10 +247,10 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 897953039260053,
+									"sid": 708576252070579,
 									"parameters": {
 										"first-value": "levels.CurX",
-										"comparison": 5,
+										"comparison": 4,
 										"second-value": "maxLevel"
 									}
 								}
@@ -822,15 +822,6 @@
 							"sid": 636171848301657,
 							"parameters": {
 								"layout": "\"level\"&levelSelectLevels.level+1"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 510612357766243,
-							"parameters": {
-								"variable": "curLevel",
-								"value": "levelSelectLevels.level"
 							}
 						}
 					],
