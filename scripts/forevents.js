@@ -8,22 +8,22 @@ function checkTurn(vehicle, turnCheck) {
 	const turnArray = turnCheck.instVars.turnAngle
 		.split('|').map((str) => str.split(',').map(num => parseInt(num)));
 	
-// 	console.log(turnArray);
-	
 	const curAngle = vehicle.instVars.currentAngle;
-	let pelanggaran = vehicle.instVars.pelanggaran == 1 
-						|| vehicle.instVars.pelanggaran == 5 
-						? vehicle.instVars.pelanggaran : 0;
+	const pelanggaran = vehicle.instVars.pelanggaran;
 
-// 	console.table({curAngle, pelanggaran});
-
-	const turnable = turnArray.filter(val => val[0] == pelanggaran && val[1] == curAngle);
+	let turnable;
+	
+	if(turnArray.find(val => val[0] == pelanggaran)) {
+		turnable = turnArray.filter(val => val[0] == pelanggaran && val[1] == curAngle);
+	} else {
+		turnable = turnArray.filter(val => val[0] == 0 && val[1] == curAngle)
+	}
 	
 // 	console.log(turnable);
 
 	if(turnable.length == 0) {
 		console.error(`
-		Belok tidak ditemukan. 
+		Belokan tidak ditemukan. 
 		Pelanggaran = ${pelanggaran} 
 		CurAngle = ${curAngle}
 		TurnCheck UID = ${turnCheck.uid}
@@ -53,18 +53,26 @@ function checkLock(vehicle, lockCheck) {
 	const targetAngle = vehicle.instVars.targetAngle;
 	const targetX = vehicle.instVars.targetTurnX;
 	const targetY = vehicle.instVars.targetTurnY;
-	const pelanggaran = vehicle.instVars.pelanggaran == 1 
-						|| vehicle.instVars.pelanggaran == 5 
-						? vehicle.instVars.pelanggaran : 0;
+	const pelanggaran = vehicle.instVars.pelanggaran;
 	
 // 	console.log(vehicle);
 // 	console.table({curAngle, targetAngle, targetX, targetY, pelanggaran});
 
-	const turn = turnArray.find(val => val[0] == pelanggaran 
+	let turn;
+								  
+	if(turnArray.find(val => val[0] == pelanggaran)) {
+		turn = turnArray.find(val => val[0] == pelanggaran 
 								  && val[1] == curAngle
 								  && val[2] == targetAngle
 								  && val[3] == targetX
 								  && val[4] == targetY);
+	} else {
+		turn = turnArray.find(val => val[0] == 0 
+								  && val[1] == curAngle
+								  && val[2] == targetAngle
+								  && val[3] == targetX
+								  && val[4] == targetY);
+	}
 
 // 	console.log(turn);
 	if(turn) {
