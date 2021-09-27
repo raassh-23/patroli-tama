@@ -12,6 +12,7 @@
 		"motorbikeWithoutHelm",
 		"motorbikeWithoutLight",
 		"trafficLightCollision",
-		"truck"
+		"truck",
+		"asap"
 	]
 }

@@ -1,0 +1,13 @@
+{
+	"name": "particleAsap",
+	"plugin-id": "Particles",
+	"sid": 963596841392394,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"particleAsap1",
+		"particleAsap3",
+		"particleAsap2"
+	]
+}

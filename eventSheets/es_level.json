@@ -413,6 +413,15 @@
 								"object": "TimeScaledPaused",
 								"time-scale": "1"
 							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 312698150780938,
+							"parameters": {
+								"object": "particleAsap",
+								"time-scale": "1"
+							}
 						}
 					],
 					"sid": 673868468994296
@@ -3578,6 +3587,15 @@
 									}
 								},
 								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 723673319515328,
+									"parameters": {
+										"object": "particleAsap",
+										"time-scale": "0"
+									}
+								},
+								{
 									"id": "pause-resume-timer",
 									"objectClass": "levelTimer",
 									"sid": 319748308070910,
@@ -3727,6 +3745,15 @@
 									"sid": 937059579934650,
 									"parameters": {
 										"object": "TimeScaledPelanggaran",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 665007885356544,
+									"parameters": {
+										"object": "particleAsap",
 										"time-scale": "1"
 									}
 								},
@@ -4051,6 +4078,15 @@
 										"object": "TimeScaledPaused",
 										"time-scale": "0"
 									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 112279170673210,
+									"parameters": {
+										"object": "particleAsap",
+										"time-scale": "0"
+									}
 								}
 							],
 							"sid": 142820984747903
@@ -4134,6 +4170,15 @@
 											"sid": 351350054606726,
 											"parameters": {
 												"object": "TimeScaledPaused",
+												"time-scale": "1"
+											}
+										},
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 433754148867710,
+											"parameters": {
+												"object": "particleAsap",
 												"time-scale": "1"
 											}
 										}
@@ -4233,6 +4278,15 @@
 									"sid": 971980608393842,
 									"parameters": {
 										"object": "TimeScaledPaused",
+										"time-scale": "0"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 598436679319124,
+									"parameters": {
+										"object": "particleAsap",
 										"time-scale": "0"
 									}
 								}
@@ -6810,6 +6864,15 @@
 											"sid": 410170174517217,
 											"parameters": {
 												"object": "TimeScaledPaused",
+												"time-scale": "0"
+											}
+										},
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 319772538068623,
+											"parameters": {
+												"object": "particleAsap",
 												"time-scale": "0"
 											}
 										},

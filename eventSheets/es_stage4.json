@@ -1,0 +1,82 @@
+{
+	"name": "Es_Stage4",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 350935926078587
+				}
+			],
+			"actions": [],
+			"sid": 390072440175344,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 758226822371874,
+							"parameters": {
+								"count": "100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 710237956864854,
+							"parameters": {
+								"object-to-create": "asap",
+								"layer": "\"topGame\"",
+								"x": "random(LayoutWidth)",
+								"y": "random(LayoutHeight)",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "asap",
+							"sid": 209256067746471,
+							"parameters": {
+								"frame-number": "floor(random(5))"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "asap",
+							"sid": 543851972229967,
+							"parameters": {
+								"scale": "random(0.5,1)"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "asap",
+							"sid": 352710470664320,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "315"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "asap",
+							"sid": 800842301188357,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "random(25,50)"
+							}
+						}
+					],
+					"sid": 870891194936429
+				}
+			]
+		}
+	],
+	"sid": 710662716616906
+}

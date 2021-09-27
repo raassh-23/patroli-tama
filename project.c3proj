@@ -40,6 +40,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
@@ -128,6 +136,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "wrap",
+			"name": "Wrap",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -199,7 +215,8 @@
 			"LevelUITime2",
 			"LevelUITime3",
 			"windEffect",
-			"Mouse"
+			"Mouse",
+			"asap"
 		],
 		"subfolders": [
 			{
@@ -347,6 +364,15 @@
 				],
 				"subfolders": [],
 				"name": "stage4"
+			},
+			{
+				"items": [
+					"particleAsap1",
+					"particleAsap2",
+					"particleAsap3"
+				],
+				"subfolders": [],
+				"name": "particleAsap"
 			}
 		]
 	},
@@ -368,7 +394,8 @@
 			"failedPin",
 			"Tutorial",
 			"buttons",
-			"TimeScaledPelanggaran"
+			"TimeScaledPelanggaran",
+			"particleAsap"
 		],
 		"subfolders": []
 	},
@@ -433,7 +460,9 @@
 					"test",
 					"Es_Level12",
 					"Es_Level11",
-					"Es_Level10"
+					"Es_Level10",
+					"Es_Stage4",
+					"Es_Level13"
 				],
 				"subfolders": [],
 				"name": "levels"
