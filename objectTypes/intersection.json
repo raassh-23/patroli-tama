@@ -23,7 +23,7 @@
 			"sid": 638492696871499
 		},
 		{
-			"name": "id",
+			"name": "sequenceId",
 			"type": "number",
 			"desc": "",
 			"sid": 331528432212752

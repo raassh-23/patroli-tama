@@ -85,7 +85,7 @@ function lockIntersection(vehicle, allIntersections) {
 		if (pickedLock[i] == -1) continue;
 		
 		const intersection = allIntersections.find(val => val.instVars.intersectionId == pickedLock[0]
-													&& val.instVars.id == pickedLock[i]
+													&& val.instVars.sequenceId == pickedLock[i]
 													&& val.instVars.vehiclesUID == "");
 		if(!intersection) {
 			return false;

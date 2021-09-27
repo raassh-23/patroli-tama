@@ -2007,7 +2007,7 @@
 						"collisionCount": 0,
 						"vehiclesUID": "",
 						"intersectionId": 2,
-						"id": 0,
+						"sequenceId": 0,
 						"lockedVehicle": 0,
 						"isCollided": false
 					},
@@ -2043,7 +2043,7 @@
 						"collisionCount": 0,
 						"vehiclesUID": "",
 						"intersectionId": 2,
-						"id": 1,
+						"sequenceId": 1,
 						"lockedVehicle": 0,
 						"isCollided": false
 					},
@@ -2079,7 +2079,7 @@
 						"collisionCount": 0,
 						"vehiclesUID": "",
 						"intersectionId": 2,
-						"id": 3,
+						"sequenceId": 3,
 						"lockedVehicle": 0,
 						"isCollided": false
 					},
@@ -2115,7 +2115,7 @@
 						"collisionCount": 0,
 						"vehiclesUID": "",
 						"intersectionId": 2,
-						"id": 2,
+						"sequenceId": 2,
 						"lockedVehicle": 0,
 						"isCollided": false
 					},
