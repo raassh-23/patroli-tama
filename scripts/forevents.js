@@ -118,10 +118,20 @@ function pickVehicle(pelanggaran, level) {
 		case kodePelanggaran.TANPA_LAMPU:
 			pickedVehicle = "motorbikeWithoutLight";
 			break;
+		
+		case kodePelanggaran.MELEBIHI_MUATAN:
+			pickedVehicle = "truckOverload";
+			break;
 			
+		case kodePelanggaran.MENGANGKUT_PENUMPANG:
+			pickedVehicle = "truckWithPassenger";
+			break;
+		
 		default:
 			let vehiclesArray = Object.keys(vehicles).filter(v => v !== "motorbikeWithoutHelm" 
-														&& v !== "motorbikeWithoutLight");
+														&& v !== "motorbikeWithoutLight"
+														&& v !== "truckOverload"
+														&& v !== "truckWithPassenger");
 			
 			if(level <= 8) {
 				vehiclesArray = vehiclesArray.filter(v => v != "truck");

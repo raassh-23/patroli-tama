@@ -7,6 +7,8 @@ const kodePelanggaran = {
 	DILARANG_PARKIR: 6,
 	DILARANG_BERHENTI: 7,
 	BATAS_KECEPATAN: 8,
+	MELEBIHI_MUATAN: 9,
+	MENGANGKUT_PENUMPANG: 10,
 };
 
 export default kodePelanggaran;

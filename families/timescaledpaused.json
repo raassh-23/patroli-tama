@@ -13,6 +13,8 @@
 		"motorbikeWithoutLight",
 		"trafficLightCollision",
 		"truck",
-		"asap"
+		"asap",
+		"truckOverload",
+		"truckWithPassenger"
 	]
 }

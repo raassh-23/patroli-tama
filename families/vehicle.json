@@ -154,6 +154,8 @@
 		"motorbike",
 		"motorbikeWithoutHelm",
 		"motorbikeWithoutLight",
-		"truck"
+		"truck",
+		"truckOverload",
+		"truckWithPassenger"
 	]
 }

@@ -12,6 +12,8 @@
 		"motorbike",
 		"motorbikeWithoutHelm",
 		"truck",
-		"asap"
+		"asap",
+		"truckOverload",
+		"truckWithPassenger"
 	]
 }

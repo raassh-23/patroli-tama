@@ -1,0 +1,228 @@
+{
+	"name": "truckOverload",
+	"plugin-id": "Sprite",
+	"sid": 161929847034419,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 185,
+						"height": 113,
+						"originX": 0.5,
+						"originY": 0.6991150442477876,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6616578,
+						"collisionPoly": {
+							"points": [
+								0.0027026614627322365,
+								0.3982300884955756,
+								1,
+								0.3982300884955756,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 71,
+						"height": 162,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3915204,
+						"collisionPoly": {
+							"points": [
+								0.11267605633802817,
+								0,
+								0.8732394366197185,
+								0,
+								0.8732394366197185,
+								1,
+								0.11267605633802817,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 185,
+						"height": 113,
+						"originX": 0.5,
+						"originY": 0.6991150442477876,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4067113,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.3982300884955756,
+								0.9972973385372678,
+								0.3982300884955756
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 71,
+						"height": 162,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7385154,
+						"collisionPoly": {
+							"points": [
+								0.11267605633802817,
+								0,
+								0.8732394366197185,
+								0,
+								0.8732394366197185,
+								1,
+								0.11267605633802817,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 577055535064515,
+				"name": "truckOverload1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 1
+			},
+			{
+				"frames": [
+					{
+						"width": 183,
+						"height": 111,
+						"originX": 0.5,
+						"originY": 0.7117117117117117,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6513467,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.3963963963963966,
+								1,
+								0.3963963963963966
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 71,
+						"height": 162,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9445929,
+						"collisionPoly": {
+							"points": [
+								0.11267605633802816,
+								0,
+								0.887323943661972,
+								0,
+								0.887323943661972,
+								1,
+								0.11267605633802816,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 183,
+						"height": 111,
+						"originX": 0.5,
+						"originY": 0.7117117117117117,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7778762,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.3963963963963966,
+								1,
+								0.3963963963963966,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 71,
+						"height": 162,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7591148,
+						"collisionPoly": {
+							"points": [
+								0.11267605633802816,
+								0,
+								0.887323943661972,
+								0,
+								0.887323943661972,
+								1,
+								0.11267605633802816,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 322343569551786,
+				"name": "truckOverload2",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

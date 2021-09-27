@@ -1,0 +1,180 @@
+{
+	"name": "truckWithPassenger",
+	"plugin-id": "Sprite",
+	"sid": 562165528476378,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 153,
+						"height": 75,
+						"originX": 0.5,
+						"originY": 0.5466666666666666,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4625570,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.10666666666666667,
+								1,
+								0.10666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 62,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4280770,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 153,
+						"height": 75,
+						"originX": 0.5,
+						"originY": 0.5466666666666666,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4526130,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.10666666666666667,
+								1,
+								0.10666666666666667,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 62,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1357423,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 935140898447989,
+				"name": "truckWithPassenger1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 1
+			},
+			{
+				"frames": [
+					{
+						"width": 153,
+						"height": 74,
+						"originX": 0.5,
+						"originY": 0.5540540540540541,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5495377,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.08108108108108109,
+								0.9983659133412479,
+								0.08108108108108109
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 62,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 85845,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 153,
+						"height": 74,
+						"originX": 0.5,
+						"originY": 0.5540540540540541,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1212840,
+						"collisionPoly": {
+							"points": [
+								0.0016340866587520426,
+								0.08108108108108109,
+								1,
+								0.08108108108108109,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 62,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7503531,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 338529287520061,
+				"name": "truckWithPassenger2",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

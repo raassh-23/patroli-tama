@@ -3363,6 +3363,26 @@
 														"comparison": 0,
 														"value": "8"
 													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 170937311627219,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "9"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 699299336854574,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "10"
+													}
 												}
 											],
 											"actions": [

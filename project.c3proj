@@ -216,7 +216,9 @@
 			"LevelUITime3",
 			"windEffect",
 			"Mouse",
-			"asap"
+			"asap",
+			"truckOverload",
+			"truckWithPassenger"
 		],
 		"subfolders": [
 			{
