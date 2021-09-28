@@ -602,7 +602,7 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "vehicle",
-							"sid": 145193154989687,
+							"sid": 257835142456319,
 							"parameters": {
 								"instance-variable": "pelanggaran",
 								"comparison": 0,
@@ -614,70 +614,18 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 201828885723908,
+							"sid": 807685787922212,
 							"parameters": {
 								"variable": "tutorialProgress",
 								"value": "1"
 							}
-						}
-					],
-					"sid": 348579702470943,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-by-comparison",
-									"objectClass": "System",
-									"sid": 700116411522959,
-									"parameters": {
-										"object": "Tutorial",
-										"expression": "Tutorial.progress",
-										"comparison": 1,
-										"value": "tutorialProgress"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "Tutorial",
-									"sid": 488333964762576,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 786984338717030
 						},
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-by-comparison",
-									"objectClass": "System",
-									"sid": 456744359989274,
-									"parameters": {
-										"object": "Tutorial",
-										"expression": "Tutorial.progress",
-										"comparison": 0,
-										"value": "tutorialProgress"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "Tutorial",
-									"sid": 916268676223058,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 353197888730898
+							"callFunction": "showNextTutorial",
+							"sid": 329516355704385
 						}
-					]
+					],
+					"sid": 348579702470943
 				}
 			]
 		},
@@ -6962,7 +6910,7 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 166237222088981,
+											"sid": 485619053350633,
 											"parameters": {
 												"variable": "tutorialProgress",
 												"comparison": 0,
@@ -6997,64 +6945,14 @@
 												"variable": "tutorialProgress",
 												"value": "1"
 											}
+										},
+										{
+											"callFunction": "showNextTutorial",
+											"sid": 386581598541363
 										}
 									],
 									"sid": 443098376641423,
 									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "pick-by-comparison",
-													"objectClass": "System",
-													"sid": 943385383180272,
-													"parameters": {
-														"object": "Tutorial",
-														"expression": "Tutorial.progress",
-														"comparison": 1,
-														"value": "tutorialProgress"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-visible",
-													"objectClass": "Tutorial",
-													"sid": 954188800550079,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												}
-											],
-											"sid": 570609131599290
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "pick-by-comparison",
-													"objectClass": "System",
-													"sid": 340504719191657,
-													"parameters": {
-														"object": "Tutorial",
-														"expression": "Tutorial.progress",
-														"comparison": 0,
-														"value": "tutorialProgress"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-visible",
-													"objectClass": "Tutorial",
-													"sid": 558553198469880,
-													"parameters": {
-														"visibility": "visible"
-													}
-												}
-											],
-											"sid": 778027378024103
-										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -7382,7 +7280,8 @@
 					"sid": 142366647551787
 				}
 			],
-			"sid": 445319448788068
+			"sid": 445319448788068,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -7403,7 +7302,8 @@
 					"sid": 443736618884417
 				}
 			],
-			"sid": 384670355989720
+			"sid": 384670355989720,
+			"disabled": true
 		}
 	],
 	"sid": 746794069324216

@@ -6047,7 +6047,9 @@
 					},
 					"uid": 745,
 					"instanceVariables": {
-						"progress": 0
+						"progress": 0,
+						"targetX": 960,
+						"targetY": 904
 					},
 					"behaviors": {},
 					"world": {
@@ -6079,6 +6081,8 @@
 					"uid": 748,
 					"instanceVariables": {
 						"progress": 0,
+						"targetX": 1417,
+						"targetY": 938,
 						"touched": false
 					},
 					"behaviors": {},
@@ -6111,12 +6115,14 @@
 					"uid": 755,
 					"instanceVariables": {
 						"progress": 1,
+						"targetX": 1131,
+						"targetY": 635,
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1130.929188940975,
-						"y": 635,
+						"x": 1131,
+						"y": 1894,
 						"width": 188.87560997080428,
 						"height": 227.56097586843887,
 						"originX": 0.5,
@@ -6143,12 +6149,14 @@
 					"uid": 762,
 					"instanceVariables": {
 						"progress": 1,
+						"targetX": 801,
+						"targetY": 635,
 						"id": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 800.9291889409752,
-						"y": 635,
+						"x": 801,
+						"y": 1894,
 						"width": 212.59236573470528,
 						"height": 214.7397633683892,
 						"originX": 0.5,
@@ -6174,12 +6182,14 @@
 					},
 					"uid": 763,
 					"instanceVariables": {
-						"progress": 1
+						"progress": 1,
+						"targetX": 960,
+						"targetY": 904
 					},
 					"behaviors": {},
 					"world": {
 						"x": 960,
-						"y": 904,
+						"y": 1537,
 						"width": 1019,
 						"height": 231,
 						"originX": 0.5,
@@ -6206,12 +6216,14 @@
 					"uid": 764,
 					"instanceVariables": {
 						"progress": 1,
+						"targetX": 1417,
+						"targetY": 938,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
 						"x": 1417,
-						"y": 938,
+						"y": 1571,
 						"width": 33,
 						"height": 50,
 						"originX": 0.5,
@@ -6237,12 +6249,14 @@
 					},
 					"uid": 765,
 					"instanceVariables": {
-						"progress": 2
+						"progress": 2,
+						"targetX": 960,
+						"targetY": 904
 					},
 					"behaviors": {},
 					"world": {
 						"x": 960,
-						"y": 904,
+						"y": 1261,
 						"width": 1019,
 						"height": 253,
 						"originX": 0.5,
@@ -6269,12 +6283,14 @@
 					"uid": 766,
 					"instanceVariables": {
 						"progress": 2,
+						"targetX": 1417,
+						"targetY": 938,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
 						"x": 1417,
-						"y": 938,
+						"y": 1295,
 						"width": 33,
 						"height": 50,
 						"originX": 0.5,

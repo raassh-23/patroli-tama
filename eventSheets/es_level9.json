@@ -31,7 +31,7 @@
 				{
 					"id": "createProbabilityTable",
 					"objectClass": "AdvancedRandom",
-					"sid": 141119828997940,
+					"sid": 133431452116504,
 					"parameters": {
 						"name": "\"spawnChance9\""
 					}
@@ -39,7 +39,7 @@
 				{
 					"id": "setProbabilityTable",
 					"objectClass": "AdvancedRandom",
-					"sid": 626269633261972,
+					"sid": 571085770782704,
 					"parameters": {
 						"name": "\"spawnChance9\""
 					}
@@ -151,7 +151,106 @@
 					"sid": 936691069552597
 				}
 			],
-			"sid": 882598902470739
+			"sid": 882598902470739,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-x",
+							"objectClass": "tutorials",
+							"sid": 894438837105849,
+							"parameters": {
+								"x": "4",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 606130551138559,
+							"parameters": {
+								"layer": "\"tutorial0\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 801473211635059,
+							"parameters": {
+								"variable": "tutorialProgress",
+								"value": "0"
+							}
+						},
+						{
+							"callFunction": "showNextTutorial",
+							"sid": 586786397549977
+						}
+					],
+					"sid": 140498356500228,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 950738965327791,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 162020084847903,
+									"parameters": {
+										"object": "TimeScaledPaused",
+										"time-scale": "0"
+									}
+								}
+							],
+							"sid": 900670498391062
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-x",
+							"objectClass": "tutorials",
+							"sid": 471056776361279,
+							"parameters": {
+								"x": "4",
+								"comparison": 1,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 274772917783759,
+							"parameters": {
+								"layer": "\"tutorial0\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"callFunction": "startGame",
+							"sid": 371309283541293
+						}
+					],
+					"sid": 510246113474526
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -208,6 +307,223 @@
 				}
 			],
 			"sid": 185836905971017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 663230518310927,
+					"parameters": {
+						"object": "tutorialButton"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "tutorialButton",
+					"sid": 104402368972730,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "tutorialButton",
+					"sid": 209024915676402
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 396228859335797,
+					"parameters": {
+						"layer": "\"paused\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 485107885088046,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 999600678496049,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "tutorialButton",
+					"sid": 897789176383597,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "tutorialButton",
+					"sid": 335055491701211,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 645869065980623,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "tutorialButton",
+					"sid": 438471238204587,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 375496026213419,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
+			"sid": 610688792298658,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 750218534270815,
+							"parameters": {
+								"layer": "\"tutorial0\""
+							}
+						},
+						{
+							"id": "is-on-layer",
+							"objectClass": "tutorialButton",
+							"sid": 256140288684352,
+							"parameters": {
+								"layer": "\"tutorial0\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 261376233230094
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 375123615044543,
+							"parameters": {
+								"variable": "tutorialProgress",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "showNextTutorial",
+							"sid": 501777217098935
+						}
+					],
+					"sid": 265470375574138,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 492617454309297,
+									"parameters": {
+										"variable": "tutorialProgress",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "tutorials",
+									"sid": 432404019457475,
+									"parameters": {
+										"x": "4",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 691026151767072,
+									"parameters": {
+										"key": "\"tutorials\"",
+										"value": "tutorials.AsJSON"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 460879744985986,
+									"parameters": {
+										"layer": "\"tutorial0\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 477657188175367,
+									"parameters": {
+										"object": "TimeScaledPaused",
+										"time-scale": "1"
+									}
+								},
+								{
+									"callFunction": "startGame",
+									"sid": 155801681198295
+								}
+							],
+							"sid": 779542057292046
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "tutorialButton",
+							"sid": 495219327108980,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 473776778874384
+				}
+			]
 		}
 	],
 	"sid": 531307503196414

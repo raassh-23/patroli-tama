@@ -2471,7 +2471,9 @@
 					},
 					"uid": 343,
 					"instanceVariables": {
-						"progress": 0
+						"progress": 0,
+						"targetX": 960,
+						"targetY": 932
 					},
 					"behaviors": {},
 					"world": {
@@ -2503,6 +2505,8 @@
 					"uid": 344,
 					"instanceVariables": {
 						"progress": 0,
+						"targetX": 1417,
+						"targetY": 966,
 						"touched": false
 					},
 					"behaviors": {},
@@ -2534,12 +2538,14 @@
 					},
 					"uid": 721,
 					"instanceVariables": {
-						"progress": 1
+						"progress": 1,
+						"targetX": 962,
+						"targetY": 934
 					},
 					"behaviors": {},
 					"world": {
 						"x": 962,
-						"y": 934,
+						"y": 1623,
 						"width": 1020,
 						"height": 247,
 						"originX": 0.5,
@@ -2566,12 +2572,14 @@
 					"uid": 725,
 					"instanceVariables": {
 						"progress": 1,
+						"targetX": 1419,
+						"targetY": 968,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
 						"x": 1419,
-						"y": 968,
+						"y": 1657,
 						"width": 33,
 						"height": 50,
 						"originX": 0.5,

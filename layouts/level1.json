@@ -2450,7 +2450,9 @@
 					},
 					"uid": 325,
 					"instanceVariables": {
-						"progress": 0
+						"progress": 0,
+						"targetX": 0,
+						"targetY": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -2482,6 +2484,8 @@
 					"uid": 326,
 					"instanceVariables": {
 						"progress": 0,
+						"targetX": 0,
+						"targetY": 0,
 						"id": 0
 					},
 					"behaviors": {},
@@ -2514,6 +2518,8 @@
 					"uid": 327,
 					"instanceVariables": {
 						"progress": 0,
+						"targetX": 0,
+						"targetY": 0,
 						"id": 1
 					},
 					"behaviors": {},
@@ -2546,6 +2552,8 @@
 					"uid": 329,
 					"instanceVariables": {
 						"progress": 0,
+						"targetX": 0,
+						"targetY": 0,
 						"touched": false
 					},
 					"behaviors": {},
@@ -2608,12 +2616,14 @@
 					},
 					"uid": 335,
 					"instanceVariables": {
-						"progress": 3
+						"progress": 3,
+						"targetX": 960,
+						"targetY": 911
 					},
 					"behaviors": {},
 					"world": {
-						"x": 960,
-						"y": 911,
+						"x": -671,
+						"y": 1408,
 						"width": 1017,
 						"height": 250,
 						"originX": 0.5,
@@ -2640,12 +2650,14 @@
 					"uid": 338,
 					"instanceVariables": {
 						"progress": 3,
+						"targetX": 1417,
+						"targetY": 945,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1417,
-						"y": 945,
+						"x": -530,
+						"y": 1442,
 						"width": 33,
 						"height": 50,
 						"originX": 0.5,
@@ -2671,45 +2683,16 @@
 					},
 					"uid": 336,
 					"instanceVariables": {
-						"progress": 4
+						"progress": 4,
+						"targetX": 960,
+						"targetY": 916
 					},
 					"behaviors": {},
 					"world": {
-						"x": 960,
-						"y": 916,
+						"x": 431,
+						"y": 1404,
 						"width": 1020,
 						"height": 247,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "tutorialPopup",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "id",
-						"initial-frame": 5,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 337,
-					"instanceVariables": {
-						"progress": 5
-					},
-					"behaviors": {},
-					"world": {
-						"x": 634,
-						"y": 916,
-						"width": 1017,
-						"height": 252,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2733,12 +2716,14 @@
 					},
 					"uid": 339,
 					"instanceVariables": {
-						"progress": 6
+						"progress": 6,
+						"targetX": 960,
+						"targetY": 919
 					},
 					"behaviors": {},
 					"world": {
-						"x": 960,
-						"y": 919,
+						"x": 249,
+						"y": 1816,
 						"width": 1017,
 						"height": 236,
 						"originX": 0.5,
@@ -2765,12 +2750,14 @@
 					"uid": 340,
 					"instanceVariables": {
 						"progress": 6,
+						"targetX": 1417,
+						"targetY": 953,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1417,
-						"y": 953,
+						"x": 706,
+						"y": 1850,
 						"width": 33,
 						"height": 50,
 						"originX": 0.5,
@@ -2796,12 +2783,14 @@
 					},
 					"uid": 341,
 					"instanceVariables": {
-						"progress": 7
+						"progress": 7,
+						"targetX": 960,
+						"targetY": 921
 					},
 					"behaviors": {},
 					"world": {
-						"x": 960,
-						"y": 921,
+						"x": 1276,
+						"y": 1787,
 						"width": 1017,
 						"height": 241,
 						"originX": 0.5,
@@ -2828,14 +2817,49 @@
 					"uid": 342,
 					"instanceVariables": {
 						"progress": 7,
+						"targetX": 1417,
+						"targetY": 955,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1417,
-						"y": 955,
+						"x": 1733,
+						"y": 1821,
 						"width": 33,
 						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "tutorialPopup",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "id",
+						"initial-frame": 5,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2589,
+					"instanceVariables": {
+						"progress": 5,
+						"targetX": 634,
+						"targetY": 916
+					},
+					"behaviors": {},
+					"world": {
+						"x": -748,
+						"y": 1808,
+						"width": 1017,
+						"height": 252,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

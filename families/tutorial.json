@@ -8,6 +8,18 @@
 			"type": "number",
 			"desc": "",
 			"sid": 345245249690864
+		},
+		{
+			"name": "targetX",
+			"type": "number",
+			"desc": "",
+			"sid": 383152796170687
+		},
+		{
+			"name": "targetY",
+			"type": "number",
+			"desc": "",
+			"sid": 637488121750262
 		}
 	],
 	"behaviorTypes": [],

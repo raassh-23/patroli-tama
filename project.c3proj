@@ -437,7 +437,7 @@
 				"items": [
 					"MainMenu",
 					"LevelSelect",
-					"Story"
+					"StoryStart"
 				],
 				"subfolders": [],
 				"name": "Menu"
@@ -448,7 +448,7 @@
 		"items": [
 			"Es_general",
 			"Es_SplashScreen",
-			"Es_Story"
+			"Es_StoryStart"
 		],
 		"subfolders": [
 			{
@@ -468,7 +468,10 @@
 					"Es_Level11",
 					"Es_Level10",
 					"Es_Stage4",
-					"Es_Level13"
+					"Es_Level13",
+					"Es_Level14",
+					"Es_Level15",
+					"Es_Level16"
 				],
 				"subfolders": [],
 				"name": "levels"

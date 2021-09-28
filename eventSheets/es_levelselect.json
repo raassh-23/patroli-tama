@@ -800,7 +800,7 @@
 							"objectClass": "System",
 							"sid": 526483690248311,
 							"parameters": {
-								"layout": "Story"
+								"layout": "StoryStart"
 							}
 						}
 					],

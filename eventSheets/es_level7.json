@@ -181,64 +181,14 @@
 								"variable": "tutorialProgress",
 								"value": "0"
 							}
+						},
+						{
+							"callFunction": "showNextTutorial",
+							"sid": 259855242785774
 						}
 					],
 					"sid": 802266704050420,
 					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-by-comparison",
-									"objectClass": "System",
-									"sid": 278011794068202,
-									"parameters": {
-										"object": "Tutorial",
-										"expression": "Tutorial.progress",
-										"comparison": 1,
-										"value": "tutorialProgress"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "Tutorial",
-									"sid": 771119708583654,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 773657731061928
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-by-comparison",
-									"objectClass": "System",
-									"sid": 795101582531907,
-									"parameters": {
-										"object": "Tutorial",
-										"expression": "Tutorial.progress",
-										"comparison": 0,
-										"value": "tutorialProgress"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "Tutorial",
-									"sid": 748301928668817,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 239363764118884
-						},
 						{
 							"eventType": "block",
 							"conditions": [],
@@ -485,64 +435,14 @@
 								"variable": "tutorialProgress",
 								"value": "1"
 							}
+						},
+						{
+							"callFunction": "showNextTutorial",
+							"sid": 591396912184598
 						}
 					],
 					"sid": 285525378724179,
 					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-by-comparison",
-									"objectClass": "System",
-									"sid": 500687560517063,
-									"parameters": {
-										"object": "Tutorial",
-										"expression": "Tutorial.progress",
-										"comparison": 1,
-										"value": "tutorialProgress"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "Tutorial",
-									"sid": 713404815172060,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 948074162561558
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-by-comparison",
-									"objectClass": "System",
-									"sid": 789628912235621,
-									"parameters": {
-										"object": "Tutorial",
-										"expression": "Tutorial.progress",
-										"comparison": 0,
-										"value": "tutorialProgress"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "Tutorial",
-									"sid": 450397910414794,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 125194420761434
-						},
 						{
 							"eventType": "block",
 							"conditions": [
