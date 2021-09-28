@@ -2610,7 +2610,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "id",
-						"initial-frame": 2,
+						"initial-frame": 3,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -2624,8 +2624,8 @@
 					"world": {
 						"x": -671,
 						"y": 1408,
-						"width": 477.37609970674487,
-						"height": 267.4789156626506,
+						"width": 1018.2529325513196,
+						"height": 252.99999999999997,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2677,7 +2677,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "id",
-						"initial-frame": 2,
+						"initial-frame": 4,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -2691,8 +2691,8 @@
 					"world": {
 						"x": 431,
 						"y": 1404,
-						"width": 477.37609970674487,
-						"height": 267.4789156626506,
+						"width": 1019,
+						"height": 252.99999999999997,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2710,7 +2710,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "id",
-						"initial-frame": 2,
+						"initial-frame": 6,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -2724,8 +2724,8 @@
 					"world": {
 						"x": 249,
 						"y": 1816,
-						"width": 477.37609970674487,
-						"height": 267.4789156626506,
+						"width": 1019,
+						"height": 252.99999999999997,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2777,7 +2777,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "id",
-						"initial-frame": 2,
+						"initial-frame": 7,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -2791,8 +2791,8 @@
 					"world": {
 						"x": 1276,
 						"y": 1787,
-						"width": 477.37609970674487,
-						"height": 267.4789156626506,
+						"width": 1019,
+						"height": 252.99999999999997,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2844,7 +2844,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "id",
-						"initial-frame": 2,
+						"initial-frame": 5,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -2858,8 +2858,8 @@
 					"world": {
 						"x": -748,
 						"y": 1808,
-						"width": 477.37609970674487,
-						"height": 267.4789156626506,
+						"width": 1019,
+						"height": 252.99999999999997,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
