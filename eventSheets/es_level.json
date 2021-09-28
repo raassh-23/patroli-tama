@@ -472,8 +472,7 @@
 							"sid": 142366647551787
 						}
 					],
-					"sid": 445319448788068,
-					"disabled": true
+					"sid": 445319448788068
 				}
 			]
 		},
@@ -3582,6 +3581,15 @@
 										"comparison": 0,
 										"value": "melawanArus"
 									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "spawner",
+									"sid": 461094128008068,
+									"parameters": {
+										"object": "vehicle"
+									},
+									"isInverted": true
 								},
 								{
 									"id": "pick-random-instance",
