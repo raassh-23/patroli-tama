@@ -5332,7 +5332,7 @@
 						"width": 40,
 						"height": 234,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,
