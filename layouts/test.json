@@ -6056,7 +6056,7 @@
 						"rate": 10,
 						"spray-cone": 60,
 						"type": "continuous-spray",
-						"object": -1,
+						"object": 365508805333432,
 						"live-preview": false,
 						"speed": 100,
 						"size": 16,

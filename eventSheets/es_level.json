@@ -469,28 +469,6 @@
 						}
 					],
 					"sid": 892382547991826
-				},
-				{
-					"eventType": "comment",
-					"text": "buat ngetes turncheck"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-outside-layout",
-							"objectClass": "spawner",
-							"sid": 740427368459150
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "spawner",
-							"sid": 142366647551787
-						}
-					],
-					"sid": 445319448788068
 				}
 			]
 		},
@@ -5024,6 +5002,15 @@
 						{
 							"id": "set-layer-scale",
 							"objectClass": "System",
+							"sid": 971154349252549,
+							"parameters": {
+								"layer": "\"topGame\"",
+								"scale": "1"
+							}
+						},
+						{
+							"id": "set-layer-scale",
+							"objectClass": "System",
 							"sid": 376661243874426,
 							"parameters": {
 								"layer": "\"bg\"",
@@ -5389,6 +5376,15 @@
 									"sid": 601875103361806,
 									"parameters": {
 										"layer": "\"bg\"",
+										"scale": "LayerScale(\"game\")"
+									}
+								},
+								{
+									"id": "set-layer-scale",
+									"objectClass": "System",
+									"sid": 910744043795107,
+									"parameters": {
+										"layer": "\"topGame\"",
 										"scale": "LayerScale(\"game\")"
 									}
 								},
@@ -7365,6 +7361,49 @@
 				}
 			],
 			"sid": 410462013415966
+		},
+		{
+			"eventType": "comment",
+			"text": "buat ngetes turncheck"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "spawner",
+					"sid": 740427368459150
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "spawner",
+					"sid": 142366647551787
+				}
+			],
+			"sid": 445319448788068
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "vehicle",
+					"sid": 347680801118439,
+					"parameters": {
+						"object": "OtherVehicle"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "vehicle",
+					"sid": 443736618884417
+				}
+			],
+			"sid": 384670355989720
 		}
 	],
 	"sid": 746794069324216
