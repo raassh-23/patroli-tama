@@ -3818,9 +3818,9 @@
 								{
 									"id": "set-animation-frame",
 									"objectClass": "pelanggaranDriver",
-									"sid": 902371737618701,
+									"sid": 430477577698246,
 									"parameters": {
-										"frame-number": "vehicle.type"
+										"frame-number": "vehicle.type - 1 "
 									}
 								}
 							],
