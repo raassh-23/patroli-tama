@@ -13,7 +13,10 @@
 		"parkTarget",
 		"stopTarget",
 		"intersection",
-		"cekMelanggar",
-		"trafficLightCollision"
+		"cekMelanggarLampuMerah",
+		"trafficLightCollision",
+		"cekMelanggarSatuArah",
+		"cekMelanggarDilarangMobil",
+		"cekMelanggarDilarangTruk"
 	]
 }

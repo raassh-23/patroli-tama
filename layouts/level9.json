@@ -351,7 +351,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarLampuMerah",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -361,7 +361,6 @@
 					},
 					"uid": 404,
 					"instanceVariables": {
-						"pelanggaran": 5,
 						"TCLID": -1
 					},
 					"behaviors": {},
@@ -383,7 +382,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarLampuMerah",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -393,7 +392,6 @@
 					},
 					"uid": 405,
 					"instanceVariables": {
-						"pelanggaran": 5,
 						"TCLID": -1
 					},
 					"behaviors": {},
@@ -10019,7 +10017,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarLampuMerah",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -10029,7 +10027,6 @@
 					},
 					"uid": 1374,
 					"instanceVariables": {
-						"pelanggaran": 4,
 						"TCLID": 4
 					},
 					"behaviors": {},
@@ -10051,7 +10048,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarLampuMerah",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -10061,7 +10058,6 @@
 					},
 					"uid": 1375,
 					"instanceVariables": {
-						"pelanggaran": 4,
 						"TCLID": 2
 					},
 					"behaviors": {},
@@ -10083,7 +10079,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarLampuMerah",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -10093,7 +10089,6 @@
 					},
 					"uid": 1376,
 					"instanceVariables": {
-						"pelanggaran": 4,
 						"TCLID": 1
 					},
 					"behaviors": {},
@@ -10115,7 +10110,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarLampuMerah",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -10125,7 +10120,6 @@
 					},
 					"uid": 1377,
 					"instanceVariables": {
-						"pelanggaran": 4,
 						"TCLID": 3
 					},
 					"behaviors": {},

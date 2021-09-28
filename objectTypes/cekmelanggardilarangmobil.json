@@ -1,22 +1,9 @@
 {
-	"name": "cekMelanggar",
+	"name": "cekMelanggarDilarangMobil",
 	"plugin-id": "Sprite",
-	"sid": 912517722399140,
+	"sid": 126752082260829,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "pelanggaran",
-			"type": "number",
-			"desc": "tipe pelanggaran yang dicek",
-			"sid": 129340505836178
-		},
-		{
-			"name": "TCLID",
-			"type": "number",
-			"desc": "id traffic light collision",
-			"sid": 924815997100659
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -31,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6300911,
+						"imageSpriteId": 4821674,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 275872258643977,
+				"sid": 236897107565201,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

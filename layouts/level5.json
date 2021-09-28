@@ -1007,7 +1007,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarLampuMerah",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1017,7 +1017,6 @@
 					},
 					"uid": 391,
 					"instanceVariables": {
-						"pelanggaran": 4,
 						"TCLID": 1
 					},
 					"behaviors": {},
@@ -1039,7 +1038,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarLampuMerah",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1049,7 +1048,6 @@
 					},
 					"uid": 392,
 					"instanceVariables": {
-						"pelanggaran": 4,
 						"TCLID": 3
 					},
 					"behaviors": {},
@@ -1071,7 +1069,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarLampuMerah",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1081,7 +1079,6 @@
 					},
 					"uid": 394,
 					"instanceVariables": {
-						"pelanggaran": 4,
 						"TCLID": 2
 					},
 					"behaviors": {},

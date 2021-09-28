@@ -200,7 +200,7 @@
 			"AdvancedRandom",
 			"trafficLight",
 			"trafficLightCollision",
-			"cekMelanggar",
+			"cekMelanggarLampuMerah",
 			"CreditsButton",
 			"CreditsPanel",
 			"LocalStorage",
@@ -218,7 +218,10 @@
 			"Mouse",
 			"asap",
 			"truckOverload",
-			"truckWithPassenger"
+			"truckWithPassenger",
+			"cekMelanggarSatuArah",
+			"cekMelanggarDilarangMobil",
+			"cekMelanggarDilarangTruk"
 		],
 		"subfolders": [
 			{

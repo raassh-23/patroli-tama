@@ -1312,7 +1312,28 @@
 							"objectClass": "vehicle",
 							"sid": 280167675162533,
 							"parameters": {
-								"object": "cekMelanggar"
+								"object": "cekMelanggarLampuMerah"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 307705358573063,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 142551887245040,
+							"parameters": {
+								"object": "trafficLightCollision",
+								"expression": "trafficLightCollision.id",
+								"comparison": 0,
+								"value": "cekMelanggarLampuMerah.TCLID"
 							}
 						}
 					],
@@ -1324,100 +1345,22 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "vehicle",
-									"sid": 528559110927296,
+									"objectClass": "trafficLightCollision",
+									"sid": 678568032436413,
 									"parameters": {
-										"instance-variable": "pelanggaran",
+										"instance-variable": "state",
 										"comparison": 0,
-										"value": "4"
+										"value": "0"
 									}
 								},
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "cekMelanggar",
-									"sid": 715779204765864,
+									"objectClass": "trafficLightCollision",
+									"sid": 610404024452898,
 									"parameters": {
-										"instance-variable": "pelanggaran",
+										"instance-variable": "state",
 										"comparison": 0,
-										"value": "4"
-									}
-								},
-								{
-									"id": "pick-by-comparison",
-									"objectClass": "System",
-									"sid": 533491243558161,
-									"parameters": {
-										"object": "trafficLightCollision",
-										"expression": "trafficLightCollision.id",
-										"comparison": 0,
-										"value": "cekMelanggar.TCLID"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 690963371252414,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "trafficLightCollision",
-											"sid": 784820219642760,
-											"parameters": {
-												"instance-variable": "state",
-												"comparison": 0,
-												"value": "0"
-											}
-										},
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "trafficLightCollision",
-											"sid": 218757366426448,
-											"parameters": {
-												"instance-variable": "state",
-												"comparison": 0,
-												"value": "3"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "vehicle",
-											"sid": 560287632154333,
-											"parameters": {
-												"instance-variable": "melanggar",
-												"value": "true"
-											}
-										}
-									],
-									"sid": 696930934327290,
-									"isOrBlock": true
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "vehicle",
-									"sid": 738634454694270,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "5"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "cekMelanggar",
-									"sid": 387788820862622,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "5"
+										"value": "3"
 									}
 								}
 							],
@@ -1425,90 +1368,122 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "vehicle",
-									"sid": 881386704324976,
+									"sid": 165654733127270,
 									"parameters": {
 										"instance-variable": "melanggar",
 										"value": "true"
 									}
 								}
 							],
-							"sid": 800012950522087
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "vehicle",
-									"sid": 710748182212387,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "11"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "cekMelanggar",
-									"sid": 326350844312254,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "11"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "vehicle",
-									"sid": 647869681910896,
-									"parameters": {
-										"instance-variable": "melanggar",
-										"value": "true"
-									}
-								}
-							],
-							"sid": 148968633711625
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "vehicle",
-									"sid": 763536914112499,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "12"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "cekMelanggar",
-									"sid": 800384410647800,
-									"parameters": {
-										"instance-variable": "pelanggaran",
-										"comparison": 0,
-										"value": "12"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "vehicle",
-									"sid": 908679911155660,
-									"parameters": {
-										"instance-variable": "melanggar",
-										"value": "true"
-									}
-								}
-							],
-							"sid": 630154478189367
+							"sid": 275652325170173,
+							"isOrBlock": true
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 493226824749173,
+							"parameters": {
+								"object": "cekMelanggarSatuArah"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 330999886941218,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 754176071419640,
+							"parameters": {
+								"instance-variable": "melanggar",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 970749079181904
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 527815421242566,
+							"parameters": {
+								"object": "cekMelanggarDilarangMobil"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 315844627470612,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "11"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 191671041707576,
+							"parameters": {
+								"instance-variable": "melanggar",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 740293711584462
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
+							"sid": 911115694836598,
+							"parameters": {
+								"object": "cekMelanggarDilarangTruk"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "vehicle",
+							"sid": 583590892512521,
+							"parameters": {
+								"instance-variable": "pelanggaran",
+								"comparison": 0,
+								"value": "12"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "vehicle",
+							"sid": 896066876693353,
+							"parameters": {
+								"instance-variable": "melanggar",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 537818712394542
 				},
 				{
 					"eventType": "block",

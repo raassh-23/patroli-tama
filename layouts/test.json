@@ -5756,7 +5756,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarDilarangMobil",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -5764,15 +5764,99 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1275,
-					"instanceVariables": {
-						"pelanggaran": 11,
-						"TCLID": -1
-					},
+					"uid": 798,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1421,
-						"y": 785,
+						"x": 1128.5089638204452,
+						"y": 467.5927522968075,
+						"width": 14,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cekMelanggarDilarangTruk",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 797,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1146.408642329748,
+						"y": 464.2030060128299,
+						"width": 14,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cekMelanggarDilarangMobil",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1285,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1567.0208218670475,
+						"y": 621.3175539159729,
+						"width": 14,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cekMelanggarDilarangMobil",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3778,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1427.3420212922997,
+						"y": 327.9139219548802,
 						"width": 14,
 						"height": 140,
 						"originX": 0.5,
@@ -5788,7 +5872,7 @@
 					}
 				},
 				{
-					"type": "cekMelanggar",
+					"type": "cekMelanggarDilarangTruk",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -5796,15 +5880,41 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1285,
-					"instanceVariables": {
-						"pelanggaran": 12,
-						"TCLID": -1
-					},
+					"uid": 1275,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1269,
-						"y": 303,
+						"x": 1551.3778962117901,
+						"y": 618.7081244860296,
+						"width": 14,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cekMelanggarDilarangTruk",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3779,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1268.0774794187405,
+						"y": 762.2886283996686,
 						"width": 14,
 						"height": 140,
 						"originX": 0.5,
