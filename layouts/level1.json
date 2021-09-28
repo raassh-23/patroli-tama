@@ -4171,35 +4171,6 @@
 					}
 				},
 				{
-					"type": "Dekorasi3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 3,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1055,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1110,
-						"y": 5337,
-						"width": 845,
-						"height": 931,
-						"originX": 0.5,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "windEffect",
 					"properties": {
 						"initially-visible": true,

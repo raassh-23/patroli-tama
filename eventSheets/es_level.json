@@ -220,14 +220,6 @@
 					}
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "invisibleInGame",
-					"sid": 700972969169854,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
 					"id": "pin-to-object-properties",
 					"objectClass": "pelanggaranPin",
 					"sid": 655524603398902,
@@ -335,6 +327,32 @@
 				{
 					"callFunction": "resetPanAndZoomVariable",
 					"sid": 820411304427186
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "invisibleInGame",
+					"sid": 629815472017518,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "parkCheck",
+					"sid": 706063498154227,
+					"parameters": {
+						"width": "8",
+						"height": "8"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "stopCheck",
+					"sid": 933700294210625,
+					"parameters": {
+						"width": "8",
+						"height": "8"
+					}
 				}
 			],
 			"sid": 876990249090575,
@@ -969,10 +987,10 @@
 								{
 									"id": "set-position",
 									"objectClass": "vehicle",
-									"sid": 516155910091064,
+									"sid": 567517567392469,
 									"parameters": {
-										"x": "Self.targetTurnX",
-										"y": "Self.targetTurnY"
+										"x": "Self.currentAngle = 0 | Self.currentAngle = 180? Self.X : Self.targetTurnX",
+										"y": "Self.currentAngle = 90 | Self.currentAngle = 270? Self.Y : Self.targetTurnY"
 									}
 								}
 							],

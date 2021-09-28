@@ -11983,39 +11983,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1462,
-					"instanceVariables": {
-						"turnAngle": "",
-						"intersectionId": 2,
-						"exceptions": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 949,
-						"y": 1741,
-						"width": 148,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "turnCheck",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 1463,
 					"instanceVariables": {
 						"turnAngle": "5, 270, 0, 791, 1760|5, 270, 270, 791, 1760",
@@ -13052,38 +13019,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "lockCheck",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3639,
-					"instanceVariables": {
-						"lockList": "0, 180, 90, 791, 1741, 1, -1, -1|0, 180, 90, 639, 1741, 1, 0, -1|5, 180, 270, 639, 1741, 1, 0, 3|5, 180, 270, 791, 1741, 1, 2, -1",
-						"intersectionId": 2
-					},
-					"behaviors": {},
-					"world": {
-						"x": 915,
-						"y": 1735,
-						"width": 144.26460697796983,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				},
@@ -14549,35 +14484,6 @@
 					"world": {
 						"x": 930,
 						"y": 1894,
-						"width": 14,
-						"height": 140,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "cekMelanggarSatuArah",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1472,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 930,
-						"y": 1736,
 						"width": 14,
 						"height": 140,
 						"originX": 0.5,
