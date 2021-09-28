@@ -1,0 +1,19 @@
+{
+	"name": "invisibleInGame",
+	"plugin-id": "Sprite",
+	"sid": 219353535605667,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"lockCheck",
+		"parkCheck",
+		"turnCheck",
+		"stopCheck",
+		"parkTarget",
+		"stopTarget",
+		"intersection",
+		"cekMelanggar",
+		"trafficLightCollision"
+	]
+}

@@ -397,7 +397,8 @@
 			"Tutorial",
 			"buttons",
 			"TimeScaledPelanggaran",
-			"particleAsap"
+			"particleAsap",
+			"invisibleInGame"
 		],
 		"subfolders": []
 	},
@@ -664,7 +665,7 @@
 	},
 	"properties": {
 		"description": "Game edukasi lalu lintas",
-		"version": "1.0.0.0",
+		"version": "1.0.0.1",
 		"author": "Apaya",
 		"authorEmail": "",
 		"authorWebsite": "",

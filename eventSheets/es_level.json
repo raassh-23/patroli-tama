@@ -220,6 +220,14 @@
 					}
 				},
 				{
+					"id": "set-visible",
+					"objectClass": "invisibleInGame",
+					"sid": 700972969169854,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
 					"id": "pin-to-object-properties",
 					"objectClass": "pelanggaranPin",
 					"sid": 655524603398902,
