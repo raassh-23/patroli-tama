@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "lang",
 			"type": "string",
-			"initialValue": "\"id\"",
+			"initialValue": "id",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

@@ -940,10 +940,10 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 443726419876183,
+					"sid": 799177988893218,
 					"parameters": {
 						"variable": "tutorialProgress",
-						"comparison": 5,
+						"comparison": 0,
 						"value": "4"
 					}
 				},
