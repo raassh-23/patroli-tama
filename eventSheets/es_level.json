@@ -970,10 +970,10 @@
 								{
 									"id": "set-position",
 									"objectClass": "vehicle",
-									"sid": 386042857960033,
+									"sid": 516155910091064,
 									"parameters": {
-										"x": "Self.currentAngle = 90 | Self.currentAngle = 270 ? Self.targetTurnX : Self.X",
-										"y": "Self.currentAngle = 0 | Self.currentAngle = 180 ? Self.targetTurnY : Self.Y"
+										"x": "Self.targetTurnX",
+										"y": "Self.targetTurnY"
 									}
 								}
 							],
