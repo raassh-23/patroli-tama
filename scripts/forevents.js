@@ -2,18 +2,18 @@ import vehicles from "./vehiclesData.js";
 import kodePelanggaran from "./pelanggaran.js";
 import { randomInt } from './commonFunctions.js';
 
-function splitTurnElements(str) {
+function splitComma(str) {
 	return str.split(',').map(num => parseInt(num));
 }
 
-function splitTurnArray(str) {
-	return str.split('|').map(splitTurnElements);
+function splitPipe(str) {
+	return str.split('|').map(splitComma);
 }
 
 function checkTurn(vehicle, turnCheck) {
 // 	console.log("vehicle uid " + vehicle.uid);
 	
-	const turnArray = splitTurnArray(turnCheck.instVars.turnAngle)
+	const turnArray = splitPipe(turnCheck.instVars.turnAngle)
 	
 	const curAngle = vehicle.instVars.currentAngle;
 	const pelanggaran = vehicle.instVars.pelanggaran;
@@ -36,7 +36,7 @@ function checkTurn(vehicle, turnCheck) {
 	}
 	
 	if (turnExceptionsObj && Object.keys(turnExceptionsObj).includes(vehicle.objectType.name)) {
-		const turnExceptions = splitTurnArray(turnExceptionsObj[vehicle.objectType.name])
+		const turnExceptions = splitPipe(turnExceptionsObj[vehicle.objectType.name])
 
 		turnable = turnable.filter((val1) => !turnExceptions.some((val2) => val1.length == val2.length
 																	&& val1.every((x, i) => x == val2[i])));
@@ -69,7 +69,7 @@ function checkTurn(vehicle, turnCheck) {
 function checkLock(vehicle, lockCheck) {
 // 	console.log("vehicle uid " + vehicle.uid);
 	
-	const turnArray = splitTurnArray(lockCheck.instVars.lockList);
+	const turnArray = splitPipe(lockCheck.instVars.lockList);
 	
 // 	console.log(turnArray);
 	
@@ -108,7 +108,7 @@ function checkLock(vehicle, lockCheck) {
 }
 
 function lockIntersection(vehicle, allIntersections) {
-	const pickedLock = splitTurnElements(vehicle.instVars.intersectionLock);
+	const pickedLock = splitComma(vehicle.instVars.intersectionLock);
 // 	console.log(pickedLock);
 	
 	const pickedIntersections = [];
