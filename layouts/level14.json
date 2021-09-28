@@ -3346,7 +3346,7 @@
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 2995, 3675|0, 180, 270, 2995, 3675",
 						"intersectionId": 13,
-						"exceptions": ""
+						"exceptions": "{\"truck\":\"0, 180, 270, 2995, 3675\"}"
 					},
 					"behaviors": {},
 					"world": {
@@ -10114,6 +10114,2406 @@
 						"height": 131,
 						"originX": 0.5,
 						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4475,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 4,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4878,
+						"y": 986,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4476,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 4,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5037,
+						"y": 987,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4477,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 4,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4879,
+						"y": 1150,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4478,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 4,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5037,
+						"y": 1154,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4479,
+					"instanceVariables": {
+						"lockList": "0, 270, 180, 4895, 1130, 3, -1, -1|0, 270, 270, 4895, 1025, 3, 0, -1",
+						"intersectionId": 4
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4878,
+						"y": 1300,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4481,
+					"instanceVariables": {
+						"lockList": "0, 90, 90, 5005, 1130, 1, 2, -1|0, 90, 180, 5005, 1130, 1, 2, 3",
+						"intersectionId": 4
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5038,
+						"y": 865,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4482,
+					"instanceVariables": {
+						"lockList": "0, 0, 90, 5005, 1025, 0, 1, 2|0, 0, 270, 4895, 1025, 0, -1, -1",
+						"intersectionId": 4
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4751,
+						"y": 995,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4480,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 5,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3598,
+						"y": 357,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4483,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 5,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3757,
+						"y": 358,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4484,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 5,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3599,
+						"y": 521,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4485,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 5,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3757,
+						"y": 525,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4486,
+					"instanceVariables": {
+						"lockList": "0, 270, 0, 3625, 385, 3, 0, 1|0, 270, 180, 3625, 490, 3, -1, -1",
+						"intersectionId": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3598,
+						"y": 671,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4487,
+					"instanceVariables": {
+						"lockList": "0, 180, 90, 3735, 490, 2, -1, -1|0, 180, 180, 3625, 490, 2, 3, -1",
+						"intersectionId": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3894,
+						"y": 519,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4488,
+					"instanceVariables": {
+						"lockList": "0, 0, 0, 3735, 385, 0, 1, -1|0, 0, 90, 3735, 385, 0, 1, 2",
+						"intersectionId": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3471,
+						"y": 366,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4489,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 6,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 415,
+						"y": 2259,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4490,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 6,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 574,
+						"y": 2260,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4491,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 6,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 416,
+						"y": 2423,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4492,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 6,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 574,
+						"y": 2427,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4493,
+					"instanceVariables": {
+						"lockList": "0, 270, 180, 445, 2400, 3, -1, -1|0, 270, 270, 445, 2295, 3, 0, -1",
+						"intersectionId": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 415,
+						"y": 2573,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4494,
+					"instanceVariables": {
+						"lockList": "0, 90, 90, 555, 2400, 1, 2, -1|0, 90, 180, 555, 2400, 1, 2, 3",
+						"intersectionId": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 582,
+						"y": 2128,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4495,
+					"instanceVariables": {
+						"lockList": "0, 0, 90, 555, 2295, 0, 1, 2|0, 0, 270, 445, 2295, 0, -1, -1",
+						"intersectionId": 6
+					},
+					"behaviors": {},
+					"world": {
+						"x": 288,
+						"y": 2268,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4496,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 7,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1690,
+						"y": 2267,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4497,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 7,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1849,
+						"y": 2268,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4498,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 7,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1691,
+						"y": 2431,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4499,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 7,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1849,
+						"y": 2435,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4500,
+					"instanceVariables": {
+						"lockList": "0, 270, 0, 1715, 2295, 3, 0, 1|0, 270, 270, 1715, 2295, 3, 0, -1",
+						"intersectionId": 7
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1690,
+						"y": 2581,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4501,
+					"instanceVariables": {
+						"lockList": "0, 90, 0, 1825, 2295, 1, -1, -1|0, 90, 90, 1825, 2400, 1, 2, -1",
+						"intersectionId": 7
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1857,
+						"y": 2136,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4502,
+					"instanceVariables": {
+						"lockList": "0, 180, 90, 1825, 2400, 2, -1, -1|0, 180, 270, 1715, 2400, 2, 3, 0",
+						"intersectionId": 7
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1987,
+						"y": 2424,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4503,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 8,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4863.733530555324,
+						"y": 2260.062540760351,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4504,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 8,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5022.733530555324,
+						"y": 2261.062540760351,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4505,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 8,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4864.733530555324,
+						"y": 2424.062540760351,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4506,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 8,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5022.733530555324,
+						"y": 2428.062540760351,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4507,
+					"instanceVariables": {
+						"lockList": "0, 270, 180, 4895, 2400, 3, -1, -1|0, 270, 270, 4895, 2295, 3, 0, -1",
+						"intersectionId": 8
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4863.733530555324,
+						"y": 2574.062540760351,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4508,
+					"instanceVariables": {
+						"lockList": "0, 90, 90, 5005, 2400, 1, 2, -1|0, 90, 180, 5005, 2400, 1, 2, 3",
+						"intersectionId": 8
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5030.733530555324,
+						"y": 2129.062540760351,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4509,
+					"instanceVariables": {
+						"lockList": "0, 0, 90, 5005, 2295, 0, 1, 2|0, 0, 270, 4895, 2295, 0, -1, -1",
+						"intersectionId": 8
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4741.412834882484,
+						"y": 2269.4557882485906,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4510,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 9,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5507,
+						"y": 985,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4511,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 9,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5666,
+						"y": 986,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4512,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 9,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5508,
+						"y": 1149,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4513,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 9,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5666,
+						"y": 1153,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4514,
+					"instanceVariables": {
+						"lockList": "0, 270, 0, 5530, 1025, 3, 0, 1|0, 270, 270, 5530, 1025, 3, 0, -1",
+						"intersectionId": 9
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5507,
+						"y": 1299,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4515,
+					"instanceVariables": {
+						"lockList": "0, 90, 0, 5640, 1025, 1, -1, -1|0, 90, 90, 5640, 1130, 1, 2, -1",
+						"intersectionId": 9
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5674,
+						"y": 854,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4516,
+					"instanceVariables": {
+						"lockList": "0, 180, 90, 5640, 1130, 2, -1, -1|0, 180, 270, 5530, 1130, 2, 3, 0",
+						"intersectionId": 9
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5803,
+						"y": 1150,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4517,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 10,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1687,
+						"y": 3537,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4518,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 10,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1846,
+						"y": 3538,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4519,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 10,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1688,
+						"y": 3701,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4520,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 10,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1846,
+						"y": 3705,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4521,
+					"instanceVariables": {
+						"lockList": "0, 0, 0, 1825, 3570, 0, 1, -1|0, 0, 270, 1715, 3570, 0, -1, -1",
+						"intersectionId": 10
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1557,
+						"y": 3546,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4522,
+					"instanceVariables": {
+						"lockList": "0, 90, 0, 1825, 3570, 1, -1, -1|0, 90, 180, 1825, 3675, 1, 2, 3",
+						"intersectionId": 10
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1854,
+						"y": 3406,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4523,
+					"instanceVariables": {
+						"lockList": "0, 180, 180, 1715, 3675, 2, 3, -1|0, 180, 270, 1715, 3675, 2, 3, 0",
+						"intersectionId": 10
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1983,
+						"y": 3702,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4524,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 11,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2963,
+						"y": 3540,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4525,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 11,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3122,
+						"y": 3541,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4526,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 11,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2964,
+						"y": 3704,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4527,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 11,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3122,
+						"y": 3708,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4528,
+					"instanceVariables": {
+						"lockList": "0, 0, 0, 3105, 3570, 0, 1, -1|0, 0, 270, 2995, 3570, 0, -1, -1",
+						"intersectionId": 11
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2833,
+						"y": 3549,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4529,
+					"instanceVariables": {
+						"lockList": "0, 90, 0, 3105, 3570, 1, -1, -1|0, 90, 180, 3105, 3675, 1, 2, 3",
+						"intersectionId": 11
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3130,
+						"y": 3409,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4530,
+					"instanceVariables": {
+						"lockList": "0, 180, 180, 2995, 3675, 2, 3, -1|0, 180, 270, 2995, 3675, 2, 3, 0",
+						"intersectionId": 11
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3259,
+						"y": 3705,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4531,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 12,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4228,
+						"y": 3540,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4532,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 12,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4387,
+						"y": 3541,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4533,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 12,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4229,
+						"y": 3704,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4534,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 12,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4387,
+						"y": 3708,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4535,
+					"instanceVariables": {
+						"lockList": "0, 0, 0, 4375, 3570, 0, 1, -1|0, 0, 270, 4265, 3570, 0, -1, -1",
+						"intersectionId": 12
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4098,
+						"y": 3549,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4536,
+					"instanceVariables": {
+						"lockList": "0, 90, 0, 4375, 3570, 1, -1, -1|0, 90, 180, 4375, 3675, 1, 2, 3",
+						"intersectionId": 12
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4395,
+						"y": 3409,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4537,
+					"instanceVariables": {
+						"lockList": "0, 180, 180, 4265, 3675, 2, 3, -1|0, 180, 270, 4265, 3675, 2, 3, 0",
+						"intersectionId": 12
+					},
+					"behaviors": {},
+					"world": {
+						"x": 4524,
+						"y": 3705,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4538,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 13,
+						"sequenceId": 0,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5508,
+						"y": 3544,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4539,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 13,
+						"sequenceId": 1,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5667,
+						"y": 3545,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4540,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 13,
+						"sequenceId": 3,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5509,
+						"y": 3708,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "intersection",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4541,
+					"instanceVariables": {
+						"collisionCount": 0,
+						"vehiclesUID": "",
+						"intersectionId": 13,
+						"sequenceId": 2,
+						"lockedVehicle": 0,
+						"isCollided": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5667,
+						"y": 3712,
+						"width": 101.83573377919501,
+						"height": 99.22721658868994,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4542,
+					"instanceVariables": {
+						"lockList": "0, 0, 90, 5640, 3570, 0, 1, 2|0, 0, 270, 5530, 3570, 0, -1, -1",
+						"intersectionId": 13
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5378,
+						"y": 3553,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4543,
+					"instanceVariables": {
+						"lockList": "0, 90, 90, 5640, 3675, 1, 2, -1|0, 90, 180, 5640, 3675, 1, 2, 3",
+						"intersectionId": 13
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5675,
+						"y": 3413,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "lockCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4544,
+					"instanceVariables": {
+						"lockList": "0, 270, 180, 5530, 3675, 3, -1, -1|0, 270, 270, 5530, 3570, 3, 0, -1",
+						"intersectionId": 13
+					},
+					"behaviors": {},
+					"world": {
+						"x": 5521,
+						"y": 3840,
+						"width": 144.26460697796983,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
