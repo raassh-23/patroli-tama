@@ -302,7 +302,8 @@
 					"uid": 1410,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 3180, 3174| 0, 270, 270, 3180, 3174| 0, 270, 0, 3180, 3016",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -334,7 +335,8 @@
 					"uid": 1411,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 3344, 3174| 0, 180, 180, 3344, 3174| 0, 180, 270, 3180, 3174",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -366,7 +368,8 @@
 					"uid": 1412,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 270, 3180, 3016| 0, 0, 0, 3344, 3016| 0, 0, 90, 3344, 3016",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -398,7 +401,8 @@
 					"uid": 1413,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 3344, 3016| 0, 90, 90, 3344, 3174| 0, 90, 180, 3344, 3174",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -4881,7 +4885,8 @@
 					"uid": 1582,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 803, 3009|0, 90, 180, 803, 3173",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -4913,7 +4918,8 @@
 					"uid": 1583,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 639, 3173|0, 180, 270, 639, 3173",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -4945,7 +4951,8 @@
 					"uid": 1584,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 639, 3009|0, 0, 270, 639, 3009",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -4977,7 +4984,8 @@
 					"uid": 1585,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 180, 4617, 3173",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -5009,7 +5017,8 @@
 					"uid": 1586,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 270, 4453, 3009",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -5041,7 +5050,8 @@
 					"uid": 1587,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 4453, 1737",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -5073,7 +5083,8 @@
 					"uid": 1588,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 90, 4617, 1901",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -5501,8 +5512,9 @@
 					},
 					"uid": 1576,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 1290, 595| 0, 270, 270, 1290, 490| 0, 270, 0, 1290, 490",
-						"intersectionId": 1
+						"turnAngle": "0, 270, 180, 1290, 595| 0, 270, 270, 1290, 490| 0, 270, 0, 1290, 490|12, 270, 270, 1290, 490",
+						"intersectionId": 1,
+						"exceptions": "{\"truck\": \"0, 270, 270, 1290, 490\"}"
 					},
 					"behaviors": {},
 					"world": {
@@ -5533,8 +5545,9 @@
 					},
 					"uid": 1577,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 90, 1400, 595| 0, 180, 180, 1290, 595| 0, 180, 270, 1290, 595",
-						"intersectionId": 1
+						"turnAngle": "0, 180, 90, 1400, 595| 0, 180, 180, 1290, 595| 0, 180, 270, 1290, 595|11, 180, 90, 1400, 595| 12, 180, 270, 1290, 595",
+						"intersectionId": 1,
+						"exceptions": "{\"truck\": \"0, 180, 270, 1290, 595\", \"car\": \"0, 180, 90, 1400, 595\"}"
 					},
 					"behaviors": {},
 					"world": {
@@ -5565,8 +5578,9 @@
 					},
 					"uid": 1578,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 270, 1290, 490| 0, 0, 0, 1400, 490| 0, 0, 90, 1400, 490",
-						"intersectionId": 1
+						"turnAngle": "0, 0, 270, 1290, 490| 0, 0, 0, 1400, 490| 0, 0, 90, 1400, 490| 11, 0, 90, 1400, 490|12, 0, 270, 1290, 490",
+						"intersectionId": 1,
+						"exceptions": "{\"truck\": \"0, 0, 270, 1290, 490\", \"car\": \"0, 0, 90, 1400, 490\"}"
 					},
 					"behaviors": {},
 					"world": {
@@ -5597,8 +5611,9 @@
 					},
 					"uid": 3396,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 0, 1400, 595| 0, 90, 90, 1400, 490| 0, 90, 180, 1400, 490",
-						"intersectionId": 1
+						"turnAngle": "0, 90, 0, 1400, 490| 0, 90, 90, 1400, 490| 0, 90, 180, 1400, 595|11, 90, 90, 1400, 490",
+						"intersectionId": 1,
+						"exceptions": "{\"car\": \"0, 90, 90, 1400, 490\"}"
 					},
 					"behaviors": {},
 					"world": {
@@ -5679,6 +5694,128 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dekorasi4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 27,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1272,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1606,
+						"y": 971,
+						"width": 97,
+						"height": 131,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dekorasi4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 28,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1273,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1080,
+						"y": 280,
+						"width": 97,
+						"height": 131,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cekMelanggar",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1275,
+					"instanceVariables": {
+						"pelanggaran": 11,
+						"TCLID": -1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1421,
+						"y": 785,
+						"width": 14,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cekMelanggar",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1285,
+					"instanceVariables": {
+						"pelanggaran": 12,
+						"TCLID": -1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1269,
+						"y": 303,
+						"width": 14,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}

@@ -1433,6 +1433,80 @@
 								}
 							],
 							"sid": 800012950522087
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "vehicle",
+									"sid": 710748182212387,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "11"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "cekMelanggar",
+									"sid": 326350844312254,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "11"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 647869681910896,
+									"parameters": {
+										"instance-variable": "melanggar",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 148968633711625
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "vehicle",
+									"sid": 763536914112499,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "12"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "cekMelanggar",
+									"sid": 800384410647800,
+									"parameters": {
+										"instance-variable": "pelanggaran",
+										"comparison": 0,
+										"value": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "vehicle",
+									"sid": 908679911155660,
+									"parameters": {
+										"instance-variable": "melanggar",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 630154478189367
 						}
 					]
 				},
@@ -3176,7 +3250,7 @@
 								},
 								{
 									"type": "script",
-									"script": "localVars.vehicleName = pickVehicle(localVars.pelanggaran, runtime.globalVars.curLevel-1);\n\nlocalVars.type = pickType(localVars.vehicleName);"
+									"script": "localVars.vehicleName = pickVehicle(localVars.pelanggaran, runtime.globalVars.curLevel);\n\nlocalVars.type = pickType(localVars.vehicleName);"
 								}
 							],
 							"sid": 139294230369858
@@ -3458,6 +3532,26 @@
 														"instance-variable": "pelanggaran",
 														"comparison": 0,
 														"value": "7"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 671828756237767,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "11"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "vehicle",
+													"sid": 858658395806455,
+													"parameters": {
+														"instance-variable": "pelanggaran",
+														"comparison": 0,
+														"value": "12"
 													}
 												}
 											],
@@ -4222,19 +4316,19 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 543744275290854,
+							"sid": 657319127847769,
 							"parameters": {
-								"variable": "curLevel",
-								"value": "int(right(LayoutName, len(LayoutName) - 5))"
+								"variable": "score",
+								"value": "0"
 							}
 						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 657319127847769,
+							"sid": 592746024089294,
 							"parameters": {
-								"variable": "score",
-								"value": "0"
+								"variable": "curLevel",
+								"value": "int(right(LayoutName, len(LayoutName) - 5))"
 							}
 						}
 					],

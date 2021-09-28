@@ -2,11 +2,18 @@ import vehicles from "./vehiclesData.js";
 import kodePelanggaran from "./pelanggaran.js";
 import { randomInt } from './commonFunctions.js';
 
+function splitTurnElements(str) {
+	return str.split(',').map(num => parseInt(num));
+}
+
+function splitTurnArray(str) {
+	return str.split('|').map(splitTurnElements);
+}
+
 function checkTurn(vehicle, turnCheck) {
 // 	console.log("vehicle uid " + vehicle.uid);
 	
-	const turnArray = turnCheck.instVars.turnAngle
-		.split('|').map((str) => str.split(',').map(num => parseInt(num)));
+	const turnArray = splitTurnArray(turnCheck.instVars.turnAngle)
 	
 	const curAngle = vehicle.instVars.currentAngle;
 	const pelanggaran = vehicle.instVars.pelanggaran;
@@ -18,7 +25,25 @@ function checkTurn(vehicle, turnCheck) {
 	} else {
 		turnable = turnArray.filter(val => val[0] == 0 && val[1] == curAngle)
 	}
+
+// 	console.log("sebelum");
+// 	console.log(turnable);
 	
+	let turnExceptionsObj;
+	
+	if(turnCheck.instVars.exceptions != ""){
+		turnExceptionsObj = JSON.parse(turnCheck.instVars.exceptions);
+	}
+	
+	if (turnExceptionsObj && Object.keys(turnExceptionsObj).includes(vehicle.objectType.name)) {
+		const turnExceptions = splitTurnArray(turnExceptionsObj[vehicle.objectType.name])
+
+		turnable = turnable.filter((val1) => !turnExceptions.some((val2) => val1.length == val2.length
+																	&& val1.every((x, i) => x == val2[i])));
+
+// 		console.log("setelah");
+// 		console.log(turnable);
+	}
 // 	console.log(turnable);
 
 	if(turnable.length == 0) {
@@ -44,8 +69,7 @@ function checkTurn(vehicle, turnCheck) {
 function checkLock(vehicle, lockCheck) {
 // 	console.log("vehicle uid " + vehicle.uid);
 	
-	const turnArray = lockCheck.instVars.lockList
-		.split('|').map((str) => str.split(',').map(num => parseInt(num)));
+	const turnArray = splitTurnArray(lockCheck.instVars.lockList);
 	
 // 	console.log(turnArray);
 	
@@ -59,19 +83,19 @@ function checkLock(vehicle, lockCheck) {
 // 	console.table({curAngle, targetAngle, targetX, targetY, pelanggaran});
 
 	let turn;
-								  
+
 	if(turnArray.find(val => val[0] == pelanggaran)) {
 		turn = turnArray.find(val => val[0] == pelanggaran 
-								  && val[1] == curAngle
-								  && val[2] == targetAngle
-								  && val[3] == targetX
-								  && val[4] == targetY);
+								&& val[1] == curAngle
+								&& val[2] == targetAngle
+								&& val[3] == targetX
+								&& val[4] == targetY);
 	} else {
 		turn = turnArray.find(val => val[0] == 0 
-								  && val[1] == curAngle
-								  && val[2] == targetAngle
-								  && val[3] == targetX
-								  && val[4] == targetY);
+								&& val[1] == curAngle
+								&& val[2] == targetAngle
+								&& val[3] == targetX
+								&& val[4] == targetY);
 	}
 
 // 	console.log(turn);
@@ -84,7 +108,7 @@ function checkLock(vehicle, lockCheck) {
 }
 
 function lockIntersection(vehicle, allIntersections) {
-	const pickedLock = vehicle.instVars.intersectionLock.split(",").map(val => parseInt(val));
+	const pickedLock = splitTurnElements(vehicle.instVars.intersectionLock);
 // 	console.log(pickedLock);
 	
 	const pickedIntersections = [];
@@ -126,7 +150,15 @@ function pickVehicle(pelanggaran, level) {
 		case kodePelanggaran.MENGANGKUT_PENUMPANG:
 			pickedVehicle = "truckWithPassenger";
 			break;
+			
+		case kodePelanggaran.DILARANG_MOBIL:
+			pickedVehicle = "car";
+			break;
 		
+		case kodePelanggaran.DILARANG_TRUK:
+			pickedVehicle = "truck";
+			break;
+
 		default:
 			let vehiclesArray = Object.keys(vehicles).filter(v => v !== "motorbikeWithoutHelm" 
 														&& v !== "motorbikeWithoutLight"

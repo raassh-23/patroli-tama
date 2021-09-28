@@ -290,7 +290,8 @@
 					"uid": 88,
 					"instanceVariables": {
 						"turnAngle": "0, 90, 0, 534, 549",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -322,7 +323,8 @@
 					"uid": 89,
 					"instanceVariables": {
 						"turnAngle": "1, 90, 0, 386, 697",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -354,7 +356,8 @@
 					"uid": 91,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 90, 1496, 549",
-						"intersectionId": 2
+						"intersectionId": 2,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -386,7 +389,8 @@
 					"uid": 92,
 					"instanceVariables": {
 						"turnAngle": "1, 0, 90, 1348, 697",
-						"intersectionId": 2
+						"intersectionId": 2,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -1140,7 +1144,8 @@
 					"uid": 200,
 					"instanceVariables": {
 						"turnAngle": "1, 270, 180, 1496, 549",
-						"intersectionId": 2
+						"intersectionId": 2,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -1172,7 +1177,8 @@
 					"uid": 201,
 					"instanceVariables": {
 						"turnAngle": "0, 270, 180, 1348, 697",
-						"intersectionId": 2
+						"intersectionId": 2,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -1204,7 +1210,8 @@
 					"uid": 202,
 					"instanceVariables": {
 						"turnAngle": "1, 180, 270, 534, 549",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -1236,7 +1243,8 @@
 					"uid": 203,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 270, 386, 697",
-						"intersectionId": 1
+						"intersectionId": 1,
+						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {

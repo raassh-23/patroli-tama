@@ -26,6 +26,15 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
+					"sid": 786370168295522,
+					"parameters": {
+						"variable": "curLevel",
+						"value": "13"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
 					"sid": 375709819819205,
 					"parameters": {
 						"variable": "randNum",
@@ -60,47 +69,37 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 318727559898607,
+					"sid": 154754767378579,
 					"parameters": {
-						"value": "9",
+						"value": "11",
 						"weight": "20"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 802792938377516,
+					"sid": 377822106167784,
 					"parameters": {
-						"value": "10",
-						"weight": "20"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 258826205585838,
-					"disabled": true,
-					"parameters": {
-						"value": "8",
+						"value": "12",
 						"weight": "20"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 547832743628097,
+					"sid": 931077272415122,
 					"parameters": {
 						"variable": "randSpawnTimeFrom",
-						"value": "0.5"
+						"value": "2"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 409999890531322,
+					"sid": 363980308822074,
 					"parameters": {
 						"variable": "randSpawnTimeTo",
-						"value": "1.5"
+						"value": "3"
 					}
 				},
 				{
@@ -111,10 +110,6 @@
 						"variable": "timeLimit",
 						"value": "150"
 					}
-				},
-				{
-					"callFunction": "startGame",
-					"sid": 371972520553422
 				},
 				{
 					"id": "set-eventvar-value",
@@ -128,11 +123,15 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 538100027472231,
+					"sid": 532836511396020,
 					"parameters": {
 						"variable": "options",
-						"value": "\"9|10\""
+						"value": "\"9|10|11|12\""
 					}
+				},
+				{
+					"callFunction": "startGame",
+					"sid": 939295531428834
 				},
 				{
 					"callFunction": "setStar",

@@ -15,6 +15,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 789946180673202
+		},
+		{
+			"name": "exceptions",
+			"type": "string",
+			"desc": "",
+			"sid": 940021465656044
 		}
 	],
 	"behaviorTypes": [],
