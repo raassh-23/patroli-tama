@@ -4650,19 +4650,19 @@
 								{
 									"id": "set-at-x",
 									"objectClass": "levels",
-									"sid": 887121486847747,
+									"sid": 248189470737544,
 									"parameters": {
 										"x": "curLevel-1",
-										"value": "levelFinishedStar.AnimationFrame"
+										"value": "levelFinishedStar.AnimationFrame > levels.At(curLevel - 1) ? levelFinishedStar.AnimationFrame : levels.At(curLevel - 1)"
 									}
 								},
 								{
 									"id": "set-at-x",
 									"objectClass": "levels",
-									"sid": 419764226971076,
+									"sid": 525161969898297,
 									"parameters": {
 										"x": "curLevel",
-										"value": "0"
+										"value": "levels.At(curLevel) > 0 ? levels.At(curLevel) : 0"
 									}
 								},
 								{
