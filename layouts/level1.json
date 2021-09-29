@@ -2489,6 +2489,21 @@
 						"id": 0
 					},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 0,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 305.74215806233605,
 						"y": 776.9318801143042,
@@ -2523,6 +2538,21 @@
 						"id": 1
 					},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 0,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 1588.1106942181657,
 						"y": 809.8294413971108,

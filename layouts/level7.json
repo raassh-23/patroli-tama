@@ -6003,36 +6003,6 @@
 			"global": false
 		},
 		{
-			"name": "paused",
-			"overriden": 1,
-			"instances": [],
-			"sid": 901686438832685,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 0,
-			"parallaxY": 0,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
 			"name": "tutorial0",
 			"overriden": 0,
 			"instances": [
@@ -6120,6 +6090,21 @@
 						"id": 1
 					},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 10,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 1131,
 						"y": 1894,
@@ -6154,11 +6139,26 @@
 						"id": 1
 					},
 					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 10,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
 					"world": {
 						"x": 801,
 						"y": 1894,
 						"width": 212.59236573470528,
-						"height": 214.7397633683892,
+						"height": 281.3090900125898,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -6307,6 +6307,36 @@
 				}
 			],
 			"sid": 495836374088711,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "paused",
+			"overriden": 1,
+			"instances": [],
+			"sid": 901686438832685,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [

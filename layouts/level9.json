@@ -13990,36 +13990,6 @@
 			"global": false
 		},
 		{
-			"name": "paused",
-			"overriden": 1,
-			"instances": [],
-			"sid": 276479308876732,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 0,
-			"parallaxY": 0,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
 			"name": "tutorial0",
 			"overriden": 0,
 			"instances": [
@@ -14036,12 +14006,12 @@
 					"instanceVariables": {
 						"progress": 0,
 						"targetX": 960,
-						"targetY": 875
+						"targetY": 916
 					},
 					"behaviors": {},
 					"world": {
 						"x": 960,
-						"y": 875,
+						"y": 916,
 						"width": 1018.2529325513196,
 						"height": 252.99999999999997,
 						"originX": 0.5,
@@ -14068,14 +14038,14 @@
 					"uid": 2588,
 					"instanceVariables": {
 						"progress": 0,
-						"targetX": 1417,
-						"targetY": 938,
+						"targetX": 1409,
+						"targetY": 949,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1417,
-						"y": 948,
+						"x": 1409,
+						"y": 949,
 						"width": 33,
 						"height": 50,
 						"originX": 0.5,
@@ -14103,7 +14073,7 @@
 					"instanceVariables": {
 						"progress": 1,
 						"targetX": 960,
-						"targetY": 875
+						"targetY": 916
 					},
 					"behaviors": {},
 					"world": {
@@ -14135,14 +14105,14 @@
 					"uid": 2591,
 					"instanceVariables": {
 						"progress": 1,
-						"targetX": 1417,
-						"targetY": 938,
+						"targetX": 1409,
+						"targetY": 949,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
 						"x": 1417,
-						"y": 1465,
+						"y": 1422,
 						"width": 33,
 						"height": 50,
 						"originX": 0.5,
@@ -14170,7 +14140,7 @@
 					"instanceVariables": {
 						"progress": 2,
 						"targetX": 960,
-						"targetY": 875
+						"targetY": 916
 					},
 					"behaviors": {},
 					"world": {
@@ -14202,14 +14172,14 @@
 					"uid": 2618,
 					"instanceVariables": {
 						"progress": 2,
-						"targetX": 1417,
-						"targetY": 938,
+						"targetX": 1409,
+						"targetY": 949,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
 						"x": 1417,
-						"y": 1936,
+						"y": 1893,
 						"width": 33,
 						"height": 50,
 						"originX": 0.5,
@@ -14237,7 +14207,7 @@
 					"instanceVariables": {
 						"progress": 3,
 						"targetX": 960,
-						"targetY": 875
+						"targetY": 916
 					},
 					"behaviors": {},
 					"world": {
@@ -14269,14 +14239,14 @@
 					"uid": 2624,
 					"instanceVariables": {
 						"progress": 3,
-						"targetX": 1417,
-						"targetY": 938,
+						"targetX": 1409,
+						"targetY": 949,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
 						"x": 1417,
-						"y": 2304,
+						"y": 2261,
 						"width": 33,
 						"height": 50,
 						"originX": 0.5,
@@ -14304,7 +14274,7 @@
 					"instanceVariables": {
 						"progress": 4,
 						"targetX": 960,
-						"targetY": 875
+						"targetY": 916
 					},
 					"behaviors": {},
 					"world": {
@@ -14336,16 +14306,114 @@
 					"uid": 2686,
 					"instanceVariables": {
 						"progress": 4,
-						"targetX": 1417,
-						"targetY": 938,
+						"targetX": 1409,
+						"targetY": 949,
 						"touched": false
 					},
 					"behaviors": {},
 					"world": {
 						"x": 2640,
-						"y": 2304,
+						"y": 2261,
 						"width": 33,
 						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "tutorialDecor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 6,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4741,
+					"instanceVariables": {
+						"progress": 2,
+						"targetX": 797,
+						"targetY": 608,
+						"id": 1
+					},
+					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 10,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 797,
+						"y": 608,
+						"width": 255.3281554117591,
+						"height": 255.328155411759,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "tutorialDecor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 7,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4742,
+					"instanceVariables": {
+						"progress": 2,
+						"targetX": 1123.5,
+						"targetY": 608,
+						"id": 1
+					},
+					"behaviors": {},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"width": 10,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1124,
+						"y": 2526,
+						"width": 258.1471374852541,
+						"height": 255.56566611040157,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -14360,6 +14428,36 @@
 				}
 			],
 			"sid": 785428134166452,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "paused",
+			"overriden": 1,
+			"instances": [],
+			"sid": 276479308876732,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
