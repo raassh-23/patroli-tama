@@ -16553,9 +16553,9 @@
 					"world": {
 						"x": 851,
 						"y": 616,
-						"width": 639,
-						"height": 352,
-						"originX": 0.5,
+						"width": 847,
+						"height": 464,
+						"originX": 0.5011806375442739,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -16718,8 +16718,8 @@
 					"world": {
 						"x": 851,
 						"y": 1398,
-						"width": 639,
-						"height": 352,
+						"width": 847,
+						"height": 464,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -16785,8 +16785,8 @@
 					"world": {
 						"x": 851,
 						"y": 2354,
-						"width": 639,
-						"height": 352,
+						"width": 847,
+						"height": 464,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -16852,8 +16852,8 @@
 					"world": {
 						"x": 1039,
 						"y": 1833,
-						"width": 639,
-						"height": 352,
+						"width": 847,
+						"height": 464,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -16919,8 +16919,8 @@
 					"world": {
 						"x": 1039,
 						"y": 2802,
-						"width": 639,
-						"height": 352,
+						"width": 847,
+						"height": 464,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
