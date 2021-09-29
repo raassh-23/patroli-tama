@@ -65,28 +65,28 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 670977423769390,
+					"sid": 469171470172277,
 					"parameters": {
-						"value": "5",
+						"value": "8",
 						"weight": "10"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 951830640479301,
+					"sid": 118611128234964,
 					"parameters": {
 						"value": "6",
-						"weight": "25"
+						"weight": "15"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 186489586384499,
+					"sid": 806486970204847,
 					"parameters": {
 						"value": "7",
-						"weight": "25"
+						"weight": "15"
 					}
 				},
 				{
@@ -123,19 +123,19 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 624454395406672,
+					"sid": 559776491424461,
 					"parameters": {
 						"variable": "goals",
-						"value": "\"90|120|140\""
+						"value": "\"95|115|135\""
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 417117198824147,
+					"sid": 130827081431637,
 					"parameters": {
 						"variable": "options",
-						"value": "\"4|5|6|7\""
+						"value": "\"4|8|6|7\""
 					}
 				},
 				{

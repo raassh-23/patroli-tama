@@ -51,61 +51,52 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 937141801891892,
+					"sid": 666275107442978,
 					"parameters": {
 						"value": "0",
+						"weight": "40"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 831963885611432,
+					"parameters": {
+						"value": "8",
+						"weight": "5"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 311788788998506,
+					"parameters": {
+						"value": "9",
 						"weight": "20"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 931626834223116,
+					"sid": 434227248716354,
 					"parameters": {
-						"value": "2",
-						"weight": "5"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 203901119919310,
-					"parameters": {
-						"value": "3",
-						"weight": "5"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 125802682863350,
-					"parameters": {
-						"value": "4",
-						"weight": "5"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 684534432806298,
-					"parameters": {
-						"value": "5",
-						"weight": "5"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 690890388390223,
-					"parameters": {
-						"value": "6",
+						"value": "10",
 						"weight": "20"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "AdvancedRandom",
+					"sid": 897824860251165,
+					"parameters": {
+						"value": "11",
+						"weight": "15"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 363997313662985,
+					"sid": 462260453506286,
 					"parameters": {
 						"variable": "randSpawnTimeFrom",
 						"value": "0.5"
@@ -114,41 +105,41 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 874560214490030,
+					"sid": 977114011945048,
 					"parameters": {
 						"variable": "randSpawnTimeTo",
-						"value": "1.5"
+						"value": "1.0"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 234510838616128,
+					"sid": 544506818522656,
 					"parameters": {
 						"variable": "timeLimit",
-						"value": "150"
+						"value": "200"
 					}
 				},
 				{
 					"callFunction": "startGame",
-					"sid": 106700304272056
+					"sid": 664827952981540
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 179637277718568,
+					"sid": 707477803114719,
 					"parameters": {
 						"variable": "goals",
-						"value": "\"80|105|125\""
+						"value": "\"110|125|155\""
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 133404319050909,
+					"sid": 292302517573815,
 					"parameters": {
 						"variable": "options",
-						"value": "\"2|3|4|5\""
+						"value": "\"11|8|9|10\""
 					}
 				},
 				{
