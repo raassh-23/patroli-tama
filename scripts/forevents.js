@@ -12,6 +12,7 @@ function splitPipe(str) {
 
 function checkTurn(vehicle, turnCheck) {
 // 	console.log("vehicle uid " + vehicle.uid);
+// 	console.log("turnCheck uid " + turnCheck.uid);
 	
 	const turnArray = splitPipe(turnCheck.instVars.turnAngle)
 	
@@ -26,7 +27,7 @@ function checkTurn(vehicle, turnCheck) {
 		turnable = turnArray.filter(val => val[0] == 0 && val[1] == curAngle)
 	}
 
-// 	console.log("sebelum");
+// 	console.log("sebelum dikurangi");
 // 	console.log(turnable);
 	
 	let turnExceptionsObj;
@@ -41,7 +42,7 @@ function checkTurn(vehicle, turnCheck) {
 		turnable = turnable.filter((val1) => !turnExceptions.some((val2) => val1.length == val2.length
 																	&& val1.every((x, i) => x == val2[i])));
 
-// 		console.log("setelah");
+// 		console.log("setelah dikurangi");
 // 		console.log(turnable);
 	}
 // 	console.log(turnable);
@@ -52,6 +53,7 @@ function checkTurn(vehicle, turnCheck) {
 		Pelanggaran = ${pelanggaran} 
 		CurAngle = ${curAngle}
 		TurnCheck UID = ${turnCheck.uid}
+		Vehicle UID = ${vehicle.uid}
 		`)
 		return;
 	}

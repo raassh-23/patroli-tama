@@ -467,7 +467,6 @@
 					"Es_Level12",
 					"Es_Level11",
 					"Es_Level10",
-					"Es_Stage4",
 					"Es_Level13",
 					"Es_Level14",
 					"Es_Level15",
@@ -483,6 +482,14 @@
 				],
 				"subfolders": [],
 				"name": "Menu"
+			},
+			{
+				"items": [
+					"Es_Stage4",
+					"ES_Stage34"
+				],
+				"subfolders": [],
+				"name": "Stages"
 			}
 		]
 	},

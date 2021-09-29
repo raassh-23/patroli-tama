@@ -1,0 +1,27 @@
+{
+	"name": "ES_Stage34",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "vehicle",
+					"sid": 205683357491525
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "vehicle",
+					"sid": 303583313999685,
+					"parameters": {
+						"scale": "0.85"
+					}
+				}
+			],
+			"sid": 825574828236517
+		}
+	],
+	"sid": 352175679831420
+}
