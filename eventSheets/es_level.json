@@ -57,6 +57,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "TopSpeed3",
+			"type": "number",
+			"initialValue": "200",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 154018768246543
+		},
+		{
+			"eventType": "variable",
 			"name": "score",
 			"type": "number",
 			"initialValue": "0",
@@ -342,15 +352,6 @@
 					"parameters": {
 						"width": "8",
 						"height": "8"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "spawner",
-					"sid": 939120129454726,
-					"parameters": {
-						"width": "64",
-						"height": "64"
 					}
 				}
 			],
@@ -700,6 +701,14 @@
 					"parameters": {
 						"speed": "Self.speed"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "vehicle",
+					"sid": 985802401497918,
+					"parameters": {
+						"frame-number": "floor(Self.currentAngle/90)"
+					}
 				}
 			],
 			"sid": 209654945538247,
@@ -727,14 +736,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "vehicle",
-							"sid": 782172441622613,
-							"parameters": {
-								"frame-number": "floor(Self.currentAngle/90)"
-							}
-						},
 						{
 							"id": "set-angle-of-motion",
 							"objectClass": "vehicle",
@@ -1935,23 +1936,15 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "vehicle",
-							"sid": 796145312890806,
+							"sid": 347680801118439,
 							"parameters": {
-								"object": "vehicle"
+								"object": "OtherVehicle"
 							}
 						},
 						{
 							"id": "is-outside-layout",
 							"objectClass": "vehicle",
 							"sid": 767243426389614
-						},
-						{
-							"id": "pick-topbottom",
-							"objectClass": "vehicle",
-							"sid": 151517187603018,
-							"parameters": {
-								"which": "top"
-							}
 						}
 					],
 					"actions": [
