@@ -2022,7 +2022,7 @@
 					},
 					"uid": 808,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 0, 657, 2750| 5, 90, 0, 657, 2750",
+						"turnAngle": "0, 90, 0, 657, 2750",
 						"intersectionId": 6,
 						"exceptions": ""
 					},
@@ -2055,7 +2055,7 @@
 					},
 					"uid": 809,
 					"instanceVariables": {
-						"turnAngle": "0, 180, 270, 499, 2908| 5, 90, 0, 657, 2750",
+						"turnAngle": "0, 180, 270, 499, 2908",
 						"intersectionId": 6,
 						"exceptions": ""
 					},
