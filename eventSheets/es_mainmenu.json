@@ -1226,9 +1226,9 @@
 								{
 									"id": "set-size",
 									"objectClass": "tutorials",
-									"sid": 293970771630004,
+									"sid": 133691453081022,
 									"parameters": {
-										"width": "4",
+										"width": "8",
 										"height": "1",
 										"depth": "1"
 									}

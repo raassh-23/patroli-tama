@@ -16105,9 +16105,9 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
 								"width": 10,
@@ -16154,9 +16154,9 @@
 						"BetterOutline": {
 							"parameters": {
 								"color": [
-									0,
-									0,
-									0,
+									1,
+									1,
+									1,
 									1
 								],
 								"width": 10,
