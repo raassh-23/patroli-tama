@@ -1837,6 +1837,32 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "vehicle",
+							"sid": 347680801118439,
+							"parameters": {
+								"object": "OtherVehicle"
+							}
+						},
+						{
+							"id": "is-outside-layout",
+							"objectClass": "vehicle",
+							"sid": 767243426389614
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "vehicle",
+							"sid": 443736618884417
+						}
+					],
+					"sid": 384670355989720
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "vehicle",
 							"sid": 498062296985222,
 							"parameters": {
 								"object": "lockCheck"
@@ -2046,37 +2072,37 @@
 								{
 									"id": "compare-x",
 									"objectClass": "vehicle",
-									"sid": 937519027210008,
+									"sid": 553436288329267,
 									"parameters": {
 										"comparison": 2,
-										"x-co-ordinate": "0 - Self.Width/4"
+										"x-co-ordinate": "0 - Self.Width/8"
 									}
 								},
 								{
 									"id": "compare-x",
 									"objectClass": "vehicle",
-									"sid": 282628052364276,
+									"sid": 912568213172636,
 									"parameters": {
 										"comparison": 4,
-										"x-co-ordinate": "LayoutWidth + Self.Width/4"
+										"x-co-ordinate": "LayoutWidth + Self.Width/8"
 									}
 								},
 								{
 									"id": "compare-y",
 									"objectClass": "vehicle",
-									"sid": 156003531554549,
+									"sid": 220318902771168,
 									"parameters": {
 										"comparison": 4,
-										"y-co-ordinate": "LayoutHeight + Self.Height/4"
+										"y-co-ordinate": "LayoutHeight + Self.Height/8"
 									}
 								},
 								{
 									"id": "compare-y",
 									"objectClass": "vehicle",
-									"sid": 639385737220630,
+									"sid": 575125053236042,
 									"parameters": {
 										"comparison": 2,
-										"y-co-ordinate": "0 - Self.Height/4"
+										"y-co-ordinate": "0 - Self.Height/8"
 									}
 								}
 							],
@@ -7337,28 +7363,6 @@
 				}
 			],
 			"sid": 445319448788068,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "vehicle",
-					"sid": 347680801118439,
-					"parameters": {
-						"object": "OtherVehicle"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "vehicle",
-					"sid": 443736618884417
-				}
-			],
-			"sid": 384670355989720,
 			"disabled": true
 		}
 	],
