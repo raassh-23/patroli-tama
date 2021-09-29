@@ -6500,17 +6500,73 @@
 								{
 									"callFunction": "playUITap",
 									"sid": 307788986663655
-								},
-								{
-									"id": "go-to-layout-by-name",
-									"objectClass": "System",
-									"sid": 342872874766074,
-									"parameters": {
-										"layout": "curLevel < 16 ? \"level\"&curLevel+1 : \"LevelSelect\""
-									}
 								}
 							],
-							"sid": 448407277582084
+							"sid": 448407277582084,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 623149682519041,
+											"parameters": {
+												"variable": "curLevel",
+												"comparison": 2,
+												"value": "16"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout-by-name",
+											"objectClass": "System",
+											"sid": 269682228459770,
+											"parameters": {
+												"layout": "\"level\"&curLevel+1"
+											}
+										}
+									],
+									"sid": 353748310151091
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 970905966477458,
+											"parameters": {
+												"variable": "curLevel",
+												"comparison": 0,
+												"value": "16"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 725163989570912,
+											"parameters": {
+												"layer": "\"storyEnd\"",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 578679796560212,
+											"parameters": {
+												"layer": "\"levelFinished\"",
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 508435803352810
+								}
+							]
 						},
 						{
 							"eventType": "block",

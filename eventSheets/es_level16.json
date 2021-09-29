@@ -114,7 +114,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 544506818522656,
+					"sid": 221717435876606,
 					"parameters": {
 						"variable": "timeLimit",
 						"value": "200"
@@ -153,6 +153,15 @@
 				{
 					"callFunction": "setHelp",
 					"sid": 906467937842557
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 288530982644521,
+					"parameters": {
+						"layer": "\"storyEnd\"",
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 366318830590573
@@ -212,6 +221,191 @@
 				}
 			],
 			"sid": 550577657747306
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 275130289713750,
+					"parameters": {
+						"object": "tutorialButton"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "tutorialButton",
+					"sid": 959821427139003,
+					"parameters": {
+						"instance-variable": "touched"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "tutorialButton",
+					"sid": 459174531517419
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 417494938331592,
+					"parameters": {
+						"layer": "\"paused\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 500166709266481,
+					"parameters": {
+						"layer": "\"levelFailed\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 728481510710832,
+					"parameters": {
+						"layer": "\"levelFinished\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "tutorialButton",
+					"sid": 477116770575340,
+					"parameters": {
+						"instance-variable": "touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "tutorialButton",
+					"sid": 667381146470341,
+					"parameters": {
+						"scale": "0.9"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 361914605135503,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "tutorialButton",
+					"sid": 572945177852955,
+					"parameters": {
+						"scale": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 679876866116594,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				}
+			],
+			"sid": 117827419174686,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 574338241111273,
+							"parameters": {
+								"layer": "\"storyEnd\""
+							}
+						},
+						{
+							"id": "is-on-layer",
+							"objectClass": "tutorialButton",
+							"sid": 617626087411664,
+							"parameters": {
+								"layer": "\"storyEnd\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "playUITap",
+							"sid": 156989505796289
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 540951461479542,
+							"parameters": {
+								"variable": "tutorialProgress",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "showNextTutorial",
+							"sid": 229604520333189
+						}
+					],
+					"sid": 798656849994634,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 554924703586036,
+									"parameters": {
+										"variable": "tutorialProgress",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 916583512842901,
+									"parameters": {
+										"layout": "MainMenu"
+									}
+								}
+							],
+							"sid": 160642684843720
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "tutorialButton",
+							"sid": 663993521923944,
+							"parameters": {
+								"instance-variable": "touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 768569227569708
+				}
+			]
 		}
 	],
 	"sid": 800498905658710
