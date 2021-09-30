@@ -64,28 +64,10 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 389045301664327,
-					"parameters": {
-						"value": "5",
-						"weight": "15"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 911591633773302,
+					"sid": 502596360648537,
 					"parameters": {
 						"value": "6",
-						"weight": "10"
-					}
-				},
-				{
-					"id": "addProbabilityEntry",
-					"objectClass": "AdvancedRandom",
-					"sid": 407237454034147,
-					"parameters": {
-						"value": "7",
-						"weight": "10"
+						"weight": "15"
 					}
 				},
 				{
@@ -100,37 +82,37 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 551046087844867,
+					"sid": 578376820154644,
 					"parameters": {
-						"value": "9",
-						"weight": "10"
+						"value": "11",
+						"weight": "15"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 260081140351316,
+					"sid": 274296844992810,
 					"parameters": {
-						"value": "10",
-						"weight": "10"
+						"value": "12",
+						"weight": "15"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 574210065292522,
+					"sid": 358581556205850,
 					"parameters": {
 						"variable": "randSpawnTimeFrom",
-						"value": "0.4"
+						"value": "0.5"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 641284534726641,
+					"sid": 148538488779054,
 					"parameters": {
 						"variable": "randSpawnTimeTo",
-						"value": "0.4"
+						"value": "1.5"
 					}
 				},
 				{
@@ -149,19 +131,19 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 210806582939248,
+					"sid": 335719184673563,
 					"parameters": {
 						"variable": "goals",
-						"value": "\"115|135|150\""
+						"value": "\"100|120|140\""
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 705102185963054,
+					"sid": 818800952538011,
 					"parameters": {
 						"variable": "options",
-						"value": "\"5|6|7|8|9|10\""
+						"value": "\"6|8|11|12\""
 					}
 				},
 				{

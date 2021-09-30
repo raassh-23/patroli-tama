@@ -585,6 +585,36 @@
 					"name": "sfxFail.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 737258541505479
+				},
+				{
+					"name": "whistle.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 741147653527114
+				},
+				{
+					"name": "klakson1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 750984016278355
+				},
+				{
+					"name": "klakson2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 185816242514259
+				},
+				{
+					"name": "klakson3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 590405981079425
+				},
+				{
+					"name": "klakson4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 470747650755671
+				},
+				{
+					"name": "klakson5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 781812725167857
 				}
 			],
 			"subfolders": []

@@ -261,6 +261,81 @@
 				}
 			],
 			"sid": 273325383551014
+		},
+		{
+			"functionName": "playWhistle",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 889826492197430,
+					"parameters": {
+						"audio-file": "whistle",
+						"loop": "not-looping",
+						"volume": "20*log10(sfx/200)",
+						"tag-optional": "\"sfx\""
+					}
+				}
+			],
+			"sid": 787980818036307
+		},
+		{
+			"functionName": "playKlaxon",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 241395781756053,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-screen",
+							"objectClass": "vehicle",
+							"sid": 442694936187678
+						},
+						{
+							"id": "pick-random-instance",
+							"objectClass": "System",
+							"sid": 223789722304803,
+							"parameters": {
+								"object": "vehicle"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-at-object-by-name",
+							"objectClass": "Audio",
+							"sid": 440158095724409,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "\"klakson\"&choose(1,2,3,4,5)",
+								"loop": "not-looping",
+								"volume": "20*log10(sfx/200)",
+								"object": "vehicle",
+								"inner-angle": "360",
+								"outer-angle": "360",
+								"outer-gain": "0",
+								"tag-optional": "\"sfx\""
+							}
+						}
+					],
+					"sid": 712649820758866
+				}
+			]
 		}
 	],
 	"sid": 104651624668194

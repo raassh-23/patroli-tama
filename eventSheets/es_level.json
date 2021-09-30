@@ -136,6 +136,26 @@
 			"sid": 240398362007668
 		},
 		{
+			"eventType": "variable",
+			"name": "randMinKlaxon",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 494581460473149
+		},
+		{
+			"eventType": "variable",
+			"name": "randMaxKlaxon",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 620952484495214
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -572,6 +592,10 @@
 				{
 					"callFunction": "showPelanggaranPanel",
 					"sid": 767237432034060
+				},
+				{
+					"callFunction": "playWhistle",
+					"sid": 977545531045700
 				}
 			],
 			"sid": 657515552515615,
@@ -3240,6 +3264,38 @@
 			"sid": 987646984727397
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "levelTimer",
+					"sid": 874686916681747,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"klaxon\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "playKlaxon",
+					"sid": 127769956640070
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "levelTimer",
+					"sid": 211663553072822,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "random(randMinKlaxon, randMaxKlaxon)",
+						"type": "once",
+						"tag": "\"klaxon\""
+					}
+				}
+			],
+			"sid": 788024193885614
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Functions",
@@ -3788,6 +3844,16 @@
 										"tag": "\"spawnVehicle\"",
 										"state": "paused"
 									}
+								},
+								{
+									"id": "pause-resume-timer",
+									"objectClass": "levelTimer",
+									"sid": 893543730766177,
+									"behaviorType": "Timer",
+									"parameters": {
+										"tag": "\"klaxon\"",
+										"state": "paused"
+									}
 								}
 							],
 							"sid": 403838883985507
@@ -3948,6 +4014,16 @@
 									"behaviorType": "Timer",
 									"parameters": {
 										"tag": "\"spawnVehicle\"",
+										"state": "resumed"
+									}
+								},
+								{
+									"id": "pause-resume-timer",
+									"objectClass": "levelTimer",
+									"sid": 835657923794235,
+									"behaviorType": "Timer",
+									"parameters": {
+										"tag": "\"klaxon\"",
 										"state": "resumed"
 									}
 								}
@@ -4913,6 +4989,17 @@
 								"duration": "timeLimit",
 								"type": "once",
 								"tag": "\"game\""
+							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "levelTimer",
+							"sid": 220169983486985,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "random(randMinKlaxon, randMaxKlaxon)",
+								"type": "once",
+								"tag": "\"klaxon\""
 							}
 						}
 					],
