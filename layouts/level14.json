@@ -12218,7 +12218,7 @@
 					},
 					"uid": 4114,
 					"instanceVariables": {
-						"turnAngle": "0, 90, 180, 1895, 1130",
+						"turnAngle": "0, 90, 180, 4895, 1130",
 						"intersectionId": 3,
 						"exceptions": ""
 					},
