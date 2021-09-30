@@ -149,10 +149,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 114641511423652,
+					"sid": 778772446863658,
 					"parameters": {
 						"variable": "goals",
-						"value": "\"115|140|165\""
+						"value": "\"120|140|165\""
 					}
 				},
 				{
