@@ -205,19 +205,19 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 550769267200140,
+					"sid": 853488316334256,
 					"parameters": {
 						"value": "0",
-						"weight": "70"
+						"weight": "50"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 133622399563786,
+					"sid": 189364516038901,
 					"parameters": {
 						"value": "1",
-						"weight": "30"
+						"weight": "50"
 					}
 				},
 				{

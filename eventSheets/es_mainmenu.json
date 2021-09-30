@@ -1240,6 +1240,24 @@
 									"parameters": {
 										"value": "0"
 									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 519355417150220,
+									"parameters": {
+										"key": "\"levels\"",
+										"value": "levels.AsJSON"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 313576525864573,
+									"parameters": {
+										"key": "\"tutorials\"",
+										"value": "tutorials.AsJSON"
+									}
 								}
 							],
 							"sid": 772978471884368

@@ -3754,9 +3754,9 @@
 								{
 									"id": "pick-all",
 									"objectClass": "System",
-									"sid": 194851397273092,
+									"sid": 343228188980656,
 									"parameters": {
-										"object": "TimeScaledPaused"
+										"object": "TimeScaledPelanggaran"
 									}
 								}
 							],
@@ -3916,9 +3916,9 @@
 								{
 									"id": "pick-all",
 									"objectClass": "System",
-									"sid": 399481912254827,
+									"sid": 765208836821050,
 									"parameters": {
-										"object": "TimeScaledPaused"
+										"object": "TimeScaledPelanggaran"
 									}
 								}
 							],
@@ -3983,6 +3983,15 @@
 							"eventType": "block",
 							"conditions": [],
 							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 444795446243229,
+									"parameters": {
+										"object": "TimeScaledPaused",
+										"time-scale": "1"
+									}
+								},
 								{
 									"id": "tween-one-property",
 									"objectClass": "pelanggaranPanel",

@@ -85,14 +85,6 @@
 					"parameters": {
 						"key": "\"settings\""
 					}
-				},
-				{
-					"id": "check-item-exists",
-					"objectClass": "LocalStorage",
-					"sid": 989418313727599,
-					"parameters": {
-						"key": "\"story\""
-					}
 				}
 			],
 			"sid": 695057530824630
