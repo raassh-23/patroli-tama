@@ -4444,6 +4444,24 @@
 											"isInverted": true
 										},
 										{
+											"id": "layer-is-visible",
+											"objectClass": "System",
+											"sid": 647154100223629,
+											"parameters": {
+												"layer": "\"tutorial0\""
+											},
+											"isInverted": true
+										},
+										{
+											"id": "layer-is-visible",
+											"objectClass": "System",
+											"sid": 832960933142975,
+											"parameters": {
+												"layer": "\"tutorial1\""
+											},
+											"isInverted": true
+										},
+										{
 											"id": "pick-all",
 											"objectClass": "System",
 											"sid": 838206739823453,

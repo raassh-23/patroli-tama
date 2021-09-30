@@ -27,8 +27,8 @@ function checkTurn(vehicle, turnCheck) {
 		turnable = turnArray.filter(val => val[0] == 0 && val[1] == curAngle)
 	}
 
-// 	console.log("sebelum dikurangi");
-// 	console.log(turnable);
+	console.log("sebelum dikurangi");
+	console.log(turnable);
 	
 	let turnExceptionsObj;
 	
@@ -42,8 +42,8 @@ function checkTurn(vehicle, turnCheck) {
 		turnable = turnable.filter((val1) => !turnExceptions.some((val2) => val1.length == val2.length
 																	&& val1.every((x, i) => x == val2[i])));
 
-// 		console.log("setelah dikurangi");
-// 		console.log(turnable);
+		console.log("setelah dikurangi");
+		console.log(turnable);
 	}
 // 	console.log(turnable);
 
