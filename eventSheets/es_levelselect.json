@@ -706,9 +706,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-touched-object",
+					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 912391035370907,
+					"sid": 429437233473293,
 					"parameters": {
 						"object": "levelSelectLevels"
 					}
@@ -725,7 +725,7 @@
 				{
 					"id": "is-any-playing",
 					"objectClass": "levelTween",
-					"sid": 934742260076675,
+					"sid": 353831478786477,
 					"behaviorType": "Tween",
 					"isInverted": true
 				}
@@ -734,7 +734,7 @@
 				{
 					"id": "set-scale",
 					"objectClass": "levelSelectLevels",
-					"sid": 451810077171897,
+					"sid": 556578039112140,
 					"parameters": {
 						"scale": "0.9"
 					}
@@ -742,7 +742,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 390349470651503,
+					"sid": 606599467059776,
 					"parameters": {
 						"seconds": "0.1"
 					}
@@ -750,7 +750,7 @@
 				{
 					"id": "set-scale",
 					"objectClass": "levelSelectLevels",
-					"sid": 271422114004791,
+					"sid": 528475206311037,
 					"parameters": {
 						"scale": "1"
 					}
@@ -758,14 +758,14 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 525892486001246,
+					"sid": 466810620690636,
 					"parameters": {
 						"seconds": "0.1"
 					}
 				},
 				{
 					"callFunction": "playUITap",
-					"sid": 432211712130023
+					"sid": 717679322996788
 				}
 			],
 			"sid": 486673625316561,
@@ -776,7 +776,7 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "levelSelectLevels",
-							"sid": 418469334807007,
+							"sid": 316495213231710,
 							"parameters": {
 								"instance-variable": "level",
 								"comparison": 0,
@@ -786,7 +786,7 @@
 						{
 							"id": "compare-at-x",
 							"objectClass": "tutorials",
-							"sid": 939799085706957,
+							"sid": 382064669221083,
 							"parameters": {
 								"x": "0",
 								"comparison": 0,
@@ -798,13 +798,13 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 526483690248311,
+							"sid": 834855000208069,
 							"parameters": {
 								"layout": "StoryStart"
 							}
 						}
 					],
-					"sid": 661052559504054
+					"sid": 223664840210085
 				},
 				{
 					"eventType": "block",
@@ -812,20 +812,20 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 442407391060718
+							"sid": 924805467104062
 						}
 					],
 					"actions": [
 						{
 							"id": "go-to-layout-by-name",
 							"objectClass": "System",
-							"sid": 636171848301657,
+							"sid": 104527555816115,
 							"parameters": {
 								"layout": "\"level\"&levelSelectLevels.level+1"
 							}
 						}
 					],
-					"sid": 363601524561372
+					"sid": 580322609823345
 				}
 			]
 		},

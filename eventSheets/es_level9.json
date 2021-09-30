@@ -211,35 +211,34 @@
 						{
 							"callFunction": "showNextTutorial",
 							"sid": 586786397549977
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "tutorialButton",
+							"sid": 202052799195749,
+							"parameters": {
+								"scale": "1.25"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 843682834936576,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 536729627110528,
+							"parameters": {
+								"object": "TimeScaledPaused",
+								"time-scale": "0"
+							}
 						}
 					],
-					"sid": 140498356500228,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 950738965327791,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-object-time-scale",
-									"objectClass": "System",
-									"sid": 162020084847903,
-									"parameters": {
-										"object": "TimeScaledPaused",
-										"time-scale": "0"
-									}
-								}
-							],
-							"sid": 900670498391062
-						}
-					]
+					"sid": 140498356500228
 				},
 				{
 					"eventType": "block",
@@ -396,15 +395,15 @@
 				{
 					"id": "set-scale",
 					"objectClass": "tutorialButton",
-					"sid": 335055491701211,
+					"sid": 116027804545233,
 					"parameters": {
-						"scale": "0.9"
+						"scale": "1.1"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 645869065980623,
+					"sid": 284189135814868,
 					"parameters": {
 						"seconds": "0.1"
 					}
@@ -412,9 +411,9 @@
 				{
 					"id": "set-scale",
 					"objectClass": "tutorialButton",
-					"sid": 438471238204587,
+					"sid": 644400549576143,
 					"parameters": {
-						"scale": "1"
+						"scale": "1.25"
 					}
 				},
 				{

@@ -197,44 +197,43 @@
 						{
 							"callFunction": "showNextTutorial",
 							"sid": 104880687480757
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "tutorialButton",
+							"sid": 616449565114515,
+							"parameters": {
+								"scale": "1.25"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 316551229311833,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 348329937118062,
+							"parameters": {
+								"object": "TimeScaledPaused",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 331973500895993,
+							"parameters": {
+								"object": "particleAsap",
+								"time-scale": "0"
+							}
 						}
 					],
-					"sid": 463803056066353,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 303401339552190,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-object-time-scale",
-									"objectClass": "System",
-									"sid": 537254926818559,
-									"parameters": {
-										"object": "TimeScaledPaused",
-										"time-scale": "0"
-									}
-								},
-								{
-									"id": "set-object-time-scale",
-									"objectClass": "System",
-									"sid": 779502271139338,
-									"parameters": {
-										"object": "particleAsap",
-										"time-scale": "0"
-									}
-								}
-							],
-							"sid": 253101482678387
-						}
-					]
+					"sid": 463803056066353
 				},
 				{
 					"eventType": "block",
@@ -391,15 +390,15 @@
 				{
 					"id": "set-scale",
 					"objectClass": "tutorialButton",
-					"sid": 101884052176878,
+					"sid": 701178031580893,
 					"parameters": {
-						"scale": "0.9"
+						"scale": "1.1"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 494140222059989,
+					"sid": 418926938862576,
 					"parameters": {
 						"seconds": "0.1"
 					}
@@ -407,9 +406,9 @@
 				{
 					"id": "set-scale",
 					"objectClass": "tutorialButton",
-					"sid": 679527222955467,
+					"sid": 147387217476969,
 					"parameters": {
-						"scale": "1"
+						"scale": "1.25"
 					}
 				},
 				{

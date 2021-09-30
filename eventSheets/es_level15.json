@@ -197,44 +197,43 @@
 						{
 							"callFunction": "showNextTutorial",
 							"sid": 574015044015963
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "tutorialButton",
+							"sid": 991641385199570,
+							"parameters": {
+								"scale": "1.25"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 607442324077856,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 773663055903781,
+							"parameters": {
+								"object": "TimeScaledPaused",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 335321888535263,
+							"parameters": {
+								"object": "particleAsap",
+								"time-scale": "0"
+							}
 						}
 					],
-					"sid": 747917884690324,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 389074106327333,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-object-time-scale",
-									"objectClass": "System",
-									"sid": 543218978507157,
-									"parameters": {
-										"object": "TimeScaledPaused",
-										"time-scale": "0"
-									}
-								},
-								{
-									"id": "set-object-time-scale",
-									"objectClass": "System",
-									"sid": 698201234371720,
-									"parameters": {
-										"object": "particleAsap",
-										"time-scale": "0"
-									}
-								}
-							],
-							"sid": 968913524714682
-						}
-					]
+					"sid": 747917884690324
 				},
 				{
 					"eventType": "block",
@@ -391,9 +390,9 @@
 				{
 					"id": "set-scale",
 					"objectClass": "tutorialButton",
-					"sid": 666020235018609,
+					"sid": 921230506987086,
 					"parameters": {
-						"scale": "0.9"
+						"scale": "1.1"
 					}
 				},
 				{
@@ -407,9 +406,9 @@
 				{
 					"id": "set-scale",
 					"objectClass": "tutorialButton",
-					"sid": 695786329890189,
+					"sid": 342437424770609,
 					"parameters": {
-						"scale": "1"
+						"scale": "1.25"
 					}
 				},
 				{
