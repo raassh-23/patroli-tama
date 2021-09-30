@@ -486,8 +486,7 @@
 			{
 				"items": [
 					"Es_Stage4",
-					"ES_Stage34",
-					"ES_Stage1"
+					"ES_Stage34"
 				],
 				"subfolders": [],
 				"name": "Stages"
@@ -709,7 +708,7 @@
 	},
 	"properties": {
 		"description": "Game edukasi lalu lintas",
-		"version": "1.1.4",
+		"version": "1.1.2",
 		"author": "Apaya",
 		"authorEmail": "",
 		"authorWebsite": "",
