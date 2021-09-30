@@ -64,55 +64,55 @@
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 656464967974533,
+					"sid": 523593114397922,
 					"parameters": {
 						"value": "6",
-						"weight": "5"
+						"weight": "10"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 249481385953593,
+					"sid": 888616588672856,
 					"parameters": {
 						"value": "8",
-						"weight": "5"
+						"weight": "10"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 842685698756449,
+					"sid": 933806029822269,
 					"parameters": {
 						"value": "9",
-						"weight": "5"
+						"weight": "10"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 167255456877733,
+					"sid": 866493595216059,
 					"parameters": {
-						"value": "5",
-						"weight": "5"
+						"value": "10",
+						"weight": "10"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 874887698591315,
+					"sid": 204111943543892,
 					"parameters": {
 						"value": "11",
-						"weight": "20"
+						"weight": "10"
 					}
 				},
 				{
 					"id": "addProbabilityEntry",
 					"objectClass": "AdvancedRandom",
-					"sid": 465697091005419,
+					"sid": 389039052692807,
 					"parameters": {
 						"value": "12",
-						"weight": "20"
+						"weight": "10"
 					}
 				},
 				{
