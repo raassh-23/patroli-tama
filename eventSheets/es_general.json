@@ -350,9 +350,9 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 885954593668314,
+					"sid": 840057441048813,
 					"parameters": {
-						"audio-file": "placeholderSFX",
+						"audio-file": "mooo",
 						"loop": "not-looping",
 						"volume": "20*log10(sfx/200)",
 						"tag-optional": "\"sfx\""
