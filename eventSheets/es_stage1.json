@@ -1,0 +1,62 @@
+{
+	"name": "ES_Stage1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 638875250753680
+				}
+			],
+			"actions": [
+				{
+					"id": "start-timer",
+					"objectClass": "levelTimer",
+					"sid": 510784774077183,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "random(randMinAmbience, randMaxAmbience)",
+						"type": "once",
+						"tag": "\"villageAmbience\""
+					}
+				}
+			],
+			"sid": 566771269379517
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "levelTimer",
+					"sid": 244613289443746,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"villageAmbience\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "playViillageSound",
+					"sid": 660837542135643
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "levelTimer",
+					"sid": 831311719630240,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "random(randMinAmbience, randMaxAmbience)",
+						"type": "once",
+						"tag": "\"villageAmbience\""
+					}
+				}
+			],
+			"sid": 969934405667321
+		}
+	],
+	"sid": 602763104355750
+}

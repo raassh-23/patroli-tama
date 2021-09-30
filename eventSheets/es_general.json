@@ -336,6 +336,30 @@
 					"sid": 712649820758866
 				}
 			]
+		},
+		{
+			"functionName": "playViillageSound",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 885954593668314,
+					"parameters": {
+						"audio-file": "placeholderSFX",
+						"loop": "not-looping",
+						"volume": "20*log10(sfx/200)",
+						"tag-optional": "\"sfx\""
+					}
+				}
+			],
+			"sid": 391045630265819
 		}
 	],
 	"sid": 104651624668194

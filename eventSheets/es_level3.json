@@ -6,6 +6,10 @@
 			"includeSheet": "Es_Level"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "ES_Stage1"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

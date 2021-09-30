@@ -137,7 +137,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "randMinKlaxon",
+			"name": "randMinAmbience",
 			"type": "number",
 			"initialValue": "3",
 			"comment": "",
@@ -147,7 +147,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "randMaxKlaxon",
+			"name": "randMaxAmbience",
 			"type": "number",
 			"initialValue": "5",
 			"comment": "",
@@ -3287,7 +3287,7 @@
 					"sid": 211663553072822,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "random(randMinKlaxon, randMaxKlaxon)",
+						"duration": "random(randMinAmbience, randMaxAmbience)",
 						"type": "once",
 						"tag": "\"klaxon\""
 					}
@@ -3854,6 +3854,16 @@
 										"tag": "\"klaxon\"",
 										"state": "paused"
 									}
+								},
+								{
+									"id": "pause-resume-timer",
+									"objectClass": "levelTimer",
+									"sid": 404519352629055,
+									"behaviorType": "Timer",
+									"parameters": {
+										"tag": "\"villageAmbience\"",
+										"state": "paused"
+									}
 								}
 							],
 							"sid": 403838883985507
@@ -4024,6 +4034,16 @@
 									"behaviorType": "Timer",
 									"parameters": {
 										"tag": "\"klaxon\"",
+										"state": "resumed"
+									}
+								},
+								{
+									"id": "pause-resume-timer",
+									"objectClass": "levelTimer",
+									"sid": 495555394742951,
+									"behaviorType": "Timer",
+									"parameters": {
+										"tag": "\"villageAmbience\"",
 										"state": "resumed"
 									}
 								}
@@ -4997,7 +5017,7 @@
 							"sid": 220169983486985,
 							"behaviorType": "Timer",
 							"parameters": {
-								"duration": "random(randMinKlaxon, randMaxKlaxon)",
+								"duration": "random(randMinAmbience, randMaxAmbience)",
 								"type": "once",
 								"tag": "\"klaxon\""
 							}
