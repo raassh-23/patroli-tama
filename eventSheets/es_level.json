@@ -516,7 +516,61 @@
 					}
 				}
 			],
-			"sid": 859308124010579
+			"sid": 859308124010579,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 774913042559991,
+							"parameters": {
+								"variable": "score",
+								"comparison": 2,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "LevelUIScore",
+							"sid": 696884315810024,
+							"parameters": {
+								"color": "rgbEx255(230, 57, 70)"
+							}
+						}
+					],
+					"sid": 490713402261008
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 919176689049028,
+							"parameters": {
+								"variable": "score",
+								"comparison": 5,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "LevelUIScore",
+							"sid": 524208998014768,
+							"parameters": {
+								"color": "rgbEx255(38, 70, 83)"
+							}
+						}
+					],
+					"sid": 995936844363201
+				}
+			]
 		},
 		{
 			"eventType": "block",
