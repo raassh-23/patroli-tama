@@ -350,12 +350,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 822359404241206,
+					"sid": 485064047328063,
 					"parameters": {
 						"folder": "sounds",
 						"audio-file-name": "\"mooo\"&choose(1, 2)",
 						"loop": "not-looping",
-						"volume": "20*log10(sfx/200)",
+						"volume": "20*log10(sfx/400)",
 						"tag-optional": "\"sfx\""
 					}
 				}
