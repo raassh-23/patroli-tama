@@ -338,7 +338,7 @@
 			]
 		},
 		{
-			"functionName": "playViillageSound",
+			"functionName": "playVillageSound",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -348,11 +348,12 @@
 			"conditions": [],
 			"actions": [
 				{
-					"id": "play",
+					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 840057441048813,
+					"sid": 822359404241206,
 					"parameters": {
-						"audio-file": "mooo",
+						"folder": "sounds",
+						"audio-file-name": "\"mooo\"&choose(1, 2)",
 						"loop": "not-looping",
 						"volume": "20*log10(sfx/200)",
 						"tag-optional": "\"sfx\""

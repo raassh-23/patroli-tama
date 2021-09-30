@@ -85,85 +85,6 @@
 						],
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "truck",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "truck1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1382,
-					"instanceVariables": {
-						"speed": 0,
-						"pelanggaran": 0,
-						"targetAngle": 0,
-						"targetTurnX": 0,
-						"targetTurnY": 0,
-						"turningId": 0,
-						"berhenti": false,
-						"currentAngle": 0,
-						"turning": false,
-						"picked": false,
-						"type": 0,
-						"waiting": false,
-						"inTrafficLight": false,
-						"melanggar": false,
-						"aboutToCollide": false,
-						"intersectionLock": "",
-						"parked": false,
-						"parking": false,
-						"stopping": false,
-						"stopped": false,
-						"topSpeed": 0,
-						"speeding": false
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": true,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"BetterOutline": {
-							"parameters": {
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"width": 3,
-								"precision-step": 1,
-								"samples": 16
-							}
-						}
-					},
-					"world": {
-						"x": 3205,
-						"y": 888,
-						"width": 61,
-						"height": 160,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 458105777422625,
@@ -644,7 +565,7 @@
 					"behaviors": {},
 					"world": {
 						"x": -208,
-						"y": 490,
+						"y": 495,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1377,8 +1298,8 @@
 						}
 					},
 					"world": {
-						"x": 46,
-						"y": 607,
+						"x": 264,
+						"y": 504,
 						"width": 104,
 						"height": 70,
 						"originX": 0.5,
@@ -2283,7 +2204,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1367,
-						"y": 401,
+						"y": 398,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -2827,7 +2748,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 2098,
-						"y": 690,
+						"y": 695,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -2859,7 +2780,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 2344,
-						"y": 690,
+						"y": 696,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -5317,7 +5238,7 @@
 					},
 					"uid": 2324,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 3205, 602|0, 270, 0, 3205, 467",
+						"turnAngle": "0, 270, 180, 3205, 602|0, 270, 0, 3205, 495",
 						"intersectionId": 5,
 						"exceptions": ""
 					},
@@ -5350,7 +5271,7 @@
 					},
 					"uid": 2325,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 0, 3311, 467|0, 0, 90, 3311, 467",
+						"turnAngle": "0, 0, 0, 3311, 495|0, 0, 90, 3311, 495",
 						"intersectionId": 5,
 						"exceptions": ""
 					},
@@ -5416,7 +5337,7 @@
 					},
 					"uid": 2327,
 					"instanceVariables": {
-						"turnAngle": "0, 270, 180, 639, 602|0, 270, 0, 639, 467",
+						"turnAngle": "0, 270, 180, 639, 602|0, 270, 0, 639, 495",
 						"intersectionId": 6,
 						"exceptions": ""
 					},
@@ -5449,7 +5370,7 @@
 					},
 					"uid": 2328,
 					"instanceVariables": {
-						"turnAngle": "0, 0, 0, 803, 467|0, 0, 90, 803, 467",
+						"turnAngle": "0, 0, 0, 803, 495|0, 0, 90, 803, 495",
 						"intersectionId": 6,
 						"exceptions": ""
 					},
@@ -10614,7 +10535,7 @@
 					},
 					"uid": 3250,
 					"instanceVariables": {
-						"lockList": "0, 270, 180, 3205, 602, 3, -1, -1|0, 270, 0, 3205, 467, 3, 0, 1",
+						"lockList": "0, 270, 180, 3205, 602, 3, -1, -1|0, 270, 0, 3205, 495, 3, 0, 1",
 						"intersectionId": 5
 					},
 					"behaviors": {},
@@ -10678,7 +10599,7 @@
 					},
 					"uid": 3254,
 					"instanceVariables": {
-						"lockList": "0, 0, 0, 3311, 467, 0, 1, -1|0, 0, 90, 3311, 467, 0, 1, 2",
+						"lockList": "0, 0, 0, 3311, 495, 0, 1, -1|0, 0, 90, 3311, 495, 0, 1, 2",
 						"intersectionId": 5
 					},
 					"behaviors": {},
@@ -10710,7 +10631,7 @@
 					},
 					"uid": 3161,
 					"instanceVariables": {
-						"lockList": "0, 270, 180, 639, 602, 3, -1, -1|0, 270, 0, 639, 467, 3, 1, 0",
+						"lockList": "0, 270, 180, 639, 602, 3, -1, -1|0, 270, 0, 639, 495, 3, 1, 0",
 						"intersectionId": 6
 					},
 					"behaviors": {},
@@ -10774,7 +10695,7 @@
 					},
 					"uid": 3197,
 					"instanceVariables": {
-						"lockList": "0, 0, 0, 803, 467, 0, 1, -1|0, 0, 90, 803, 467, 0, 1, 2",
+						"lockList": "0, 0, 0, 803, 495, 0, 1, -1|0, 0, 90, 803, 495, 0, 1, 2",
 						"intersectionId": 6
 					},
 					"behaviors": {},
@@ -11521,38 +11442,86 @@
 						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
-				}
-			],
-			"sid": 515043004772366,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "topGame",
-			"overriden": 0,
-			"instances": [
+				},
+				{
+					"type": "truck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "truck1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1382,
+					"instanceVariables": {
+						"speed": 0,
+						"pelanggaran": 0,
+						"targetAngle": 0,
+						"targetTurnX": 0,
+						"targetTurnY": 0,
+						"turningId": 0,
+						"berhenti": false,
+						"currentAngle": 0,
+						"turning": false,
+						"picked": false,
+						"type": 0,
+						"waiting": false,
+						"inTrafficLight": false,
+						"melanggar": false,
+						"aboutToCollide": false,
+						"intersectionLock": "",
+						"parked": false,
+						"parking": false,
+						"stopping": false,
+						"stopped": false,
+						"topSpeed": 0,
+						"speeding": false
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": true,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"BetterOutline": {
+							"parameters": {
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"width": 3,
+								"precision-step": 1,
+								"samples": 16
+							}
+						}
+					},
+					"world": {
+						"x": 1618,
+						"y": 602,
+						"width": 183,
+						"height": 88,
+						"originX": 0.5,
+						"originY": 0.6136363636363636,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "Dekorasi3",
 					"properties": {
@@ -11628,35 +11597,6 @@
 						"y": 1578,
 						"width": 176,
 						"height": 47,
-						"originX": 0.5,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Dekorasi2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 38,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2337,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1093,
-						"y": 1591,
-						"width": 82,
-						"height": 142,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -12991,6 +12931,66 @@
 						"y": 1986,
 						"width": -63,
 						"height": 152,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 515043004772366,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "topGame",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Dekorasi2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 38,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2337,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1093,
+						"y": 1591,
+						"width": 82,
+						"height": 142,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [

@@ -14,10 +14,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 676766490078288,
+					"sid": 422492090704339,
 					"parameters": {
 						"variable": "randMinAmbience",
-						"value": "6"
+						"value": "8"
 					}
 				},
 				{
@@ -32,10 +32,10 @@
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
-					"sid": 619535834324941,
+					"sid": 744089593723081,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "random(randMinAmbience, randMaxAmbience) / 2",
+						"duration": "random(randMinAmbience, randMaxAmbience)",
 						"type": "once",
 						"tag": "\"villageAmbience\""
 					}
@@ -58,16 +58,16 @@
 			],
 			"actions": [
 				{
-					"callFunction": "playViillageSound",
+					"callFunction": "playVillageSound",
 					"sid": 660837542135643
 				},
 				{
 					"id": "start-timer",
 					"objectClass": "levelTimer",
-					"sid": 307762872512878,
+					"sid": 430348928276513,
 					"behaviorType": "Timer",
 					"parameters": {
-						"duration": "random(randMinAmbience, randMaxAmbience) / 2",
+						"duration": "random(randMinAmbience, randMaxAmbience)",
 						"type": "once",
 						"tag": "\"villageAmbience\""
 					}
