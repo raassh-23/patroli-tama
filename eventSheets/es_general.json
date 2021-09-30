@@ -275,11 +275,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 889826492197430,
+					"sid": 885944545388854,
 					"parameters": {
 						"audio-file": "whistle",
 						"loop": "not-looping",
-						"volume": "20*log10(sfx/200)",
+						"volume": "20*log10(sfx/300)",
 						"tag-optional": "\"sfx\""
 					}
 				}
@@ -319,12 +319,12 @@
 						{
 							"id": "play-at-object-by-name",
 							"objectClass": "Audio",
-							"sid": 440158095724409,
+							"sid": 553735741416288,
 							"parameters": {
 								"folder": "sounds",
 								"audio-file-name": "\"klakson\"&choose(1,2,3,4,5)",
 								"loop": "not-looping",
-								"volume": "20*log10(sfx/200)",
+								"volume": "20*log10(sfx/400)",
 								"object": "vehicle",
 								"inner-angle": "360",
 								"outer-angle": "360",
