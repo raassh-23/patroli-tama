@@ -21,7 +21,7 @@ function checkTurn(vehicle, turnCheck) {
 
 	let turnable;
 	
-	if(turnArray.find(val => val[0] == pelanggaran)) {
+	if(turnArray.some(val => val[0] == pelanggaran)) {
 		turnable = turnArray.filter(val => val[0] == pelanggaran && val[1] == curAngle);
 	} else {
 		turnable = turnArray.filter(val => val[0] == 0 && val[1] == curAngle)
@@ -86,7 +86,7 @@ function checkLock(vehicle, lockCheck) {
 
 	let turn;
 
-	if(turnArray.find(val => val[0] == pelanggaran)) {
+	if(turnArray.some(val => val[0] == pelanggaran)) {
 		turn = turnArray.find(val => val[0] == pelanggaran 
 								&& val[1] == curAngle
 								&& val[2] == targetAngle
