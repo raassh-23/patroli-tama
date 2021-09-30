@@ -136,7 +136,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 879882994929244,
+					"sid": 246581447383803,
 					"parameters": {
 						"variable": "timeLimit",
 						"value": "200"
@@ -398,6 +398,29 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "tutorials",
+									"sid": 356366692358448,
+									"parameters": {
+										"x": "8",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 733120412793466,
+									"parameters": {
+										"key": "\"tutorials\"",
+										"value": "tutorials.AsJSON"
+									}
+								},
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 790032842336476
+								},
 								{
 									"id": "go-to-layout",
 									"objectClass": "System",

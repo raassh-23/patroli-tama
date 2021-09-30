@@ -657,27 +657,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 194772638857754,
-					"parameters": {
-						"object": "vehicle"
-					}
-				}
-			],
-			"actions": [
-				{
-					"type": "script",
-					"script": "const vehicle = runtime.objects.vehicle.getPickedInstances()[0];\n\nconsole.log(vehicle);"
-				}
-			],
-			"sid": 958866417014395,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "vehicle",
 					"sid": 826089368272064,
@@ -5444,6 +5423,15 @@
 								"layer": "\"levelFinished\""
 							},
 							"isInverted": true
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 109991762510762,
+							"parameters": {
+								"layer": "\"storyEnd\""
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -6821,27 +6809,85 @@
 											}
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 508435803352810,
+									"children": [
 										{
-											"id": "set-layer-visible",
-											"objectClass": "System",
-											"sid": 725163989570912,
-											"parameters": {
-												"layer": "\"storyEnd\"",
-												"visibility": "visible"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-at-x",
+													"objectClass": "tutorials",
+													"sid": 813498339213532,
+													"parameters": {
+														"x": "8",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 233436779615147,
+													"parameters": {
+														"layer": "\"storyEnd\"",
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-layer-visible",
+													"objectClass": "System",
+													"sid": 572635928399010,
+													"parameters": {
+														"layer": "\"levelFinished\"",
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 819801574283522,
+													"parameters": {
+														"variable": "tutorialProgress",
+														"value": "0"
+													}
+												},
+												{
+													"callFunction": "showNextTutorial",
+													"sid": 833317659730546
+												}
+											],
+											"sid": 903137086967706
 										},
 										{
-											"id": "set-layer-visible",
-											"objectClass": "System",
-											"sid": 578679796560212,
-											"parameters": {
-												"layer": "\"levelFinished\"",
-												"visibility": "invisible"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-at-x",
+													"objectClass": "tutorials",
+													"sid": 479687657896045,
+													"parameters": {
+														"x": "8",
+														"comparison": 1,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 728208177731085,
+													"parameters": {
+														"layout": "MainMenu"
+													}
+												}
+											],
+											"sid": 706738952428430
 										}
-									],
-									"sid": 508435803352810
+									]
 								}
 							]
 						},
