@@ -4329,39 +4329,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 2593,
-					"instanceVariables": {
-						"turnAngle": "0, 270, 0, 3055, 1925|0, 270, 180, 3055, 2030|0, 270, 270, 3055, 1925|11, 270, 180, 3055, 2030|12, 270, 0, 3055, 1925",
-						"intersectionId": 1,
-						"exceptions": "{\"car\":\"0, 270, 180, 3055, 2030\", \"truck\":\"0, 270, 0, 3055, 1925\", \"truckOverload\":\"0, 270, 0, 3055, 1925\", \"truckWithPeople\":\"0, 270, 0, 3055, 1925\"}"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 3029,
-						"y": 2221,
-						"width": 148,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "turnCheck",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 2594,
 					"instanceVariables": {
 						"turnAngle": "0, 0, 0, 3165, 1925|0, 0, 90, 3165, 1925|0, 0, 270, 3055, 1925|12, 0, 0, 3165, 1925",
@@ -4371,9 +4338,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 2865,
-						"y": 1904,
-						"width": 148,
-						"height": 16,
+						"y": 1900.6898671134543,
+						"width": 141.37973422690868,
+						"height": 15.284295592098237,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -5517,7 +5484,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 2865,
-						"y": 3189,
+						"y": 3170.207780517414,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -5544,13 +5511,13 @@
 					"uid": 2632,
 					"instanceVariables": {
 						"turnAngle": "0, 180, 180, 3055, 3305|0, 180, 270, 3055, 3305",
-						"intersectionId": 1,
+						"intersectionId": 3,
 						"exceptions": ""
 					},
 					"behaviors": {},
 					"world": {
 						"x": 3347,
-						"y": 3343,
+						"y": 3350.7851256610375,
 						"width": 148,
 						"height": 16,
 						"originX": 0.5,
@@ -11417,13 +11384,13 @@
 					},
 					"uid": 4672,
 					"instanceVariables": {
-						"lockList": "0, 270, 0, 3055, 1925, 3, 0, 1|0, 270, 180, 3055, 2030, 3, -1, -1|0, 270, 270, 3055, 1925, 3, 0, -1|12, 270, 0, 3055, 1925, 3, 0, 1|11, 270, 180, 3055, 2030, 3, -1, -1",
+						"lockList": "0, 270, 0, 3055, 1925, 3, 0, 1|0, 270, 180, 3055, 2030, 3, -1, -1|0, 270, 270, 3055, 1925, 3, 0, -1|11, 270, 180, 3055, 2030, 3, -1, -1|12, 270, 0, 3055, 1925, 3, 0, 1",
 						"intersectionId": 4
 					},
 					"behaviors": {},
 					"world": {
-						"x": 3035.38003455326,
-						"y": 2193.2772029870093,
+						"x": 3029,
+						"y": 2186,
 						"width": 144.26460697796983,
 						"height": 16,
 						"originX": 0.5,
@@ -13369,7 +13336,7 @@
 					},
 					"uid": 4729,
 					"instanceVariables": {
-						"lockList": "0, 270, 0, 4325, 4470, 3, 0, 1|0, 270, 180, 4325, 4608, 3, -1, -1",
+						"lockList": "0, 270, 0, 4325, 4470, 3, 0, 1|0, 270, 180, 4325, 4575, 3, -1, -1",
 						"intersectionId": 12
 					},
 					"behaviors": {},
@@ -13691,6 +13658,39 @@
 							1
 						],
 						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "turnCheck",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4778,
+					"instanceVariables": {
+						"turnAngle": "0, 270, 0, 3055, 1925|0, 270, 180, 3055, 2030|0, 270, 270, 3055, 1925|11, 270, 180, 3055, 2030|12, 270, 0, 3055, 1925",
+						"intersectionId": 1,
+						"exceptions": "{\"car\":\"0, 270, 180, 3055, 2030\", \"truck\":\"0, 270, 0, 3055, 1925\", \"truckOverload\":\"0, 270, 0, 3055, 1925\", \"truckWithPeople\":\"0, 270, 0, 3055, 1925\"}"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3027.587861994867,
+						"y": 2224.3678029136413,
+						"width": 148,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

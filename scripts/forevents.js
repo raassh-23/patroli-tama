@@ -11,8 +11,6 @@ function splitPipe(str) {
 }
 
 function checkTurn(vehicle, turnCheck) {
-// 	console.log("vehicle uid " + vehicle.uid);
-// 	console.log("turnCheck uid " + turnCheck.uid);
 	
 	const turnArray = splitPipe(turnCheck.instVars.turnAngle)
 	
@@ -26,9 +24,6 @@ function checkTurn(vehicle, turnCheck) {
 	} else {
 		turnable = turnArray.filter(val => val[0] == 0 && val[1] == curAngle)
 	}
-
-	console.log("sebelum dikurangi");
-	console.log(turnable);
 	
 	let turnExceptionsObj;
 	
@@ -41,11 +36,7 @@ function checkTurn(vehicle, turnCheck) {
 
 		turnable = turnable.filter((val1) => !turnExceptions.some((val2) => val1.length == val2.length
 																	&& val1.every((x, i) => x == val2[i])));
-
-		console.log("setelah dikurangi");
-		console.log(turnable);
 	}
-// 	console.log(turnable);
 
 	if(turnable.length == 0) {
 		console.error(`
@@ -59,8 +50,9 @@ function checkTurn(vehicle, turnCheck) {
 	}
 
 	const [, , targetAngle, targetX, targetY] = turnable[randomInt(0, turnable.length - 1)];
-
-// 	console.table({targetAngle, targetX, targetY});
+	
+	console.log(turnCheck.uid, targetAngle, targetX, targetY);
+	console.log(turnable);
 
 	vehicle.instVars.targetAngle = targetAngle;
 	vehicle.instVars.targetTurnX = targetX;
@@ -69,20 +61,15 @@ function checkTurn(vehicle, turnCheck) {
 }
 
 function checkLock(vehicle, lockCheck) {
-// 	console.log("vehicle uid " + vehicle.uid);
+	
 	
 	const turnArray = splitPipe(lockCheck.instVars.lockList);
-	
-// 	console.log(turnArray);
 	
 	const curAngle = vehicle.instVars.currentAngle;
 	const targetAngle = vehicle.instVars.targetAngle;
 	const targetX = vehicle.instVars.targetTurnX;
 	const targetY = vehicle.instVars.targetTurnY;
 	const pelanggaran = vehicle.instVars.pelanggaran;
-	
-// 	console.log(vehicle);
-// 	console.table({curAngle, targetAngle, targetX, targetY, pelanggaran});
 
 	let turn;
 
@@ -100,12 +87,16 @@ function checkLock(vehicle, lockCheck) {
 								&& val[4] == targetY);
 	}
 
-// 	console.log(turn);
 	if(turn) {
 		const intersectionLock = [lockCheck.instVars.intersectionId, turn[5], turn[6], turn[7]]
 		vehicle.instVars.intersectionLock = intersectionLock.toString();
 		
 		return intersectionLock;
+	} else {
+		console.log("lock check tidak ada");
+		console.log(test);
+		console.log(vehicle);
+		console.log(lockCheck);
 	}
 }
 

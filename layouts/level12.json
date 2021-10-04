@@ -4976,7 +4976,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 5412,
-						"y": 45,
+						"y": 71,
 						"width": 68,
 						"height": 143,
 						"originX": 0.5,
@@ -5005,7 +5005,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 5663,
-						"y": 39,
+						"y": 65,
 						"width": 176,
 						"height": 47,
 						"originX": 0.5,
@@ -5034,7 +5034,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 5935,
-						"y": 44,
+						"y": 70,
 						"width": 68,
 						"height": 143,
 						"originX": 0.5,
@@ -5063,7 +5063,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 4808,
-						"y": 45,
+						"y": 71,
 						"width": 68,
 						"height": 143,
 						"originX": 0.5,
@@ -5092,7 +5092,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 5099,
-						"y": 32,
+						"y": 58,
 						"width": 176,
 						"height": 47,
 						"originX": 0.5,
@@ -5121,7 +5121,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 4178,
-						"y": 44,
+						"y": 70,
 						"width": 68,
 						"height": 143,
 						"originX": 0.5,
@@ -5150,7 +5150,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 4440,
-						"y": 38,
+						"y": 64,
 						"width": 176,
 						"height": 47,
 						"originX": 0.5,
@@ -5179,7 +5179,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 808,
-						"y": 33,
+						"y": 62,
 						"width": 68,
 						"height": 143,
 						"originX": 0.5,
@@ -5208,7 +5208,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1059,
-						"y": 27,
+						"y": 56,
 						"width": 176,
 						"height": 47,
 						"originX": 0.5,
@@ -5237,7 +5237,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1331,
-						"y": 32,
+						"y": 61,
 						"width": 68,
 						"height": 143,
 						"originX": 0.5,
@@ -5266,7 +5266,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 204,
-						"y": 33,
+						"y": 62,
 						"width": 68,
 						"height": 143,
 						"originX": 0.5,
@@ -5295,7 +5295,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 495,
-						"y": 20,
+						"y": 49,
 						"width": 176,
 						"height": 47,
 						"originX": 0.5,
@@ -6484,7 +6484,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 3374,
-						"y": 21,
+						"y": 56,
 						"width": 68,
 						"height": 143,
 						"originX": 0.5,
@@ -9289,8 +9289,8 @@
 					"world": {
 						"x": 264,
 						"y": 95,
-						"width": 97,
-						"height": 131,
+						"width": 74.39267890338664,
+						"height": 100.46846326127474,
 						"originX": 0.5,
 						"originY": 1,
 						"color": [

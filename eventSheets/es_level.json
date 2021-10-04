@@ -99,7 +99,7 @@
 			"eventType": "variable",
 			"name": "tolerance",
 			"type": "number",
-			"initialValue": "30",
+			"initialValue": "60",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1609,11 +1609,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 984960903785278,
+							"sid": 400049742326074,
 							"parameters": {
 								"first-value": "distance(vehicle.X, vehicle.Y, parkTarget.X, parkTarget.Y)",
 								"comparison": 3,
-								"second-value": "tolerance/2"
+								"second-value": "tolerance/3"
 							}
 						}
 					],
@@ -1728,11 +1728,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 717347997550986,
+							"sid": 542048355211630,
 							"parameters": {
 								"first-value": "distance(vehicle.X, vehicle.Y, stopTarget.X, stopTarget.Y)",
 								"comparison": 3,
-								"second-value": "tolerance/2"
+								"second-value": "tolerance/3"
 							}
 						}
 					],
@@ -1753,17 +1753,6 @@
 							"parameters": {
 								"instance-variable": "stopped",
 								"value": "true"
-							}
-						},
-						{
-							"id": "start-timer",
-							"objectClass": "stopTarget",
-							"sid": 866772510971252,
-							"behaviorType": "Timer",
-							"parameters": {
-								"duration": "random(minStopTime, maxStopTime)",
-								"type": "once",
-								"tag": "\"stopping\""
 							}
 						}
 					],
@@ -3274,27 +3263,92 @@
 					"id": "on-destroyed",
 					"objectClass": "vehicle",
 					"sid": 803121350205265
+				}
+			],
+			"actions": [],
+			"sid": 987646984727397,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 906469134798103,
+							"parameters": {
+								"object": "windEffect",
+								"expression": "windEffect.vehicleUid",
+								"comparison": 0,
+								"value": "vehicle.UID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "windEffect",
+							"sid": 866858770915555
+						}
+					],
+					"sid": 752777019263172
 				},
 				{
-					"id": "pick-by-comparison",
-					"objectClass": "System",
-					"sid": 564812343043667,
-					"parameters": {
-						"object": "windEffect",
-						"expression": "windEffect.vehicleUid",
-						"comparison": 0,
-						"value": "vehicle.UID"
-					}
-				}
-			],
-			"actions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 862773544666171,
+							"parameters": {
+								"object": "parkTarget",
+								"expression": "parkTarget.occupiedBy",
+								"comparison": 0,
+								"value": "vehicle.UID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "parkTarget",
+							"sid": 458010966820882,
+							"parameters": {
+								"instance-variable": "occupiedBy",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 407713794917375
+				},
 				{
-					"id": "destroy",
-					"objectClass": "windEffect",
-					"sid": 284008002873338
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 295264256845931,
+							"parameters": {
+								"object": "stopTarget",
+								"expression": "stopTarget.occupiedBy",
+								"comparison": 0,
+								"value": "vehicle.UID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "stopTarget",
+							"sid": 504480748598271,
+							"parameters": {
+								"instance-variable": "occupiedBy",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 867688096518868
 				}
-			],
-			"sid": 987646984727397
+			]
 		},
 		{
 			"eventType": "block",
