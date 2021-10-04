@@ -1132,9 +1132,9 @@
 		},
 		{
 			"eventType": "group",
-			"disabled": false,
+			"disabled": true,
 			"title": "debugging tools",
-			"description": "disable this group and move the button out of layout before exporting for production",
+			"description": "disable this group before exporting for release",
 			"isActiveOnStart": true,
 			"children": [
 				{
@@ -1151,6 +1151,7 @@
 					],
 					"actions": [],
 					"sid": 397633461506374,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -1175,7 +1176,8 @@
 									}
 								}
 							],
-							"sid": 211982741934092
+							"sid": 211982741934092,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -1260,7 +1262,8 @@
 									}
 								}
 							],
-							"sid": 772978471884368
+							"sid": 772978471884368,
+							"disabled": true
 						}
 					]
 				}

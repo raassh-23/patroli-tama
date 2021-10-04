@@ -7745,7 +7745,8 @@
 					"script": "console.log(runtime.objects.vehicle.getFirstPickedInstance())"
 				}
 			],
-			"sid": 410462013415966
+			"sid": 410462013415966,
+			"disabled": true
 		},
 		{
 			"eventType": "comment",
