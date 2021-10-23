@@ -1132,7 +1132,7 @@
 		},
 		{
 			"eventType": "group",
-			"disabled": true,
+			"disabled": false,
 			"title": "debugging tools",
 			"description": "disable this group before exporting for release",
 			"isActiveOnStart": true,

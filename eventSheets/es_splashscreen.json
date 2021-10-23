@@ -12,6 +12,11 @@
 			],
 			"actions": [
 				{
+					"id": "sign-in",
+					"objectClass": "GooglePlay",
+					"sid": 335146630873339
+				},
+				{
 					"id": "set-size",
 					"objectClass": "levels",
 					"sid": 712552706641722,
