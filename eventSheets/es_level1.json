@@ -848,6 +848,13 @@
 								{
 									"callFunction": "startGame",
 									"sid": 679367574510467
+								},
+								{
+									"callFunction": "unlockAchievement",
+									"sid": 915839113281358,
+									"parameters": [
+										"\"Tutorial\""
+									]
 								}
 							],
 							"sid": 498000327722830

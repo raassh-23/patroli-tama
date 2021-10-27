@@ -132,6 +132,30 @@
 						}
 					],
 					"sid": 683763558091890
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-loaded",
+							"objectClass": "GooglePlay",
+							"sid": 930604692845996
+						},
+						{
+							"id": "is-signed-in",
+							"objectClass": "GooglePlay",
+							"sid": 639223060693894,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "sign-in",
+							"objectClass": "GooglePlay",
+							"sid": 584570080081565
+						}
+					],
+					"sid": 971551986016129
 				}
 			]
 		},

@@ -315,6 +315,81 @@
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-x",
+							"objectClass": "levels",
+							"sid": 618381553829698,
+							"parameters": {
+								"x": "4",
+								"comparison": 4,
+								"value": "-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "unlockAchievement",
+							"sid": 159458206522583,
+							"parameters": [
+								"\"KotaKecil\""
+							]
+						}
+					],
+					"sid": 594313011504218
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-x",
+							"objectClass": "levels",
+							"sid": 307276966392401,
+							"parameters": {
+								"x": "8",
+								"comparison": 4,
+								"value": "-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "unlockAchievement",
+							"sid": 327859808573245,
+							"parameters": [
+								"\"KotaMetropolitan\""
+							]
+						}
+					],
+					"sid": 398956358383236
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-x",
+							"objectClass": "levels",
+							"sid": 709705123566211,
+							"parameters": {
+								"x": "12",
+								"comparison": 4,
+								"value": "-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "unlockAchievement",
+							"sid": 257368723018217,
+							"parameters": [
+								"\"KawasanIndustri\""
+							]
+						}
+					],
+					"sid": 701542191909459
 				}
 			]
 		},
@@ -1086,6 +1161,138 @@
 							"sid": 307596022682735
 						}
 					]
+				}
+			]
+		},
+		{
+			"functionName": "unlockAchievement",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "nama",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 213684707482892
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "is-loaded",
+					"objectClass": "GooglePlay",
+					"sid": 205453882260504
+				}
+			],
+			"actions": [],
+			"sid": 639762360806706,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 933495203586641,
+							"parameters": {
+								"variable": "nama",
+								"comparison": 0,
+								"value": "\"Tutorial\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unlock",
+							"objectClass": "GooglePlay",
+							"sid": 440987053058161,
+							"parameters": {
+								"achievement-id": "\"CgkIop-euq8VEAIQBA\""
+							}
+						}
+					],
+					"sid": 661863800148084
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 171525177852840,
+							"parameters": {
+								"variable": "nama",
+								"comparison": 0,
+								"value": "\"KotaKecil\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unlock",
+							"objectClass": "GooglePlay",
+							"sid": 867562788410056,
+							"parameters": {
+								"achievement-id": "\"CgkIop-euq8VEAIQAQ\""
+							}
+						}
+					],
+					"sid": 493438553582379
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 480077537264393,
+							"parameters": {
+								"variable": "nama",
+								"comparison": 0,
+								"value": "\"KotaMetropolitan\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unlock",
+							"objectClass": "GooglePlay",
+							"sid": 820557928769527,
+							"parameters": {
+								"achievement-id": "\"CgkIop-euq8VEAIQAg\""
+							}
+						}
+					],
+					"sid": 150045997698496
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 230213509628844,
+							"parameters": {
+								"variable": "nama",
+								"comparison": 0,
+								"value": "\"KawasanIndustri\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "unlock",
+							"objectClass": "GooglePlay",
+							"sid": 521441610281473,
+							"parameters": {
+								"achievement-id": "\"CgkIop-euq8VEAIQAw\""
+							}
+						}
+					],
+					"sid": 964192839522691
 				}
 			]
 		}

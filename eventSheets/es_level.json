@@ -4938,6 +4938,81 @@
 										}
 									],
 									"sid": 320597021661865
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-at-x",
+											"objectClass": "levels",
+											"sid": 767388066155303,
+											"parameters": {
+												"x": "4",
+												"comparison": 4,
+												"value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "unlockAchievement",
+											"sid": 915836863102307,
+											"parameters": [
+												"\"KotaKecil\""
+											]
+										}
+									],
+									"sid": 699052866200768
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-at-x",
+											"objectClass": "levels",
+											"sid": 594105404547948,
+											"parameters": {
+												"x": "8",
+												"comparison": 4,
+												"value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "unlockAchievement",
+											"sid": 531483799620163,
+											"parameters": [
+												"\"KotaMetropolitan\""
+											]
+										}
+									],
+									"sid": 855279131728084
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-at-x",
+											"objectClass": "levels",
+											"sid": 718445970511514,
+											"parameters": {
+												"x": "12",
+												"comparison": 4,
+												"value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "unlockAchievement",
+											"sid": 765431624561776,
+											"parameters": [
+												"\"KawasanIndustri\""
+											]
+										}
+									],
+									"sid": 631830707552040
 								}
 							]
 						}
