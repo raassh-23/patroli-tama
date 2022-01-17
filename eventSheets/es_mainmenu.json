@@ -1165,6 +1165,74 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-signed-in",
+							"objectClass": "GooglePlay",
+							"sid": 773975032027418
+						}
+					],
+					"actions": [
+						{
+							"id": "request-player-details",
+							"objectClass": "GooglePlay",
+							"sid": 919159223387596
+						},
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 790062307332605,
+							"parameters": {
+								"text": "\"Login Berhasil\""
+							}
+						}
+					],
+					"sid": 497176212904642
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-sign-in-fail",
+							"objectClass": "GooglePlay",
+							"sid": 858388469798499
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SpriteFont",
+							"sid": 729972563179824,
+							"parameters": {
+								"text": "\"Login Gagal\" & newline & GooglePlay.ErrorMessage"
+							}
+						}
+					],
+					"sid": 533673824383170
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-player-details-received",
+							"objectClass": "GooglePlay",
+							"sid": 594549419825831
+						}
+					],
+					"actions": [
+						{
+							"id": "append-text",
+							"objectClass": "SpriteFont",
+							"sid": 992209710622713,
+							"parameters": {
+								"text": "newline & \"User: \" & GooglePlay.MyDisplayName"
+							}
+						}
+					],
+					"sid": 863708716036148
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-touched-object",
 							"objectClass": "Touch",
 							"sid": 750060425495885,
@@ -1175,7 +1243,6 @@
 					],
 					"actions": [],
 					"sid": 397633461506374,
-					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -1200,8 +1267,7 @@
 									}
 								}
 							],
-							"sid": 211982741934092,
-							"disabled": true
+							"sid": 211982741934092
 						},
 						{
 							"eventType": "block",
@@ -1286,8 +1352,29 @@
 									}
 								}
 							],
-							"sid": 772978471884368,
-							"disabled": true
+							"sid": 772978471884368
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "testButton",
+									"sid": 781345742648710,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "sign-in",
+									"objectClass": "GooglePlay",
+									"sid": 312989479643573
+								}
+							],
+							"sid": 999027869147668
 						}
 					]
 				}

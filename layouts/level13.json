@@ -4,6 +4,7 @@
 		{
 			"name": "bg",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "rumput4",
@@ -207,6 +208,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -215,6 +217,7 @@
 		{
 			"name": "game",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "levelTimer",
@@ -11069,6 +11072,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -11077,6 +11081,7 @@
 		{
 			"name": "topGame",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "particleAsap1",
@@ -12315,6 +12320,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -12323,6 +12329,7 @@
 		{
 			"name": "ui",
 			"overriden": 1,
+			"subLayers": [],
 			"instances": [],
 			"sid": 689020778590191,
 			"effectTypes": [],
@@ -12345,6 +12352,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -12353,6 +12361,7 @@
 		{
 			"name": "pilihanPelanggaran",
 			"overriden": 1,
+			"subLayers": [],
 			"instances": [],
 			"sid": 999045968920801,
 			"effectTypes": [],
@@ -12375,6 +12384,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -12383,6 +12393,7 @@
 		{
 			"name": "help",
 			"overriden": 1,
+			"subLayers": [],
 			"instances": [],
 			"sid": 565237588184011,
 			"effectTypes": [],
@@ -12405,6 +12416,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -12413,6 +12425,7 @@
 		{
 			"name": "tutorial0",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "tutorialPopup",
@@ -12869,6 +12882,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -12877,6 +12891,7 @@
 		{
 			"name": "paused",
 			"overriden": 1,
+			"subLayers": [],
 			"instances": [],
 			"sid": 653149912405345,
 			"effectTypes": [],
@@ -12899,6 +12914,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -12907,6 +12923,7 @@
 		{
 			"name": "levelFinished",
 			"overriden": 1,
+			"subLayers": [],
 			"instances": [],
 			"sid": 525162979269100,
 			"effectTypes": [],
@@ -12929,6 +12946,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -12937,6 +12955,7 @@
 		{
 			"name": "levelFailed",
 			"overriden": 1,
+			"subLayers": [],
 			"instances": [],
 			"sid": 611652511385253,
 			"effectTypes": [],
@@ -12959,6 +12978,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -12973,5 +12993,6 @@
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
+	"projection": "perspective",
 	"eventSheet": "Es_Level13"
 }

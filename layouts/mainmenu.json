@@ -4,6 +4,7 @@
 		{
 			"name": "bg",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "background",
@@ -56,6 +57,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -64,6 +66,7 @@
 		{
 			"name": "Menuui",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "menuButton",
@@ -215,6 +218,73 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "testButton",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4780,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1822,
+						"y": 111,
+						"width": 144.5683229480096,
+						"height": 144.5683229480096,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SpriteFont",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 4781,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -225,
+						"y": 872,
+						"width": 2370,
+						"height": 356,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 432660000702837,
@@ -238,6 +308,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -246,6 +317,7 @@
 		{
 			"name": "setting",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "blueBackground",
@@ -779,6 +851,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -787,6 +860,7 @@
 		{
 			"name": "Credit",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "blueBackground",
@@ -915,6 +989,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -929,5 +1004,6 @@
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
+	"projection": "perspective",
 	"eventSheet": "Es_MainMenu"
 }

@@ -4,6 +4,7 @@
 		{
 			"name": "bg",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "rumput1",
@@ -108,6 +109,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -116,6 +118,7 @@
 		{
 			"name": "game",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "Dekorasi1",
@@ -1589,6 +1592,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -1597,6 +1601,7 @@
 		{
 			"name": "ui",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "levelUIDecor",
@@ -2003,6 +2008,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -2011,6 +2017,7 @@
 		{
 			"name": "pilihanPelanggaran",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "pelanggaranPanel",
@@ -2279,6 +2286,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -2287,6 +2295,7 @@
 		{
 			"name": "help",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "helpPanel",
@@ -2397,6 +2406,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -2405,6 +2415,7 @@
 		{
 			"name": "tutorial0",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "blueBackground",
@@ -2626,6 +2637,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -2634,6 +2646,7 @@
 		{
 			"name": "tutorial1",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "tutorialPopup",
@@ -2924,6 +2937,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -2932,6 +2946,7 @@
 		{
 			"name": "paused",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "blueBackground",
@@ -3539,6 +3554,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -3547,6 +3563,7 @@
 		{
 			"name": "levelFinished",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "blueBackground",
@@ -3911,6 +3928,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -3919,6 +3937,7 @@
 		{
 			"name": "levelFailed",
 			"overriden": 0,
+			"subLayers": [],
 			"instances": [
 				{
 					"type": "blueBackground",
@@ -4246,6 +4265,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -4281,5 +4301,6 @@
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
+	"projection": "perspective",
 	"eventSheet": "Es_Level1"
 }

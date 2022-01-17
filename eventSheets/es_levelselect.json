@@ -1182,9 +1182,9 @@
 			"eventType": "function-block",
 			"conditions": [
 				{
-					"id": "is-loaded",
+					"id": "is-signed-in",
 					"objectClass": "GooglePlay",
-					"sid": 205453882260504
+					"sid": 263553324894340
 				}
 			],
 			"actions": [],
@@ -1196,7 +1196,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 933495203586641,
+							"sid": 922841893958138,
 							"parameters": {
 								"variable": "nama",
 								"comparison": 0,
@@ -1208,13 +1208,13 @@
 						{
 							"id": "unlock",
 							"objectClass": "GooglePlay",
-							"sid": 440987053058161,
+							"sid": 508143597069588,
 							"parameters": {
 								"achievement-id": "\"CgkIop-euq8VEAIQBA\""
 							}
 						}
 					],
-					"sid": 661863800148084
+					"sid": 548997576957220
 				},
 				{
 					"eventType": "block",
@@ -1222,7 +1222,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 171525177852840,
+							"sid": 330407837896053,
 							"parameters": {
 								"variable": "nama",
 								"comparison": 0,
@@ -1234,13 +1234,13 @@
 						{
 							"id": "unlock",
 							"objectClass": "GooglePlay",
-							"sid": 867562788410056,
+							"sid": 532765473481351,
 							"parameters": {
 								"achievement-id": "\"CgkIop-euq8VEAIQAQ\""
 							}
 						}
 					],
-					"sid": 493438553582379
+					"sid": 198445218799761
 				},
 				{
 					"eventType": "block",
@@ -1248,7 +1248,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 480077537264393,
+							"sid": 508287488642418,
 							"parameters": {
 								"variable": "nama",
 								"comparison": 0,
@@ -1260,13 +1260,13 @@
 						{
 							"id": "unlock",
 							"objectClass": "GooglePlay",
-							"sid": 820557928769527,
+							"sid": 858942284272266,
 							"parameters": {
 								"achievement-id": "\"CgkIop-euq8VEAIQAg\""
 							}
 						}
 					],
-					"sid": 150045997698496
+					"sid": 966557432329287
 				},
 				{
 					"eventType": "block",
@@ -1274,7 +1274,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 230213509628844,
+							"sid": 703279447991601,
 							"parameters": {
 								"variable": "nama",
 								"comparison": 0,
@@ -1286,13 +1286,13 @@
 						{
 							"id": "unlock",
 							"objectClass": "GooglePlay",
-							"sid": 521441610281473,
+							"sid": 549510462706848,
 							"parameters": {
 								"achievement-id": "\"CgkIop-euq8VEAIQAw\""
 							}
 						}
 					],
-					"sid": 964192839522691
+					"sid": 334164292215701
 				}
 			]
 		}
