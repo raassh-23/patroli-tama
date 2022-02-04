@@ -1156,7 +1156,7 @@
 		},
 		{
 			"eventType": "group",
-			"disabled": false,
+			"disabled": true,
 			"title": "debugging tools",
 			"description": "disable this group before exporting for release",
 			"isActiveOnStart": true,
@@ -1185,7 +1185,8 @@
 							}
 						}
 					],
-					"sid": 497176212904642
+					"sid": 497176212904642,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1206,7 +1207,8 @@
 							}
 						}
 					],
-					"sid": 533673824383170
+					"sid": 533673824383170,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1227,7 +1229,8 @@
 							}
 						}
 					],
-					"sid": 863708716036148
+					"sid": 863708716036148,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1243,6 +1246,7 @@
 					],
 					"actions": [],
 					"sid": 397633461506374,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -1267,7 +1271,8 @@
 									}
 								}
 							],
-							"sid": 211982741934092
+							"sid": 211982741934092,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -1352,7 +1357,8 @@
 									}
 								}
 							],
-							"sid": 772978471884368
+							"sid": 772978471884368,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -1374,7 +1380,8 @@
 									"sid": 312989479643573
 								}
 							],
-							"sid": 999027869147668
+							"sid": 999027869147668,
+							"disabled": true
 						}
 					]
 				}
